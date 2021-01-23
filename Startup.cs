@@ -4,11 +4,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Vet.Controllers;
 using Vet.Data;
 using Vet.Models;
 
@@ -35,17 +37,19 @@ namespace Vet
                     .AllowAnyHeader());
             });
 
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddTransient<IEmailSender, EmailSender>();
+
+            services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDefaultIdentity<VetUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<VetDbContext>();
 
             services.AddIdentityServer()
-                .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
+                .AddApiAuthorization<VetUser, VetDbContext>();
 
             services.AddAuthentication()
                 .AddIdentityServerJwt();

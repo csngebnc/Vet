@@ -37,7 +37,7 @@ export class LogoutComponent implements OnInit {
         await this.processLogoutCallback();
         break;
       case LogoutActions.LoggedOut:
-        this.message.next('You successfully logged out!');
+        this.message.next('Sikeresen kijelentkeztél!');
         break;
       default:
         throw new Error(`Invalid action '${action}'`);

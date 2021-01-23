@@ -10,9 +10,9 @@ using Vet.Models;
 
 namespace Vet.Data
 {
-    public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>
+    public class VetDbContext : ApiAuthorizationDbContext<VetUser>
     {
-        public ApplicationDbContext(
+        public VetDbContext(
             DbContextOptions options,
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
