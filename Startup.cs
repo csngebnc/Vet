@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +13,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Vet.Controllers;
 using Vet.Data;
+using Vet.Data.Repositories;
+using Vet.Helpers;
+using Vet.Interfaces;
 using Vet.Models;
 
 namespace Vet
@@ -38,6 +42,10 @@ namespace Vet
             });
 
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAnimalRepository, AnimalRepository>();
+            services.AddScoped<IPhotoManager, PhotoManager>();
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(

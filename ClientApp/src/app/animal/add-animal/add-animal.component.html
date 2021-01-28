@@ -1,0 +1,65 @@
+<div class="container">
+    <form class="p-3" [formGroup]='addAnimalForm' (ngSubmit)="addAnimalForm.valid && addAnimal()" autocomplete="off">
+        <h2 class="">Új állat felvétele</h2>
+        <hr>
+        
+        <app-text-input [formControl]='addAnimalForm.controls["name"]' [label]='"Név"'></app-text-input>
+        <div class="form-row">
+            <div class="col-8">
+                <app-date-input [formControl]='addAnimalForm.controls["dateOfBirth"]' [label]='"Születési dátum"' [maxDate]='maxDate'></app-date-input>
+            </div>
+            <div class="col">
+                
+                <input type="file" class="form-control-file" (change)="fileChangeEvent($event)" />
+                <!--<input type="file" class="form-control-file" (change)="onImagePicked($event)" accept="image/*"> -->
+                <!--<button [disabled]='!addAnimalForm.valid' class="btn btn-outline-dark" type="button">Kép feltöltés</button>-->
+            </div>
+        </div>
+
+
+        Állat neme: 
+        <div class="form-check form-check-inline pl-1">
+            <input class="form-check-input" id="m" type="radio" value='hím' formControlName='sex'>
+            <label class="form-check-label" for="m">Hím</label>
+        </div>
+        <div class="form-check form-check-inline pb-2">
+            <input class="form-check-input" id="f" type="radio" value='nőstény' formControlName='sex'>
+            <label class="form-check-label" for="f">Nőstény</label>
+        </div>
+
+        <div class="form-group">
+            <label style="margin-right: 10px;" class="control-label">Állat fajtája:</label>
+            <select class="form-control" formControlName="speciesid">
+                <option value="" disabled>Válassz...</option>
+                <option *ngFor="let spec of speciesList" [ngValue]="spec.id">{{spec.name}}</option>
+             </select>
+        </div>
+        
+        <div class="row" *ngIf="validationErrors.length > 0">
+            <ul class="text-danger">
+                <li *ngFor="let error of validationErrors">{{error}}</li>
+            </ul>
+        </div>
+
+        <div class="row dflex justify-content-center">
+            <div style="width: 250px; max-height: 250px;">
+                <image-cropper
+                [imageChangedEvent]="imageChangedEvent"
+                [maintainAspectRatio]="true"
+                [aspectRatio]="4 / 4"
+                [resizeToWidth]="256" 
+                format="png"
+                (imageCropped)="imageCropped($event)"
+                (imageLoaded)="imageLoaded()"
+                (cropperReady)="cropperReady()"
+                (loadImageFailed)="loadImageFailed()"
+                >
+                </image-cropper>
+            </div>
+        </div>
+        
+        <div class="form-group text-center">
+            <button [disabled]='!addAnimalForm.valid' class="btn btn-success mr-2" type="submit">Állat felvétele</button>
+        </div>
+    </form>
+</div>

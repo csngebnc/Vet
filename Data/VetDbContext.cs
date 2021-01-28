@@ -17,5 +17,9 @@ namespace Vet.Data
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
         }
+
+        public DbSet<VetUser> Users { get; set; }
+        public DbSet<AnimalSpecies> AnimalSpecies { get; set; }
+        public DbSet<Animal> Animals { get; set; }
     }
 }

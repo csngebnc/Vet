@@ -1,0 +1,127 @@
+<div class="row" *ngIf="animal">
+    <div class="col-4">
+        <h2>{{animal.name}} adatai</h2>
+    </div>
+    
+    <div class="col-8">
+        <div class="alert alert-info" *ngIf="editAnimalForm.dirty">
+            <strong>Információ: </strong> Alapadatokat módosítottál, ami mentés nélkül elveszik. Ne felejts el menteni.
+        </div>
+    </div>
+    
+    <div class="col-4">
+        <div class="card">
+            <img src="{{animal.photoPath}}" alt="{{animal.name}}" 
+                class="card-img-top img-thumbnail">
+            <div class="card-body">
+                <div>
+                    <strong>Név:</strong>
+                    <p>{{animal.name}}</p>
+                </div>
+                <div>
+                    <strong>Neme:</strong>
+                    <p>{{animal.sex}}</p>
+                </div>
+                <div>
+                    <strong>Kor:</strong>
+                    <p>{{animal.age}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+            <li [ngbNavItem]="1">
+                <a ngbNavLink>Alapadatok</a>
+                <ng-template ngbNavContent>
+                
+                    <form class="p-3" [formGroup]='editAnimalForm' (ngSubmit)="editAnimalForm.valid && editAnimalForm.dirty && updateAnimal()" autocomplete="off">
+                        <h2 class="">Adatok szerkesztése</h2>
+                        <hr>
+                        <div class="form-group m-0">
+                            <label class="control-label">Állat neve:</label>
+                            <app-text-input [formControl]='editAnimalForm.controls["name"]' [label]='"Név"'></app-text-input>
+                        </div>
+
+                        <div class="form-group m-0">
+                            <label class="control-label">Születési dátuma:</label>
+                            <app-date-input [formControl]='editAnimalForm.controls["dateOfBirth"]' [label]='"Születési dátum"' [maxDate]='maxDate'></app-date-input>
+                        </div>
+                        
+                        <div class="form-group" style="margin-bottom: 8px;">
+                            <label class="control-label">Állat neme: </label>
+                            <div class="form-check form-check-inline pl-2">
+                                <input class="form-check-input" id="m" type="radio" value='hím' formControlName='sex'>
+                                <label class="form-check-label" for="m">Hím</label>
+                            </div>
+                            <div class="form-check form-check-inline pb-2">
+                                <input class="form-check-input" id="f" type="radio" value='nőstény' formControlName='sex'>
+                                <label class="form-check-label" for="f">Nőstény</label>
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <label style="margin-right: 10px;" class="control-label">Állat faja:</label>
+                            <select class="form-control" formControlName="speciesid">
+                                <option value="" disabled>Válassz...</option>
+                                <option *ngFor="let spec of speciesList" [ngValue]="spec.id">{{spec.name}}</option>
+                             </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Állat alfaja:</label>
+                            <app-text-input [formControl]='editAnimalForm.controls["subspecies"]' [label]='"Fajta"'></app-text-input>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label">Állat súlya:</label>
+                            <app-text-input [formControl]='editAnimalForm.controls["weight"]' [label]='"Súly"'></app-text-input>
+                        </div>
+                        <button [disabled]="!editAnimalForm.dirty" type="submit" class="btn btn-dark btn-block">Módosítások mentése</button>
+                    </form>
+
+              </ng-template>
+            </li>
+
+            <li [ngbNavItem]="2">
+              <a ngbNavLink>Fénykép</a>
+              <ng-template ngbNavContent>
+                <h2 class="">Fénykép szerkesztése</h2>
+                <p>Jelenlegi fénykép törlése, vagy azonnali csere új kép feltöltésével.</p>
+                <div class="pb-3">
+                    <button [disabled]="(animal.photoPath === 'Images/Animals/empty-photo.jpg')" class="btn btn-dark mr-2" (click)="deletePhoto()">Fénykép törlése</button>
+                    <input type="file" (change)="fileChangeEvent($event)" class="btn btn-dark"/>
+                </div>
+                
+                <div class="row">
+                    <div class="col-8 dflex justify-content-center">
+                        <div class="row dflex justify-content-center">
+                            <div style="width: 350px; max-height: 350px;">
+                                <image-cropper
+                                [imageChangedEvent]="imageChangedEvent"
+                                [maintainAspectRatio]="true"
+                                [aspectRatio]="4 / 4"
+                                [resizeToWidth]="256" 
+                                format="png"
+                                (imageCropped)="imageCropped($event)"
+                                (imageLoaded)="imageLoaded()"
+                                (cropperReady)="cropperReady()"
+                                (loadImageFailed)="loadImageFailed()"
+                                >
+                                </image-cropper>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-8 justify-content-center" *ngIf="croppedImage">
+                    <button class="btn btn-dark mt-2" (click)="updatePhoto()">Fénykép feltöltése</button>
+                </div>
+
+              </ng-template>
+            </li>
+          </ul>
+          
+          <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+</div>

@@ -12,5 +12,6 @@ namespace Vet.Models
         public string Address { get; set; }
         public string PhotoPath { get; set; }
         public int AuthLevel { get; set; }
+        public ICollection<Animal> Animals { get; set; }
     }
 }
