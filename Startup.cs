@@ -2,15 +2,12 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Vet.BL;
 using Vet.Controllers;
 using Vet.Data;
 using Vet.Data.Repositories;
@@ -46,6 +43,8 @@ namespace Vet
             services.AddScoped<IAnimalRepository, AnimalRepository>();
             services.AddScoped<IPhotoManager, PhotoManager>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
+
+            services.AddTransient<AnimalManager>();
 
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(

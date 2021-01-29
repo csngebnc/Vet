@@ -1,28 +1,29 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vet.Models;
-using Vet.Models.DTOs;
 
 namespace Vet.Interfaces
 {
     public interface IAnimalRepository
     {
-        Task<bool> AnimalExists(int id);
-
         //CUD
-        Task<Animal> AddAnimal(AddAnimalDto animal, string OwnerId);
-        Task<AnimalDto> UpdateAnimal(UpdateAnimalDto animal);
-        Task<AnimalDto> UpdateAnimalPhoto(UpdateAnimalPhotoDto animal, string OwnerId);
-        Task DeleteAnimalPhoto(int id);
-        Task<bool> DeleteAnimal(int id);
+        Task<Animal> AddAnimal(Animal animal);
+        Task<Animal> UpdateAnimal(Animal animal);
+        Task<bool> DeleteAnimal(Animal animal);
         Task ArchiveAnimalById(int id);
         //R
-        Task<AnimalDto> GetAnimalByIdAsync(int id);
-        Task<IEnumerable<AnimalDto>> GetAnimalsByUserIdAsync(string id);
-        Task<IEnumerable<AnimalDto>> GetAnimalsAsync();
+        Task<Animal> GetAnimalByIdAsync(int id);
+        Task<IEnumerable<Animal>> GetAnimalsByUserIdAsync(string id);
+        Task<IEnumerable<Animal>> GetAnimalsAsync();
         // --> CRUD
+
+
+        Task<bool> AddAnimalSpecies(string name);
+        Task<AnimalSpecies> UpdateAnimalSpecies(AnimalSpecies spec);
+        Task<bool> DeleteAnimalSpecies(AnimalSpecies spec);
+
+        Task<IEnumerable<AnimalSpecies>> GetAnimalSpecies();
+        Task<AnimalSpecies> GetAnimalSpeciesById(int id);
+        Task<AnimalSpecies> GetAnimalSpeciesByName(string name);
     }
 }

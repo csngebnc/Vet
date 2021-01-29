@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Vet.Interfaces;
 using Vet.Models;
-using Vet.Models.DTOs;
 
 namespace Vet.Data.Repositories
 {
@@ -15,73 +13,32 @@ namespace Vet.Data.Repositories
     {
         private readonly VetDbContext _context;
         private readonly IMapper _mapper;
-        private readonly IPhotoManager _photoManager;
 
-        public AnimalRepository(VetDbContext context, IMapper mapper, IPhotoManager photoManager)
+        public AnimalRepository(VetDbContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
-            _photoManager = photoManager;
         }
 
-        public async Task<Animal> AddAnimal(AddAnimalDto animal, string OwnerId)
+        public async Task<Animal> AddAnimal(Animal animal)
         {
-            var _animal = _mapper.Map<Animal>(animal);
-            _animal.OwnerId = OwnerId;
-
-            var photoPath = await _photoManager.UploadAnimalPhoto(animal.Photo, OwnerId);
-            _animal.PhotoPath = photoPath == null ? "Images/Animals/empty-photo.jpg" : photoPath;
-
-            await _context.Animals.AddAsync(_animal);
+            await _context.Animals.AddAsync(animal);
             await _context.SaveChangesAsync();
 
-            return _animal;
+            return animal;
         }
 
-        public async Task<AnimalDto> UpdateAnimal(UpdateAnimalDto animal)
+        public async Task<Animal> UpdateAnimal(Animal animal)
         {
-            var _animal = await _context.Animals
-                .Include("Owner")
-                .Where(a => a.Id == animal.Id)
-                .FirstOrDefaultAsync();
-
-            _mapper.Map<UpdateAnimalDto, Animal>(animal, _animal);
+            _context.Animals.Update(animal);
             await _context.SaveChangesAsync();
-            return _mapper.Map<AnimalDto>(_animal);
+            return await this.GetAnimalByIdAsync(animal.Id);
         }
 
-        public async Task<AnimalDto> UpdateAnimalPhoto(UpdateAnimalPhotoDto animal, string OwnerId)
+        public async Task<bool> DeleteAnimal(Animal animal)
         {
-            var _animal = await _context.Animals.FindAsync(animal.Id);
-            var photoPath = await _photoManager.UploadAnimalPhoto(animal.Photo, OwnerId);
-            _animal.PhotoPath = photoPath;
-
-            await _context.SaveChangesAsync();
-
-            return _mapper.Map<AnimalDto>(_animal);
-        }
-
-        public async Task DeleteAnimalPhoto(int id)
-        {
-            var _animal = await _context.Animals.FindAsync(id);
-            if (!_animal.PhotoPath.Equals("Images/Animals/empty-photo.jpg"))
-            {
-                _photoManager.RemovePhoto(_animal.PhotoPath);
-                _animal.PhotoPath = "Images/Animals/empty-photo.jpg";
-            }
-            await _context.SaveChangesAsync();
-
-        }
-
-        public async Task<bool> DeleteAnimal(int id)
-        {
-            var _animal = await _context.Animals.FindAsync(id);
-            // TODO: bővíteni
-
-            if(_animal.PhotoPath != "Images/Animals/empty-photo.jpg")
-                _photoManager.RemovePhoto(_animal.PhotoPath);
-
-            _context.Animals.Remove(_animal);
+            // TODO: bővíteni, hogy ha van rá hivatkozás, akkor már nem lehet törölni
+            _context.Animals.Remove(animal);
             await _context.SaveChangesAsync();
             return true;
         }
@@ -92,39 +49,64 @@ namespace Vet.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<AnimalDto>> GetAnimalsByUserIdAsync(string id)
+        
+        public async Task<bool> AddAnimalSpecies(string name)
         {
-            return _mapper.Map<IEnumerable<AnimalDto>>(
-                await _context.Animals
+            //if (await SpeciesExists(name)) return false;
+            _context.AnimalSpecies.Add(new AnimalSpecies { Name = name });
+            return (await _context.SaveChangesAsync()) > 0;
+
+        }
+        public async Task<AnimalSpecies> UpdateAnimalSpecies(AnimalSpecies spec)
+        {
+            _context.AnimalSpecies.Update(spec);
+            await _context.SaveChangesAsync();
+            return await this.GetAnimalSpeciesById(spec.Id);
+        }
+        public async Task<bool> DeleteAnimalSpecies(AnimalSpecies spec)
+        {
+            _context.AnimalSpecies.Remove(spec);
+            return (await _context.SaveChangesAsync() > 0);
+        }
+
+        
+        public async Task<IEnumerable<Animal>> GetAnimalsAsync()
+        {
+            return await _context.Animals
+                    .Include("Owner")
+                    .ToListAsync();
+        }
+        public async Task<IEnumerable<Animal>> GetAnimalsByUserIdAsync(string id)
+        {
+            return await _context.Animals
                     .Include("Owner")
                     .Where(a => a.OwnerId == id)
-                    .ToListAsync());
+                    .ToListAsync();
         }
 
-        public async Task<AnimalDto> GetAnimalByIdAsync(int id)
+        public async Task<Animal> GetAnimalByIdAsync(int id)
         {
-            return _mapper.Map<AnimalDto>(
-                await _context.Animals
+            return await _context.Animals
                     .Include("Owner")
                     .Where(a => a.Id == id)
-                    .FirstOrDefaultAsync());
+                    .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<AnimalDto>> GetAnimalsAsync()
+        public async Task<IEnumerable<AnimalSpecies>> GetAnimalSpecies()
         {
-            return _mapper.Map<IEnumerable<AnimalDto>>(
-                await _context.Animals
-                    .Include("Owner")
-                    .ToListAsync());
+            return await _context.AnimalSpecies.ToListAsync();
         }
 
-
-
-
-        public async Task<bool> AnimalExists(int id)
+        public async Task<AnimalSpecies> GetAnimalSpeciesById(int id)
         {
-            return await _context.Animals.AnyAsync(a => a.Id == id);
+            return await _context.AnimalSpecies.FindAsync(id);
         }
+        public async Task<AnimalSpecies> GetAnimalSpeciesByName(string name)
+        {
+            return await _context.AnimalSpecies.Where(s => s.Name == name).FirstOrDefaultAsync();
+        }
+
+   
 
 
 

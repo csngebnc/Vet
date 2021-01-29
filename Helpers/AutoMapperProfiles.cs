@@ -1,8 +1,4 @@
 ﻿using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Vet.Extensions;
 using Vet.Models;
 using Vet.Models.DTOs;
@@ -19,6 +15,8 @@ namespace Vet.Helpers
             CreateMap<AddAnimalDto, Animal>();
             CreateMap<UpdateAnimalDto, Animal>();
             CreateMap<VetUser, VetUserDto>();
+            CreateMap<AnimalSpecies, AnimalSpeciesDto>();
+            CreateMap<AnimalSpeciesDto, AnimalSpecies>();
         }
     }
 }

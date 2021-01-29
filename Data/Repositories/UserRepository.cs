@@ -1,12 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Vet.Interfaces;
 using Vet.Models;
-using Vet.Models.DTOs;
 
 namespace Vet.Data.Repositories
 {
