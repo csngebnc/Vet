@@ -47,7 +47,6 @@ namespace Vet.BL
             var _animal = await _animalRepository.GetAnimalByIdAsync(animal.Id);
             var photoPath = await _photoManager.UploadAnimalPhoto(animal.Photo, OwnerId);
             _animal.PhotoPath = photoPath;
-
             _animal = await _animalRepository.UpdateAnimal(_animal);
             return _mapper.Map<AnimalDto>(_animal);
         }
@@ -76,35 +75,10 @@ namespace Vet.BL
             return await _animalRepository.DeleteAnimal(_animal);
         }
 
-        public async Task<bool> AddAnimalSpecies(string name)
-        {
-            return await _animalRepository.AddAnimalSpecies(name);
-        }
-
-        public async Task<AnimalSpeciesDto> UpdateAnimalSpecies(AnimalSpeciesDto animal)
-        {
-            var spec = await _animalRepository.GetAnimalSpeciesById(animal.Id);
-            spec.Name = animal.Name;
-            spec = await _animalRepository.UpdateAnimalSpecies(spec);
-            return _mapper.Map<AnimalSpeciesDto>(spec);
-        }
-
-        public async Task<bool> DeleteAnimalSpecies(int id)
-        {
-            var spec = await _animalRepository.GetAnimalSpeciesById(id);
-            return await _animalRepository.DeleteAnimalSpecies(spec);
-        }
-
         public async Task<bool> AnimalExists(int id)
         {
             return (await _animalRepository.GetAnimalByIdAsync(id))!=null;
         }
-
-        public async Task<bool> SpeciesExists(string name)
-        {
-            return (await _animalRepository.GetAnimalSpeciesByName(name)) != null;
-        }
-
 
         public async Task<IEnumerable<AnimalDto>> GetAnimalsAsync()
             => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsAsync());

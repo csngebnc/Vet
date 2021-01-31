@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="p-3" [formGroup]='editSpeciesForm' (ngSubmit)="editSpeciesForm.valid && updateSpecies()" autocomplete="off">
+        <h2 class="">Állatfaj átnevezése</h2>
+        <hr>
+        
+        <app-text-input [formControl]='editSpeciesForm.controls["name"]' [label]='"Név"'></app-text-input>
+
+        <div class="row" *ngIf="validationErrors.length > 0">
+            <ul class="text-danger">
+                <li *ngFor="let error of validationErrors">{{error}}</li>
+            </ul>
+        </div>
+
+        <div class="form-group text-center">
+            <button [disabled]='!editSpeciesForm.valid' class="btn btn-success mr-2" type="submit">Mentés</button>
+        </div>
+    </form>
+</div>

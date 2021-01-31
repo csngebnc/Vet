@@ -19,5 +19,6 @@ namespace Vet.Models.DTOs
         public string OwnerId { get; set; }
         public string OwnerName { get; set; }
         public string PhotoPath { get; set; }
+        public bool IsArchived { get; set; }
     }
 }

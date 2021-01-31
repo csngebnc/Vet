@@ -12,35 +12,36 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AnimalService {
+  baseUrl: string = 'https://localhost:44345/api/'
 
   constructor(private http: HttpClient) { }
 
   addAnimal(model: FormData){
-    return this.http.post('https://localhost:44345/api/animal/addanimal', model);
+    return this.http.post(this.baseUrl + 'animal/addanimal', model);
   }
 
   updateAnimal(model: any){
-    return this.http.put('https://localhost:44345/api/animal/updateanimal', model);
+    return this.http.put(this.baseUrl + 'animal/updateanimal', model);
   }
 
   updatePhoto(model: FormData){
-    return this.http.put('https://localhost:44345/api/animal/updatephoto', model);
+    return this.http.put(this.baseUrl + 'animal/updatephoto', model);
   }
 
   deletePhoto(id: any){
-    return this.http.delete('https://localhost:44345/api/animal/deletephoto/'+id);
+    return this.http.delete(this.baseUrl + 'animal/deletephoto/'+id);
   }
 
   deleteAnimal(id: number){
-    return this.http.delete('https://localhost:44345/api/animal/'+id);
+    return this.http.delete(this.baseUrl + 'animal/'+id);
   }
 
   getAnimal(id: any){
-    return this.http.get('https://localhost:44345/api/animal/get/'+id);
+    return this.http.get(this.baseUrl + 'animal/get/'+id);
   }
 
   getUserAnimals(){
-    return this.http.get('https://localhost:44345/api/animal/my-animals');
+    return this.http.get(this.baseUrl + 'animal/my-animals');
   }
 
 }

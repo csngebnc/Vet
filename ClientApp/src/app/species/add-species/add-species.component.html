@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="p-3" [formGroup]='addSpeciesForm' (ngSubmit)="addSpeciesForm.valid && addSpecies()" autocomplete="off">
+        <h2 class="">Új állatfaj felvétele</h2>
+        <hr>
+        
+        <app-text-input [formControl]='addSpeciesForm.controls["name"]' [label]='"Név"'></app-text-input>
+
+        <div class="row" *ngIf="validationErrors.length > 0">
+            <ul class="text-danger">
+                <li *ngFor="let error of validationErrors">{{error}}</li>
+            </ul>
+        </div>
+
+        <div class="form-group text-center">
+            <button [disabled]='!addSpeciesForm.valid' class="btn btn-success mr-2" type="submit">Állatfaj felvétele</button>
+        </div>
+    </form>
+</div>

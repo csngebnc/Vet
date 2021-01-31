@@ -48,27 +48,6 @@ namespace Vet.Data.Repositories
             // TODO: később, amikor jobban világossá válik, hogy miként szeretném
             throw new NotImplementedException();
         }
-
-        
-        public async Task<bool> AddAnimalSpecies(string name)
-        {
-            //if (await SpeciesExists(name)) return false;
-            _context.AnimalSpecies.Add(new AnimalSpecies { Name = name });
-            return (await _context.SaveChangesAsync()) > 0;
-
-        }
-        public async Task<AnimalSpecies> UpdateAnimalSpecies(AnimalSpecies spec)
-        {
-            _context.AnimalSpecies.Update(spec);
-            await _context.SaveChangesAsync();
-            return await this.GetAnimalSpeciesById(spec.Id);
-        }
-        public async Task<bool> DeleteAnimalSpecies(AnimalSpecies spec)
-        {
-            _context.AnimalSpecies.Remove(spec);
-            return (await _context.SaveChangesAsync() > 0);
-        }
-
         
         public async Task<IEnumerable<Animal>> GetAnimalsAsync()
         {
@@ -91,22 +70,6 @@ namespace Vet.Data.Repositories
                     .Where(a => a.Id == id)
                     .FirstOrDefaultAsync();
         }
-
-        public async Task<IEnumerable<AnimalSpecies>> GetAnimalSpecies()
-        {
-            return await _context.AnimalSpecies.ToListAsync();
-        }
-
-        public async Task<AnimalSpecies> GetAnimalSpeciesById(int id)
-        {
-            return await _context.AnimalSpecies.FindAsync(id);
-        }
-        public async Task<AnimalSpecies> GetAnimalSpeciesByName(string name)
-        {
-            return await _context.AnimalSpecies.Where(s => s.Name == name).FirstOrDefaultAsync();
-        }
-
-   
 
 
 

@@ -6,6 +6,7 @@ namespace Vet.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public bool IsInactive { get; set; }
 
         public ICollection<Animal> Animals { get; set; }
     }

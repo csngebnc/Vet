@@ -22,6 +22,9 @@ import { ListAnimalComponent } from './animal/list-animal/list-animal.component'
 
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { EditAnimalComponent } from './animal/edit-animal/edit-animal.component';
+import { ListSpeciesComponent } from './species/list-species/list-species.component';
+import { AddSpeciesComponent } from './species/add-species/add-species.component';
+import { EditSpeciesComponent } from './species/edit-species/edit-species.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { EditAnimalComponent } from './animal/edit-animal/edit-animal.component'
     TextInputComponent,
     DateInputComponent,
     ListAnimalComponent,
-    EditAnimalComponent
+    EditAnimalComponent,
+    ListSpeciesComponent,
+    AddSpeciesComponent,
+    EditSpeciesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -48,6 +54,7 @@ import { EditAnimalComponent } from './animal/edit-animal/edit-animal.component'
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'counter', component: CounterComponent},
     { path: 'animals/myanimals', component: ListAnimalComponent },
+    { path: 'species/list', component: ListSpeciesComponent },
     { path: 'animals/edit/:animalid', component: EditAnimalComponent },
     { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
     ], { relativeLinkResolution: 'legacy' }),

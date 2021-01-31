@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { base64ToFile, ImageCroppedEvent } from 'ngx-image-cropper';
 import { AnimalService } from 'src/app/_services/animal.service';
+import { SpeciesService } from 'src/app/_services/species.service';
 
 @Component({
   selector: 'app-edit-animal',
@@ -18,21 +19,8 @@ export class EditAnimalComponent implements OnInit {
 
   editAnimalForm: FormGroup;
   maxDate: Date;
-  speciesList: any = [
-    {
-      name: 'kutya',
-      id: 1
-    },
-    {
-      name: 'macska',
-      id: 2
-    },
-    {
-      name: 'nyúl',
-      id: 3
-    }
-    ];
-  constructor(private animalService: AnimalService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) { }
+  speciesList: any;
+  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) { }
 
   ngOnInit(): void {
     this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( res => {
@@ -43,8 +31,11 @@ export class EditAnimalComponent implements OnInit {
 
   refreshData(){
     this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( res => {
-      this.animal = res; 
-      this.initializeForm();
+      this.animal = res;
+      this.speciesService.getAnimalSpecies().subscribe(response => {
+        this.speciesList = response;
+        this.initializeForm();
+      }) 
     })
   }
 

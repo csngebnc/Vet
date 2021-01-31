@@ -41,10 +41,12 @@ namespace Vet
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
+            services.AddScoped<ISpeciesRepository, SpeciesRepository>();
             services.AddScoped<IPhotoManager, PhotoManager>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
             services.AddTransient<AnimalManager>();
+            services.AddTransient<SpeciesManager>();
 
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(

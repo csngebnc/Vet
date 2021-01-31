@@ -18,5 +18,6 @@ namespace Vet.Models
         public string OwnerId { get; set; }
         public VetUser Owner { get; set; }
         public string? PhotoPath { get; set; }
+        public bool IsArchived { get; set; }
     }
 }

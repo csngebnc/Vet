@@ -4,6 +4,7 @@ import { AnimalService } from 'src/app/_services/animal.service';
 import { DatePipe } from '@angular/common'
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCroppedEvent, base64ToFile } from 'ngx-image-cropper';
+import { SpeciesService } from 'src/app/_services/species.service';
 
 @Component({
   selector: 'app-add-animal',
@@ -16,26 +17,16 @@ export class AddAnimalComponent implements OnInit {
   addAnimalForm: FormGroup;
   maxDate: Date;
   validationErrors: string[] = [];
-  speciesList: any = [
-    {
-      name: 'kutya',
-      id: 1
-    },
-    {
-      name: 'macska',
-      id: 2
-    },
-    {
-      name: 'nyúl',
-      id: 3
-    }
-    ];
+  speciesList: any;
   
 
-  constructor(private animalService: AnimalService, private fb: FormBuilder, public datepipe: DatePipe, private ngbModal: NgbActiveModal) { }
+  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private fb: FormBuilder, public datepipe: DatePipe, private ngbModal: NgbActiveModal) { }
 
   ngOnInit(): void {
-    this.initializeForm();
+    this.speciesService.getAnimalSpecies().subscribe(res => {
+      this.speciesList = res;
+      this.initializeForm();
+    })
     this.maxDate = new Date();
   }
 
