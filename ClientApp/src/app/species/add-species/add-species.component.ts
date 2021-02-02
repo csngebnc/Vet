@@ -21,8 +21,7 @@ export class AddSpeciesComponent implements OnInit {
   }
 
   addSpecies(){
-    this.speciesService.addSpecies(this.addSpeciesForm.value).subscribe((res) => {
-      console.log(res);
+    this.speciesService.addSpecies(this.addSpeciesForm.value).subscribe(() => {
       this.ngbModal.close();
     })
   }

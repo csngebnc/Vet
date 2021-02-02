@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SpeciesDto } from 'src/app/_models/speciesdto';
 import { SpeciesService } from 'src/app/_services/species.service';
 import { AddSpeciesComponent } from '../add-species/add-species.component';
 import { EditSpeciesComponent } from '../edit-species/edit-species.component';
@@ -11,7 +12,7 @@ import { EditSpeciesComponent } from '../edit-species/edit-species.component';
 })
 export class ListSpeciesComponent implements OnInit {
 
-  species: any;
+  species: SpeciesDto[] = [];
 
   constructor(private speciesService: SpeciesService, private modalService: NgbModal) {
     this.refreshSpecies();
@@ -20,6 +21,7 @@ export class ListSpeciesComponent implements OnInit {
   ngOnInit(): void {
     
   }
+
   open() {
     const modalRef = this.modalService.open(AddSpeciesComponent);
     modalRef.result.then(() => this.refreshSpecies())
@@ -32,8 +34,8 @@ export class ListSpeciesComponent implements OnInit {
   }
 
   refreshSpecies(){
-    this.speciesService.getAnimalSpecies().subscribe(res => {
-      this.species = res;
+    this.speciesService.getAnimalSpecies().subscribe((species: SpeciesDto[]) => {
+      this.species = species;
     })
   }
 

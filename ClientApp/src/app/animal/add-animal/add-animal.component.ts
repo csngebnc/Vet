@@ -47,7 +47,7 @@ export class AddAnimalComponent implements OnInit {
     formData.append('dateOfBirth',this.datepipe.transform(this.addAnimalForm.get('dateOfBirth').value, 'yyyy-MM-dd'));
     formData.append('speciesid',this.addAnimalForm.get('speciesid').value);
     formData.append('photo',this.addAnimalForm.get('photo').value);
-    this.animalService.addAnimal(formData).subscribe(() => {console.log('done'); this.ngbModal.close()}, err => console.log(err));;
+    this.animalService.addAnimal(formData).subscribe(() => {this.ngbModal.close()}, err => console.log(err));
   }
 
   fileChangeEvent(event: any): void {this.imageChangedEvent = event;}

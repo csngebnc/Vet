@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { base64ToFile, ImageCroppedEvent } from 'ngx-image-cropper';
+import { AnimalDto } from 'src/app/_models/animaldto';
 import { AnimalService } from 'src/app/_services/animal.service';
 import { SpeciesService } from 'src/app/_services/species.service';
 
@@ -12,7 +13,7 @@ import { SpeciesService } from 'src/app/_services/species.service';
   styleUrls: ['./edit-animal.component.css']
 })
 export class EditAnimalComponent implements OnInit {
-  animal: any;
+  animal: AnimalDto;
   active = 1;
   imageChangedEvent: any = '';
   croppedImage: any = '';
@@ -20,18 +21,17 @@ export class EditAnimalComponent implements OnInit {
   editAnimalForm: FormGroup;
   maxDate: Date;
   speciesList: any;
-  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) { }
+  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) { 
+    this.refreshData();
+  }
 
   ngOnInit(): void {
-    this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( res => {
-      this.refreshData();
-      this.maxDate = new Date();
-    })
+    this.maxDate = new Date();
   }
 
   refreshData(){
-    this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( res => {
-      this.animal = res;
+    this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( (animal: AnimalDto) => {
+      this.animal = animal;
       this.speciesService.getAnimalSpecies().subscribe(response => {
         this.speciesList = response;
         this.initializeForm();
@@ -58,15 +58,15 @@ export class EditAnimalComponent implements OnInit {
     if(this.editAnimalForm.get('subspecies').value===""){
       this.editAnimalForm.patchValue({ subspecies: null });
     }
-    this.animalService.updateAnimal(this.editAnimalForm.value).subscribe(() => {console.log('done'); this.refreshData()}, err => console.log(err));;
+    this.animalService.updateAnimal(this.editAnimalForm.value).subscribe(() => {this.refreshData()}, err => console.log(err));;
   }
 
   updatePhoto(){
     let formData = new FormData();
     formData.append('id', this.route.snapshot.paramMap.get('animalid'));
     formData.append('photo', this.croppedImage);
+
     this.animalService.updatePhoto(formData).subscribe(res => {
-      console.log(res);
       this.imageChangedEvent = '';
       this.croppedImage = '';
       this.refreshData();
@@ -74,8 +74,7 @@ export class EditAnimalComponent implements OnInit {
   }
 
   deletePhoto(){
-    this.animalService.deletePhoto(this.route.snapshot.paramMap.get('animalid')).subscribe(res => {
-      console.log(res);
+    this.animalService.deletePhoto(this.route.snapshot.paramMap.get('animalid')).subscribe(() => {
       this.refreshData();
     });
   }

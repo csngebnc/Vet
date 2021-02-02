@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { SpeciesDto } from 'src/app/_models/speciesdto';
 import { SpeciesService } from 'src/app/_services/species.service';
 
 @Component({
@@ -21,15 +22,14 @@ export class EditSpeciesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.speciesService.getAnimalSpeciesById(this.id).subscribe((res: any) => {
-      this.editSpeciesForm.patchValue({name: res.name});
+    this.speciesService.getAnimalSpeciesById(this.id).subscribe((species: SpeciesDto) => {
+      this.editSpeciesForm.patchValue({name: species.name});
     })
   }
 
   updateSpecies(){
     this.editSpeciesForm.addControl('id', new FormControl(this.id));
-    this.speciesService.updateSpecies(this.editSpeciesForm.value).subscribe((res) => {
-      console.log(res);
+    this.speciesService.updateSpecies(this.editSpeciesForm.value).subscribe(() => {
       this.ngbModal.close();
     })
   }

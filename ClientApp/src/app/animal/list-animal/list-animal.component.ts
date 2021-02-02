@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AnimalDto } from 'src/app/_models/animaldto';
 import { AnimalService } from 'src/app/_services/animal.service';
 import { AddAnimalComponent } from '../add-animal/add-animal.component';
 
@@ -10,7 +11,7 @@ import { AddAnimalComponent } from '../add-animal/add-animal.component';
 })
 export class ListAnimalComponent implements OnInit {
 
-  animals: any = [];  
+  animals: AnimalDto[] = [];  
   page = 1;
   pageSize = 8;
 
@@ -30,9 +31,8 @@ export class ListAnimalComponent implements OnInit {
   }
 
   refreshAnimals(){
-    this.animalService.getUserAnimals().subscribe((response) => {
-      console.log(response);
-      this.animals = response;
+    this.animalService.getUserAnimals().subscribe((animals: AnimalDto[]) => {
+      this.animals = animals;
     })
   }
 
