@@ -17,6 +17,16 @@ namespace Vet.Helpers
             CreateMap<VetUser, VetUserDto>();
             CreateMap<AnimalSpecies, AnimalSpeciesDto>();
             CreateMap<AnimalSpeciesDto, AnimalSpecies>();
+
+            CreateMap<AddTreatmentDto, Treatment>();
+            CreateMap<UpdateTreatmentDto, Treatment>();
+            CreateMap<Treatment, TreatmentDto>()
+                .ForMember(dest => dest.DoctorName, opt => opt.MapFrom(src => src.Doctor.RealName));
+
+            CreateMap<AddTreatmentTimeDto, TreatmentTime>();
+            CreateMap<UpdateTreatmentTimeDto, TreatmentTime>();
+            CreateMap<TreatmentTime, TreatmentTimeDto>();
+
         }
     }
 }

@@ -42,11 +42,13 @@ namespace Vet
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
             services.AddScoped<ISpeciesRepository, SpeciesRepository>();
+            services.AddScoped<ITreatmentRepository, TreatmentRepository>();
             services.AddScoped<IPhotoManager, PhotoManager>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
             services.AddTransient<AnimalManager>();
             services.AddTransient<SpeciesManager>();
+            services.AddTransient<TreatmentManager>();
 
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(

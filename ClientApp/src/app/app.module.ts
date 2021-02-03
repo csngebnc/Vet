@@ -5,6 +5,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
+import { TimepickerModule } from 'ngx-bootstrap/timepicker';
 import { DatePipe } from '@angular/common'
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -25,6 +26,12 @@ import { EditAnimalComponent } from './animal/edit-animal/edit-animal.component'
 import { ListSpeciesComponent } from './species/list-species/list-species.component';
 import { AddSpeciesComponent } from './species/add-species/add-species.component';
 import { EditSpeciesComponent } from './species/edit-species/edit-species.component';
+import { AddTreatmentComponent } from './treatment/add-treatment/add-treatment.component';
+import { EditTreatmentComponent } from './treatment/edit-treatment/edit-treatment.component';
+import { ListOwnTreatmentComponent } from './treatment/list-own-treatment/list-own-treatment.component';
+import { AddTreatmentTimeComponent } from './treatment/times/add-treatment-time/add-treatment-time.component';
+import { EditTreatmentTimeComponent } from './treatment/times/edit-treatment-time/edit-treatment-time.component';
+import { ListTreatmentTimeComponent } from './treatment/times/list-treatment-time/list-treatment-time.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +47,13 @@ import { EditSpeciesComponent } from './species/edit-species/edit-species.compon
     EditAnimalComponent,
     ListSpeciesComponent,
     AddSpeciesComponent,
-    EditSpeciesComponent
+    EditSpeciesComponent,
+    AddTreatmentComponent,
+    EditTreatmentComponent,
+    ListOwnTreatmentComponent,
+    AddTreatmentTimeComponent,
+    EditTreatmentTimeComponent,
+    ListTreatmentTimeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -49,12 +62,16 @@ import { EditSpeciesComponent } from './species/edit-species/edit-species.compon
     ReactiveFormsModule,
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
+    TimepickerModule.forRoot(),
     ApiAuthorizationModule,
     RouterModule.forRoot([
     { path: '', component: HomeComponent, pathMatch: 'full' },
     { path: 'counter', component: CounterComponent},
     { path: 'animals/myanimals', component: ListAnimalComponent },
     { path: 'species/list', component: ListSpeciesComponent },
+    { path: 'treatments/my-treatments', component: ListOwnTreatmentComponent },
+    { path: 'treatments/my-treatments/:treatmentid', component: ListTreatmentTimeComponent },
+    { path: 'treatments/addtreatment', component: AddTreatmentTimeComponent },
     { path: 'animals/edit/:animalid', component: EditAnimalComponent },
     { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
     ], { relativeLinkResolution: 'legacy' }),

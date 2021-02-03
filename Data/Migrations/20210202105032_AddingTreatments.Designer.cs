@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Vet.Data;
 
 namespace Vet.Data.Migrations
 {
     [DbContext(typeof(VetDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210202105032_AddingTreatments")]
+    partial class AddingTreatments
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -341,44 +343,6 @@ namespace Vet.Data.Migrations
                     b.ToTable("Treatments");
                 });
 
-            modelBuilder.Entity("Vet.Models.TreatmentTime", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("DayOfWeek")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Duration")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EndHour")
-                        .HasColumnType("int");
-
-                    b.Property<int>("EndMin")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsInactive")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("StartHour")
-                        .HasColumnType("int");
-
-                    b.Property<int>("StartMin")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TreatmentId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TreatmentId");
-
-                    b.ToTable("TreatmentTimes");
-                });
-
             modelBuilder.Entity("Vet.Models.VetUser", b =>
                 {
                     b.Property<string>("Id")
@@ -533,25 +497,9 @@ namespace Vet.Data.Migrations
                     b.Navigation("Doctor");
                 });
 
-            modelBuilder.Entity("Vet.Models.TreatmentTime", b =>
-                {
-                    b.HasOne("Vet.Models.Treatment", "Treatment")
-                        .WithMany("TreatmentTimes")
-                        .HasForeignKey("TreatmentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Treatment");
-                });
-
             modelBuilder.Entity("Vet.Models.AnimalSpecies", b =>
                 {
                     b.Navigation("Animals");
-                });
-
-            modelBuilder.Entity("Vet.Models.Treatment", b =>
-                {
-                    b.Navigation("TreatmentTimes");
                 });
 
             modelBuilder.Entity("Vet.Models.VetUser", b =>

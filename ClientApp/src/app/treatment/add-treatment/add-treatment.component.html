@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="p-3" [formGroup]='addTreatmentForm' (ngSubmit)="addTreatmentForm.valid && addSpecies()" autocomplete="off">
+        <h2 class="">Új kezelés felvétele</h2>
+        <hr>
+        
+        <app-text-input [formControl]='addTreatmentForm.controls["name"]' [label]='"Megnevezés"'></app-text-input>
+
+        <div class="row" *ngIf="validationErrors.length > 0">
+            <ul class="text-danger">
+                <li *ngFor="let error of validationErrors">{{error}}</li>
+            </ul>
+        </div>
+
+        <div class="form-group text-center">
+            <button [disabled]='!addTreatmentForm.valid' class="btn btn-success mr-2" type="submit">Kezelés felvétele</button>
+        </div>
+    </form>
+</div>
