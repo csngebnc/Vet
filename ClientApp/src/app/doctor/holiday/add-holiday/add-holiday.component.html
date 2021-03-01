@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row d-flex justify-content-center pt-3">
+    <h1>Új szabadság rögzítése</h1>
+  </div>
+  <div class="row d-flex justify-content-center pt-2">
+    <mat-form-field appearance="fill">
+      <mat-label>Válassz intervallumot</mat-label>
+      <mat-date-range-input [formGroup]="addHolidayForm" [rangePicker]="picker">
+        <input matStartDate formControlName="startDate" placeholder="Első nap">
+        <input matEndDate formControlName="endDate" placeholder="Utolsó nap">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    
+      <mat-error *ngIf="addHolidayForm.controls.startDate.hasError('matStartDateInvalid')">Hibás első nap formátum</mat-error>
+      <mat-error *ngIf="addHolidayForm.controls.endDate.hasError('matEndDateInvalid')">Hibás utolsó nap formátum</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="row d-flex justify-content-center pt-2">
+    <button class="btn btn-outline-dark" [disabled]="!addHolidayForm.valid" (click)="addHoliday()">Rögzít</button>
+  </div>
+</div>

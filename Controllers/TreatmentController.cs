@@ -10,8 +10,6 @@ using Vet.Models.DTOs;
 
 namespace Vet.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class TreatmentController : BaseApiController
     {
         private readonly TreatmentManager _treatmentManager;

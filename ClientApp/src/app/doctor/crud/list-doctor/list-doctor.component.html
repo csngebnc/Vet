@@ -1,0 +1,24 @@
+<div class="container ">
+    <div class="row pb-4">
+        <div class="col-6">
+            <h2>Alkalmazottak</h2>
+        </div>
+        <div class="col-6 d-flex justify-content-end"><button class="btn btn-outline-dark" (click)="open()">Új doktor kinevezése</button></div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <table class="table " style="width: 60%;">
+            <tr class="align-middle">
+                <th style="width: 20%;">Név</th>
+                <th style="width: 30%;">Email</th>
+                <th style="width: 30%;"></th>
+            </tr>
+            <tr *ngFor="let item of doctors">
+                <td class="p-1 align-middle" style="width: 20%; text-align: center;">{{item.realName}}</td>
+                <td class="p-1 align-middle" style="width: 30%;">{{item.email}}</td>
+                <td class="p-1 align-middle"style="width: 30%;">
+                    <i (click)="demoteDoctor(item.id)" class="fa fa-trash fa-2x pr-1"></i>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

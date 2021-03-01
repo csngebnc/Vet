@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row pb-4 d-flex justify-content-center">
+        <div class="col-4">
+            <h2>Beállított szabadságok:</h2>
+        </div>
+        <div class="col-4 d-flex justify-content-end"><button class="btn btn-outline-dark" (click)="open()">Új szabadság beállítása</button></div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <table class="table " style="width: 40%;">
+            <tr class="align-middle">
+                <th style="width: 35%;">Első nap</th>
+                <th style="width: 35%;">Utolsó nap</th>
+                <th style="width: 30%;"></th>
+            </tr>
+            <tr *ngFor="let item of holidays">
+                <td class="p-1 align-middle" style="width: 35%; text-align: center;">{{item.startDate | date: 'yyyy. MM. dd.'}}</td>
+                <td class="p-1 align-middle" style="width: 35%;">{{item.endDate | date: 'yyyy. MM. dd.'}}</td>
+                <td class="p-1 align-middle"style="width: 30%;">
+                    <i (click)="openEdit(item.id)" class="fa fa-edit fa-2x pr-1"></i>
+                    <i (click)="delete(item.id)" class="fa fa-trash fa-2x pr-1"></i>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

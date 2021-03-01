@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Vet.Data;
 
 namespace Vet.Data.Migrations
 {
     [DbContext(typeof(VetDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210225101218_AddingAppointmentResign")]
+    partial class AddingAppointmentResign
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -318,6 +320,47 @@ namespace Vet.Data.Migrations
                     b.ToTable("AnimalSpecies");
                 });
 
+            modelBuilder.Entity("Vet.Models.Appointment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("AnimalId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DoctorId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsResigned")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("TreatmentId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("OwnerId");
+
+                    b.HasIndex("TreatmentId");
+
+                    b.ToTable("Appointments");
+                });
+
             modelBuilder.Entity("Vet.Models.Treatment", b =>
                 {
                     b.Property<int>("Id")
@@ -522,6 +565,35 @@ namespace Vet.Data.Migrations
                     b.Navigation("Owner");
 
                     b.Navigation("Species");
+                });
+
+            modelBuilder.Entity("Vet.Models.Appointment", b =>
+                {
+                    b.HasOne("Vet.Models.Animal", "Animal")
+                        .WithMany()
+                        .HasForeignKey("AnimalId");
+
+                    b.HasOne("Vet.Models.VetUser", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.HasOne("Vet.Models.VetUser", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId");
+
+                    b.HasOne("Vet.Models.Treatment", "Treatment")
+                        .WithMany()
+                        .HasForeignKey("TreatmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Owner");
+
+                    b.Navigation("Treatment");
                 });
 
             modelBuilder.Entity("Vet.Models.Treatment", b =>

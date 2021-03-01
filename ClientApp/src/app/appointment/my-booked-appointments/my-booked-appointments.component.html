@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row pb-4">
+        <h1>Aktív időpontok:</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Időpont</th>
+            <th scope="col">Kezelés</th>
+            <th scope="col">Kezelőorvos</th>
+            <th scope="col">Állat (opcionális)</th>
+            <th scope="col">Lemond</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let a of my_appointments">
+            <th class="align-middle" scope="row">{{a.startDate | date: 'yyyy. MM. dd. HH:mm'}}</th>
+            <td class="align-middle">{{a.treatmentName}}</td>
+            <td class="align-middle" >{{a.doctorName}}</td>
+            <td class="align-middle" >{{a.animalName}}</td>
+            <td class="align-middle" ><i (click)="resignAppointment(a.id)" class="far fa-minus-square fa-2x"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="row">
+        <h1>Korábbi időpontok:</h1>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Időpont</th>
+            <th scope="col">Kezelés</th>
+            <th scope="col">Kezelőorvos</th>
+            <th scope="col">Állat (opcionális)</th>
+            <th scope="col">Részletek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let a of my_old_appointments">
+            <th class="align-middle" scope="row">{{a.startDate | date: 'yyyy. MM. dd. HH:mm'}}</th>
+            <td class="align-middle">{{a.treatmentName}}</td>
+            <td class="align-middle">{{a.doctorName}}</td>
+            <td class="align-middle">{{a.animalName}}</td>
+            <td class="align-middle"><i *ngIf="a.details" class="fas fa-info-circle fa-2x" title="{{a.details}}"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

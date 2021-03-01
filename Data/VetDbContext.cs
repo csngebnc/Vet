@@ -19,5 +19,7 @@ namespace Vet.Data
         public DbSet<Animal> Animals { get; set; }
         public DbSet<Treatment> Treatments { get; set; }
         public DbSet<TreatmentTime> TreatmentTimes { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Holiday> Holidays { get; set; }
     }
 }
