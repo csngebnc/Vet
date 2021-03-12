@@ -53,12 +53,14 @@ namespace Vet.Data.Repositories
         {
             return await _context.Animals
                     .Include("Owner")
+                    .Include("Species")
                     .ToListAsync();
         }
         public async Task<IEnumerable<Animal>> GetAnimalsByUserIdAsync(string id)
         {
             return await _context.Animals
                     .Include("Owner")
+                    .Include("Species")
                     .Where(a => a.OwnerId == id)
                     .ToListAsync();
         }
@@ -67,6 +69,7 @@ namespace Vet.Data.Repositories
         {
             return await _context.Animals
                     .Include("Owner")
+                    .Include("Species")
                     .Where(a => a.Id == id)
                     .FirstOrDefaultAsync();
         }

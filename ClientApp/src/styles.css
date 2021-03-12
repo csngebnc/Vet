@@ -1,8 +1,13 @@
+@font-face {
+  font-family: caps;
+  src: url(/src/assets/font/Capsuula.woff);
+}
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  /*color: #0366d6;*/
+  color: black;
 }
 
 code {
@@ -14,6 +19,65 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-
-html, body { height: 100%; }
+/*
+.main-color {
+  background-color: #6A82CA;
+}
+*/
+html, body { height: 100%; background-color: #E9EBEE !important; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.dark-blue-bg {
+  background-color: #29487D;
+  color: #E9EBEE;
+}
+
+.half-dark-blue-bg{
+  background-color: #365899;
+  color: #E9EBEE;
+}
+
+.light-blue-bg{
+  background-color: #4267B2;
+  color: #E9EBEE;
+}
+
+.gray-bg{
+  background-color: #4267B2;
+}
+
+
+
+.gray-font{
+  color: #4267B2;
+  font-family: 'caps';
+}
+
+.light-font{
+  color: #E9EBEE !important;
+  font-family: 'caps' !important;
+}
+
+.mat-table {
+  background-color: #e9ebee !important;
+}
+
+.mat-paginator {
+  background-color: #e9ebee !important;
+}
+
+.mat-step{
+  background-color: #e9ebee !important;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

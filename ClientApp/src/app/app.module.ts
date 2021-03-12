@@ -49,6 +49,9 @@ import { EditHolidayComponent } from './doctor/holiday/edit-holiday/edit-holiday
 import { ListHolidayComponent } from './doctor/holiday/list-holiday/list-holiday.component';
 import { AddDoctorComponent } from './doctor/crud/add-doctor/add-doctor.component';
 import { ListDoctorComponent } from './doctor/crud/list-doctor/list-doctor.component';
+import { RoleGuard } from './_guards/role.guard';
+import { PreventUnsavedChangesGuard } from './_guards/prevent-unsaved-changes.guard';
+import { MAT_RADIO_DEFAULT_OPTIONS } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -80,7 +83,7 @@ import { ListDoctorComponent } from './doctor/crud/list-doctor/list-doctor.compo
     ListDoctorComponent
   ],
   imports: [
-	MatModule,
+    MatModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
@@ -90,24 +93,61 @@ import { ListDoctorComponent } from './doctor/crud/list-doctor/list-doctor.compo
     TimepickerModule.forRoot(),
     ApiAuthorizationModule,
     RouterModule.forRoot([
-    { path: '', component: HomeComponent, pathMatch: 'full' },
-    { path: 'counter', component: CounterComponent},
-    { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
 
-    { path: 'appointment', component: BookAppointmentComponent},
-    { path: 'appointment/my-appointments', component: MyBookedAppointmentsComponent},
+      { path: 'animals/myanimals', component: ListAnimalComponent },
+      { path: 'animals/edit/:animalid', component: EditAnimalComponent, canDeactivate: [PreventUnsavedChangesGuard] },
 
-    { path: 'species/list', component: ListSpeciesComponent },
+      { path: 'appointment', component: BookAppointmentComponent },
+      { path: 'appointment/my-appointments', component: MyBookedAppointmentsComponent },
 
-    { path: 'doctors', component: ListDoctorComponent },
-    { path: 'holidays', component: ListHolidayComponent},
+      ////////////////////////////////////////////////////////////////////////////////////////
+      {
+        path: 'holidays', component: ListHolidayComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 2
+        }
+      },
+      {
+        path: 'treatments/my-treatments', component: ListOwnTreatmentComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 2
+        }
+      },
+      {
+        path: 'treatments/my-treatments/:treatmentid', component: ListTreatmentTimeComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 2
+        }
+      },
+      {
+        path: 'treatments/addtreatment', component: AddTreatmentTimeComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 2
+        }
+      },
+      ////////////////////////////////////////////////////////////////////////////////////////
+      {
+        path: 'species/list', component: ListSpeciesComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 3
+        }
+      },
 
-    { path: 'treatments/my-treatments', component: ListOwnTreatmentComponent },
-    { path: 'treatments/my-treatments/:treatmentid', component: ListTreatmentTimeComponent },
-    { path: 'treatments/addtreatment', component: AddTreatmentTimeComponent },
-
-    { path: 'animals/myanimals', component: ListAnimalComponent },
-    { path: 'animals/edit/:animalid', component: EditAnimalComponent },
+      {
+        path: 'doctors', component: ListDoctorComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 3
+        }
+      },
 
     ], { relativeLinkResolution: 'legacy' }),
     NgbModule,
@@ -115,12 +155,15 @@ import { ListDoctorComponent } from './doctor/crud/list-doctor/list-doctor.compo
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },
-    {provide: MAT_DATE_LOCALE, useValue: 'hu-HU'},
+    { provide: MAT_DATE_LOCALE, useValue: 'hu-HU' },
+    { provide: MAT_RADIO_DEFAULT_OPTIONS, useValue: { color: 'primary' }},
     DatePipe
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { constructor(localeService: BsLocaleService) {
-  defineLocale('hu', huLocale);
-  localeService.use('hu');
-}}
+export class AppModule {
+  constructor(localeService: BsLocaleService) {
+    defineLocale('hu', huLocale);
+    localeService.use('hu');
+  }
+}

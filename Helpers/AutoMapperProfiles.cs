@@ -11,7 +11,8 @@ namespace Vet.Helpers
         {
             CreateMap<Animal, AnimalDto>()
                 .ForMember(dest => dest.Age, opt => opt.MapFrom(src => src.DateOfBirth.CalculateAge()))
-                .ForMember(dest => dest.OwnerName, opt => opt.MapFrom(src => src.Owner.RealName));
+                .ForMember(dest => dest.OwnerName, opt => opt.MapFrom(src => src.Owner.RealName))
+                .ForMember(dest => dest.SpeciesName, opt => opt.MapFrom(src => src.Species.Name));
             CreateMap<AddAnimalDto, Animal>();
             CreateMap<UpdateAnimalDto, Animal>();
             CreateMap<VetUser, VetUserDto>();

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TreatmentTimeDto } from 'src/app/_models/treatmenttimedto';
@@ -14,6 +15,8 @@ import { EditTreatmentTimeComponent } from '../edit-treatment-time/edit-treatmen
 export class ListTreatmentTimeComponent implements OnInit {
 
   days: string[] = ["vasárnap", "hétfő", "kedd", "szerda", "csütörtök", "péntek", "szombat"];
+  dataSource;
+  displayedColumns: string[] = ['id', 'day', 'time', 'duration', 'status', 'button'];
 
   treatmentTimes: TreatmentTimeDto[] = [];
   constructor(private treatmentTimeService: TreatmenttimeService, private route: ActivatedRoute, private modalService: NgbModal) { }
@@ -22,32 +25,35 @@ export class ListTreatmentTimeComponent implements OnInit {
     this.refreshTimes();
   }
 
-  refreshTimes(){
+  refreshTimes() {
     this.treatmentTimeService.getTreatmentTimeByTreatmentId(this.route.snapshot.paramMap.get('treatmentid'))
       .subscribe((treatmentTimes: TreatmentTimeDto[]) => {
         this.treatmentTimes = treatmentTimes;
-        console.log(this.route.snapshot.paramMap.get('treatmentid'));
-        console.log(this.treatmentTimes);
+        this.refreshSource();
       })
   }
 
-  open(){
-    const modalRef = this.modalService.open(AddTreatmentTimeComponent, {size: 'lg'});
+  open() {
+    const modalRef = this.modalService.open(AddTreatmentTimeComponent, { size: 'lg' });
     modalRef.componentInstance.treatmentId = this.route.snapshot.paramMap.get('treatmentid');
-    modalRef.result.then(() => {this.refreshTimes();},() => {})
+    modalRef.result.then(() => { this.refreshTimes(); }, () => { })
   }
 
-  openEdit(id){
-    const modalRef = this.modalService.open(EditTreatmentTimeComponent, {size: 'lg'});
+  openEdit(id) {
+    const modalRef = this.modalService.open(EditTreatmentTimeComponent, { size: 'lg' });
     modalRef.componentInstance.id = id;
-    modalRef.result.then(() => this.refreshTimes(), () => {});
+    modalRef.result.then(() => this.refreshTimes(), () => { });
   }
 
-  deleteTreatmentTime(id){
+  deleteTreatmentTime(id) {
     this.treatmentTimeService.deleteTreatmentTime(id).subscribe(() => this.refreshTimes());
   }
 
-  changeStateOfTreatmentTime(id){
-    this.treatmentTimeService.changeState(id).subscribe(()=> this.refreshTimes());
+  changeStateOfTreatmentTime(id) {
+    this.treatmentTimeService.changeState(id).subscribe(() => this.refreshTimes());
+  }
+
+  refreshSource() {
+    this.dataSource = new MatTableDataSource<TreatmentTimeDto>(this.treatmentTimes);
   }
 }

@@ -10,7 +10,7 @@ namespace Vet.Models.DTOs
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public int Age { get; set; }
+        public string Age { get; set; }
         public double Weight { get; set; }
         public string Sex { get; set; }
         public int SpeciesId { get; set; }

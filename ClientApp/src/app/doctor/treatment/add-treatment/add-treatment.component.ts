@@ -21,7 +21,7 @@ export class AddTreatmentComponent implements OnInit {
     })
   }
 
-  addSpecies(){
+  addTreatment(){
     this.treatmentService.addTreatment(this.addTreatmentForm.value).subscribe(() => {
       this.ngbModal.close();
     })

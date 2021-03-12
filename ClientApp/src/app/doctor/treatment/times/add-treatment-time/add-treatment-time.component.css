@@ -1,0 +1,8 @@
+div.inline { float:left; }
+.clearBoth { clear:both; }
+
+div.day-div{
+    border-radius: 15px;
+    width: 14%;
+    height: 60px;
+}

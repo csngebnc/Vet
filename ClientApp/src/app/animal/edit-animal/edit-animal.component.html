@@ -40,12 +40,10 @@
                         <h2 class="">Adatok szerkesztése</h2>
                         <hr>
                         <div class="form-group m-0">
-                            <label class="control-label">Állat neve:</label>
-                            <app-text-input [formControl]='editAnimalForm.controls["name"]' [label]='"Név"'></app-text-input>
+                            <app-text-input [formControl]='editAnimalForm.controls["name"]' [label]='"Állat neve"'></app-text-input>
                         </div>
 
                         <div class="form-group m-0">
-                            <label class="control-label">Születési dátuma:</label>
                             <app-date-input [formControl]='editAnimalForm.controls["dateOfBirth"]' [label]='"Születési dátum"' [maxDate]='maxDate'></app-date-input>
                         </div>
                         
@@ -62,7 +60,7 @@
                         </div>
                 
                         <div class="form-group">
-                            <label style="margin-right: 10px;" class="control-label">Állat faja:</label>
+                            <label style="margin-right: 10px;" class="control-label">Állat faja</label>
                             <select class="form-control" formControlName="speciesid">
                                 <option value="" disabled>Válassz...</option>
                                 <option *ngFor="let spec of speciesList" [ngValue]="spec.id">{{spec.name}}</option>
@@ -70,13 +68,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label">Állat alfaja:</label>
-                            <app-text-input [formControl]='editAnimalForm.controls["subspecies"]' [label]='"Fajta"'></app-text-input>
+                            <app-text-input [formControl]='editAnimalForm.controls["subspecies"]' [label]='"Állat alfaja"'></app-text-input>
                         </div>
                         
                         <div class="form-group">
-                            <label class="control-label">Állat súlya:</label>
-                            <app-text-input [formControl]='editAnimalForm.controls["weight"]' [label]='"Súly"'></app-text-input>
+                            <app-text-input [formControl]='editAnimalForm.controls["weight"]' [label]='"Állat súlya"'></app-text-input>
                         </div>
                         <button [disabled]="!editAnimalForm.dirty" type="submit" class="btn btn-dark btn-block">Módosítások mentése</button>
                     </form>

@@ -43,7 +43,7 @@ namespace Vet.Data.Repositories
 
         public async Task<IEnumerable<VetUser>> GetDoctors()
         {
-            return await _context.Users.Where(u => u.AuthLevel == 1).ToListAsync();
+            return await _context.Users.Where(u => u.AuthLevel >= 1).ToListAsync();
         }
 
         public async Task<Holiday> AddHoliday(Holiday holiday)

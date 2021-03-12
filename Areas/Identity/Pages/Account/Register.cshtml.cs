@@ -79,7 +79,7 @@ namespace Vet.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new VetUser { UserName = Input.Email, Email = Input.Email, RealName = Input.Name };
+                var user = new VetUser { UserName = Input.Email, Email = Input.Email, RealName = Input.Name, AuthLevel = 1 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

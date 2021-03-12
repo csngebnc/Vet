@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { TreatmentDto } from 'src/app/_models/treatmentdto';
 import { TreatmentService } from 'src/app/_services/treatment.service';
@@ -13,6 +14,8 @@ import { EditTreatmentComponent } from '../edit-treatment/edit-treatment.compone
 export class ListOwnTreatmentComponent implements OnInit {
 
   treatments: TreatmentDto[] = [];
+  dataSource;
+  displayedColumns: string[] = ['id', 'name', 'status', 'button'];
 
   constructor(private treatmentService: TreatmentService, private modalService: NgbModal) { }
 
@@ -20,30 +23,31 @@ export class ListOwnTreatmentComponent implements OnInit {
     this.refreshTreatments();
   }
 
-  refreshTreatments(){
+  refreshTreatments() {
     this.treatmentService.getOwnTreatments().subscribe((treatments: TreatmentDto[]) => {
       this.treatments = treatments;
+      this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
     })
   }
 
-  open(){
+  open() {
     const modalRef = this.modalService.open(AddTreatmentComponent);
     modalRef.result.then(() => this.refreshTreatments())
   }
 
-  openEdit(id){
+  openEdit(id) {
     const modalRef = this.modalService.open(EditTreatmentComponent);
     modalRef.componentInstance.id = id;
     modalRef.result.then(() => this.refreshTreatments())
   }
 
-  deleteTreatment(id){
+  deleteTreatment(id) {
     this.treatmentService.deleteTreatment(id).subscribe(() => {
       this.refreshTreatments();
     })
   }
 
-  changeStateOfTreatment(id){
+  changeStateOfTreatment(id) {
     this.treatmentService.changeState(id).subscribe(() => {
       this.refreshTreatments();
     })

@@ -18,7 +18,8 @@ namespace Vet.Data.Repositories
 
         public async Task<VetUser> GetUserByIdAsync(string id)
         {
-            return await _context.Users.FindAsync(id);
+            var user =  await _context.Users.FindAsync(id);
+            return user == null ? new VetUser { AuthLevel = 0 } : user;
         }
 
         public async Task<VetUser> GetUserByUsernameAsync(string username)

@@ -1,18 +1,21 @@
 <div class="container">
-    <form class="p-3" [formGroup]='promoteDoctorForm' (ngSubmit)="promoteDoctorForm.valid && promoteDoctor()" autocomplete="off">
-        <h2 class="">Új doktor kinevezése</h2>
-        <hr>
-        
-        <app-text-input [formControl]='promoteDoctorForm.controls["email"]' [label]='"Email"'></app-text-input>
+    <form class="p-3" [formGroup]='promoteDoctorForm' (ngSubmit)="promoteDoctorForm.valid && promoteDoctor()"
+        autocomplete="off">
 
-        <div class="row" *ngIf="validationErrors.length > 0">
-            <ul class="text-danger">
-                <li *ngFor="let error of validationErrors">{{error}}</li>
-            </ul>
+        <div class="d-flex justify-content-between">
+            <h2 class="mb-0">Új doktor kinevezése</h2>
+            <h2 class="mb-0"><i class="fas fa-star-of-life"></i></h2>
         </div>
+        <hr>
+        <mat-form-field class="full-width">
+            <mat-label>Doktor email címe:</mat-label>
+            <input matInput formControlName='email' required>
+            <mat-error *ngIf="promoteDoctorForm.get('email').invalid">A mező nem lehet üres.</mat-error>
+        </mat-form-field>
 
         <div class="form-group text-center">
-            <button [disabled]='!promoteDoctorForm.valid' class="btn btn-success mr-2" type="submit">Doktor felvétele</button>
+            <button [disabled]='!promoteDoctorForm.valid' class="btn btn-success mr-2" type="submit">Doktor
+                felvétele</button>
         </div>
     </form>
 </div>

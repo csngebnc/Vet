@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { base64ToFile, ImageCroppedEvent } from 'ngx-image-cropper';
@@ -17,6 +17,12 @@ export class EditAnimalComponent implements OnInit {
   active = 1;
   imageChangedEvent: any = '';
   croppedImage: any = '';
+
+  @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any){
+    if(this.editAnimalForm.dirty){
+      $event.returnValue = true;
+    }
+  }
 
   editAnimalForm: FormGroup;
   maxDate: Date;

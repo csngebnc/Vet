@@ -1,9 +1,17 @@
 ::ng-deep .mat-step-header{ pointer-events: none; }
 
 .mat-stepper-vertical {
-    margin-top: 8px;
-  }
+  margin-top: 8px;
+}
   
-  .mat-form-field {
-    margin-top: 16px;
-  }
+.mat-form-field {
+  margin-top: 16px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  

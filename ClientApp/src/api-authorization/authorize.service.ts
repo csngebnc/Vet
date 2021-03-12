@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User, UserManager, WebStorageStateStore } from 'oidc-client';
 import { BehaviorSubject, concat, from, Observable } from 'rxjs';
@@ -44,7 +45,12 @@ export class AuthorizeService {
   private userManager: UserManager;
   private userSubject: BehaviorSubject<IUser | null> = new BehaviorSubject(null);
 
+  public authLevel: number = 0;
+
+  constructor(private http: HttpClient) { }
+
   public isAuthenticated(): Observable<boolean> {
+    this.loadAuthLevel();
     return this.getUser().pipe(map(u => !!u));
   }
 
@@ -75,6 +81,7 @@ export class AuthorizeService {
     try {
       user = await this.userManager.signinSilent(this.createArguments());
       this.userSubject.next(user.profile);
+      this.loadAuthLevel()
       return this.success(state);
     } catch (silentError) {
       // User might not be authenticated, fallback to popup authentication
@@ -86,6 +93,7 @@ export class AuthorizeService {
         }
         user = await this.userManager.signinPopup(this.createArguments());
         this.userSubject.next(user.profile);
+        this.loadAuthLevel()
         return this.success(state);
       } catch (popupError) {
         if (popupError.message === 'Popup window closed') {
@@ -112,6 +120,7 @@ export class AuthorizeService {
       await this.ensureUserManagerInitialized();
       const user = await this.userManager.signinCallback(url);
       this.userSubject.next(user && user.profile);
+      this.loadAuthLevel()
       return this.success(user && user.state);
     } catch (error) {
       console.log('There was an error signing in: ', error);
@@ -128,6 +137,7 @@ export class AuthorizeService {
       await this.ensureUserManagerInitialized();
       await this.userManager.signoutPopup(this.createArguments());
       this.userSubject.next(null);
+      this.authLevel = 0;
       return this.success(state);
     } catch (popupSignOutError) {
       console.log('Popup signout error: ', popupSignOutError);
@@ -146,6 +156,7 @@ export class AuthorizeService {
     try {
       const response = await this.userManager.signoutCallback(url);
       this.userSubject.next(null);
+      this.authLevel = 0;
       return this.success(response && response.state);
     } catch (error) {
       console.log(`There was an error trying to log out '${error}'.`);
@@ -187,6 +198,8 @@ export class AuthorizeService {
     this.userManager.events.addUserSignedOut(async () => {
       await this.userManager.removeUser();
       this.userSubject.next(null);
+
+      this.authLevel = 0;
     });
   }
 
@@ -195,5 +208,11 @@ export class AuthorizeService {
       .pipe(
         mergeMap(() => this.userManager.getUser()),
         map(u => u && u.profile));
+  }
+
+  public loadAuthLevel() {
+    if (this.authLevel == 0) {
+      this.http.get<number>('https://localhost:44345/api/users/role').toPromise().then(lvl => this.authLevel = lvl);
+    }
   }
 }

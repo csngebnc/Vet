@@ -18,7 +18,6 @@ export class AddAnimalComponent implements OnInit {
   maxDate: Date;
   validationErrors: string[] = [];
   speciesList: any;
-  
 
   constructor(private animalService: AnimalService, private speciesService: SpeciesService, private fb: FormBuilder, public datepipe: DatePipe, private ngbModal: NgbActiveModal) { }
 

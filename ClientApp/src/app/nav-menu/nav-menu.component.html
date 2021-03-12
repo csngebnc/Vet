@@ -1,53 +1,97 @@
 <header>
   <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light half-dark-blue-bg border-bottom box-shadow mb-3 p-0">
     <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Vet</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
+      <a class="navbar-brand" [routerLink]="['/']"><img src="logo.png" alt="" class="mr-1"
+          style="width: 150px; height: auto;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
         <ul class="navbar-nav flex-grow">
-          <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link light-font" [routerLink]="['/']">Kezdőlap</a>
+          </li>
+          <ng-container *ngIf="auth.authLevel==1">
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/animals/myanimals']">Állataim</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/appointment']">Időpontfoglalás</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/appointment/my-appointments']">Időpontjaim</a>
+            </li>
+          </ng-container>
+
+          <ng-container *ngIf="auth.authLevel>=2">
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/treatments/my-treatments']">Kezeléseim</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/holidays']">Szabadságok</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Gazdi menü
+              </a>
+              <div class="dropdown-menu light-blue-bg" aria-labelledby="navbarDropdown">
+                <a class="nav-link light-font" [routerLink]="['/animals/myanimals']">Állataim</a>
+                <a class="nav-link light-font" [routerLink]="['/appointment']">Időpontfoglalás</a>
+                <a class="nav-link light-font" [routerLink]="['/appointment/my-appointments']">Időpontjaim</a>
+              </div>
+            </li>
+          </ng-container>
+
+
+          <ng-container *ngIf="auth.authLevel>=3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Műveletek
+              </a>
+              <div class="dropdown-menu light-blue-bg" aria-labelledby="navbarDropdown">
+                <a class="nav-link light-font" [routerLink]="['/doctors']">Orvosok</a>
+                <a class="nav-link light-font" [routerLink]="['/species/list']">Állatfajták</a>
+                <a class="nav-link light-font" [routerLink]="['/']">TBD</a>
+              </div>
+            </li>
+          </ng-container>
+
+        </ul>
+        <!--
+        <ul class="navbar-nav flex-grow">
+          <li *ngIf="auth.authLevel > 0">{{auth.authLevel}} - level</li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }" >
+            <a class="nav-link light-font" [routerLink]="['/']">Home</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/animals/myanimals']"
+            <a class="nav-link light-font" [routerLink]="['/animals/myanimals']"
               >Állataim</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/appointment']"
+            <a class="nav-link light-font" [routerLink]="['/appointment']"
               >Időpontfoglalás</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/appointment/my-appointments']"
+            <a class="nav-link light-font" [routerLink]="['/appointment/my-appointments']"
               >Időpontjaim</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
+            <a class="nav-link light-font" [routerLink]="['/counter']"
               >Counter</a>
           </li>
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
+            <a class="nav-link light-font" [routerLink]="['/fetch-data']"
               >Fetch data</a>
           </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link light-font" [routerLink]="['/holidays']"
+              >Szabadságok</a>
+          </li>
         </ul>
+      -->
         <app-login-menu></app-login-menu>
       </div>
     </div>

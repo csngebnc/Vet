@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { DoctorService } from 'src/app/_services/doctor.service';
-import { SpeciesService } from 'src/app/_services/species.service';
 
 @Component({
   selector: 'app-add-doctor',

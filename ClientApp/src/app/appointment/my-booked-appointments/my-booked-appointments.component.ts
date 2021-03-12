@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 import { AppointmentDto } from 'src/app/_models/appointmentdto';
 import { AppointmentService } from 'src/app/_services/appointment.service';
 
@@ -12,6 +14,12 @@ export class MyBookedAppointmentsComponent implements OnInit {
   my_old_appointments: AppointmentDto[] = [];
   constructor(private appointmentService: AppointmentService) { }
 
+  displayedColumns: string[] = ['startDate', 'treatmentName', 'doctorName', 'animalName', 'details'];
+  dataSource;
+  dataSourceCurrent;
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
   ngOnInit(): void {
     this.appointmentService.getMyAppointments().subscribe((appointments: AppointmentDto[]) => {
       this.my_appointments = appointments;
@@ -22,6 +30,10 @@ export class MyBookedAppointmentsComponent implements OnInit {
       })
       this.my_old_appointments = this.my_appointments.filter(a => a.endDate < now || a.isResigned);
       this.my_appointments = this.my_appointments.filter(a => a.startDate >= now && !a.isResigned);
+      this.dataSource = new MatTableDataSource<AppointmentDto>(this.my_old_appointments);
+      this.dataSourceCurrent = new MatTableDataSource<AppointmentDto>(this.my_appointments);
+
+      this.dataSource.paginator = this.paginator;
     });
   }
 
@@ -33,8 +45,11 @@ export class MyBookedAppointmentsComponent implements OnInit {
 
         this.my_appointments = this.my_appointments.filter(a => a.id !== appointment.id);
         this.my_old_appointments.push(appointment);
-        this.my_old_appointments.sort((a, b) => (a.startDate > b.startDate) ? -1 : ((b.startDate > a.startDate) ? 1 : 
-              (a.id > b.id) ? -1 : (b.id > a.id) ? 1 : 0))
+        this.my_old_appointments.sort((a, b) => (a.startDate > b.startDate) ? -1 : ((b.startDate > a.startDate) ? 1 :
+          (a.id > b.id) ? -1 : (b.id > a.id) ? 1 : 0))
+
+        this.dataSource = new MatTableDataSource<AppointmentDto>(this.my_old_appointments);
+        this.dataSourceCurrent = new MatTableDataSource<AppointmentDto>(this.my_appointments);
       });
     }
   }

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { AuthorizeService } from 'src/api-authorization/authorize.service';
+
+const mycolor = "#6A82CA";
 
 @Component({
   selector: 'app-nav-menu',
@@ -7,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
   isExpanded = false;
+
+
+  constructor(public auth: AuthorizeService) { }
 
   collapse() {
     this.isExpanded = false;

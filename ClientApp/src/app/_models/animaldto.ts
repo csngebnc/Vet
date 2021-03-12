@@ -2,7 +2,7 @@ export interface AnimalDto {
     id: number
     name: string
     dateOfBirth: Date
-    age: number
+    age: string
     weight: string
     sex: string
     speciesId: number

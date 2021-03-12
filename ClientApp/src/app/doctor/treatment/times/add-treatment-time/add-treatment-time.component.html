@@ -1,14 +1,15 @@
-
 <div class="container">
-    <form class="p-3" id="ngForm" #addForm="ngForm" [formGroup]='addTimeForm' (ngSubmit)="addTimeForm.valid && addTreatmentTime()" autocomplete="off">
+    <form class="p-3" id="ngForm" #addForm="ngForm" [formGroup]='addTimeForm'
+        (ngSubmit)="addTimeForm.valid && addTreatmentTime()" autocomplete="off">
         <h2 class="">Új idősáv</h2>
         <hr>
-        <div class="form-group">
-            <label style="margin-right: 10px;" class="control-label">Nap:</label>
-            <select class="form-control" formControlName="dayOfWeek">
-                <option value="" disabled>Válassz...</option>
-                <option *ngFor="let day of days" [ngValue]="day.id">{{day.day}}</option>
-             </select>
+        <div class="d-flex align-items-center justify-content-between pt-1">
+            <div *ngFor="let day of days"
+                class="inline day-div light-font d-flex justify-content-center align-items-center noselect"
+                [ngClass]="addTimeForm.get('dayOfWeek').value !== day.id ? 'light-blue-bg': 'half-dark-blue-bg'"
+                (click)="updateDay(day.id)">
+                {{day.day}}
+            </div>
         </div>
 
         <div class="row" *ngIf="validationErrors.length > 0">
@@ -20,22 +21,24 @@
     <div class="form-group p-3 d-flex justify-content-around">
         <div>
             <label class="control-label">Legkorábban:</label>
-            <ngb-timepicker [(ngModel)]="startTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="startTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
         </div>
         <div>
             <label class="control-label">Legkésőbb:</label>
-            <ngb-timepicker [(ngModel)]="endTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="endTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
         </div>
         <div>
             <label class="control-label">Egy kezelés hossza:</label>
-            <ngb-timepicker [(ngModel)]="duration" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="duration" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
         </div>
     </div>
-    
+
     <div class="form-group text-center">
         <button class="btn btn-success mr-2" form="ngForm" [disabled]="!addForm.form.valid">
             Idősáv felvétele
         </button>
     </div>
 </div>
-
