@@ -7,7 +7,8 @@ namespace Vet.Interfaces
     {
         Task<string> UploadUserPhoto(IFormFile photo, string user_id);
         Task<string> UploadAnimalPhoto(IFormFile photo, string user_id);
+        Task<string> UploadMedicalRecordPhoto(IFormFile photo);
 
-        void RemovePhoto(string path);
+        bool RemovePhoto(string path);
     }
 }

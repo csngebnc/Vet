@@ -53,10 +53,31 @@ namespace Vet.Helpers
             return path;
         }
 
-        public void RemovePhoto(string path)
+        public async Task<string> UploadMedicalRecordPhoto(IFormFile photo)
+        {
+            string path = null;
+
+            if (photo != null)
+            {
+                string folder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "MedicalRecordPhotos");
+                string newFileName = Guid.NewGuid() + Path.GetExtension(photo.FileName);
+
+                path = Path.Combine("Images", "MedicalRecordPhotos", newFileName);
+
+                using (var fileStream = new FileStream(Path.Combine(folder, newFileName), FileMode.Create))
+                {
+                    await photo.CopyToAsync(fileStream);
+                }
+            }
+            return path;
+        }
+
+        public bool RemovePhoto(string path)
         {
             if (System.IO.File.Exists(Path.Combine(_webHostEnvironment.WebRootPath, path)))
                 System.IO.File.Delete(Path.Combine(_webHostEnvironment.WebRootPath, path));
+
+            return !System.IO.File.Exists(Path.Combine(_webHostEnvironment.WebRootPath, path));
 
         }
     }

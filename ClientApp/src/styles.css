@@ -81,3 +81,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+
+/*
+
+:root {
+    --main-blue: rgb(104, 104, 182);
+    --deep-blue: rgb(73, 73, 143);
+    --light-blue: rgb(147, 147, 248);
+    --white: white;
+  }
+
+*/

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Vet.Interfaces;
 using Vet.Models;
@@ -22,11 +24,24 @@ namespace Vet.Data.Repositories
             return user == null ? new VetUser { AuthLevel = 0 } : user;
         }
 
+        public async Task<string> GetUserIdByUserEmail(string email)
+        {
+            return (await _context.Users.SingleOrDefaultAsync(u => u.Email == email))?.Id;
+        }
+
         public async Task<VetUser> GetUserByUsernameAsync(string username)
         {
             return await _context.Users
                 .Include(a => a.Animals)
                 .SingleOrDefaultAsync(x => x.UserName == username);
+        }
+
+        public async Task<IEnumerable<VetUser>> GetUserByFilter(string name, string email)
+        {
+            if (name == null) name = "";
+            if (email == null) email = "";
+            
+            return await _context.Users.Where(u => u.RealName.Contains(name) && u.Email.Contains(email)).ToListAsync();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vet.Extensions;
 using Vet.Interfaces;
@@ -24,6 +25,24 @@ namespace Vet.Controllers
             return _mapper.Map<VetUserDto>(await _userRepository.GetUserByIdAsync(User.GetById()));
         }
 
+        [HttpGet("filter")]
+        public async Task<IEnumerable<VetUserDto>> GetUsersByFilter([FromQuery]string name, [FromQuery] string email)
+        {
+            return _mapper.Map<IEnumerable<VetUserDto>>(await _userRepository.GetUserByFilter(name, email));
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<VetUserDto>> GetUserById(string id)
+        {
+            return _mapper.Map<VetUserDto>(await _userRepository.GetUserByIdAsync(id));
+        }
+
+        [HttpGet("get-id/{email}")]
+        public async Task<string> GetUserIdByUserEmail(string email)
+        {
+            return await _userRepository.GetUserIdByUserEmail(email);
+        }
+
         [HttpGet("role")]
         public async Task<int> GetRole()
         {
@@ -32,7 +51,7 @@ namespace Vet.Controllers
         }
 
         [HttpGet("fix-error")]
-        public async Task<ActionResult<string>> Felada()
+        public async Task<ActionResult<string>> Feladat()
         {
             ModelState.AddModelError("hiba", "hiba");
             ModelState.AddModelError("hibababa", "hibababa");

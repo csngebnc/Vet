@@ -49,5 +49,10 @@ namespace Vet.BL
 
         public async Task<IEnumerable<AppointmentDto>> GetUserAppointments(string id)
             => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetUserAppointments(id));
+
+        public async Task<IEnumerable<AppointmentDto>> GetDoctorActiveAppointments(string id)
+            => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetDoctorActiveAppointments(id));
+        public async Task<IEnumerable<AppointmentDto>> GetDoctorInactiveAppointments(string id)
+            => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetDoctorInactiveAppointments(id));
     }
 }

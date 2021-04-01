@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Vet.Models
@@ -19,5 +20,8 @@ namespace Vet.Models
         public VetUser Owner { get; set; }
         public string? PhotoPath { get; set; }
         public bool IsArchived { get; set; }
+
+        public ICollection<MedicalRecord> MedicalRecords { get; set; }
+        public ICollection<VaccineRecord> VaccineRecords { get; set; }
     }
 }

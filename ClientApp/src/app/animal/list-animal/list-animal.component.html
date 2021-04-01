@@ -1,6 +1,7 @@
 <div class="container">
     <div class="row p-2 dflex justify-content-end">
         <button class="btn btn-outline-dark mt-2" (click)="open()">Új állat felvétele</button>
+        <button class="btn btn-outline-dark mt-2" routerLink='../myarchivedanimals'>Archivált állatok</button>
     </div>
 
     <div class="row mt-4">
@@ -20,7 +21,7 @@
                             <h5 class="m-0">{{item.speciesName}}</h5>
                         </div>
                         <div class="card-footer border-left">
-                            <button mat-icon-button>
+                            <button mat-icon-button routerLink="../records/{{item.id}}">
                                 <mat-icon>library_books</mat-icon>
                             </button>
                             <button mat-icon-button routerLink="../edit/{{item.id}}">
@@ -29,7 +30,7 @@
                             <button mat-icon-button (click)="deleteAnimal(item.id)">
                                 <mat-icon>delete_forever</mat-icon>
                             </button>
-                            <button mat-icon-button>
+                            <button mat-icon-button (click)="archiveAnimal(item.id)">
                                 <mat-icon>archive</mat-icon>
                             </button>
                         </div>

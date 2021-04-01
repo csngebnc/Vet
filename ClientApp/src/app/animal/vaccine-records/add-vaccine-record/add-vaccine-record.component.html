@@ -1,0 +1,38 @@
+<div class="container p-4">
+    <div class="d-flex justify-content-center">
+        <h1>Oltás felvétele naplóba</h1>
+    </div>
+    <form>
+        <div class="d-flex justify-content-center">
+            <mat-form-field class="mt-2 mb-0" class="full-width">
+                <mat-label>Oltás kiválasztása</mat-label>
+                <input matInput [matAutocomplete]="auto" [formControl]="addVaccineRecordForm.controls['vaccineId']"
+                    required>
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredVaccines | async" [value]="option.id">
+                        {{option.name}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <mat-form-field class="full-width">
+                <mat-label>Oltás dátuma:</mat-label>
+                <input matInput [matDatepicker]="picker" [max]="maxDate"
+                    [formControl]="addVaccineRecordForm.controls['date']" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error *ngIf="addVaccineRecordForm.get('date').invalid">Az oltás dátumának megadása kötelező.
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button (click)="addVaccineRecord()" style="width: 87%;" mat-flat-button color="primary"
+                [disabled]="!addVaccineRecordForm.valid">Rögzítés</button>
+        </div>
+
+
+    </form>
+</div>

@@ -28,12 +28,36 @@ namespace Vet.Controllers
             return Ok(await _animalManager.GetAnimalsByUserIdAsync(User.GetById()));
         }
 
+        [HttpGet("my-archived-animals")]
+        public async Task<ActionResult<IEnumerable<AnimalDto>>> GetArchivedAnimalsByUserId()
+        {
+            return Ok(await _animalManager.GetArchivedAnimalsByUserIdAsync(User.GetById()));
+        }
+
         [HttpGet("get/{id}")]
         public async Task<ActionResult<AnimalDto>> GetAnimalById(int id)
         {
             if(await _animalManager.AnimalExists(id))
                 return await _animalManager.GetAnimalByIdAsync(id);
             return NotFound();
+        }
+
+        [HttpGet("by-email/{email}")]
+        public async Task<ActionResult<IEnumerable<AnimalDto>>> GetAnimalsByUserEmail(string email)
+        {
+            return Ok(await _animalManager.GetAnimalsByUserEmailAsync(email));
+        }
+
+        [HttpGet("by-id/{id}")]
+        public async Task<ActionResult<IEnumerable<AnimalDto>>> GetAnimalsByUserId(string id)
+        {
+            return Ok(await _animalManager.GetAnimalsByUserIdAsync(id));
+        }
+
+        [HttpGet("archived-by-id/{id}")]
+        public async Task<ActionResult<IEnumerable<AnimalDto>>> GetArchivedAnimalsByUserId(string id)
+        {
+            return Ok(await _animalManager.GetArchivedAnimalsByUserIdAsync(id));
         }
 
         [HttpPost("addAnimal")]
@@ -50,6 +74,13 @@ namespace Vet.Controllers
                 return NotFound();
 
             await _animalManager.UpdateAnimal(animal);
+            return Ok();
+        }
+
+        [HttpPut("archiveAnimal/{id}")]
+        public async Task<ActionResult> UpdateAnimal(int id)
+        {
+            await _animalManager.ChangeStateOfAnimal(id);
             return Ok();
         }
 

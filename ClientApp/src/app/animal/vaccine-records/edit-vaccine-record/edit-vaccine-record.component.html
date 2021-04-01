@@ -1,0 +1,30 @@
+<div class="container p-4" *ngIf="addVaccineRecordForm">
+    <div class="d-flex justify-content-center">
+        <h1>Oltás felvétele naplóba</h1>
+    </div>
+    <form>
+
+        <div class="mb-2">
+            <strong class="full-width">Oltás neve: {{record.vaccineName}}</strong>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <mat-form-field class="full-width">
+                <mat-label>Oltás dátuma:</mat-label>
+                <input matInput [matDatepicker]="picker" [max]="maxDate"
+                    [formControl]="addVaccineRecordForm.controls['date']" required>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error *ngIf="addVaccineRecordForm.get('date').invalid">Az oltás dátumának megadása kötelező.
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button (click)="updateVaccineRecord()" style="width: 87%;" mat-flat-button color="primary"
+                [disabled]="!addVaccineRecordForm.valid">Rögzítés</button>
+        </div>
+
+
+    </form>
+</div>

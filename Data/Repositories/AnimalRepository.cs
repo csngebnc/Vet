@@ -12,12 +12,10 @@ namespace Vet.Data.Repositories
     public class AnimalRepository : IAnimalRepository
     {
         private readonly VetDbContext _context;
-        private readonly IMapper _mapper;
 
-        public AnimalRepository(VetDbContext context, IMapper mapper)
+        public AnimalRepository(VetDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<Animal> AddAnimal(Animal animal)
@@ -43,10 +41,11 @@ namespace Vet.Data.Repositories
             return true;
         }
 
-        public Task ArchiveAnimalById(int id)
+        public async Task ChangeStateOfAnimal(int id)
         {
-            // TODO: később, amikor jobban világossá válik, hogy miként szeretném
-            throw new NotImplementedException();
+            var animal = await _context.Animals.FindAsync(id);
+            animal.IsArchived = !animal.IsArchived;
+            await _context.SaveChangesAsync();
         }
         
         public async Task<IEnumerable<Animal>> GetAnimalsAsync()
@@ -61,7 +60,16 @@ namespace Vet.Data.Repositories
             return await _context.Animals
                     .Include("Owner")
                     .Include("Species")
-                    .Where(a => a.OwnerId == id)
+                    .Where(a => a.OwnerId == id && !a.IsArchived)
+                    .ToListAsync();
+        }
+
+        public async Task<IEnumerable<Animal>> GetAnimalsByUserEmailAsync(string email)
+        {
+            return await _context.Animals
+                    .Include("Owner")
+                    .Include("Species")
+                    .Where(a => a.Owner.Email == email && !a.IsArchived)
                     .ToListAsync();
         }
 
@@ -74,6 +82,15 @@ namespace Vet.Data.Repositories
                     .FirstOrDefaultAsync();
         }
 
+
+        public async Task<IEnumerable<Animal>> GetArchivedAnimalsByUserId(string id)
+        {
+            return await _context.Animals
+                    .Include("Owner")
+                    .Include("Species")
+                    .Where(a => a.OwnerId == id && a.IsArchived)
+                    .ToListAsync();
+        }
 
 
     }

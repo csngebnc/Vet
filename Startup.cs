@@ -45,6 +45,9 @@ namespace Vet
             services.AddScoped<ITreatmentRepository, TreatmentRepository>();
             services.AddScoped<IAppointmentRepository, AppointmentRepository>();
             services.AddScoped<IDoctorRepository, DoctorRepository>();
+            services.AddScoped<ITherapiaRepository, TherapiaRepository>();
+            services.AddScoped<IMedicalRecordRepository, MedicalRecordRepository>();
+            services.AddScoped<IVaccineRepository, VaccineRepository>();
             services.AddScoped<IPhotoManager, PhotoManager>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
 
@@ -53,6 +56,9 @@ namespace Vet
             services.AddTransient<TreatmentManager>();
             services.AddTransient<AppointmentManager>();
             services.AddTransient<DoctorManager>();
+            services.AddTransient<TherapiaManager>();
+            services.AddTransient<MedicalRecordManager>();
+            services.AddTransient<VaccineManager>();
 
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(

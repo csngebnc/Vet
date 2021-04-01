@@ -52,5 +52,11 @@ namespace Vet.Data.Repositories
         public async Task<Appointment> GetAppointmentById(int id) 
             => await _context.Appointments.Include("Treatment").Include("Doctor").Include("Owner").Include("Animal").Where(a => a.Id == id).SingleOrDefaultAsync();
 
+        public async Task<IEnumerable<Appointment>> GetDoctorActiveAppointments(string id)
+            => await _context.Appointments.Include("Treatment").Include("Doctor").Include("Owner").Include("Animal").Where(a => a.DoctorId == id).Where(a => a.StartDate >= DateTime.Now.AddMinutes(-10)).OrderBy(a => a.StartDate).ThenByDescending(a => a.Id).ToListAsync();
+
+        public async Task<IEnumerable<Appointment>> GetDoctorInactiveAppointments(string id)
+            => await _context.Appointments.Include("Treatment").Include("Doctor").Include("Owner").Include("Animal").Where(a => a.DoctorId == id).Where(a => a.StartDate < DateTime.Now).OrderBy(a => a.StartDate).ThenByDescending(a => a.Id).ToListAsync();
+
     }
 }

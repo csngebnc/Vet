@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type':  'application/json'
+    'Content-Type': 'application/json'
   })
 };
 
@@ -16,32 +16,53 @@ export class AnimalService {
 
   constructor(private http: HttpClient) { }
 
-  addAnimal(model: FormData){
+  addAnimal(model: FormData) {
     return this.http.post(this.baseUrl + 'animal/addanimal', model);
   }
 
-  updateAnimal(model: any){
+  updateAnimal(model: any) {
     return this.http.put(this.baseUrl + 'animal/updateanimal', model);
   }
 
-  updatePhoto(model: FormData){
+  updatePhoto(model: FormData) {
     return this.http.put(this.baseUrl + 'animal/updatephoto', model);
   }
 
-  deletePhoto(id: any){
-    return this.http.delete(this.baseUrl + 'animal/deletephoto/'+id);
+  changeStateOfAnimal(id) {
+    return this.http.put(this.baseUrl + 'animal/archiveAnimal/' + id, null);
   }
 
-  deleteAnimal(id: number){
-    return this.http.delete(this.baseUrl + 'animal/'+id);
+  deletePhoto(id: any) {
+    return this.http.delete(this.baseUrl + 'animal/deletephoto/' + id);
   }
 
-  getAnimal(id: any){
-    return this.http.get(this.baseUrl + 'animal/get/'+id);
+  deleteAnimal(id: number) {
+    return this.http.delete(this.baseUrl + 'animal/' + id);
   }
 
-  getUserAnimals(){
+  getAnimal(id: any) {
+    return this.http.get(this.baseUrl + 'animal/get/' + id);
+  }
+
+  getUserAnimals() {
     return this.http.get(this.baseUrl + 'animal/my-animals');
   }
+
+  getUserAnimalsByEmail(email) {
+    return this.http.get(this.baseUrl + 'animal/by-email/' + email);
+  }
+
+  getUserAnimalsByUserId(id) {
+    return this.http.get(this.baseUrl + 'animal/by-id/' + id);
+  }
+
+  getUserArchivedAnimals() {
+    return this.http.get(this.baseUrl + 'animal/my-archived-animals');
+  }
+
+  getArchivedAnimalsByUserId(id) {
+    return this.http.get(this.baseUrl + 'animal/archived-by-id/' + id);
+  }
+
 
 }

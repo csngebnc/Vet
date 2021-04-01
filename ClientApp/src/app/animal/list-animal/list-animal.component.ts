@@ -32,6 +32,12 @@ export class ListAnimalComponent implements OnInit {
     }
   }
 
+  archiveAnimal(id) {
+    if (confirm('Biztosan szeretnéd archiválni?')) {
+      this.animalService.changeStateOfAnimal(id).subscribe(() => this.refreshAnimals());
+    }
+  }
+
   refreshAnimals() {
     this.animalService.getUserAnimals().subscribe((animals: AnimalDto[]) => {
       this.animals = animals;

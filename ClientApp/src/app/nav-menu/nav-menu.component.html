@@ -23,15 +23,16 @@
             <li class="nav-item" [routerLinkActive]="['link-active']">
               <a class="nav-link light-font" [routerLink]="['/appointment/my-appointments']">Időpontjaim</a>
             </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link light-font" [routerLink]="['/records/my-records']">Kórlapok</a>
+            </li>
           </ng-container>
 
           <ng-container *ngIf="auth.authLevel>=2">
             <li class="nav-item" [routerLinkActive]="['link-active']">
-              <a class="nav-link light-font" [routerLink]="['/treatments/my-treatments']">Kezeléseim</a>
+              <a class="nav-link light-font" [routerLink]="['/record']">Új kórlap</a>
             </li>
-            <li class="nav-item" [routerLinkActive]="['link-active']">
-              <a class="nav-link light-font" [routerLink]="['/holidays']">Szabadságok</a>
-            </li>
+
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
@@ -41,6 +42,20 @@
                 <a class="nav-link light-font" [routerLink]="['/animals/myanimals']">Állataim</a>
                 <a class="nav-link light-font" [routerLink]="['/appointment']">Időpontfoglalás</a>
                 <a class="nav-link light-font" [routerLink]="['/appointment/my-appointments']">Időpontjaim</a>
+                <a class="nav-link light-font" [routerLink]="['/records/my-records']">Kórlapok</a>
+              </div>
+            </li>
+          </ng-container>
+
+          <ng-container *ngIf="auth.authLevel>=2">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
+                Műveletek
+              </a>
+              <div class="dropdown-menu light-blue-bg" aria-labelledby="navbarDropdown">
+                <a class="nav-link light-font" [routerLink]="['/treatments/my-treatments']">Kezeléseim</a>
+                <a class="nav-link light-font" [routerLink]="['/holidays']">Szabadságok</a>
+                <a class="nav-link light-font" [routerLink]="['/users']">Gazdik</a>
               </div>
             </li>
           </ng-container>
@@ -49,12 +64,13 @@
           <ng-container *ngIf="auth.authLevel>=3">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
-                Műveletek
+                Beállítások
               </a>
               <div class="dropdown-menu light-blue-bg" aria-labelledby="navbarDropdown">
                 <a class="nav-link light-font" [routerLink]="['/doctors']">Orvosok</a>
                 <a class="nav-link light-font" [routerLink]="['/species/list']">Állatfajták</a>
-                <a class="nav-link light-font" [routerLink]="['/']">TBD</a>
+                <a class="nav-link light-font" [routerLink]="['/vaccines']">Oltások</a>
+                <a class="nav-link light-font" [routerLink]="['/therapias']">Kórlap terápiák</a>
               </div>
             </li>
           </ng-container>

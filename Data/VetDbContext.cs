@@ -21,5 +21,11 @@ namespace Vet.Data
         public DbSet<TreatmentTime> TreatmentTimes { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Holiday> Holidays { get; set; }
+        public DbSet<Therapia> Therapias { get; set; }
+        public DbSet<MedicalRecord> MedicalRecords { get; set; }
+        public DbSet<MedicalRecordPhoto> MedicalRecordPhotos { get; set; }
+        public DbSet<TherapiaRecord> TherapiaRecords { get; set; }
+        public DbSet<Vaccine> Vaccines { get; set; }
+        public DbSet<VaccineRecord> VaccinationRecords { get; set; }
     }
 }

@@ -1,0 +1,45 @@
+<div class="container">
+
+    <div class="mt-2">
+        <h2><strong>Archivált állatok:</strong></h2>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 pb-3"
+            *ngFor="let item of animals | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+            <div class="card mb-3" style="max-width: 310px;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img class="img-fluid p-2" src="{{item.photoPath}}" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title m-0">{{item.name}}</h2>
+                            <h5 class="m-0">{{item.sex}}</h5>
+                            <h5 class="m-0">{{item.speciesName}}</h5>
+                        </div>
+                        <div class="card-footer border-left">
+                            <button mat-icon-button routerLink="../records/{{item.id}}">
+                                <mat-icon>library_books</mat-icon>
+                            </button>
+                            <button mat-icon-button routerLink="../edit/{{item.id}}">
+                                <mat-icon>edit</mat-icon>
+                            </button>
+                            <button mat-icon-button (click)="deleteAnimal(item.id)">
+                                <mat-icon>delete_forever</mat-icon>
+                            </button>
+                            <button mat-icon-button (click)="archiveAnimal(item.id)">
+                                <mat-icon>archive</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center fixed-bottom">
+        <ngb-pagination [collectionSize]="animals.length" [(page)]="page" [pageSize]="pageSize" [maxSize]="8"
+            [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+    </div>
+</div>

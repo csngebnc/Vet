@@ -1,0 +1,8 @@
+::ng-deep .cdk-overlay-container {     z-index:2000; }
+
+.full-width {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

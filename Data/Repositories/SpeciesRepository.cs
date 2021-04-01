@@ -12,12 +12,10 @@ namespace Vet.Data.Repositories
     public class SpeciesRepository : ISpeciesRepository
     {
         private readonly VetDbContext _context;
-        private readonly IMapper _mapper;
 
-        public SpeciesRepository(VetDbContext context, IMapper mapper)
+        public SpeciesRepository(VetDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<bool> AddAnimalSpecies(string name)

@@ -1,0 +1,72 @@
+:root {
+    --main-blue: rgb(104, 104, 182);
+    --deep-blue: rgb(73, 73, 143);
+    --light-blue: rgb(147, 147, 248);
+    --white: white;
+  }
+  
+  .navbar-nav {
+    background: #365899;
+    color: white;
+    height: 3rem;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .title-section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .index-section {
+    height: 500px;
+  }
+  
+  .index-section:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+    color: white;
+    background: #365899;
+  }
+  
+  .index-section:nth-child(2n + 2) {
+    color: #29487D;
+    background: white;
+    text-align: right;
+  }
+  
+  .section-image {
+    object-fit: cover;
+    max-height: 500px;
+    padding: 0;
+  }
+  
+  .section-text {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .section-icon {
+    position: absolute;
+    font-size: 200px;
+    opacity: 0.2;
+    align-self: center;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .section-text > p {
+    margin-bottom: 0;
+  }
+  

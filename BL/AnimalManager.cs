@@ -63,7 +63,8 @@ namespace Vet.BL
             _animal = await _animalRepository.UpdateAnimal(_animal);
         }
 
-        public Task ArchiveAnimalById(int id) { /* később */ throw new NotImplementedException(); }
+        public async Task ChangeStateOfAnimal(int id)
+            => await _animalRepository.ChangeStateOfAnimal(id);
 
         public async Task<bool> DeleteAnimal(int id)
         {
@@ -83,8 +84,13 @@ namespace Vet.BL
         public async Task<IEnumerable<AnimalDto>> GetAnimalsAsync()
             => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsAsync());
 
+        public async Task<IEnumerable<AnimalDto>> GetArchivedAnimalsByUserIdAsync(string id)
+            => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetArchivedAnimalsByUserId(id));
         public async Task<IEnumerable<AnimalDto>> GetAnimalsByUserIdAsync(string id)
             => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsByUserIdAsync(id));
+
+        public async Task<IEnumerable<AnimalDto>> GetAnimalsByUserEmailAsync(string email)
+            => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsByUserEmailAsync(email));
 
         public async Task<AnimalDto> GetAnimalByIdAsync(int id)
             => _mapper.Map<AnimalDto>(await _animalRepository.GetAnimalByIdAsync(id));

@@ -9,15 +9,24 @@ export class AppointmentService {
 
   constructor(private http: HttpClient) { }
 
-  bookAppointment(model: FormData){
+  bookAppointment(model: FormData) {
     return this.http.post(this.baseUrl + 'appointments', model);
   }
 
-  getMyAppointments(){
+  getMyAppointments() {
     return this.http.get(this.baseUrl + 'appointments/my-appointments');
   }
 
-  resignAppointment(id){
-    return this.http.put(this.baseUrl + 'appointments/resign/'+id, null);
+  resignAppointment(id) {
+    return this.http.put(this.baseUrl + 'appointments/resign/' + id, null);
   }
+
+  doctorActiveAppointments(id) {
+    return this.http.get(this.baseUrl + 'appointments/doctor-active-appointments/' + id);
+  }
+
+  doctorInactiveAppointments(id) {
+    return this.http.get(this.baseUrl + 'appointments/doctor-inactive-appointments/' + id);
+  }
+
 }

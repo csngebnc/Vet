@@ -1,0 +1,42 @@
+<div class="container" *ngIf="editTherapiaForm">
+    <form class="p-3" [formGroup]='editTherapiaForm' (ngSubmit)="editTherapiaForm.valid && editTherapia()"
+        autocomplete="off">
+        <div class="d-flex justify-content-between">
+            <h2 class="">Új állat felvétele</h2>
+            <h2>
+                <mat-icon>healing</mat-icon>
+            </h2>
+        </div>
+        <hr>
+        <mat-form-field class="full-width">
+            <mat-label>Terápia neve:</mat-label>
+            <input matInput formControlName='name' required>
+            <mat-error *ngIf="editTherapiaForm.get('name').invalid">Az mező nem lehet üres.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Mértékegység neve:</mat-label>
+            <input matInput formControlName='unitName' required>
+            <mat-error *ngIf="editTherapiaForm.get('unitName').invalid">Az mező nem lehet üres.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Egy egység tartalma mértékegység nélkül: (pl. 10)</mat-label>
+            <input type="number" matInput formControlName='unit' required>
+            <mat-error *ngIf="editTherapiaForm.get('unit').invalid">Az mező nem lehet üres.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <mat-label>Egy egység ára:</mat-label>
+            <input type="number" matInput formControlName='pricePerUnit' required>
+            <mat-error *ngIf="editTherapiaForm.get('pricePerUnit').invalid">Az mező nem lehet üres.</mat-error>
+        </mat-form-field>
+
+
+        <div class="form-group text-center">
+            <button [disabled]='!editTherapiaForm.valid' class="btn btn-success mb-4" type="submit">Terápia
+                frissítése</button>
+        </div>
+    </form>
+
+</div>

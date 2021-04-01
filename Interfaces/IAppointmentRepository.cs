@@ -19,5 +19,8 @@ namespace Vet.Interfaces
         Task<IEnumerable<Appointment>> GetUserAppointments(string id);
 
         Task<Appointment> GetAppointmentById(int id);
+
+        Task<IEnumerable<Appointment>> GetDoctorActiveAppointments(string id);
+        Task<IEnumerable<Appointment>> GetDoctorInactiveAppointments(string id);
     }
 }

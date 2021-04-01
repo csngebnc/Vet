@@ -90,18 +90,11 @@ namespace Vet.Areas.Identity.Pages.Account.Manage
             }
 
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-            if (Input.PhoneNumber != phoneNumber)
-            {
-                var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
-                user.RealName = Input.Name;
-                user.Address = Input.Address;
-                await _userManager.UpdateAsync(user);
-                if (!setPhoneResult.Succeeded)
-                {
-                    StatusMessage = "Váratlan hiba történt";
-                    return RedirectToPage();
-                }
-            }
+            user.PhoneNumber = Input.PhoneNumber;
+            user.RealName = Input.Name;
+            user.Address = Input.Address;
+
+            await _userManager.UpdateAsync(user);
 
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Az adatok sikeresen mentve.";

@@ -57,5 +57,18 @@ namespace Vet.Controllers
         {
             return await _appointmentManager.GetUserAppointments(User.GetById());
         }
+
+
+        [HttpGet("doctor-active-appointments/{id}")]
+        public async Task<IEnumerable<AppointmentDto>> GetDoctorActiveAppointments(string id)
+        {
+            return await _appointmentManager.GetDoctorActiveAppointments(id);
+        }
+
+        [HttpGet("doctor-inactive-appointments/{id}")]
+        public async Task<IEnumerable<AppointmentDto>> GetDoctorInactiveAppointments(string id)
+        {
+            return await _appointmentManager.GetDoctorInactiveAppointments(id);
+        }
     }
 }

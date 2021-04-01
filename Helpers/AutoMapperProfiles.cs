@@ -2,6 +2,8 @@
 using Vet.Extensions;
 using Vet.Models;
 using Vet.Models.DTOs;
+using Vet.Models.DTOs.MedicalRecord;
+using Vet.Models.DTOs.Vaccine;
 
 namespace Vet.Helpers
 {
@@ -45,6 +47,34 @@ namespace Vet.Helpers
             CreateMap<HolidayDto, Holiday>()
                 .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.ToLocalTime()))
                 .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.ToLocalTime()));
+
+            CreateMap<AddTherapiaDto, Therapia>();
+
+            CreateMap<AddMedicalRecordDto, MedicalRecord>();
+            CreateMap<UpdateMedicalRecordDto, MedicalRecord>();
+            CreateMap<MedicalRecord, MedicalRecordDto>()
+                .ForMember(dest => dest.DoctorName, opt => opt.MapFrom(src => src.Doctor.RealName))
+                .ForMember(dest => dest.OwnerName, opt => opt.MapFrom(src => src.Owner.RealName))
+                .ForMember(dest => dest.AnimalName, opt => opt.MapFrom(src => src.Animal.Name));
+
+            CreateMap<MedicalRecordPhoto, MedicalRecordPhotoDto>();
+
+            CreateMap<AddTherapiaToRecordDto, TherapiaRecord>();
+            CreateMap<UpdateTherapiaOnRecordDto, TherapiaRecord>();
+            CreateMap<TherapiaRecord, TherapiaRecordDto>()
+                .ForMember(dest => dest.TherapiaName, opt => opt.MapFrom(src => src.Therapia.Name))
+                .ForMember(dest => dest.TherapiaUnit, opt => opt.MapFrom(src => src.Therapia.UnitName));
+            CreateMap<TherapiaOnMedicalRecord, TherapiaRecord>();
+
+            CreateMap<AddVaccineDto, Vaccine>();
+            CreateMap<VaccineDto, Vaccine>();
+            CreateMap<Vaccine, VaccineDto>();
+
+            CreateMap<AddVaccineRecordDto, VaccineRecord>();
+            CreateMap<UpdateVaccineRecordDto, VaccineRecord>();
+            CreateMap<VaccineRecord, VaccineRecordDto>()
+                .ForMember(dest => dest.AnimalName, opt => opt.MapFrom(src => src.Animal.Name))
+                .ForMember(dest => dest.VaccineName, opt => opt.MapFrom(src => src.Vaccine.Name));
 
 
         }
