@@ -41,7 +41,7 @@ namespace Vet.Helpers
             if (photo != null)
             {
                 string folder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Users");
-                string newFileName = user_id + Path.GetExtension(photo.FileName);
+                string newFileName = user_id+"_"+ Guid.NewGuid().ToString("N") +".png";
 
                 path = Path.Combine("Images", "Users", newFileName);
 
@@ -80,5 +80,6 @@ namespace Vet.Helpers
             return !System.IO.File.Exists(Path.Combine(_webHostEnvironment.WebRootPath, path));
 
         }
+
     }
 }

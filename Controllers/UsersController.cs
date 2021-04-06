@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vet.Extensions;
 using Vet.Interfaces;
+using Vet.Models;
 using Vet.Models.DTOs;
 
 namespace Vet.Controllers
@@ -11,11 +13,13 @@ namespace Vet.Controllers
     public class UsersController : BaseApiController
     {
         private readonly IUserRepository _userRepository;
+        private readonly IPhotoManager _photoManager;
         private readonly IMapper _mapper;
 
-        public UsersController(IUserRepository userRepository, IMapper mapper)
+        public UsersController(IUserRepository userRepository, IPhotoManager photoManager, IMapper mapper)
         {
             _userRepository = userRepository;
+            _photoManager = photoManager;
             _mapper = mapper;
         }
 
@@ -38,9 +42,11 @@ namespace Vet.Controllers
         }
 
         [HttpGet("get-id/{email}")]
-        public async Task<string> GetUserIdByUserEmail(string email)
+        public async Task<VetUserDto> GetUserIdByUserEmail(string email)
         {
-            return await _userRepository.GetUserIdByUserEmail(email);
+            var id = await _userRepository.GetUserIdByUserEmail(email);
+            if (id == null) return null;
+            return _mapper.Map<VetUserDto>(await _userRepository.GetUserByIdAsync(id));
         }
 
         [HttpGet("role")]
@@ -56,6 +62,36 @@ namespace Vet.Controllers
             ModelState.AddModelError("hiba", "hiba");
             ModelState.AddModelError("hibababa", "hibababa");
             return BadRequest(ModelState);
+        }
+
+        [HttpPut("add-photo")]
+        public async Task<ActionResult<string>> UploadPhoto([FromForm]TestClass profilePhoto)
+        {
+            var path = await _photoManager.UploadUserPhoto(profilePhoto.ProfilePhoto, User.GetById());
+
+            var user = await _userRepository.GetUserByIdAsync(User.GetById());
+
+            if (path == null) return BadRequest("Sikertelen képfeltöltés!!!");
+
+            if(user.PhotoPath != null)
+                _photoManager.RemovePhoto(user.PhotoPath);
+
+            if (await _userRepository.SetPhoto(path, User.GetById()))
+            {
+                return path;
+            }
+            else
+            {
+                return BadRequest("Sikertelen képfeltöltés");
+            }
+        }
+
+        [HttpPut("delete-photo")]
+        public async Task<bool> DeletePhoto()
+        {
+            var user = await _userRepository.GetUserByIdAsync(User.GetById());
+            return _photoManager.RemovePhoto(user.PhotoPath);
+            await _userRepository.SetPhoto(null, user.Id);
         }
 
     }

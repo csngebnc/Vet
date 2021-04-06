@@ -26,4 +26,16 @@ export class UserService {
   getUserById(id) {
     return this.http.get(this.baseUrl + 'users/' + id);
   }
+
+  getUserByEmail(email) {
+    return this.http.get(this.baseUrl + 'users/get-id/' + email)
+  }
+
+  updatePhoto(photo) {
+    return this.http.put(this.baseUrl + 'users/add-photo', photo, { responseType: 'blob' });
+  }
+
+  deletePhoto() {
+    return this.http.put(this.baseUrl + 'users/delete-photo', null,);
+  }
 }

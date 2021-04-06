@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <h2>Jelenlegi profilkép:</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <img class="img-fluid p-2" [src]="photoPath" alt="" style="max-width: 250px;">
+    </div>
+    <div class="d-flex justify-content-center mt-3 mb-1">
+        <h2>Feltöltött kép szerkesztése:</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="full-width mb-3 mt-1">
+            <input type="file" id="imageFile" (change)="fileChangeEvent($event)" />
+        </div>
+    </div>
+
+    <div *ngIf="imageChangedEvent" class="d-flex justify-content-center mb-3">
+        <div style="width: 250px; max-height: 250px;">
+            <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="4 / 4"
+                [resizeToWidth]="256" format="png" (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded()"
+                (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()">
+            </image-cropper>
+        </div>
+    </div>
+
+    <div *ngIf="imageChangedEvent" class="d-flex justify-content-center mt-3 mb-4">
+        <button mat-raised-button color="primary" (click)="submit()">Kép mentése</button>
+    </div>
+
+
+
+</div>

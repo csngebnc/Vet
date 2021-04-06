@@ -3,9 +3,19 @@
     <div class="card mb-3">
         <div class="row no-gutters">
             <div class="col-md-3">
-                <img class="img-fluid p-2"
-                    src="https://t4.ftcdn.net/jpg/03/32/59/65/360_F_332596535_lAdLhf6KzbW6PWXBWeIFTovTii1drkbT.jpg"
-                    alt="" style="max-width: 250px;">
+                <img *ngIf="doctor.photoPath" class="img-fluid p-2" src={{doctor.photoPath}} alt=""
+                    style="max-width: 250px;">
+                <img *ngIf="!doctor.photoPath" class="img-fluid p-2" src="Images\Users\default.jpg" alt=""
+                    style="max-width: 250px;">
+                <div class="ml-4 mb-2 d-flex justify-content-center" style="width: 80%;">
+                    <button mat-raised-button color="primary" (click)="openEdit()">
+                        <mat-icon> insert_photo</mat-icon>
+                    </button>
+                    <button mat-raised-button color="primary" class="ml-1" (click)="deletePhoto()"
+                        [disabled]="!doctor.photoPath">
+                        <mat-icon> delete</mat-icon>
+                    </button>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="card-body">

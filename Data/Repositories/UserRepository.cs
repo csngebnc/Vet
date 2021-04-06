@@ -43,5 +43,14 @@ namespace Vet.Data.Repositories
             
             return await _context.Users.Where(u => u.RealName.Contains(name) && u.Email.Contains(email)).ToListAsync();
         }
+
+        public async Task<bool> SetPhoto(string photoPath, string userId)
+        {
+            var user = await _context.Users.FindAsync(userId);
+
+            user.PhotoPath = photoPath;
+            return (await _context.SaveChangesAsync() > 0);
+        }
+
     }
 }

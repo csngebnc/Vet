@@ -76,6 +76,8 @@ import { ListAnimalByOwnerComponent } from './animal/list-animal-by-owner/list-a
 import { ListArchivedAnimalsComponent } from './animal/list-archived-animals/list-archived-animals.component';
 import { ListArchivedAnimalByOwnerComponent } from './animal/list-archived-animal-by-owner/list-archived-animal-by-owner.component';
 import { ListUsersComponent } from './admin/list-users/list-users.component';
+import { UserPhotoComponent } from './user/user-photo/user-photo.component';
+import { BookAppointmentByDoctorComponent } from './appointment/book-appointment-by-doctor/book-appointment-by-doctor.component';
 
 @NgModule({
   declarations: [
@@ -125,7 +127,9 @@ import { ListUsersComponent } from './admin/list-users/list-users.component';
     ListAnimalByOwnerComponent,
     ListArchivedAnimalsComponent,
     ListArchivedAnimalByOwnerComponent,
-    ListUsersComponent
+    ListUsersComponent,
+    UserPhotoComponent,
+    BookAppointmentByDoctorComponent
   ],
   imports: [FileUploadModule,
     MatModule,
@@ -151,6 +155,7 @@ import { ListUsersComponent } from './admin/list-users/list-users.component';
       { path: 'animals/archived-by-user/:userid', component: ListArchivedAnimalByOwnerComponent },
 
       { path: 'appointment', component: BookAppointmentComponent },
+      { path: 'appointment/by-doctor', component: BookAppointmentByDoctorComponent },
       { path: 'appointment/my-appointments', component: MyBookedAppointmentsComponent },
 
       ////////////////////////////////////////////////////////////////////////////////////////

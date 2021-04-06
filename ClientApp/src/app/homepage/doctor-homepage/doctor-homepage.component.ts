@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { UserPhotoComponent } from 'src/app/user/user-photo/user-photo.component';
 import { AppointmentDto } from 'src/app/_models/appointmentdto';
 import { VetUserDto } from 'src/app/_models/vetuserdto';
 import { AppointmentService } from 'src/app/_services/appointment.service';
@@ -13,7 +15,7 @@ import { UserService } from 'src/app/_services/user.service';
 })
 export class DoctorHomepageComponent implements OnInit {
 
-  constructor(private userService: UserService, private appointmentService: AppointmentService) { }
+  constructor(private userService: UserService, private appointmentService: AppointmentService, private modalService: NgbModal) { }
 
   notesFormControl;
 
@@ -49,4 +51,23 @@ export class DoctorHomepageComponent implements OnInit {
 
   }
 
+  openEdit() {
+    const modalRef = this.modalService.open(UserPhotoComponent, { size: 'lg' });
+    modalRef.componentInstance.userId = this.doctor.id;
+    modalRef.componentInstance.photoPath = this.doctor.photoPath ? this.doctor.photoPath : "Images\\Users\\default.jpg";
+    modalRef.result.then(() => {
+      this.userService.getCurrentUser().subscribe((user: VetUserDto) => {
+        this.doctor.photoPath = user.photoPath;
+      })
+    }, () => { })
+  }
+
+  deletePhoto() {
+    this.userService.deletePhoto().subscribe((res: boolean) => {
+      if (res) {
+        this.doctor.photoPath = null;
+      }
+    });
+  }
 }
+
