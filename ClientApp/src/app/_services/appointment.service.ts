@@ -13,12 +13,20 @@ export class AppointmentService {
     return this.http.post(this.baseUrl + 'appointments', model);
   }
 
+  bookAppointmentByDoctor(model: FormData) {
+    return this.http.post(this.baseUrl + 'appointments/by-doctor', model);
+  }
+
   getMyAppointments() {
     return this.http.get(this.baseUrl + 'appointments/my-appointments');
   }
 
   resignAppointment(id) {
     return this.http.put(this.baseUrl + 'appointments/resign/' + id, null);
+  }
+
+  resignAppointmentByDoctor(id) {
+    return this.http.put(this.baseUrl + 'appointments/resign-by-doctor/' + id, null);
   }
 
   doctorActiveAppointments(id) {

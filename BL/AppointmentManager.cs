@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Vet.Interfaces;
 using Vet.Models;
 using Vet.Models.DTOs;
+using Vet.Models.DTOs.Appointment;
 
 namespace Vet.BL
 {
@@ -33,10 +34,25 @@ namespace Vet.BL
             };
 
             return await _appointmentRepository.AddAppointment(_appointment);
-
-
         }
-        public async Task<AppointmentDto> ResignAppointment(int id) => _mapper.Map<Appointment, AppointmentDto>(await _appointmentRepository.ResignAppointment(id));
+
+        public async Task<bool> AddAppointmentByDoctor(AddAppointmentByDoctorDto appointment)
+        {
+            var _appointment = new Appointment
+            {
+                StartDate = appointment.StartDate.ToLocalTime(),
+                EndDate = appointment.EndDate.ToLocalTime(),
+                OwnerId = appointment.OwnerId,
+                AnimalId = appointment.AnimalId,
+                DoctorId = appointment.DoctorId,
+                TreatmentId = appointment.TreatmentId
+            };
+
+            return await _appointmentRepository.AddAppointment(_appointment);
+        }
+
+        public async Task<AppointmentDto> ResignAppointment(int id, string details = "Lemondva") 
+            => _mapper.Map<Appointment, AppointmentDto>(await _appointmentRepository.ResignAppointment(id, details));
 
         public async Task<IEnumerable<AppointmentDto>> GetAllAppointments()
             => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetAllAppointments());

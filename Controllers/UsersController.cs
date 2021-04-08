@@ -55,7 +55,7 @@ namespace Vet.Controllers
             var user = (await _userRepository.GetUserByIdAsync(User.GetById()));
             return user == null ? 0 : user.AuthLevel;
         }
-
+        /*
         [HttpGet("fix-error")]
         public async Task<ActionResult<string>> Feladat()
         {
@@ -63,7 +63,7 @@ namespace Vet.Controllers
             ModelState.AddModelError("hibababa", "hibababa");
             return BadRequest(ModelState);
         }
-
+        */
         [HttpPut("add-photo")]
         public async Task<ActionResult<string>> UploadPhoto([FromForm]TestClass profilePhoto)
         {
@@ -90,8 +90,8 @@ namespace Vet.Controllers
         public async Task<bool> DeletePhoto()
         {
             var user = await _userRepository.GetUserByIdAsync(User.GetById());
-            return _photoManager.RemovePhoto(user.PhotoPath);
             await _userRepository.SetPhoto(null, user.Id);
+            return _photoManager.RemovePhoto(user.PhotoPath);
         }
 
     }

@@ -60,6 +60,8 @@ namespace Vet
             services.AddTransient<MedicalRecordManager>();
             services.AddTransient<VaccineManager>();
 
+            services.AddTransient<PdfManager>();
+
             services.AddDbContext<VetDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));

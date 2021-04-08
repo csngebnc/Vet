@@ -11,6 +11,7 @@ using Vet.Data;
 using Vet.Extensions;
 using Vet.Models;
 using Vet.Models.DTOs;
+using Vet.Models.DTOs.Appointment;
 
 namespace Vet.Controllers
 {
@@ -40,6 +41,13 @@ namespace Vet.Controllers
             return await _appointmentManager.AddAppointment(appointment, User.GetById());
         }
 
+        [HttpPost("by-doctor")]
+        public async Task<bool> BookAppointmentByDoctor(AddAppointmentByDoctorDto appointment)
+        {
+            return await _appointmentManager.AddAppointmentByDoctor(appointment);
+        }
+
+
         [HttpGet("getreserved")]
         public async Task<IEnumerable<AppointmentTimeDto>> GetReservedTimes([FromQuery] DateTime time, [FromQuery] string doctorId)
         {
@@ -47,9 +55,15 @@ namespace Vet.Controllers
         }
 
         [HttpPut("resign/{id}")]
-        public async Task<AppointmentDto> Resign(int id)
+        public async Task<AppointmentDto> ResignByUser(int id)
         {
             return await _appointmentManager.ResignAppointment(id);
+        }
+
+        [HttpPut("resign-by-doctor/{id}")]
+        public async Task<AppointmentDto> ResignByDoctor(int id)
+        {
+            return await _appointmentManager.ResignAppointment(id, "Lemondva orvos által");
         }
 
         [HttpGet("my-appointments")]

@@ -62,7 +62,7 @@
 
             <ng-container matColumnDef="doctorName">
                 <th mat-header-cell *matHeaderCellDef> <b>Gazdi</b> </th>
-                <td mat-cell *matCellDef="let element"> <a *ngIf="element.animalName"
+                <td mat-cell *matCellDef="let element"> <a
                         routerLink="/animals/user/{{element.ownerId}}">{{element.ownerName}}</a> </td>
             </ng-container>
 

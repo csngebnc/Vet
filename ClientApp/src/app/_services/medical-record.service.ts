@@ -53,4 +53,8 @@ export class MedicalRecordService {
   removeTherapiaFromMedicalRecord(id) {
     return this.http.delete(this.baseUrl + 'records/therapia/' + id)
   }
+
+  generatePdf(id) {
+    return this.http.get(this.baseUrl + 'records/pdf/' + id, { responseType: 'blob' });
+  }
 }

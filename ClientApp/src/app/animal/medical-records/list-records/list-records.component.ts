@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -22,7 +23,8 @@ export class ListRecordsComponent implements OnInit {
     private animalService: AnimalService,
     private recordService: MedicalRecordService,
     private route: ActivatedRoute,
-    private modalService: NgbModal) { }
+    private modalService: NgbModal,
+    private http: HttpClient) { }
 
   animal: AnimalDto;
   meds: MedicalRecordDto[] = [];
@@ -53,6 +55,14 @@ export class ListRecordsComponent implements OnInit {
     const modalRef = this.modalService.open(ListVaccineRecordsComponent, { size: 'lg' });
     modalRef.componentInstance.animalId = this.animal.id;
     modalRef.result.then(() => { }, () => { })
+  }
+
+  genPdf(id) {
+    this.recordService.generatePdf(id).subscribe((response) => {
+      var file = new Blob([response], { type: 'application/pdf' });
+      var fileURL = URL.createObjectURL(file);
+      window.open(fileURL);
+    })
   }
 
 }

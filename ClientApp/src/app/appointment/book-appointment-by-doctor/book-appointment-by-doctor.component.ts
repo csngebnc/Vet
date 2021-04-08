@@ -71,8 +71,9 @@ export class BookAppointmentByDoctorComponent implements OnInit {
   constructor(private _formBuilder: FormBuilder, private http: HttpClient, private userService: UserService,
     private treatmentService: TreatmentService, private treatmentTimeService: TreatmenttimeService,
     private animalService: AnimalService, private appointmentService: AppointmentService, private doctorService: DoctorService, private router: Router) {
-    this.http.get('https://localhost:44345/api/doctors').subscribe((res: DoctorDto[]) => {
-      this.doctors = res;
+
+    this.doctorService.getDoctors().subscribe((doctors: DoctorDto[]) => {
+      this.doctors = doctors;
     });
 
     this.maxDate.setDate(this.maxDate.getDate() + this.maxAhead);

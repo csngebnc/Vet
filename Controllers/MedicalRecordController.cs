@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Vet.BL;
@@ -16,10 +18,14 @@ namespace Vet.Controllers
     [ApiController]
     public class MedicalRecordController : ControllerBase
     {
+        private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly MedicalRecordManager _medicalRecordManager;
-        public MedicalRecordController(MedicalRecordManager medicalRecordManager)
+        private readonly PdfManager _pdf;
+        public MedicalRecordController(MedicalRecordManager medicalRecordManager, PdfManager p, IWebHostEnvironment webHostEnvironment)
         {
+            _webHostEnvironment = webHostEnvironment;
             _medicalRecordManager = medicalRecordManager;
+            _pdf = p;
         }
 
         [HttpGet]
@@ -99,6 +105,18 @@ namespace Vet.Controllers
         public async Task<IEnumerable<MedicalRecordDto>> GetMedicalRecordsByUserId(string id)
         {
             return await _medicalRecordManager.GetMedicalRecordsByUserId(id);
+        }
+
+        [HttpGet("pdf/{id}")]
+        public async Task<IActionResult> GetPdf(int id)
+        {
+
+            string path = Path.Combine(_webHostEnvironment.WebRootPath, "pdfs");
+            var net = new System.Net.WebClient();
+            var data = net.DownloadData(await _pdf.GeneratePdf(path+"/"+id, id)+".pdf");
+            var content = new MemoryStream(data);
+            var contentType = "APPLICATION/octet-stream";
+            return File(content, contentType);
         }
     }
 }

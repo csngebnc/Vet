@@ -10,7 +10,7 @@ namespace Vet.Interfaces
     public interface IAppointmentRepository
     {
         Task<bool> AddAppointment(Appointment appointment);
-        Task<Appointment> ResignAppointment(int id);
+        Task<Appointment> ResignAppointment(int id, string details);
         Task<IEnumerable<Appointment>> GetAllAppointments();
         Task<IEnumerable<Appointment>> GetActiveAppointments();
         Task<IEnumerable<Appointment>> GetInactiveAppointments();

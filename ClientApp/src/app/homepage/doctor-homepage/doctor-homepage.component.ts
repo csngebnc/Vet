@@ -48,7 +48,12 @@ export class DoctorHomepageComponent implements OnInit {
   }
 
   resignAppointment(id) {
-
+    if (confirm('Biztosan le szeretnéd mondani az időpontot?')) {
+      this.appointmentService.resignAppointmentByDoctor(id).subscribe((appointment: AppointmentDto) => {
+        this.appointments = this.appointments.filter(a => a.id !== appointment.id);
+        this.dataSource = new MatTableDataSource<AppointmentDto>(this.appointments);
+      })
+    }
   }
 
   openEdit() {

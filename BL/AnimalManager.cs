@@ -23,14 +23,14 @@ namespace Vet.BL
             _photoManager = photoManager;
         }
 
-        public async Task<Animal> AddAnimal(AddAnimalDto animal, string OwnerId)
+        public async Task<AnimalDto> AddAnimal(AddAnimalDto animal, string OwnerId)
         {
             var _animal = _mapper.Map<Animal>(animal);
             _animal.OwnerId = OwnerId;
 
             var photoPath = await _photoManager.UploadAnimalPhoto(animal.Photo, OwnerId);
-            _animal.PhotoPath = photoPath == null ? "Images/Animals/empty-photo.jpg" : photoPath;
-            return await _animalRepository.AddAnimal(_animal);
+            _animal.PhotoPath = photoPath == null ? "Images/Animals/empty-photo.jpg" : photoPath; 
+            return _mapper.Map<AnimalDto>(await _animalRepository.AddAnimal(_animal));
         }
 
         public async Task<AnimalDto> UpdateAnimal(UpdateAnimalDto animal)
@@ -39,7 +39,7 @@ namespace Vet.BL
             _animal = _mapper.Map<UpdateAnimalDto, Animal>(animal, _animal);
             _animal = await _animalRepository.UpdateAnimal(_animal);
 
-            return _mapper.Map<AnimalDto>(_animal);
+            
         }
 
         public async Task<AnimalDto> UpdateAnimalPhoto(UpdateAnimalPhotoDto animal, string OwnerId)
