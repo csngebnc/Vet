@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { HolidayDto } from 'src/app/_models/holidaydto';
 import { DoctorService } from 'src/app/_services/doctor.service';
 
 @Component({
@@ -21,9 +22,9 @@ export class AddHolidayComponent implements OnInit {
     })
   }
 
-  addHoliday(){
-    this.doctorService.addHoliday(this.addHolidayForm.value).subscribe(res => {
-      this.ngbModal.close();
+  addHoliday() {
+    this.doctorService.addHoliday(this.addHolidayForm.value).subscribe((res: HolidayDto) => {
+      this.ngbModal.close(res);
     })
   }
 

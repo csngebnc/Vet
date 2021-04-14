@@ -2,6 +2,7 @@
 using Vet.Extensions;
 using Vet.Models;
 using Vet.Models.DTOs;
+using Vet.Models.DTOs.Appointment;
 using Vet.Models.DTOs.MedicalRecord;
 using Vet.Models.DTOs.Vaccine;
 
@@ -36,7 +37,12 @@ namespace Vet.Helpers
                 .ForMember(dest => dest.OwnerName, opt => opt.MapFrom(src => src.Owner.RealName))
                 .ForMember(dest => dest.AnimalName, opt => opt.MapFrom(src => src.Animal.Name));
             CreateMap<Appointment, AppointmentTimeDto>();
-            CreateMap<AddAppointmentByUserDto, Appointment>();
+            CreateMap<AddAppointmentByUserDto, Appointment>()
+                .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.ToLocalTime()))
+                .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.ToLocalTime()));
+            CreateMap<AddAppointmentByDoctorDto, Appointment>()
+                .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.ToLocalTime()))
+                .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.ToLocalTime()));
 
             CreateMap<AddHolidayDto, Holiday>()
                 .ForMember(dest => dest.StartDate, opt => opt.MapFrom(src => src.StartDate.ToLocalTime()))
@@ -49,6 +55,7 @@ namespace Vet.Helpers
                 .ForMember(dest => dest.EndDate, opt => opt.MapFrom(src => src.EndDate.ToLocalTime()));
 
             CreateMap<AddTherapiaDto, Therapia>();
+            CreateMap<Therapia, TherapiaDto>();
 
             CreateMap<AddMedicalRecordDto, MedicalRecord>();
             CreateMap<UpdateMedicalRecordDto, MedicalRecord>();

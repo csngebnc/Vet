@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VaccineService {
-  baseUrl: string = 'https://localhost:44345/api/'
+  baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

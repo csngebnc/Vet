@@ -28,7 +28,10 @@ export class ListDoctorComponent implements OnInit {
 
   open() {
     const modalRef = this.modalService.open(AddDoctorComponent);
-    modalRef.result.then(() => this.refreshDoctors(), () => { })
+    modalRef.result.then((doctor: DoctorDto) => {
+      this.doctors.push(doctor);
+      this.dataSource = new MatTableDataSource<DoctorDto>(this.doctors);
+    }, () => { })
   }
 
 
@@ -40,7 +43,10 @@ export class ListDoctorComponent implements OnInit {
   }
 
   demoteDoctor(id) {
-    this.doctorService.demoteDoctor(id).subscribe(() => { this.refreshDoctors() }, () => { });
+    this.doctorService.demoteDoctor(id).subscribe(() => {
+      this.doctors = this.doctors.filter(doc => doc.id !== id);
+      this.dataSource = new MatTableDataSource<DoctorDto>(this.doctors);
+    }, () => { });
   }
 
 }

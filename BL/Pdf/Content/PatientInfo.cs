@@ -81,20 +81,24 @@ namespace Vet.BL.Pdf.Content
             p.AddFormattedText("Állat adatai: ", TextFormat.Underline);
             p.AddLineBreak();
             p.AddLineBreak();
-            p.AddText($"Állat kód: {animal.Id}");
+            p.AddText($"Állat kód: {animal?.Id}");
             p.AddLineBreak();
-            p.AddText($"Név: {animal.Name}");
+            p.AddText($"Név: {animal?.Name}");
             p.AddLineBreak();
-            p.AddText($"Faj: {animal.Species.Name}");
+            p.AddText($"Faj: {animal?.Species?.Name}");
             p.AddLineBreak();
-            var spec = animal.SubSpecies == null ? "" : animal.SubSpecies;
+            var spec = animal?.SubSpecies == null ? "" : animal.SubSpecies;
             p.AddText($"Fajta: {spec}");
             p.AddLineBreak();
-            p.AddText($"Születési dátum: {Format(animal.DateOfBirth)}");
+            if(animal?.DateOfBirth != null)
+                p.AddText($"Születési dátum: {Format(animal.DateOfBirth)}");
+            else
+                p.AddText("Születési dátum:");
             p.AddLineBreak();
-            p.AddText($"Ivar: {animal.Sex}");
+            p.AddText($"Ivar: {animal?.Sex}");
             p.AddLineBreak();
-            var weight = animal.Weight == 0 ? "nincs mért adat" : $"{animal.Weight} kg";
+            var weight = animal?.Weight == 0 ? "nincs mért adat" : $"{animal?.Weight} kg";
+            if (weight == null) weight = "";
             p.AddText($"Legutóbbi súly: {weight}");
         }
 

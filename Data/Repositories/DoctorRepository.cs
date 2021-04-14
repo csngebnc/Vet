@@ -12,39 +12,35 @@ namespace Vet.Data.Repositories
     public class DoctorRepository : IDoctorRepository
     {
         private readonly VetDbContext _context;
-        private readonly IMapper _mapper;
 
-        public DoctorRepository(VetDbContext context, IMapper mapper)
+        public DoctorRepository(VetDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<VetUser> PromoteToDoctor(VetUser user)
         {
-            user.AuthLevel = 1;
+            user.AuthLevel = 2;
             await _context.SaveChangesAsync();
             return user;
         }
 
         public async Task<VetUser> DemoteToUser(VetUser doctor)
         {
-            doctor.AuthLevel = 0;
+            doctor.AuthLevel = 1;
             await _context.SaveChangesAsync();
             return doctor;
         }
 
         public async Task<VetUser> GetDoctorById(string id)
-            => await _context.Users.Where(d => d.Id == id && d.AuthLevel == 1).SingleOrDefaultAsync();
+            => await _context.Users.Where(d => d.Id == id && d.AuthLevel >= 2).SingleOrDefaultAsync();
 
 
         public async Task<VetUser> GetDoctorByEmail(string email)
             => await _context.Users.Where(d => d.Email == email).SingleOrDefaultAsync();
 
         public async Task<IEnumerable<VetUser>> GetDoctors()
-        {
-            return await _context.Users.Where(u => u.AuthLevel >= 1).ToListAsync();
-        }
+            => await _context.Users.Where(u => u.AuthLevel >= 2).ToListAsync();
 
         public async Task<Holiday> AddHoliday(Holiday holiday)
         {
@@ -70,18 +66,12 @@ namespace Vet.Data.Repositories
         }
 
         public async Task<Holiday> GetHolidayById(int id)
-        {
-            return await _context.Holidays.Include("Doctor").Where(d => d.Id == id).SingleOrDefaultAsync();
-        }
+            => await _context.Holidays.Include("Doctor").Where(d => d.Id == id).SingleOrDefaultAsync();
 
         public async Task<IEnumerable<Holiday>> GetDoctorsHolidays(string doctorId)
-        {
-            return await _context.Holidays.Include("Doctor").Where(d => d.DoctorId == doctorId).ToListAsync();
-        }
+            => await _context.Holidays.Include("Doctor").Where(d => d.DoctorId == doctorId).ToListAsync();
 
         public async Task<IEnumerable<Holiday>> GetHolidays()
-        {
-            return await _context.Holidays.Include("Doctor").ToListAsync();
-        }
+            => await _context.Holidays.Include("Doctor").ToListAsync();
     }
 }

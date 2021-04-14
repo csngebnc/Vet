@@ -23,14 +23,14 @@ export class EditSpeciesComponent implements OnInit {
 
   ngOnInit(): void {
     this.speciesService.getAnimalSpeciesById(this.id).subscribe((species: SpeciesDto) => {
-      this.editSpeciesForm.patchValue({name: species.name});
+      this.editSpeciesForm.patchValue({ name: species.name });
     })
   }
 
-  updateSpecies(){
+  updateSpecies() {
     this.editSpeciesForm.addControl('id', new FormControl(this.id));
-    this.speciesService.updateSpecies(this.editSpeciesForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.speciesService.updateSpecies(this.editSpeciesForm.value).subscribe((spec: SpeciesDto) => {
+      this.ngbModal.close(spec);
     })
   }
 }

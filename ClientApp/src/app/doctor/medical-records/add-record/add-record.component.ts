@@ -13,6 +13,7 @@ import { FileUploader } from 'ng2-file-upload';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from 'src/app/_services/user.service';
 import { VetUserDto } from 'src/app/_models/vetuserdto';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-add-record',
@@ -95,6 +96,10 @@ export class AddRecordComponent implements OnInit {
     })
   }
 
+  getName(therapiaId: number) {
+    return this.therapias.find(therapia => therapia.id === therapiaId)?.name;
+  }
+
   addTherapiaToRecord() {
     let newTherapiaRecord: LocalTherapiaRecord = {
       id: this.therapiaRecordForm.get('id').value,
@@ -123,7 +128,7 @@ export class AddRecordComponent implements OnInit {
   }
 
   private _filter(value: string) {
-    return this.therapias.filter(option => option.name.toLowerCase().includes(value.toLowerCase()));
+    return this.therapias.filter(option => option.name.toLowerCase().includes(value.toString().toLowerCase()));
   }
 
   post() {
@@ -140,7 +145,7 @@ export class AddRecordComponent implements OnInit {
 
 
     this.medicalRecordService.addMedicalRecord(newMedicalRecord).subscribe(id => {
-      this.uploader.setOptions({ url: 'https://localhost:44345/api/records/add-photo/' + id });
+      this.uploader.setOptions({ url: environment.apiUrl + 'records/add-photo/' + id });
       this.uploader.uploadAll();
     });
   }
@@ -152,7 +157,7 @@ export class AddRecordComponent implements OnInit {
   initializeUploader() {
     let token: any = JSON.parse(sessionStorage.getItem("oidc.user:https://localhost:44345:Vet"));
     this.uploader = new FileUploader({
-      url: 'https://localhost:44345/api/records/add-photo',
+      url: environment.apiUrl + 'records/add-photo/',
       authToken: 'Bearer ' + token.access_token,
       isHTML5: true,
       allowedFileType: ['image'],

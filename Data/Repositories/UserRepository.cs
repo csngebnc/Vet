@@ -11,30 +11,24 @@ namespace Vet.Data.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly VetDbContext _context;
-        private readonly IMapper _mapper;
         public UserRepository(VetDbContext context, IMapper mapper)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<VetUser> GetUserByIdAsync(string id)
         {
             var user =  await _context.Users.FindAsync(id);
-            return user == null ? new VetUser { AuthLevel = 0 } : user;
+            return user == null ? new VetUser {Id = null, AuthLevel = 0 } : user;
         }
 
         public async Task<string> GetUserIdByUserEmail(string email)
-        {
-            return (await _context.Users.SingleOrDefaultAsync(u => u.Email == email))?.Id;
-        }
+            => (await _context.Users.SingleOrDefaultAsync(u => u.Email == email))?.Id;
 
         public async Task<VetUser> GetUserByUsernameAsync(string username)
-        {
-            return await _context.Users
+            => await _context.Users
                 .Include(a => a.Animals)
                 .SingleOrDefaultAsync(x => x.UserName == username);
-        }
 
         public async Task<IEnumerable<VetUser>> GetUserByFilter(string name, string email)
         {

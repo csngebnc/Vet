@@ -1,11 +1,11 @@
-<ng-container *ngIf="auth.authLevel==0">
+<ng-container *ngIf="(auth.getAuthLevel() | async)==0">
   <app-visitor-homepage></app-visitor-homepage>
 </ng-container>
 
-<ng-container *ngIf="auth.authLevel==1">
+<ng-container *ngIf="(auth.getAuthLevel() | async)==1">
   <app-user-homepage></app-user-homepage>
 </ng-container>
 
-<ng-container *ngIf="auth.authLevel>1">
+<ng-container *ngIf="(auth.getAuthLevel() | async)>1">
   <app-doctor-homepage></app-doctor-homepage>
 </ng-container>

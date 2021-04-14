@@ -10,10 +10,7 @@ namespace Vet.Controllers
 {
     public class EmailSender : IEmailSender
     {
-
-        public EmailSender()
-        {
-        }
+        public EmailSender(){}
 
         public async Task SendEmailAsync(string email, string subject, string htmlMessage)
         {

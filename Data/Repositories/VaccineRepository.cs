@@ -17,10 +17,12 @@ namespace Vet.Data.Repositories
             _context = context;
         }
 
-        public async Task<bool> AddVaccine(Vaccine vaccine)
+        public async Task<Vaccine> AddVaccine(Vaccine vaccine)
         {
             _context.Vaccines.Add(vaccine);
-            return (await _context.SaveChangesAsync()) > 0;
+            if ((await _context.SaveChangesAsync()) > 0)
+                return vaccine;
+            return null;
         }
         public async Task<Vaccine> UpdateVaccine(Vaccine vaccine)
         {
@@ -38,12 +40,12 @@ namespace Vet.Data.Repositories
 
         }
 
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        public async Task<bool> AddVaccineRecord(VaccineRecord record)
+        public async Task<VaccineRecord> AddVaccineRecord(VaccineRecord record)
         {
             _context.VaccinationRecords.Add(record);
-            return (await _context.SaveChangesAsync()) > 0;
+            if ((await _context.SaveChangesAsync()) > 0)
+                return await GetVaccineRecordById(record.Id);
+            return null;
         }
         public async Task<VaccineRecord> UpdateVaccineRecord(VaccineRecord record)
         {
@@ -56,15 +58,11 @@ namespace Vet.Data.Repositories
             return (await _context.SaveChangesAsync()) > 0;
         }
 
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
         public async Task<IEnumerable<Vaccine>> GetVaccines()
             => await _context.Vaccines.ToListAsync();
 
         public async Task<Vaccine> GetVaccineById(int id)
             => await _context.Vaccines.Where(v => v.Id ==id).SingleOrDefaultAsync();
-
-        /////////////////////////////////////////////////////////////////////////////////////
 
         public async Task<IEnumerable<VaccineRecord>> GetVaccineRecordsOfAnimal(int animalId)
             => await _context.VaccinationRecords.Include("Vaccine").Include("Animal").Where(vr => vr.AnimalId == animalId).ToListAsync();

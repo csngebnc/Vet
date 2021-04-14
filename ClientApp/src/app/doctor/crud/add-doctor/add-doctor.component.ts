@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { DoctorDto } from 'src/app/_models/doctordto';
 import { DoctorService } from 'src/app/_services/doctor.service';
 
 @Component({
@@ -21,9 +22,9 @@ export class AddDoctorComponent implements OnInit {
     })
   }
 
-  promoteDoctor(){
-    this.doctorService.promoteDoctor(this.promoteDoctorForm.get('email').value).subscribe(() => {
-      this.ngbModal.close();
+  promoteDoctor() {
+    this.doctorService.promoteDoctor(this.promoteDoctorForm.get('email').value).subscribe((doctor: DoctorDto) => {
+      this.ngbModal.close(doctor);
     })
   }
 

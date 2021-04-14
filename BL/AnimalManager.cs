@@ -37,9 +37,9 @@ namespace Vet.BL
         {
             var _animal = await _animalRepository.GetAnimalByIdAsync(animal.Id);
             _animal = _mapper.Map<UpdateAnimalDto, Animal>(animal, _animal);
-            _animal = await _animalRepository.UpdateAnimal(_animal);
+            _animal.DateOfBirth = _animal.DateOfBirth.ToLocalTime();
 
-            
+            return _mapper.Map<AnimalDto>(await _animalRepository.UpdateAnimal(_animal));
         }
 
         public async Task<AnimalDto> UpdateAnimalPhoto(UpdateAnimalPhotoDto animal, string OwnerId)
@@ -68,7 +68,6 @@ namespace Vet.BL
 
         public async Task<bool> DeleteAnimal(int id)
         {
-            // TODO: bővíteni
             var _animal = await _animalRepository.GetAnimalByIdAsync(id);
             if (_animal.PhotoPath != "Images/Animals/empty-photo.jpg")
                 _photoManager.RemovePhoto(_animal.PhotoPath);
@@ -77,9 +76,7 @@ namespace Vet.BL
         }
 
         public async Task<bool> AnimalExists(int id)
-        {
-            return (await _animalRepository.GetAnimalByIdAsync(id))!=null;
-        }
+            => (await _animalRepository.GetAnimalByIdAsync(id))!=null;
 
         public async Task<IEnumerable<AnimalDto>> GetAnimalsAsync()
             => _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsAsync());

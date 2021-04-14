@@ -6,7 +6,7 @@ namespace Vet.Interfaces
 {
     public interface ISpeciesRepository
     {
-        Task<bool> AddAnimalSpecies(string name);
+        Task<AnimalSpecies> AddAnimalSpecies(string name);
         Task<AnimalSpecies> UpdateAnimalSpecies(AnimalSpecies spec);
         Task<bool> DeleteAnimalSpecies(AnimalSpecies spec);
 

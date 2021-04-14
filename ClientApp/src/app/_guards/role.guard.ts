@@ -13,23 +13,25 @@ export class RoleGuard implements CanActivate {
     private _auth: AuthorizeService,
     private _router: Router) { }
 
-    redirects = {
-        "0": "/",
-        "1": "/",
-        "2": "/",
-    }
+  redirects = {
+    "0": "/",
+    "1": "/",
+    "2": "/",
+    "3": "/"
+  }
 
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     const expectedRole = route.data.expectedRole
-    var role = this._auth.authLevel;
-      if (this._auth.isAuthenticated() && expectedRole <= role) {
-        return true;
-      } else {
-        this._router.navigate([this.redirects[role.toString()]]);
-        return false;
-      }
+    let role = 0;
+    this._auth.getAuthLevel().subscribe(num => role = num);
+    if (this._auth.isAuthenticated() && expectedRole <= role) {
+      return true;
+    } else {
+      this._router.navigate([this.redirects[role.toString()]]);
+      return false;
+    }
   }
-  
+
 }

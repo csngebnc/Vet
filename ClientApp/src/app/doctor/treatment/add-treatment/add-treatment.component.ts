@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { TreatmentDto } from 'src/app/_models/treatmentdto';
 import { TreatmentService } from 'src/app/_services/treatment.service';
 
 @Component({
@@ -21,9 +22,9 @@ export class AddTreatmentComponent implements OnInit {
     })
   }
 
-  addTreatment(){
-    this.treatmentService.addTreatment(this.addTreatmentForm.value).subscribe(() => {
-      this.ngbModal.close();
+  addTreatment() {
+    this.treatmentService.addTreatment(this.addTreatmentForm.value).subscribe((treatment: TreatmentDto) => {
+      this.ngbModal.close(treatment);
     })
   }
 

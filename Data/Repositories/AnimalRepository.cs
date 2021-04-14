@@ -35,10 +35,13 @@ namespace Vet.Data.Repositories
 
         public async Task<bool> DeleteAnimal(Animal animal)
         {
-            // TODO: bővíteni, hogy ha van rá hivatkozás, akkor már nem lehet törölni
+            if(await _context.Appointments.AnyAsync(a => a.AnimalId == animal.Id) ||
+                await _context.MedicalRecords.AnyAsync(m => m.AnimalId == animal.Id) ||
+                await _context.VaccinationRecords.AnyAsync(vr => vr.AnimalId == animal.Id))
+                return false;
+
             _context.Animals.Remove(animal);
-            await _context.SaveChangesAsync();
-            return true;
+            return (await _context.SaveChangesAsync()) > 0;
         }
 
         public async Task ChangeStateOfAnimal(int id)

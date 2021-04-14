@@ -8,7 +8,7 @@ namespace Vet.Interfaces
 {
     public interface ITherapiaRepository
     {
-        Task<bool> AddTherapia(Therapia therapia);
+        Task<Therapia> AddTherapia(Therapia therapia);
         Task<Therapia> UpdateTherapia(Therapia therapia);
         Task<bool> DeleteTherapia(Therapia therapia);
 

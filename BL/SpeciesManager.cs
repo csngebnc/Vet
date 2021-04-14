@@ -20,10 +20,8 @@ namespace Vet.BL
             _mapper = mapper;
         }
 
-        public async Task<bool> AddAnimalSpecies(string name)
-        {
-            return await _speciesRepository.AddAnimalSpecies(name);
-        }
+        public async Task<AnimalSpeciesDto> AddAnimalSpecies(string name)
+            => _mapper.Map<AnimalSpeciesDto>(await _speciesRepository.AddAnimalSpecies(name));
 
         public async Task<AnimalSpeciesDto> UpdateAnimalSpecies(UpdateAnimalSpeciesDto animal)
         {
@@ -48,9 +46,7 @@ namespace Vet.BL
         }
 
         public async Task<bool> SpeciesExists(string name)
-        {
-            return (await _speciesRepository.GetAnimalSpeciesByName(name)) != null;
-        }
+            => (await _speciesRepository.GetAnimalSpeciesByName(name)) != null;
 
         public async Task<IEnumerable<AnimalSpeciesDto>> GetAnimalSpecies()
             => _mapper.Map<IEnumerable<AnimalSpeciesDto>>(await _speciesRepository.GetAnimalSpecies());

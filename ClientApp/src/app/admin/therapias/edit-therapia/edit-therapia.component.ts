@@ -13,13 +13,6 @@ export class EditTherapiaComponent implements OnInit {
   @Input() id;
   editTherapiaForm: FormGroup;
   constructor(private therapiaService: TherapiaService, private fb: FormBuilder, private ngbModal: NgbActiveModal) {
-    this.editTherapiaForm = this.fb.group({
-      id: ['', Validators.required],
-      name: ['', Validators.required],
-      unitName: ['', Validators.required],
-      unit: ['', Validators.required],
-      pricePerUnit: ['', Validators.required]
-    })
   }
 
   ngOnInit(): void {
@@ -35,8 +28,8 @@ export class EditTherapiaComponent implements OnInit {
   }
 
   editTherapia() {
-    this.therapiaService.updateTherapia(this.editTherapiaForm.value).subscribe(response => {
-      this.ngbModal.close();
+    this.therapiaService.updateTherapia(this.editTherapiaForm.value).subscribe((response: TherapiaDto) => {
+      this.ngbModal.close(response);
     })
   }
 }

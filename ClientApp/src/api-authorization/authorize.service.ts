@@ -44,14 +44,16 @@ export class AuthorizeService {
   private popUpDisabled = true;
   private userManager: UserManager;
   private userSubject: BehaviorSubject<IUser | null> = new BehaviorSubject(null);
-
-  public authLevel: number = 0;
+  private roleSubject: BehaviorSubject<number> = new BehaviorSubject(0);
 
   constructor(private http: HttpClient) { }
 
   public isAuthenticated(): Observable<boolean> {
-    this.loadAuthLevel();
     return this.getUser().pipe(map(u => !!u));
+  }
+
+  public getAuthLevel(): Observable<number> {
+    return this.roleSubject.asObservable();
   }
 
   public getUser(): Observable<IUser | null> {
@@ -78,10 +80,12 @@ export class AuthorizeService {
   public async signIn(state: any): Promise<IAuthenticationResult> {
     await this.ensureUserManagerInitialized();
     let user: User = null;
+    let roleLvl: number = 0;
     try {
       user = await this.userManager.signinSilent(this.createArguments());
       this.userSubject.next(user.profile);
-      this.loadAuthLevel()
+      roleLvl = await this.loadAuthLevel();
+      this.roleSubject.next(roleLvl);
       return this.success(state);
     } catch (silentError) {
       // User might not be authenticated, fallback to popup authentication
@@ -93,7 +97,8 @@ export class AuthorizeService {
         }
         user = await this.userManager.signinPopup(this.createArguments());
         this.userSubject.next(user.profile);
-        this.loadAuthLevel()
+        roleLvl = await this.loadAuthLevel();
+        this.roleSubject.next(roleLvl);
         return this.success(state);
       } catch (popupError) {
         if (popupError.message === 'Popup window closed') {
@@ -120,7 +125,9 @@ export class AuthorizeService {
       await this.ensureUserManagerInitialized();
       const user = await this.userManager.signinCallback(url);
       this.userSubject.next(user && user.profile);
-      this.loadAuthLevel()
+      let roleLvl: number = 0;
+      roleLvl = await this.loadAuthLevel();
+      this.roleSubject.next(roleLvl);
       return this.success(user && user.state);
     } catch (error) {
       console.log('There was an error signing in: ', error);
@@ -137,7 +144,7 @@ export class AuthorizeService {
       await this.ensureUserManagerInitialized();
       await this.userManager.signoutPopup(this.createArguments());
       this.userSubject.next(null);
-      this.authLevel = 0;
+      this.roleSubject.next(0);
       return this.success(state);
     } catch (popupSignOutError) {
       console.log('Popup signout error: ', popupSignOutError);
@@ -156,7 +163,7 @@ export class AuthorizeService {
     try {
       const response = await this.userManager.signoutCallback(url);
       this.userSubject.next(null);
-      this.authLevel = 0;
+      this.roleSubject.next(0);
       return this.success(response && response.state);
     } catch (error) {
       console.log(`There was an error trying to log out '${error}'.`);
@@ -198,8 +205,8 @@ export class AuthorizeService {
     this.userManager.events.addUserSignedOut(async () => {
       await this.userManager.removeUser();
       this.userSubject.next(null);
+      this.roleSubject.next(0);
 
-      this.authLevel = 0;
     });
   }
 
@@ -210,9 +217,11 @@ export class AuthorizeService {
         map(u => u && u.profile));
   }
 
-  public loadAuthLevel() {
-    if (this.authLevel == 0) {
-      this.http.get<number>('https://localhost:44345/api/users/role').toPromise().then(lvl => this.authLevel = lvl);
-    }
+  public async loadAuthLevel() {
+    return await this.http.get<number>('https://localhost:44345/api/users/role').toPromise();
+  }
+
+  public async loadRole() {
+    this.roleSubject.next(await this.http.get<number>('https://localhost:44345/api/users/role').toPromise());
   }
 }

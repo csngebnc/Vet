@@ -32,6 +32,7 @@ namespace Vet.BL
             medicalRecord.OwnerId = await _userRepository.GetUserIdByUserEmail(recordDto.OwnerEmail);
             medicalRecord.DoctorId = doctorId;
             await _recordRepository.AddMedicalRecord(medicalRecord);
+
             var therapiaRecords = recordDto.Therapias;
             foreach (var therapia in therapiaRecords)
             {
@@ -67,6 +68,13 @@ namespace Vet.BL
         public async Task<bool> DeleteMedicalRecord(int id)
         {
             var _record = await _recordRepository.GetMedicalRecordById(id);
+
+            var therapias = await _recordRepository.GetTherapiaRecordsByRecordId(_record.Id);
+            foreach (var trecord in therapias)
+            {
+                await _recordRepository.RemoveTherapiaFromMedicalRecord(trecord);
+            }
+
             return await _recordRepository.DeleteMedicalRecord(_record);
         }
 
@@ -85,12 +93,9 @@ namespace Vet.BL
         public async Task<IEnumerable<MedicalRecordDto>> GetMedicalRecordsByDoctorId(string id)
             => _mapper.Map<IEnumerable<MedicalRecordDto>>(await _recordRepository.GetMedicalRecordsByDoctorId(id));
 
-        /// /////////////////////
-
         public async Task<bool> AddTherapiaToMedicalRecord(AddTherapiaToRecordDto therapia)
-        {
-            return await _recordRepository.AddTherapiaToMedicalRecord(_mapper.Map<TherapiaRecord>(therapia));
-        }
+            => await _recordRepository.AddTherapiaToMedicalRecord(_mapper.Map<TherapiaRecord>(therapia));
+
         public async Task<TherapiaRecordDto> UpdateTherapiaToMedicalRecord(UpdateTherapiaOnRecordDto therapiaRecord)
         {
             var _record = await _recordRepository.GetTherapiaRecordById(therapiaRecord.Id);
@@ -99,9 +104,7 @@ namespace Vet.BL
         }
 
         public async Task<bool> RemoveTherapiaFromMedicalRecord(int id)
-        {
-            return await _recordRepository.RemoveTherapiaFromMedicalRecord(await _recordRepository.GetTherapiaRecordById(id));
-        }
+            => await _recordRepository.RemoveTherapiaFromMedicalRecord(await _recordRepository.GetTherapiaRecordById(id));
 
 
         public async Task<bool> UploadPhoto(IFormFile image, int medId)

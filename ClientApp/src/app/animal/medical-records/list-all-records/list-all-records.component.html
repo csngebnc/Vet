@@ -9,7 +9,7 @@
             <mat-panel-description class="d-flex justify-content-end">
                 <mat-icon *ngIf="auth.authLevel>=2" class="mr-2" routerLink="../../record/{{med.id}}/edit">edit
                 </mat-icon>
-                <mat-icon (click)="log()">picture_as_pdf</mat-icon>
+                <mat-icon (click)="genPdf(med.id)">picture_as_pdf</mat-icon>
             </mat-panel-description>
         </mat-expansion-panel-header>
         <h5><strong>Kórlap:</strong></h5>

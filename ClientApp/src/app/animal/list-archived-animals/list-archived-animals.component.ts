@@ -18,25 +18,27 @@ export class ListArchivedAnimalsComponent implements OnInit {
   constructor(private animalService: AnimalService, private modalService: NgbModal) { }
 
   ngOnInit(): void {
-    this.refreshAnimals();
+    this.animalService.getUserArchivedAnimals().subscribe((animals: AnimalDto[]) => {
+      this.animals = animals;
+    })
   }
 
   deleteAnimal(id: number) {
     if (confirm('Biztosan szeretnéd törölni?')) {
-      this.animalService.deleteAnimal(id).subscribe(() => this.refreshAnimals());
+      this.animalService.deleteAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
     }
   }
 
   archiveAnimal(id) {
     if (confirm('Biztosan szeretnéd visszaállítani?')) {
-      this.animalService.changeStateOfAnimal(id).subscribe(() => this.refreshAnimals());
+      this.animalService.changeStateOfAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
     }
-  }
-
-  refreshAnimals() {
-    this.animalService.getUserArchivedAnimals().subscribe((animals: AnimalDto[]) => {
-      this.animals = animals;
-    })
   }
 
 }

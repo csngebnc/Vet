@@ -11,9 +11,9 @@ import { TreatmenttimeService } from 'src/app/_services/treatmenttime.service';
 })
 export class EditTreatmentTimeComponent implements OnInit {
   @Input() id;
-  startTime = {hour: 8, minute: 0};
-  endTime = {hour: 20, minute: 0};
-  duration = {hour: 0, minute: 5};
+  startTime = { hour: 8, minute: 0 };
+  endTime = { hour: 20, minute: 0 };
+  duration = { hour: 0, minute: 5 };
 
   addTimeForm: FormGroup;
   validationErrors: string[] = [];
@@ -21,16 +21,16 @@ export class EditTreatmentTimeComponent implements OnInit {
   time: TreatmentTimeDto;
 
   days = [
-    {id: 1, day: 'hétfő'},
-    {id: 2, day: 'kedd'},
-    {id: 3, day: 'szerda'},
-    {id: 4, day: 'csütörtök'},
-    {id: 5, day: 'péntek'},
-    {id: 6, day: 'szombat'},
-    {id: 0, day: 'vasárnap'}
+    { id: 1, day: 'hétfő' },
+    { id: 2, day: 'kedd' },
+    { id: 3, day: 'szerda' },
+    { id: 4, day: 'csütörtök' },
+    { id: 5, day: 'péntek' },
+    { id: 6, day: 'szombat' },
+    { id: 0, day: 'vasárnap' }
   ]
 
-  constructor(private treatmentTimeService: TreatmenttimeService, private fb: FormBuilder, private ngbModal: NgbActiveModal) { 
+  constructor(private treatmentTimeService: TreatmenttimeService, private fb: FormBuilder, private ngbModal: NgbActiveModal) {
     this.addTimeForm = this.fb.group({
       id: [''],
       startHour: ['', Validators.required],
@@ -46,10 +46,10 @@ export class EditTreatmentTimeComponent implements OnInit {
   ngOnInit(): void {
     this.treatmentTimeService.getTreatmentTimeById(this.id).subscribe((treatmentTime: TreatmentTimeDto) => {
       this.time = treatmentTime;
-      this.startTime = {hour: this.time.startHour, minute: this.time.startMin};
-      this.endTime = {hour: this.time.endHour, minute: this.time.endMin};
-      this.duration = {hour: Math.floor(this.time.duration/60), minute: (this.time.duration%60)};
-      this.initializeForm();  
+      this.startTime = { hour: this.time.startHour, minute: this.time.startMin };
+      this.endTime = { hour: this.time.endHour, minute: this.time.endMin };
+      this.duration = { hour: Math.floor(this.time.duration / 60), minute: (this.time.duration % 60) };
+      this.initializeForm();
     })
   }
 
@@ -66,17 +66,16 @@ export class EditTreatmentTimeComponent implements OnInit {
     })
   }
 
-  addTreatmentTime(){
-    this.addTimeForm.patchValue({id: this.id});
-    this.addTimeForm.patchValue({startHour: this.startTime.hour});
-    this.addTimeForm.patchValue({startMin: this.startTime.minute});
-    this.addTimeForm.patchValue({endHour: this.endTime.hour});
-    this.addTimeForm.patchValue({endMin: this.endTime.minute});
-    this.addTimeForm.patchValue({duration: (this.duration.hour*60 + this.duration.minute)});
+  addTreatmentTime() {
+    this.addTimeForm.patchValue({ id: this.id });
+    this.addTimeForm.patchValue({ startHour: this.startTime.hour });
+    this.addTimeForm.patchValue({ startMin: this.startTime.minute });
+    this.addTimeForm.patchValue({ endHour: this.endTime.hour });
+    this.addTimeForm.patchValue({ endMin: this.endTime.minute });
+    this.addTimeForm.patchValue({ duration: (this.duration.hour * 60 + this.duration.minute) });
 
-    console.log(this.addTimeForm.value)
-    this.treatmentTimeService.updateTreatmentTime(this.addTimeForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.treatmentTimeService.updateTreatmentTime(this.addTimeForm.value).subscribe((treatmentTime: TreatmentTimeDto) => {
+      this.ngbModal.close(treatmentTime);
     });
   }
 

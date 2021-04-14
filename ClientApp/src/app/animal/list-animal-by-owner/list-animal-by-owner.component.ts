@@ -19,18 +19,26 @@ export class ListAnimalByOwnerComponent implements OnInit {
 
   ngOnInit(): void {
     this.userId = this.route.snapshot.paramMap.get('userid');
-    this.refreshAnimals();
+    this.animalService.getUserAnimalsByUserId(this.userId).subscribe((animals: AnimalDto[]) => {
+      this.animals = animals;
+    })
   }
 
   deleteAnimal(id: number) {
     if (confirm('Biztosan szeretnéd törölni?')) {
-      this.animalService.deleteAnimal(id).subscribe(() => this.refreshAnimals());
+      this.animalService.deleteAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
     }
   }
 
-  refreshAnimals() {
-    this.animalService.getUserAnimalsByUserId(this.userId).subscribe((animals: AnimalDto[]) => {
-      this.animals = animals;
-    })
+  archiveAnimal(id) {
+    if (confirm('Biztosan szeretnéd archiválni?')) {
+      this.animalService.changeStateOfAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
+    }
   }
 }

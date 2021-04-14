@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { SpeciesDto } from 'src/app/_models/speciesdto';
 import { SpeciesService } from 'src/app/_services/species.service';
 
 @Component({
@@ -20,9 +21,9 @@ export class AddSpeciesComponent implements OnInit {
     })
   }
 
-  addSpecies(){
-    this.speciesService.addSpecies(this.addSpeciesForm.value).subscribe(() => {
-      this.ngbModal.close();
+  addSpecies() {
+    this.speciesService.addSpecies(this.addSpeciesForm.value).subscribe((spec: SpeciesDto) => {
+      this.ngbModal.close(spec);
     })
   }
 }

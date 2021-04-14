@@ -34,8 +34,10 @@ export class ListRecordsComponent implements OnInit {
     this.animalService.getAnimal(animalId).subscribe((animal: AnimalDto) => {
       this.animal = animal;
       this.recordService.getMedicalRecordByAnimalId(animalId).subscribe((records: MedicalRecordDto[]) => {
-        this.viewLevel = this.auth.authLevel;
-        this.meds = records;
+        this.auth.getAuthLevel().subscribe((num) => {
+          this.meds = records;
+          this.viewLevel = num;
+        })
       });
     });
   }

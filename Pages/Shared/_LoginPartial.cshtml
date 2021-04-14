@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using Vet.Models;
+@using Vet.Extensions;
 @inject SignInManager<VetUser> SignInManager
 @inject UserManager<VetUser> UserManager
 
@@ -16,24 +17,27 @@
     @if (SignInManager.IsSignedIn(User))
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Profilom</a>
+            <a class="nav-link light-font" href="/" title="Manage">Vissza a főoldalra</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link light-font" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Profilom</a>
         </li>
         <li class="nav-item">
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/">
-                <button type="submit" class="nav-link btn btn-link text-dark">Kijelentkezés</button>
+                <button type="submit" class="nav-item btn light-font">Kijelentkezés</button>
             </form>
         </li>
     }
     else
     {
         <li class="nav-item">
-            <a class="nav-link text-dark" href="/">Vissza a főoldalra</a>
+            <a class="nav-link light-font" href="/">Vissza a főoldalra</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register" asp-route-returnUrl="@returnUrl">Regisztráció</a>
+            <a class="nav-link light-font" asp-area="Identity" asp-page="/Account/Register" asp-route-returnUrl="@returnUrl">Regisztráció</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@returnUrl">Bejelentkezés</a>
+            <a class="nav-link light-font" asp-area="Identity" asp-page="/Account/Login" asp-route-returnUrl="@returnUrl">Bejelentkezés</a>
         </li>
     }
 </ul>

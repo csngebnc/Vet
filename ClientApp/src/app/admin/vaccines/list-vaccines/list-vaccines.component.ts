@@ -18,22 +18,27 @@ export class ListVaccinesComponent implements OnInit {
   dataSource;
   displayedColumns: string[] = ['id', 'name', 'button'];
   constructor(private vaccineService: VaccineService, private modalService: NgbModal) {
-    this.refreshVaccines();
   }
 
   ngOnInit(): void {
-
+    this.refreshVaccines();
   }
 
   open() {
     const modalRef = this.modalService.open(AddVaccineComponent);
-    modalRef.result.then(() => this.refreshVaccines(), () => { })
+    modalRef.result.then((vaccine) => {
+      this.vaccines.push(vaccine);
+      this.dataSource = new MatTableDataSource<VaccineDto>(this.vaccines);
+    }, () => { })
   }
 
   openEdit(id) {
     const modalRef = this.modalService.open(EditVaccineComponent);
     modalRef.componentInstance.id = id;
-    modalRef.result.then(() => this.refreshVaccines(), () => { })
+    modalRef.result.then((vaccine) => {
+      this.vaccines[this.vaccines.map((item) => {return item.id}).indexOf(vaccine.id)] = vaccine;
+      this.dataSource = new MatTableDataSource<VaccineDto>(this.vaccines);
+    }, () => { })
   }
 
   refreshVaccines() {
@@ -45,7 +50,10 @@ export class ListVaccinesComponent implements OnInit {
 
 
   deleteVaccines(id) {
-    this.vaccineService.deleteVaccine(id).subscribe(() => { this.refreshVaccines() });
+    this.vaccineService.deleteVaccine(id).subscribe(() => { 
+      this.vaccines.splice(this.vaccines.map((item) => {return item.id}).indexOf(id), 1) 
+      this.dataSource = new MatTableDataSource<VaccineDto>(this.vaccines);
+     });
   }
 
 }

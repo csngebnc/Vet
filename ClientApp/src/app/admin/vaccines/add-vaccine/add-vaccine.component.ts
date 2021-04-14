@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { VaccineDto } from 'src/app/_models/VaccineDto';
 import { VaccineService } from '../../../_services/vaccine.service';
 @Component({
   selector: 'app-add-vaccine',
@@ -21,8 +22,8 @@ export class AddVaccineComponent implements OnInit {
   }
 
   addVaccine() {
-    this.speciesService.addVaccine(this.addVaccineForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.speciesService.addVaccine(this.addVaccineForm.value).subscribe((vaccine: VaccineDto) => {
+      this.ngbModal.close(vaccine);
     })
   }
 }

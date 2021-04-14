@@ -36,7 +36,7 @@ namespace Vet.Controllers
             => await _vaccineManager.GetVaccineRecordById(id);
 
         [HttpPost]
-        public async Task<bool> AddVaccine(AddVaccineDto vaccine)
+        public async Task<VaccineDto> AddVaccine(AddVaccineDto vaccine)
             => await _vaccineManager.AddVaccine(vaccine);
 
         [HttpPut]
@@ -48,7 +48,7 @@ namespace Vet.Controllers
             => await _vaccineManager.DeleteVaccine(id);
 
         [HttpPost("record")]
-        public async Task<bool> AddVaccineRecord(AddVaccineRecordDto record)
+        public async Task<VaccineRecordDto> AddVaccineRecord(AddVaccineRecordDto record)
             => await _vaccineManager.AddVaccineRecord(record);
 
         [HttpPut("record")]

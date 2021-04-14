@@ -5,7 +5,7 @@ import { FileUploader } from 'ng2-file-upload';
 import { Observable } from 'rxjs';
 import { startWith, map } from 'rxjs/operators';
 import { AnimalDto } from 'src/app/_models/animaldto';
-import { MedicalRecordDto, MedicalRecordPhotoDto } from 'src/app/_models/MedicalRecordDto';
+import { MedicalRecordDto } from 'src/app/_models/MedicalRecordDto';
 import { TherapiaDto } from 'src/app/_models/therapiadto';
 import { LocalTherapiaRecord, TherapiaOnMedicalRecord } from 'src/app/_models/therapiarecorddto';
 import { UpdateMedicalRecordDto } from 'src/app/_models/UpdateMedicalRecordDto';
@@ -19,7 +19,6 @@ import { TherapiaService } from 'src/app/_services/therapia.service';
   styleUrls: ['./edit-record.component.css']
 })
 export class EditRecordComponent implements OnInit {
-
 
   originalMedicalRecord: MedicalRecordDto;
 
@@ -37,7 +36,6 @@ export class EditRecordComponent implements OnInit {
   filteredTherapias: Observable<TherapiaDto[]>;
 
   therapiaIndexCount;
-
 
   imagesToDelete: number[] = [];
   therapiasToDelete: number[] = [];
@@ -145,7 +143,7 @@ export class EditRecordComponent implements OnInit {
   }
 
   private _filter(value: string) {
-    return this.therapias.filter(option => option.name.toLowerCase().includes(value.toLowerCase()));
+    return this.therapias.filter(option => option.name.toLowerCase().includes(value.toString().toLowerCase()));
   }
 
   post() {

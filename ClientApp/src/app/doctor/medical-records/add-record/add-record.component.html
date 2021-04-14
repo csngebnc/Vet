@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" *ngIf="therapias">
     <div class="col-4">
         <h1>Új kórlap létrehozása</h1>
     </div>
@@ -73,7 +73,7 @@
                     <mat-label>Kezelés kiválasztása</mat-label>
                     <input matInput [matAutocomplete]="auto" [formControl]="therapiaRecordForm.controls['therapiaId']"
                         required>
-                    <mat-autocomplete #auto="matAutocomplete">
+                    <mat-autocomplete #auto="matAutocomplete" [displayWith]="getName.bind(this)">
                         <mat-option *ngFor="let option of filteredTherapias | async" [value]="option.id">
                             {{option.name}}
                         </mat-option>

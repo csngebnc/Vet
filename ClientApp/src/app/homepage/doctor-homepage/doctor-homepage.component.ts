@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserPhotoComponent } from 'src/app/user/user-photo/user-photo.component';
@@ -16,6 +17,8 @@ import { UserService } from 'src/app/_services/user.service';
 export class DoctorHomepageComponent implements OnInit {
 
   constructor(private userService: UserService, private appointmentService: AppointmentService, private modalService: NgbModal) { }
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   notesFormControl;
 
@@ -35,6 +38,8 @@ export class DoctorHomepageComponent implements OnInit {
       this.appointmentService.doctorActiveAppointments(this.doctor.id).subscribe((appointments: AppointmentDto[]) => {
         this.appointments = appointments;
         this.dataSource = new MatTableDataSource<AppointmentDto>(this.appointments);
+
+        this.dataSource.paginator = this.paginator;
       })
     })
   }
@@ -52,6 +57,7 @@ export class DoctorHomepageComponent implements OnInit {
       this.appointmentService.resignAppointmentByDoctor(id).subscribe((appointment: AppointmentDto) => {
         this.appointments = this.appointments.filter(a => a.id !== appointment.id);
         this.dataSource = new MatTableDataSource<AppointmentDto>(this.appointments);
+        this.dataSource.paginator = this.paginator;
       })
     }
   }

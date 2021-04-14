@@ -18,10 +18,13 @@ namespace Vet.Data.Repositories
             _context = context;
         }
 
-        public async Task<bool> AddAnimalSpecies(string name)
+        public async Task<AnimalSpecies> AddAnimalSpecies(string name)
         {
-            _context.AnimalSpecies.Add(new AnimalSpecies { Name = name });
-            return (await _context.SaveChangesAsync()) > 0;
+            var spec = new AnimalSpecies { Name = name };
+            _context.AnimalSpecies.Add(spec);
+            if ((await _context.SaveChangesAsync()) > 0)
+                return spec;
+            return null;
 
         }
         public async Task<AnimalSpecies> UpdateAnimalSpecies(AnimalSpecies spec)
@@ -37,25 +40,17 @@ namespace Vet.Data.Repositories
         }
 
         public async Task<IEnumerable<AnimalSpecies>> GetAnimalSpecies()
-        {
-            return await _context.AnimalSpecies.ToListAsync();
-        }
+            => await _context.AnimalSpecies.ToListAsync();
 
         public async Task<AnimalSpecies> GetAnimalSpeciesById(int id)
-        {
-            return await _context.AnimalSpecies.FindAsync(id);
-        }
+            => await _context.AnimalSpecies.FindAsync(id);
 
         public async Task<AnimalSpecies> GetAnimalSpeciesByIdWithAnimals(int id)
-        {
-            return await _context.AnimalSpecies.Include(a => a.Animals).Where(s => s.Id == id).FirstOrDefaultAsync();
-        }
+            => await _context.AnimalSpecies.Include(a => a.Animals).Where(s => s.Id == id).FirstOrDefaultAsync();
 
         public async Task<AnimalSpecies> GetAnimalSpeciesByName(string name)
-        {
-            return await _context.AnimalSpecies
+            => await _context.AnimalSpecies
                 .Where(s => s.Name == name)
                 .FirstOrDefaultAsync();
-        }
     }
 }

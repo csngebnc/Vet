@@ -20,10 +20,6 @@ export class ListOwnTreatmentComponent implements OnInit {
   constructor(private treatmentService: TreatmentService, private modalService: NgbModal) { }
 
   ngOnInit(): void {
-    this.refreshTreatments();
-  }
-
-  refreshTreatments() {
     this.treatmentService.getOwnTreatments().subscribe((treatments: TreatmentDto[]) => {
       this.treatments = treatments;
       this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
@@ -32,24 +28,33 @@ export class ListOwnTreatmentComponent implements OnInit {
 
   open() {
     const modalRef = this.modalService.open(AddTreatmentComponent);
-    modalRef.result.then(() => this.refreshTreatments())
+    modalRef.result.then((treatment: TreatmentDto) => {
+      this.treatments.push(treatment);
+      this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
+    }, () => { })
   }
 
   openEdit(id) {
     const modalRef = this.modalService.open(EditTreatmentComponent);
     modalRef.componentInstance.id = id;
-    modalRef.result.then(() => this.refreshTreatments())
+    modalRef.result.then((treatment) => {
+      this.treatments[this.treatments.map((t) => { return t.id }).indexOf(id)] = treatment;
+      this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
+    }, () => { })
   }
 
-  deleteTreatment(id) {
+  deleteTreatment(id: number) {
     this.treatmentService.deleteTreatment(id).subscribe(() => {
-      this.refreshTreatments();
+      this.treatments = this.treatments.filter(t => t.id !== id);
+      this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
     })
   }
 
   changeStateOfTreatment(id) {
     this.treatmentService.changeState(id).subscribe(() => {
-      this.refreshTreatments();
+      this.treatments[this.treatments.map(t => t.id).indexOf(id)].isInactive = !this.treatments[this.treatments.map(t => t.id).indexOf(id)].isInactive;
+      this.dataSource = new MatTableDataSource<TreatmentDto>(this.treatments);
+
     })
   }
 

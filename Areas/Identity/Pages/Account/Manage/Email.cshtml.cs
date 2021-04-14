@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Vet.Models;
+using Vet.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Vet.Areas.Identity.Pages.Account.Manage
 {
@@ -19,15 +21,18 @@ namespace Vet.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<VetUser> _userManager;
         private readonly SignInManager<VetUser> _signInManager;
         private readonly IEmailSender _emailSender;
+        private readonly VetDbContext _context;
 
         public EmailModel(
             UserManager<VetUser> userManager,
             SignInManager<VetUser> signInManager,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            VetDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
+            _context = context;
         }
 
         public string Username { get; set; }
@@ -89,6 +94,12 @@ namespace Vet.Areas.Identity.Pages.Account.Manage
                 return Page();
             }
 
+            if (await _context.Users.AnyAsync(u => u.Email == Input.NewEmail)) 
+            {
+                ModelState.AddModelError("Email", "A megadott e-mail cím már használatban van.");
+                return Page();
+            }
+
             var email = await _userManager.GetEmailAsync(user);
             if (Input.NewEmail != email)
             {
@@ -108,7 +119,7 @@ namespace Vet.Areas.Identity.Pages.Account.Manage
                 StatusMessage = "Az új e-mail cím beállításával kapcsolatban e-mailt küldtünk neked a régi e-mail címedre.";
                 return RedirectToPage();
             }
-
+            
             StatusMessage = "Az e-mail címed nem változott meg.";
             return RedirectToPage();
         }

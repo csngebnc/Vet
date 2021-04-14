@@ -8,13 +8,13 @@ namespace Vet.Interfaces
 {
     public interface IVaccineRepository
     {
-        Task<bool> AddVaccine(Vaccine vaccine);
+        Task<Vaccine> AddVaccine(Vaccine vaccine);
         Task<Vaccine> UpdateVaccine(Vaccine vaccine);
         Task<bool> DeleteVaccine(Vaccine vaccine);
 
         ///////
 
-        Task<bool> AddVaccineRecord(VaccineRecord record);
+        Task<VaccineRecord> AddVaccineRecord(VaccineRecord record);
         Task<VaccineRecord> UpdateVaccineRecord(VaccineRecord record);
         Task<bool> DeleteVaccineRecord(VaccineRecord record);
 

@@ -20,13 +20,13 @@ namespace Vet.BL
             _mapper = mapper;
         }
 
-        public async Task<bool> AddTherapia(AddTherapiaDto therapiaDto)
+        public async Task<TherapiaDto> AddTherapia(AddTherapiaDto therapiaDto)
         {
             var therapia = _mapper.Map<Therapia>(therapiaDto);
-            return await _therapiaRepository.AddTherapia(therapia);
+            return _mapper.Map<TherapiaDto>(await _therapiaRepository.AddTherapia(therapia));
         }
 
-        public async Task<Therapia> UpdateTherapia(Therapia therapia)
+        public async Task<TherapiaDto> UpdateTherapia(Therapia therapia)
         {
             var _therapia = await _therapiaRepository.GetTherapiaById(therapia.Id);
             _therapia.Name = therapia.Name;
@@ -34,13 +34,13 @@ namespace Vet.BL
             _therapia.UnitName = therapia.UnitName;
             _therapia.PricePerUnit = therapia.PricePerUnit;
             _therapia.IsInactive = therapia.IsInactive;
-            return await _therapiaRepository.UpdateTherapia(_therapia);
+            return _mapper.Map<TherapiaDto>(await _therapiaRepository.UpdateTherapia(_therapia));
         }
 
         public async Task<bool> DeleteTherapia(int id)
         {
             var therapia = await _therapiaRepository.GetTherapiaById(id);
-            //if (therapia.Animals.Count > 0) return false;
+            if (therapia.TherapyRecords.Count > 0) return false;
             return await _therapiaRepository.DeleteTherapia(therapia);
         }
 
@@ -52,14 +52,12 @@ namespace Vet.BL
         }
 
         public async Task<bool> TherapiaExists(int id)
-        {
-            return (await _therapiaRepository.GetTherapiaById(id)) != null;
-        }
+            => (await _therapiaRepository.GetTherapiaById(id)) != null;
 
-        public async Task<IEnumerable<Therapia>> GetTherapias()
-            => await _therapiaRepository.GetTherapias();
+        public async Task<IEnumerable<TherapiaDto>> GetTherapias()
+            => _mapper.Map<IEnumerable<TherapiaDto>>(await _therapiaRepository.GetTherapias());
 
-        public async Task<Therapia> GetTherapiaById(int id)
-            => await _therapiaRepository.GetTherapiaById(id);
+        public async Task<TherapiaDto> GetTherapiaById(int id)
+            => _mapper.Map<TherapiaDto>(await _therapiaRepository.GetTherapiaById(id));
     }
 }

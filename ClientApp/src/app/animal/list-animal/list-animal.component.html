@@ -45,32 +45,3 @@
             [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
     </div>
 </div>
-
-<!-- 
-
-<div class="row">
-    <div class="col-lg-3 col-md-6 col-sm-12 pb-3"
-        *ngFor="let item of animals | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
-        <div class="card text-center">
-            <div class="card-body p-1">
-                <img class="img-fluid" src="{{item.photoPath}}" style="max-height: 168px;" alt="">
-                <h2 class="card-title m-0">{{item.name}}</h2>
-                <p class="text-center m-0">{{item.speciesName}}</p>
-                <p class="text-center m-0">{{item.sex}}</p>
-            </div>
-            <div class="card-footer text-muted p-0 pt-3">
-                <ul class="list-inline dflex justify-content-center p-0">
-                    <li class="list-inline-item"><button class="btn btn-dark">
-                            <i class="fa fa-book-medical"></i></button></li>
-                    <li class="list-inline-item" routerLink="../edit/{{item.id}}"><button class="btn btn-dark">
-                            <i class="fa fa-edit"></i></button></li>
-                    <li class="list-inline-item"><button (click)="deleteAnimal(item.id)" class="btn btn-dark">
-                            <i class="fa fa-trash"></i></button></li>
-                    <li class="list-inline-item"><button class="btn btn-dark">
-                            <i class="fa fa-archive"></i></button></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
- -->

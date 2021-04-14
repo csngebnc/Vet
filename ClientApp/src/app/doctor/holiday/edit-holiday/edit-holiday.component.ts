@@ -29,8 +29,8 @@ export class EditHolidayComponent implements OnInit {
   }
 
   updateHoliday() {
-    this.doctorService.updateHoliday(this.editHolidayForm.value).subscribe(res => {
-      this.ngbModal.close();
+    this.doctorService.updateHoliday(this.editHolidayForm.value).subscribe((res: HolidayDto) => {
+      this.ngbModal.close(res);
     })
   }
 

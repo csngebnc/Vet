@@ -19,36 +19,33 @@ export class ListAnimalComponent implements OnInit {
 
   open() {
     const modalRef = this.modalService.open(AddAnimalComponent);
-    modalRef.result.then(() => this.refreshAnimals(), () => { })
+    modalRef.result.then((animal) => {
+      this.animals.push(animal)
+    }, () => { })
   }
 
   ngOnInit(): void {
-    this.refreshAnimals();
-  }
-
-  deleteAnimal(id: number) {
-    if (confirm('Biztosan szeretnéd törölni?')) {
-      this.animalService.deleteAnimal(id).subscribe(() => this.refreshAnimals());
-    }
-  }
-
-  archiveAnimal(id) {
-    if (confirm('Biztosan szeretnéd archiválni?')) {
-      this.animalService.changeStateOfAnimal(id).subscribe(() => this.refreshAnimals());
-    }
-  }
-
-  refreshAnimals() {
     this.animalService.getUserAnimals().subscribe((animals: AnimalDto[]) => {
       this.animals = animals;
     })
   }
 
+  deleteAnimal(id: number) {
+    if (confirm('Biztosan szeretnéd törölni?')) {
+      this.animalService.deleteAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
+    }
+  }
+
+  archiveAnimal(id) {
+    if (confirm('Biztosan szeretnéd archiválni?')) {
+      this.animalService.changeStateOfAnimal(id).subscribe(() => {
+        let deleteIdx = this.animals.map((a) => { return a.id }).indexOf(id);
+        this.animals.splice(deleteIdx, 1);
+      });
+    }
+  }
+
 }
-
-/*
-<mat-icon style="clip-path: inset(0% 50% 0% 0%);">wc</mat-icon> <!-- Male -->
-<mat-icon style="clip-path: inset(0% 0% 0% 50%);">wc</mat-icon> <!-- Female -->
-
-
-*/

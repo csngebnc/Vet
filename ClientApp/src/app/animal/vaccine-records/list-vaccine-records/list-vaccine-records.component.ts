@@ -37,19 +37,28 @@ export class ListVaccineRecordsComponent implements OnInit {
   open() {
     const modalRef = this.modalService.open(AddVaccineRecordComponent);
     modalRef.componentInstance.animalId = this.animalId;
-    modalRef.result.then(() => this.refreshRecords(), () => { })
+    modalRef.result.then((record: VaccineRecordDto) => {
+      record.date = new Date(record.date);
+      this.records.push(record);
+      this.dataSource = new MatTableDataSource<VaccineRecordDto>(this.records);
+    }, () => { })
   }
 
   openEdit(id) {
     const modalRef = this.modalService.open(EditVaccineRecordComponent);
     modalRef.componentInstance.id = id;
-    modalRef.result.then(() => this.refreshRecords(), () => { })
+    modalRef.result.then((record: VaccineRecordDto) => {
+      record.date = new Date(record.date);
+      this.records[this.records.map((r) => { return r.id }).indexOf(record.id)] = record;
+      this.dataSource = new MatTableDataSource<VaccineRecordDto>(this.records);
+    }, () => { })
   }
 
   deleteRecord(id) {
     this.vaccineService.deleteVaccineRecord(id).subscribe((res: boolean) => {
       if (res) {
         this.records = this.records.filter(r => r.id != id);
+        this.dataSource = new MatTableDataSource<VaccineRecordDto>(this.records);
       } else {
         alert('A rekord törlése nem sikerült.');
       }

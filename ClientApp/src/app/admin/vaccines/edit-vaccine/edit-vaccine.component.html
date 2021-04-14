@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="editVaccineForm">
     <form class="p-3" [formGroup]='editVaccineForm' (ngSubmit)="editVaccineForm.valid && updateVaccine()"
         autocomplete="off">
 

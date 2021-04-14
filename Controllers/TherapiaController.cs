@@ -19,28 +19,25 @@ namespace Vet.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Therapia>> GetTherapias()
+        public async Task<IEnumerable<TherapiaDto>> GetTherapias()
         {
             return await _therapiaManager.GetTherapias();
         }
 
         [HttpGet("{id}")]
-        public async Task<Therapia> GetAnimalSpeciesById(int id)
+        public async Task<TherapiaDto> GetAnimalSpeciesById(int id)
         {
             return await _therapiaManager.GetTherapiaById(id);
         }
 
         [HttpPost]
-        public async Task<ActionResult> AddAnimalSpecies(AddTherapiaDto therapia)
+        public async Task<ActionResult<TherapiaDto>> AddTherapia(AddTherapiaDto therapia)
         {
-            if (await _therapiaManager.AddTherapia(therapia))
-                return Ok();
-
-            return BadRequest();
+            return (await _therapiaManager.AddTherapia(therapia));
         }
 
         [HttpPut]
-        public async Task<ActionResult<Therapia>> UpdateTherapia(Therapia therapia)
+        public async Task<ActionResult<TherapiaDto>> UpdateTherapia(Therapia therapia)
         {
             return await _therapiaManager.UpdateTherapia(therapia);
         }

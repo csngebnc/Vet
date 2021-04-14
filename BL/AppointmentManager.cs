@@ -14,7 +14,6 @@ namespace Vet.BL
     {
         private readonly IAppointmentRepository _appointmentRepository;
         private readonly IMapper _mapper;
-
         public AppointmentManager(IMapper mapper, IAppointmentRepository appointmentRepository)
         {
             _appointmentRepository = appointmentRepository;
@@ -23,33 +22,14 @@ namespace Vet.BL
 
         public async Task<bool> AddAppointment(AddAppointmentByUserDto appointment, string userId) 
         {
-            var _appointment = new Appointment
-            {
-                StartDate = appointment.StartDate.ToLocalTime(),
-                EndDate = appointment.EndDate.ToLocalTime(),
-                OwnerId = userId,
-                AnimalId = appointment.AnimalId,
-                DoctorId = appointment.DoctorId,
-                TreatmentId = appointment.TreatmentId
-            };
+            var _appointment = _mapper.Map<Appointment>(appointment);
+            _appointment.OwnerId = userId;
 
             return await _appointmentRepository.AddAppointment(_appointment);
         }
 
         public async Task<bool> AddAppointmentByDoctor(AddAppointmentByDoctorDto appointment)
-        {
-            var _appointment = new Appointment
-            {
-                StartDate = appointment.StartDate.ToLocalTime(),
-                EndDate = appointment.EndDate.ToLocalTime(),
-                OwnerId = appointment.OwnerId,
-                AnimalId = appointment.AnimalId,
-                DoctorId = appointment.DoctorId,
-                TreatmentId = appointment.TreatmentId
-            };
-
-            return await _appointmentRepository.AddAppointment(_appointment);
-        }
+            => await _appointmentRepository.AddAppointment(_mapper.Map<Appointment>(appointment));
 
         public async Task<AppointmentDto> ResignAppointment(int id, string details = "Lemondva") 
             => _mapper.Map<Appointment, AppointmentDto>(await _appointmentRepository.ResignAppointment(id, details));

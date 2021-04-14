@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { TherapiaDto } from 'src/app/_models/therapiadto';
 import { TherapiaService } from 'src/app/_services/therapia.service';
 
 @Component({
@@ -23,8 +24,8 @@ export class AddTherapiaComponent implements OnInit {
   }
 
   addTherapia() {
-    this.therapiaService.addTherapia(this.addTherapiaForm.value).subscribe(response => {
-      this.ngbModal.close();
+    this.therapiaService.addTherapia(this.addTherapiaForm.value).subscribe((response: TherapiaDto) => {
+      this.ngbModal.close(response);
     })
   }
 

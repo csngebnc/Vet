@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { TreatmentTimeDto } from 'src/app/_models/treatmenttimedto';
 import { TreatmenttimeService } from 'src/app/_services/treatmenttime.service';
 
 @Component({
@@ -61,9 +62,8 @@ export class AddTreatmentTimeComponent implements OnInit {
     this.addTimeForm.patchValue({ endMin: this.endTime.minute });
     this.addTimeForm.patchValue({ duration: (this.duration.hour * 60 + this.duration.minute) });
 
-    console.log(this.addTimeForm.value)
-    this.treatmentTimeService.addTreatmentTime(this.addTimeForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.treatmentTimeService.addTreatmentTime(this.addTimeForm.value).subscribe((treatmentTime: TreatmentTimeDto) => {
+      this.ngbModal.close(treatmentTime);
     });
   }
 

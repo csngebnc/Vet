@@ -32,6 +32,7 @@
                 <label asp-for="Input.NewEmail"></label>
                 <input asp-for="Input.NewEmail" class="form-control" />
                 <span asp-validation-for="Input.NewEmail" class="text-danger"></span>
+                @Html.ValidationMessage("Email")
             </div>
             <button id="change-email-button" type="submit" asp-page-handler="ChangeEmail" class="btn btn-primary">E-mail frissítése</button>
         </form>

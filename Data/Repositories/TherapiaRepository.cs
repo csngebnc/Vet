@@ -16,10 +16,12 @@ namespace Vet.Data.Repositories
             _context = context;
         }
 
-        public async Task<bool> AddTherapia(Therapia therapia)
+        public async Task<Therapia> AddTherapia(Therapia therapia)
         {
             _context.Therapias.Add(therapia);
-            return (await _context.SaveChangesAsync()) > 0;
+            if ((await _context.SaveChangesAsync()) > 0)
+                return therapia;
+            return null;
         }
 
         public async Task<Therapia> UpdateTherapia(Therapia therapia)
@@ -36,13 +38,9 @@ namespace Vet.Data.Repositories
         }
 
         public async Task<Therapia> GetTherapiaById(int id)
-        {
-            return await _context.Therapias.FindAsync(id);
-        }
+            => await _context.Therapias.Include(t => t.TherapyRecords).Where(t => t.Id == id).SingleOrDefaultAsync();
 
         public async Task<IEnumerable<Therapia>> GetTherapias()
-        {
-            return await _context.Therapias.ToListAsync();
-        }
+            => await _context.Therapias.Include(t => t.TherapyRecords).ToListAsync();
     }
 }

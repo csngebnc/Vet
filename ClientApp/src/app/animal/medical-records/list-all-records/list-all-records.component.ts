@@ -49,6 +49,12 @@ export class ListAllRecordsComponent implements OnInit {
     }
   }
 
-  log() { }
+  genPdf(id) {
+    this.medicalRecordService.generatePdf(id).subscribe((response) => {
+      var file = new Blob([response], { type: 'application/pdf' });
+      var fileURL = URL.createObjectURL(file);
+      window.open(fileURL);
+    })
+  }
 
 }

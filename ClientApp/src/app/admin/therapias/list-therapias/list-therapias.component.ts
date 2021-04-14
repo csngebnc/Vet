@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AddSpeciesComponent } from 'src/app/species/add-species/add-species.component';
@@ -22,35 +23,46 @@ export class ListTherapiasComponent implements OnInit {
 
   constructor(private therapiaService: TherapiaService, private modalService: NgbModal) { this.refreshTherapias(); }
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
   ngOnInit(): void {
   }
 
   open() {
     const modalRef = this.modalService.open(AddTherapiaComponent);
-    modalRef.result.then(() => this.refreshTherapias(), () => { })
+    modalRef.result.then((res) => {
+      this.therapias.push(res);
+      this.dataSource = new MatTableDataSource<TherapiaDto>(this.therapias);
+    }, () => { })
   }
 
   openEdit(id) {
     const modalRef = this.modalService.open(EditTherapiaComponent);
     modalRef.componentInstance.id = id;
-    modalRef.result.then(() => this.refreshTherapias(), () => { })
+    modalRef.result.then((res) => {
+      this.therapias[this.therapias.map((item) => { return item.id }).indexOf(res.id)] = res;
+      this.dataSource = new MatTableDataSource<TherapiaDto>(this.therapias);
+    }, () => { })
   }
 
   refreshTherapias() {
     this.therapiaService.getTherapias().subscribe((therapias: TherapiaDto[]) => {
       this.therapias = therapias;
       this.dataSource = new MatTableDataSource<TherapiaDto>(this.therapias);
+      this.dataSource.paginator = this.paginator;
     })
   }
 
   changeStateOfSpecies(id) {
-    this.therapiaService.changeState(id).subscribe(() => {
-      this.refreshTherapias();
-    })
+    this.therapias[this.therapias.map((item) => { return item.id }).indexOf(id)].isInactive = !this.therapias[this.therapias.map((item) => { return item.id }).indexOf(id)].isInactive;
+    this.dataSource = new MatTableDataSource<TherapiaDto>(this.therapias);
   }
 
   deleteSpecies(id) {
-    this.therapiaService.deleteTherapia(id).subscribe(() => { this.refreshTherapias() });
+    this.therapiaService.deleteTherapia(id).subscribe(() => {
+      this.therapias.splice(this.therapias.map((item) => { return item.id }).indexOf(id), 1)
+      this.dataSource = new MatTableDataSource<TherapiaDto>(this.therapias);
+      this.dataSource.paginator = this.paginator;
+    });
   }
 
 

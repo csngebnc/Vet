@@ -13,7 +13,7 @@
           <li class="nav-item" [routerLinkActive]="['link-active']">
             <a class="nav-link light-font" [routerLink]="['/']">Kezdőlap</a>
           </li>
-          <ng-container *ngIf="auth.authLevel==1">
+          <ng-container *ngIf="(auth.getAuthLevel() | async)==1">
             <li class="nav-item" [routerLinkActive]="['link-active']">
               <a class="nav-link light-font" [routerLink]="['/animals/myanimals']">Állataim</a>
             </li>
@@ -28,7 +28,7 @@
             </li>
           </ng-container>
 
-          <ng-container *ngIf="auth.authLevel>=2">
+          <ng-container *ngIf="(auth.getAuthLevel() | async)>=2">
             <li class="nav-item" [routerLinkActive]="['link-active']">
               <a class="nav-link light-font" [routerLink]="['/record']">Új kórlap</a>
             </li>
@@ -48,7 +48,7 @@
             </li>
           </ng-container>
 
-          <ng-container *ngIf="auth.authLevel>=2">
+          <ng-container *ngIf="(auth.getAuthLevel() | async)>=2">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
                 Műveletek
@@ -62,7 +62,7 @@
           </ng-container>
 
 
-          <ng-container *ngIf="auth.authLevel>=3">
+          <ng-container *ngIf="(auth.getAuthLevel() | async)>=3">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle light-font" id="navbarDropdown" role="button" data-toggle="dropdown">
                 Beállítások

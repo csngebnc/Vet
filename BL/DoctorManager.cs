@@ -22,6 +22,7 @@ namespace Vet.BL
 
         public async Task<VetUserDto> PromoteToDoctor(string email)
             => _mapper.Map<VetUserDto>(await _doctorRepository.PromoteToDoctor(await _doctorRepository.GetDoctorByEmail(email)));
+
         public async Task<VetUserDto> DemoteToUser(string id)
             => _mapper.Map<VetUserDto>(await _doctorRepository.DemoteToUser(await _doctorRepository.GetDoctorById(id)));
 

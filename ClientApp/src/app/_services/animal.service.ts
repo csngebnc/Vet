@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -12,7 +13,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AnimalService {
-  baseUrl: string = 'https://localhost:44345/api/'
+  baseUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

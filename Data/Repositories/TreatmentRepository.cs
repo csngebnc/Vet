@@ -12,12 +12,10 @@ namespace Vet.Data.Repositories
     public class TreatmentRepository : ITreatmentRepository
     {
         private readonly VetDbContext _context;
-        private readonly IMapper _mapper;
 
-        public TreatmentRepository(VetDbContext context, IMapper mapper)
+        public TreatmentRepository(VetDbContext context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<Treatment> AddTreatment(Treatment treatment)
@@ -35,9 +33,14 @@ namespace Vet.Data.Repositories
             return await this.GetTreatmentByIdAsync(treatment.Id);
         }
 
-        public Task<bool> DeleteTreatment(int id)
+        public async Task<bool> DeleteTreatment(int id)
         {
-            throw new NotImplementedException();
+            if ((await _context.TreatmentTimes.AnyAsync(tt => tt.TreatmentId == id)) || (await _context.Appointments.AnyAsync(a => a.TreatmentId == id)))
+                return false;
+
+            _context.Treatments.Remove(await this.GetTreatmentByIdAsync(id));
+            return (await _context.SaveChangesAsync()) > 0;
+
         }
 
 
@@ -76,17 +79,13 @@ namespace Vet.Data.Repositories
         public async Task<bool> DeleteTreatmentTime(TreatmentTime time)
         {
             _context.TreatmentTimes.Remove(time);
-            return await _context.SaveChangesAsync() > 0;
+            return (await _context.SaveChangesAsync()) > 0;
         }
 
         public async Task<TreatmentTime> GetTreatmentTimeByIdAsync(int id)
-        {
-            return await _context.TreatmentTimes.FindAsync(id);
-        }
+            => await _context.TreatmentTimes.FindAsync(id);
 
         public async Task<IEnumerable<TreatmentTime>> GetTreatmentTimesByTreatmentIdAsync(int id)
-        {
-            return await _context.TreatmentTimes.Where(t => t.TreatmentId == id).ToListAsync();
-        }
+            => await _context.TreatmentTimes.Where(t => t.TreatmentId == id).ToListAsync();
     }
 }

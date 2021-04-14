@@ -10,16 +10,12 @@ import { DatePipe } from '@angular/common'
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ImageCropperModule } from 'ngx-image-cropper';
-import { TextInputComponent } from './_forms/text-input/text-input.component';
-import { DateInputComponent } from './_forms/date-input/date-input.component';
 
 import { AddAnimalComponent } from './animal/add-animal/add-animal.component';
 import { EditAnimalComponent } from './animal/edit-animal/edit-animal.component';
@@ -84,11 +80,7 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     AddAnimalComponent,
-    TextInputComponent,
-    DateInputComponent,
     ListAnimalComponent,
     EditAnimalComponent,
     ListSpeciesComponent,
@@ -143,9 +135,7 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
     ApiAuthorizationModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthorizeGuard] },
-
+      // AuthorizeGuard //
       { path: 'users', component: ListUsersComponent },
       { path: 'animals/myanimals', component: ListAnimalComponent },
       { path: 'animals/myarchivedanimals', component: ListArchivedAnimalsComponent },
@@ -220,7 +210,13 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
         }*/
       },
 
-      { path: 'records/my-records', component: ListAllRecordsComponent },
+      {
+        path: 'records/my-records', component: ListAllRecordsComponent,
+        canActivate: [RoleGuard],
+        data: {
+          expectedRole: 1
+        }
+      },
 
       {
         path: 'therapias', component: ListTherapiasComponent,

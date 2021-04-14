@@ -5,6 +5,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { VaccineDto } from 'src/app/_models/VaccineDto';
+import { VaccineRecordDto } from 'src/app/_models/VaccineRecordDto';
 import { VaccineService } from 'src/app/_services/vaccine.service';
 
 @Component({
@@ -47,9 +48,9 @@ export class AddVaccineRecordComponent implements OnInit {
 
   addVaccineRecord() {
     this.addVaccineRecordForm.patchValue({ date: this.datepipe.transform(this.addVaccineRecordForm.get('date').value, 'yyyy-MM-dd') })
-    this.vaccineService.addVaccineRecord(this.addVaccineRecordForm.value).subscribe((res: boolean) => {
-      if (res) {
-        this.ngbModal.close();
+    this.vaccineService.addVaccineRecord(this.addVaccineRecordForm.value).subscribe((record: VaccineRecordDto) => {
+      if (record) {
+        this.ngbModal.close(record);
       } else {
         alert('Hiba');
       }

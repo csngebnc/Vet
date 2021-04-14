@@ -39,7 +39,7 @@ export class EditVaccineRecordComponent implements OnInit {
     this.addVaccineRecordForm.patchValue({ date: this.datepipe.transform(this.addVaccineRecordForm.get('date').value, 'yyyy-MM-dd') })
     this.vaccineService.updateVaccineRecord(this.addVaccineRecordForm.value).subscribe((res: VaccineRecordDto) => {
       if (res) {
-        this.ngbModal.close();
+        this.ngbModal.close(res);
       } else {
         alert('Hiba');
       }

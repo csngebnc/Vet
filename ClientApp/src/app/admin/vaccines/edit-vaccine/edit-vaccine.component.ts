@@ -31,8 +31,8 @@ export class EditVaccineComponent implements OnInit {
 
   updateVaccine() {
     this.editVaccineForm.addControl('id', new FormControl(this.id));
-    this.vaccineService.updateVaccine(this.editVaccineForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.vaccineService.updateVaccine(this.editVaccineForm.value).subscribe((vaccine: VaccineDto) => {
+      this.ngbModal.close(vaccine);
     })
   }
 

@@ -35,9 +35,7 @@ namespace Vet.BL
         }
 
         public async Task<bool> DeleteTreatment(int id)
-        {
-            return await _treatmentRepository.DeleteTreatment(id);
-        }
+            => await _treatmentRepository.DeleteTreatment(id);
 
         public async Task ChageStateOfTreatment(int id)
         {
@@ -58,7 +56,6 @@ namespace Vet.BL
         public async Task<IEnumerable<TreatmentDto>> GetTreatmentsByDoctorId(string id)
             => _mapper.Map<IEnumerable<TreatmentDto>>(await _treatmentRepository.GetTreatmentsByDoctorIdAsync(id));
 
-        /////////////////////////////////////////////////////////////////
 
         public async Task<TreatmentTimeDto> AddTreatmentTime(AddTreatmentTimeDto time)
         {
@@ -67,9 +64,7 @@ namespace Vet.BL
         }
 
         public async Task<bool> DeleteTreatmentTime(int timeId)
-        {
-            return await _treatmentRepository.DeleteTreatmentTime(await _treatmentRepository.GetTreatmentTimeByIdAsync(timeId));
-        }
+            => await _treatmentRepository.DeleteTreatmentTime(await _treatmentRepository.GetTreatmentTimeByIdAsync(timeId));
 
         public async Task<TreatmentTimeDto> UpdateTreatmentTime(UpdateTreatmentTimeDto time)
         {

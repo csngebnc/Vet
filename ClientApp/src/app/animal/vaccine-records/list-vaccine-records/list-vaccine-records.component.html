@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container mt-4" *ngIf="records">
 
     <div class="row d-flex justify-content-center">
         <div class="col-6">
@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="row d-flex justify-content-center mt-2 mb-2" *ngIf="records.length>0">
+    <div class="row d-flex justify-content-center mt-2 mb-2" *ngIf="records?.length>0">
         <table mat-table [dataSource]="dataSource">
 
             <ng-container matColumnDef="name">

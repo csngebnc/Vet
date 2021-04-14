@@ -10,12 +10,69 @@
     <title>@ViewData["Title"] - Vet</title>
     <link rel="stylesheet" href="~/Identity/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/Identity/css/site.css" />
+
+    <style>
+        html, body {
+            height: 100%;
+            background-color: #E9EBEE !important;
+        }
+        html {
+            font-size: 14px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Roboto, "Helvetica Neue", sans-serif;
+        }
+
+        .half-dark-blue-bg {
+            background-color: #365899;
+            color: #E9EBEE;
+        }
+
+        .light-blue-bg {
+            background-color: #4267B2;
+            color: #E9EBEE;
+        }
+
+        @@font-face {
+            font-family: caps;
+            src: url(../../../Capsuula.woff);
+        }
+
+        a.navbar-brand {
+          white-space: normal;
+          text-align: center;
+          word-break: break-all;
+          font-family: 'caps';
+          color: #E9EBEE;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .light-font {
+            color: #E9EBEE !important;
+            font-family: 'caps' !important;
+        }
+
+        .nav-item{
+          font-family: 'caps';
+          color: #E9EBEE;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .box-shadow {
+          box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+        }
+    </style>
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light navbar-toggleable-sm border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light half-dark-blue-bg border-bottom box-shadow mb-3 p-0">
             <div class="container">
-                <a class="navbar-brand" href="~/"><img style="max-height: 30px; margin-right: 5px" src="../../../logo.png"/>Vet</a>
+                <a class="navbar-brand" href="~/"><img style="width: 150px; height: auto;" class="mr-1 " src="../../../logo.png"/></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

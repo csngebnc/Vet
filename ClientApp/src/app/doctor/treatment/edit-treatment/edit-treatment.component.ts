@@ -25,14 +25,14 @@ export class EditTreatmentComponent implements OnInit {
 
   ngOnInit(): void {
     this.treatmentService.getTreatmentById(this.id).subscribe((treatment: TreatmentDto) => {
-      this.editTreatmentForm.patchValue({name: treatment.name});
+      this.editTreatmentForm.patchValue({ name: treatment.name });
     })
   }
 
-  updateTreatment(){
+  updateTreatment() {
     this.editTreatmentForm.addControl('id', new FormControl(this.id));
-    this.treatmentService.updateTreatment(this.editTreatmentForm.value).subscribe(() => {
-      this.ngbModal.close();
+    this.treatmentService.updateTreatment(this.editTreatmentForm.value).subscribe((treatment: TreatmentDto) => {
+      this.ngbModal.close(treatment);
     })
   }
 
