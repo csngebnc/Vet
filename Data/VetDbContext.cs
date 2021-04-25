@@ -26,5 +26,16 @@ namespace Vet.Data
         public DbSet<TherapiaRecord> TherapiaRecords { get; set; }
         public DbSet<Vaccine> Vaccines { get; set; }
         public DbSet<VaccineRecord> VaccinationRecords { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseNpgsql("Host=localhost;Database=Vet;Username=postgres;Password=postgres");
+        }
     }
 }

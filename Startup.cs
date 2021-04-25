@@ -15,6 +15,7 @@ using Vet.BL.ProblemDetails;
 using Vet.Controllers;
 using Vet.Data;
 using Vet.Data.Repositories;
+using Vet.GraphQL;
 using Vet.Helpers;
 using Vet.Interfaces;
 using Vet.Models;
@@ -93,9 +94,18 @@ namespace Vet
 
             services.AddTransient<PdfManager>();
 
+            // IDEGY‹‹‹‹N, NE VEZSÕSD EL TESTVÕR
+            services.AddGraphQLServer()
+                .AddQueryType<QueryType>()
+                .AddMutationType<MutationType>()
+                .AddAuthorization();
+
+
             services.AddDbContext<VetDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                //options.UseSqlServer(
+                //  Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(
+                    Configuration.GetConnectionString("PostgresConnection")));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 
@@ -115,6 +125,7 @@ namespace Vet
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -147,6 +158,7 @@ namespace Vet
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapGraphQL(); // Graphql
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");

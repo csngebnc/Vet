@@ -2,64 +2,64 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Vet.Data;
 
 namespace Vet.Data.Migrations
 {
     [DbContext(typeof(VetDbContext))]
-    [Migration("20210225101218_AddingAppointmentResign")]
-    partial class AddingAppointmentResign
+    [Migration("20210425092339_PostgresInit")]
+    partial class PostgresInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .UseIdentityByDefaultColumns()
+                .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.2");
 
             modelBuilder.Entity("IdentityServer4.EntityFramework.Entities.DeviceFlowCodes", b =>
                 {
                     b.Property<string>("UserCode")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<string>("ClientId")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Data")
                         .IsRequired()
                         .HasMaxLength(50000)
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("character varying(50000)");
 
                     b.Property<string>("Description")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<string>("DeviceCode")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<DateTime?>("Expiration")
                         .IsRequired()
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("SessionId")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("SubjectId")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.HasKey("UserCode");
 
@@ -75,43 +75,43 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<string>("Key")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<string>("ClientId")
                         .IsRequired()
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<DateTime?>("ConsumedTime")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<DateTime>("CreationTime")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Data")
                         .IsRequired()
                         .HasMaxLength(50000)
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("character varying(50000)");
 
                     b.Property<string>("Description")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<DateTime?>("Expiration")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("SessionId")
                         .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("SubjectId")
                         .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("character varying(200)");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("character varying(50)");
 
                     b.HasKey("Key");
 
@@ -127,26 +127,25 @@ namespace Vet.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.Property<string>("NormalizedName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
-                        .HasDatabaseName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
+                        .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles");
                 });
@@ -155,18 +154,18 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -179,18 +178,18 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -203,18 +202,18 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderKey")
                         .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -226,10 +225,10 @@ namespace Vet.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.HasKey("UserId", "RoleId");
 
@@ -241,18 +240,18 @@ namespace Vet.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<string>("LoginProvider")
                         .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Name")
                         .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("character varying(128)");
 
                     b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
@@ -263,35 +262,35 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<DateTime>("DateOfBirth")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<bool>("IsArchived")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<string>("PhotoPath")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Sex")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("SpeciesId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("SubSpecies")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<double?>("Weight")
-                        .HasColumnType("float");
+                        .HasColumnType("double precision");
 
                     b.HasKey("Id");
 
@@ -306,14 +305,14 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<bool>("IsInactive")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -324,29 +323,32 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int?>("AnimalId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Details")
+                        .HasColumnType("text");
 
                     b.Property<string>("DoctorId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<bool>("IsResigned")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("OwnerId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("TreatmentId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -361,21 +363,158 @@ namespace Vet.Data.Migrations
                     b.ToTable("Appointments");
                 });
 
+            modelBuilder.Entity("Vet.Models.Holiday", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<string>("DoctorId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
+
+                    b.ToTable("Holidays");
+                });
+
+            modelBuilder.Entity("Vet.Models.MedicalRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<string>("Anamnesis")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("AnimalId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("Details")
+                        .HasColumnType("text");
+
+                    b.Property<string>("DoctorId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("OwnerEmail")
+                        .HasColumnType("text");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Symptoma")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("MedicalRecords");
+                });
+
+            modelBuilder.Entity("Vet.Models.MedicalRecordPhoto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<int>("MedicalRecordId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Path")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.ToTable("MedicalRecordPhotos");
+                });
+
+            modelBuilder.Entity("Vet.Models.Therapia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<bool>("IsInactive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<double>("PricePerUnit")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("Unit")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("UnitName")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Therapias");
+                });
+
+            modelBuilder.Entity("Vet.Models.TherapiaRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("double precision");
+
+                    b.Property<int>("MedicalRecordId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TherapiaId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalRecordId");
+
+                    b.HasIndex("TherapiaId");
+
+                    b.ToTable("TherapiaRecords");
+                });
+
             modelBuilder.Entity("Vet.Models.Treatment", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<string>("DoctorId")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<bool>("IsInactive")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -388,32 +527,32 @@ namespace Vet.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int>("DayOfWeek")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("Duration")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("EndHour")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("EndMin")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<bool>("IsInactive")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<int>("StartHour")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("StartMin")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<int>("TreatmentId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -422,69 +561,109 @@ namespace Vet.Data.Migrations
                     b.ToTable("TreatmentTimes");
                 });
 
+            modelBuilder.Entity("Vet.Models.Vaccine", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vaccines");
+                });
+
+            modelBuilder.Entity("Vet.Models.VaccineRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
+
+                    b.Property<int>("AnimalId")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<int>("VaccineId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AnimalId");
+
+                    b.HasIndex("VaccineId");
+
+                    b.ToTable("VaccinationRecords");
+                });
+
             modelBuilder.Entity("Vet.Models.VetUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("text");
 
                     b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("AuthLevel")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("PhotoPath")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("RealName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
+                        .HasColumnType("boolean");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasColumnType("character varying(256)");
 
                     b.HasKey("Id");
 
@@ -493,8 +672,7 @@ namespace Vet.Data.Migrations
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
-                        .HasDatabaseName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+                        .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
                 });
@@ -596,6 +774,66 @@ namespace Vet.Data.Migrations
                     b.Navigation("Treatment");
                 });
 
+            modelBuilder.Entity("Vet.Models.Holiday", b =>
+                {
+                    b.HasOne("Vet.Models.VetUser", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.Navigation("Doctor");
+                });
+
+            modelBuilder.Entity("Vet.Models.MedicalRecord", b =>
+                {
+                    b.HasOne("Vet.Models.Animal", "Animal")
+                        .WithMany("MedicalRecords")
+                        .HasForeignKey("AnimalId");
+
+                    b.HasOne("Vet.Models.VetUser", "Doctor")
+                        .WithMany()
+                        .HasForeignKey("DoctorId");
+
+                    b.HasOne("Vet.Models.VetUser", "Owner")
+                        .WithMany()
+                        .HasForeignKey("OwnerId");
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Owner");
+                });
+
+            modelBuilder.Entity("Vet.Models.MedicalRecordPhoto", b =>
+                {
+                    b.HasOne("Vet.Models.MedicalRecord", "MedicalRecord")
+                        .WithMany("Photos")
+                        .HasForeignKey("MedicalRecordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MedicalRecord");
+                });
+
+            modelBuilder.Entity("Vet.Models.TherapiaRecord", b =>
+                {
+                    b.HasOne("Vet.Models.MedicalRecord", "MedicalRecord")
+                        .WithMany("TherapiaRecords")
+                        .HasForeignKey("MedicalRecordId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Vet.Models.Therapia", "Therapia")
+                        .WithMany("TherapyRecords")
+                        .HasForeignKey("TherapiaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MedicalRecord");
+
+                    b.Navigation("Therapia");
+                });
+
             modelBuilder.Entity("Vet.Models.Treatment", b =>
                 {
                     b.HasOne("Vet.Models.VetUser", "Doctor")
@@ -616,14 +854,57 @@ namespace Vet.Data.Migrations
                     b.Navigation("Treatment");
                 });
 
+            modelBuilder.Entity("Vet.Models.VaccineRecord", b =>
+                {
+                    b.HasOne("Vet.Models.Animal", "Animal")
+                        .WithMany("VaccineRecords")
+                        .HasForeignKey("AnimalId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Vet.Models.Vaccine", "Vaccine")
+                        .WithMany("Records")
+                        .HasForeignKey("VaccineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Animal");
+
+                    b.Navigation("Vaccine");
+                });
+
+            modelBuilder.Entity("Vet.Models.Animal", b =>
+                {
+                    b.Navigation("MedicalRecords");
+
+                    b.Navigation("VaccineRecords");
+                });
+
             modelBuilder.Entity("Vet.Models.AnimalSpecies", b =>
                 {
                     b.Navigation("Animals");
                 });
 
+            modelBuilder.Entity("Vet.Models.MedicalRecord", b =>
+                {
+                    b.Navigation("Photos");
+
+                    b.Navigation("TherapiaRecords");
+                });
+
+            modelBuilder.Entity("Vet.Models.Therapia", b =>
+                {
+                    b.Navigation("TherapyRecords");
+                });
+
             modelBuilder.Entity("Vet.Models.Treatment", b =>
                 {
                     b.Navigation("TreatmentTimes");
+                });
+
+            modelBuilder.Entity("Vet.Models.Vaccine", b =>
+                {
+                    b.Navigation("Records");
                 });
 
             modelBuilder.Entity("Vet.Models.VetUser", b =>
