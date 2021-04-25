@@ -32,6 +32,10 @@ namespace Vet.Interfaces
         Task<TherapiaRecord> GetTherapiaRecordById(int id);
 
         Task<MedicalRecordPhoto> GetMedicalRecordPhotoById(int photoId);
+
+        Task<bool> MedicalRecordExists(int medicalrecordId);
+        Task<bool> MedicalRecordPhotoExists(int photoId);
+        Task<bool> TherapiaRecordExists(int therapiaRecordId);
     }
 
 }

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AuthorizeService } from 'src/api-authorization/authorize.service';
 
@@ -7,7 +8,7 @@ import { AuthorizeService } from 'src/api-authorization/authorize.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public auth: AuthorizeService) {
+  constructor(public auth: AuthorizeService, private http: HttpClient) {
   }
 
   ngOnInit(): void {

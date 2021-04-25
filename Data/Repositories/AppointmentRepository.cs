@@ -58,5 +58,8 @@ namespace Vet.Data.Repositories
         public async Task<IEnumerable<Appointment>> GetDoctorInactiveAppointments(string id)
             => await _context.Appointments.Include("Treatment").Include("Doctor").Include("Owner").Include("Animal").Where(a => a.DoctorId == id && a.StartDate < DateTime.Now).OrderBy(a => a.StartDate).ThenByDescending(a => a.Id).ToListAsync();
 
+
+        public async Task<bool> AppointmentExists(int appointmentId)
+            => await _context.Appointments.AnyAsync(a => a.Id == appointmentId);
     }
 }

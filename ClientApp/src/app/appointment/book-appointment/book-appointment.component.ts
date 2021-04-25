@@ -75,8 +75,8 @@ export class BookAppointmentComponent implements OnInit {
     let now = new Date(Date.now());
     let today = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
     this.avaibleDates.push(new Date(today));
-    for (let i = 0; i < this.maxAhead; i++){
-      today.setDate(today.getDate()+1)
+    for (let i = 0; i < this.maxAhead; i++) {
+      today.setDate(today.getDate() + 1)
       this.avaibleDates.push(new Date(today));
     }
 
@@ -178,12 +178,11 @@ export class BookAppointmentComponent implements OnInit {
           while (start < max) {
             let add = { startDate: new Date(start), endDate: new Date(start.setMinutes(start.getMinutes() + time.duration)), id: this.dates.length }
             let ok = true;
-            if(add.startDate<now) ok = false;
+            if (add.startDate < now) ok = false;
             for (let i = 0; i < this.dd.length; i++) {
               if ((this.dd[i].startDate <= add.startDate && this.dd[i].endDate > add.startDate) || (this.dd[i].startDate >= add.startDate && this.dd[i].endDate < add.endDate) ||
                 (this.dd[i].startDate < add.endDate && this.dd[i].endDate > add.endDate) || (this.dd[i].startDate <= add.startDate && this.dd[i].endDate > add.endDate) ||
-                (add.startDate<now)) 
-                {
+                (add.startDate < now)) {
                 ok = false;
                 break;
               }
@@ -238,7 +237,8 @@ export class BookAppointmentComponent implements OnInit {
       endDate: [this.selectDateForm.get('endDate').value, Validators.required],
       treatmentId: [this.selectTreatmentForm.get('treatmentId').value, Validators.required],
       doctorId: [this.selectDoctorForm.get('doctorId').value, Validators.required],
-      animalId: [this.selectAnimalForm.get('animalId').value === '' ? null : this.selectAnimalForm.get('animalId').value]
+      animalId: [this.selectAnimalForm.get('animalId').value === '' ? null : this.selectAnimalForm.get('animalId').value],
+      ownerId: [null]
     })
   }
 

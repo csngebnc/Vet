@@ -7,7 +7,8 @@
                     - ({{med.animalName}})</ng-container>
             </mat-panel-title>
             <mat-panel-description class="d-flex justify-content-end">
-                <mat-icon *ngIf="auth.authLevel>=2" class="mr-2" routerLink="../../record/{{med.id}}/edit">edit
+                <mat-icon *ngIf="(auth.getAuthLevel() | async)>=2" class="mr-2"
+                    routerLink="../../record/{{med.id}}/edit">edit
                 </mat-icon>
                 <mat-icon (click)="genPdf(med.id)">picture_as_pdf</mat-icon>
             </mat-panel-description>

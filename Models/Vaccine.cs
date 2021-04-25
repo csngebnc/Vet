@@ -10,7 +10,7 @@ namespace Vet.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        ICollection<VaccineRecord> Records { get; set; }
+        public ICollection<VaccineRecord> Records { get; set; }
 
     }
 }

@@ -31,9 +31,11 @@ namespace Vet.Controllers
         }
 
         [HttpPost]
-        public async Task<AnimalSpeciesDto> AddAnimalSpecies(AddSpeciesDto spec)
+        public async Task<ActionResult<AnimalSpeciesDto>> AddAnimalSpecies(AddSpeciesDto spec)
         {
-            return await _speciesManager.AddAnimalSpecies(spec.Name);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            return Ok(await _speciesManager.AddAnimalSpecies(spec.Name));
         }
 
         [HttpPut]

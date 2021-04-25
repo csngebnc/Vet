@@ -147,5 +147,12 @@ namespace Vet.Data.Repositories
 
         public async Task<MedicalRecordPhoto> GetMedicalRecordPhotoById(int photoId)
             => await _context.MedicalRecordPhotos.FindAsync(photoId);
+
+        public async Task<bool> MedicalRecordExists(int medicalrecordId)
+            => await _context.MedicalRecords.AnyAsync(a => a.Id == medicalrecordId);
+        public async Task<bool> MedicalRecordPhotoExists(int photoId)
+            => await _context.MedicalRecordPhotos.AnyAsync(a => a.Id == photoId);
+        public async Task<bool> TherapiaRecordExists(int therapiaRecordId)
+            => await _context.TherapiaRecords.AnyAsync(a => a.Id == therapiaRecordId);
     }
 }

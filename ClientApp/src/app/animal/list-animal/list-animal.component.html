@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row p-2 dflex justify-content-end">
-        <button class="btn btn-outline-dark mt-2" (click)="open()">Új állat felvétele</button>
-        <button class="btn btn-outline-dark mt-2" routerLink='../myarchivedanimals'>Archivált állatok</button>
+        <button mat-fab color="primary" class="mr-2" (click)="open()">
+            <mat-icon>add</mat-icon>
+        </button>
+        <button mat-fab color="primary" routerLink='../myarchivedanimals'>
+            <mat-icon>archive</mat-icon>
+        </button>
     </div>
 
     <div class="row mt-4">

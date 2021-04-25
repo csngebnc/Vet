@@ -20,24 +20,16 @@ namespace Vet.Controllers
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly MedicalRecordManager _medicalRecordManager;
-        private readonly PdfManager _pdf;
-        public MedicalRecordController(MedicalRecordManager medicalRecordManager, PdfManager p, IWebHostEnvironment webHostEnvironment)
+        public MedicalRecordController(MedicalRecordManager medicalRecordManager, IWebHostEnvironment webHostEnvironment)
         {
             _webHostEnvironment = webHostEnvironment;
             _medicalRecordManager = medicalRecordManager;
-            _pdf = p;
-        }
-
-        [HttpGet]
-        public async Task<IEnumerable<MedicalRecordDto>> GetMedicalRecords()
-        {
-            return await _medicalRecordManager.GetMedicalRecords();
         }
 
         [HttpPost]
         public async Task<ActionResult<int>> AddMedicalRecord(AddMedicalRecordDto record)
         {
-            var id = await _medicalRecordManager.AddMedicalRecord(record, User.GetById());
+            var id = await _medicalRecordManager.AddMedicalRecord(record);
             return Ok(id);
         }
 
@@ -83,22 +75,10 @@ namespace Vet.Controllers
             return await _medicalRecordManager.GetMedicalRecordsByAnimalId(id);
         }
 
-        [HttpGet("email/{email}")]
-        public async Task<IEnumerable<MedicalRecordDto>> GetMedicalRecordsByUserEmail(string email)
-        {
-            return await _medicalRecordManager.GetMedicalRecordsByUserEmail(email);
-        }
-
-        [HttpGet("doctor/{id}")]
-        public async Task<IEnumerable<MedicalRecordDto>> GetMedicalRecordsByDoctorId(string id)
-        {
-            return await _medicalRecordManager.GetMedicalRecordsByDoctorId(id);
-        }
-
         [HttpGet("my-records")]
         public async Task<IEnumerable<MedicalRecordDto>> GetMyMedicalRecords()
         {
-            return await _medicalRecordManager.GetCurrentUserMedicalRecords(User.GetById());
+            return await _medicalRecordManager.GetCurrentUserMedicalRecords();
         }
 
         [HttpGet("userid/{id}")]
@@ -110,11 +90,8 @@ namespace Vet.Controllers
         [HttpGet("pdf/{id}")]
         public async Task<IActionResult> GetPdf(int id)
         {
-
             string path = Path.Combine(_webHostEnvironment.WebRootPath, "pdfs");
-            var net = new System.Net.WebClient();
-            var data = net.DownloadData(await _pdf.GeneratePdf(path+"/"+id, id)+".pdf");
-            var content = new MemoryStream(data);
+            var content = new MemoryStream(await _medicalRecordManager.GeneratePdf(id, path));
             var contentType = "APPLICATION/octet-stream";
             return File(content, contentType);
         }

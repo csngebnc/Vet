@@ -46,5 +46,8 @@ namespace Vet.Data.Repositories
             return (await _context.SaveChangesAsync() > 0);
         }
 
+        public async Task<bool> UserExists(string userId)
+            => await _context.Users.AnyAsync(a => a.Id == userId);
+
     }
 }

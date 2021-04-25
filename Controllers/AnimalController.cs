@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vet.BL;
+using Vet.BL.Exceptions;
 using Vet.Extensions;
 using Vet.Models.DTOs;
 
 namespace Vet.Controllers
 {
+    [Authorize]
     public class AnimalController : BaseApiController
     {
         private readonly AnimalManager _animalManager;
@@ -46,8 +49,7 @@ namespace Vet.Controllers
         
         [HttpPost("addAnimal")]
         public async Task<ActionResult<AnimalDto>> AddAnimal([FromForm]AddAnimalDto animal)
-            => Ok(await _animalManager.AddAnimal(animal, User.GetById()));
-
+            => Ok(await _animalManager.AddAnimal(animal));
 
         [HttpPut("updateAnimal")]
         public async Task<ActionResult<AnimalDto>> UpdateAnimal(UpdateAnimalDto animal)
@@ -66,7 +68,7 @@ namespace Vet.Controllers
             if (!(await _animalManager.AnimalExists(animal.Id)))
                 return NotFound();
 
-            await _animalManager.UpdateAnimalPhoto(animal, User.GetById());
+            await _animalManager.UpdateAnimalPhoto(animal);
             return Ok();
         }
 

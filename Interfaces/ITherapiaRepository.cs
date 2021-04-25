@@ -14,5 +14,6 @@ namespace Vet.Interfaces
 
         Task<IEnumerable<Therapia>> GetTherapias();
         Task<Therapia> GetTherapiaById(int id);
+        Task<bool> TherapiaExists(int therapiaId);
     }
 }

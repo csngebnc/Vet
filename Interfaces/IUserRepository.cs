@@ -11,6 +11,8 @@ namespace Vet.Interfaces
         Task<string> GetUserIdByUserEmail(string email);
         Task<IEnumerable<VetUser>> GetUserByFilter(string name, string email);
         Task<bool> SetPhoto(string photoPath, string userId);
+
+        Task<bool> UserExists(string userId);
     }
 }
 

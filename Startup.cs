@@ -1,13 +1,17 @@
 using AutoMapper;
+using Hellang.Middleware.ProblemDetails;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Vet.BL;
+using Vet.BL.Exceptions;
+using Vet.BL.ProblemDetails;
 using Vet.Controllers;
 using Vet.Data;
 using Vet.Data.Repositories;
@@ -38,6 +42,32 @@ namespace Vet
                     .AllowAnyHeader());
             });
 
+            services.AddProblemDetails(options =>
+            {
+                options.IncludeExceptionDetails = (ctx, ex) => false;
+                options.Map<EntityNotFoundException>(
+                  (ctx, ex) =>
+                  {
+                      var pd = StatusCodeProblemDetails.Create(StatusCodes.Status404NotFound);
+                      pd.Title = ex.Message;
+                      pd.Detail = ex.Detail;
+                      return pd;
+                  }
+                  );
+
+                options.Map<DataErrorException>(
+                  (ctx, ex) =>
+                  {
+                      var pd = new DataErrorProblemDetails();
+                      pd.Status = 400;
+                      pd.Title = ex.Message;
+                      pd.Errors = ex.Errors;
+                      pd.Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1";
+                      return pd;
+                  }
+                  );
+            });
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAnimalRepository, AnimalRepository>();
@@ -59,6 +89,7 @@ namespace Vet
             services.AddTransient<TherapiaManager>();
             services.AddTransient<MedicalRecordManager>();
             services.AddTransient<VaccineManager>();
+            services.AddTransient<UsersManager>();
 
             services.AddTransient<PdfManager>();
 
@@ -73,6 +104,7 @@ namespace Vet
 
             services.AddIdentityServer()
                 .AddApiAuthorization<VetUser, VetDbContext>();
+
 
             services.AddAuthentication()
                 .AddIdentityServerJwt();
@@ -91,7 +123,7 @@ namespace Vet
             if (env.IsDevelopment())
             {
                 app.UseCors(_corsPolicy);
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
                 app.UseMigrationsEndPoint();
             }
             else
@@ -100,7 +132,7 @@ namespace Vet
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseProblemDetails();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             if (!env.IsDevelopment())

@@ -22,5 +22,8 @@ namespace Vet.Interfaces
         Task<Vaccine> GetVaccineById(int id);
         Task<IEnumerable<VaccineRecord>> GetVaccineRecordsOfAnimal(int animalId);
         Task<VaccineRecord> GetVaccineRecordById(int id);
+
+        Task<bool> VaccineExists(int vaccinerecordId);
+        Task<bool> VaccineRecordExists(int vaccinerecordId);
     }
 }

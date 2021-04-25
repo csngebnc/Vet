@@ -14,5 +14,7 @@ namespace Vet.Interfaces
         Task<AnimalSpecies> GetAnimalSpeciesById(int id);
         Task<AnimalSpecies> GetAnimalSpeciesByIdWithAnimals(int id);
         Task<AnimalSpecies> GetAnimalSpeciesByName(string name);
+        Task<bool> SpeciesExists(int specId);
+        Task<bool> SpeciesExistsByName(string name);
     }
 }

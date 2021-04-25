@@ -73,5 +73,8 @@ namespace Vet.Data.Repositories
 
         public async Task<IEnumerable<Holiday>> GetHolidays()
             => await _context.Holidays.Include("Doctor").ToListAsync();
+
+        public async Task<bool> HolidayExists(int holidayId)
+        => await _context.Holidays.AnyAsync(a => a.Id == holidayId);
     }
 }

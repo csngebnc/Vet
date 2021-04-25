@@ -20,5 +20,11 @@ namespace Vet.Models
         [ForeignKey("Treatment")]
         public int TreatmentId { get; set; }
         public Treatment Treatment { get; set; }
+
+        public int GetStartInMinutes()
+            => StartHour * 60 + StartMin;
+
+        public int GetEndInMinutes()
+            => EndHour * 60 + EndMin;
     }
 }

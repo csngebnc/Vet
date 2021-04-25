@@ -62,7 +62,7 @@ namespace Vet.Data.Repositories
             => await _context.Vaccines.ToListAsync();
 
         public async Task<Vaccine> GetVaccineById(int id)
-            => await _context.Vaccines.Where(v => v.Id ==id).SingleOrDefaultAsync();
+            => await _context.Vaccines.Include(v => v.Records).Where(v => v.Id ==id).SingleOrDefaultAsync();
 
         public async Task<IEnumerable<VaccineRecord>> GetVaccineRecordsOfAnimal(int animalId)
             => await _context.VaccinationRecords.Include("Vaccine").Include("Animal").Where(vr => vr.AnimalId == animalId).ToListAsync();
@@ -70,6 +70,9 @@ namespace Vet.Data.Repositories
         public async Task<VaccineRecord> GetVaccineRecordById(int id)
             => await _context.VaccinationRecords.Include("Vaccine").Include("Animal").Where(v => v.Id == id).SingleOrDefaultAsync();
 
-
+        public async Task<bool> VaccineExists(int vaccineId)
+            => await _context.Vaccines.AnyAsync(a => a.Id == vaccineId);
+        public async Task<bool> VaccineRecordExists(int vaccinerecordId)
+            => await _context.VaccinationRecords.AnyAsync(a => a.Id == vaccinerecordId);
     }
 }

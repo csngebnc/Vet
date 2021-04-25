@@ -14,10 +14,6 @@ export class AppointmentService {
     return this.http.post(this.baseUrl + 'appointments', model);
   }
 
-  bookAppointmentByDoctor(model: FormData) {
-    return this.http.post(this.baseUrl + 'appointments/by-doctor', model);
-  }
-
   getMyAppointments() {
     return this.http.get(this.baseUrl + 'appointments/my-appointments');
   }

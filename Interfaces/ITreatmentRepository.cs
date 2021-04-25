@@ -26,6 +26,9 @@ namespace Vet.Interfaces
         Task<TreatmentTime> GetTreatmentTimeByIdAsync(int id);
         Task<IEnumerable<TreatmentTime>> GetTreatmentTimesByTreatmentIdAsync(int id);
 
+        Task<bool> TreatmentExists(int treatmentId);
+        Task<bool> TreatmentTimeExists(int treatmentimeId);
+
 
     }
 }

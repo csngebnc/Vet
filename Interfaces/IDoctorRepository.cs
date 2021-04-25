@@ -23,6 +23,7 @@ namespace Vet.Interfaces
         Task<Holiday> GetHolidayById(int id);
         Task<IEnumerable<Holiday>> GetDoctorsHolidays(string doctorId);
         Task<IEnumerable<Holiday>> GetHolidays();
+        Task<bool> HolidayExists(int holidayId);
 
     }
 }

@@ -47,7 +47,7 @@ namespace Vet.Controllers
         [HttpPost("holiday/add")]
         public async Task<HolidayDto> AddHoliday(AddHolidayDto holiday)
         {
-            return await _doctorManager.AddHoliday(holiday, User.GetById());
+            return await _doctorManager.AddHoliday(holiday);
         }
 
         [HttpPut("holiday/update")]

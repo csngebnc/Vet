@@ -42,5 +42,8 @@ namespace Vet.Data.Repositories
 
         public async Task<IEnumerable<Therapia>> GetTherapias()
             => await _context.Therapias.Include(t => t.TherapyRecords).ToListAsync();
+        public async Task<bool> TherapiaExists(int photoId)
+            => await _context.Therapias.AnyAsync(a => a.Id == photoId);
     }
+
 }

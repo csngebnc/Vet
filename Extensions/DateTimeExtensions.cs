@@ -41,5 +41,15 @@ namespace Vet.Extensions
             return age;
 
         }
+
+        public static int GetMinutes(this DateTime date)
+        {
+            return (date.Hour * 60 + date.Minute);
+        }
+
+        public static int GetMinutesLocalTime(this DateTime date)
+        {
+            return (date.ToLocalTime().Hour * 60 + date.ToLocalTime().Minute);
+        }
     }
 }

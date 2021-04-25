@@ -265,7 +265,8 @@ export class BookAppointmentByDoctorComponent implements OnInit {
       endDate: [this.selectDateForm.get('endDate').value, Validators.required],
       treatmentId: [this.selectTreatmentForm.get('treatmentId').value, Validators.required],
       doctorId: [this.selectDoctorForm.get('doctorId').value, Validators.required],
-      animalId: [this.selectAnimalForm.get('animalId').value === '' ? null : this.selectAnimalForm.get('animalId').value]
+      animalId: [this.selectAnimalForm.get('animalId').value === '' ? null : this.selectAnimalForm.get('animalId').value],
+      ownerId: [this.selectUserForm.get('userId').value, Validators.required]
     })
   }
 

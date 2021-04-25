@@ -48,7 +48,7 @@ namespace Vet.Data.Repositories
             => await _context.Treatments.Include("Doctor").ToListAsync();
 
         public async Task<Treatment> GetTreatmentByIdAsync(int id)
-            => await _context.Treatments.Include("Doctor").Where(t => t.Id == id).SingleOrDefaultAsync();
+            => await _context.Treatments.Include("Doctor").Include(t => t.TreatmentTimes).Where(t => t.Id == id).SingleOrDefaultAsync();
         public async Task<IEnumerable<Treatment>> GetTreatmentsByDoctorIdAsync(string id)
             => await _context.Treatments.Include("Doctor").Where(t => t.DoctorId == id).ToListAsync();
 
@@ -87,5 +87,10 @@ namespace Vet.Data.Repositories
 
         public async Task<IEnumerable<TreatmentTime>> GetTreatmentTimesByTreatmentIdAsync(int id)
             => await _context.TreatmentTimes.Where(t => t.TreatmentId == id).ToListAsync();
+
+        public async Task<bool> TreatmentExists(int treatmentId)
+            => await _context.Treatments.AnyAsync(a => a.Id == treatmentId);
+        public async Task<bool> TreatmentTimeExists(int treatmenttimeId)
+            => await _context.TreatmentTimes.AnyAsync(a => a.Id == treatmenttimeId);
     }
 }

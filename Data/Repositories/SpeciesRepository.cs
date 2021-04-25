@@ -50,7 +50,13 @@ namespace Vet.Data.Repositories
 
         public async Task<AnimalSpecies> GetAnimalSpeciesByName(string name)
             => await _context.AnimalSpecies
-                .Where(s => s.Name == name)
+                .Where(s => s.Name.ToLower() == name.ToLower())
                 .FirstOrDefaultAsync();
+
+        public async Task<bool> SpeciesExists(int specId)
+            => await _context.AnimalSpecies.AnyAsync(a => a.Id == specId);
+
+        public async Task<bool> SpeciesExistsByName(string name)
+            => await _context.AnimalSpecies.AnyAsync(a => a.Name.Trim().ToLower() == name.Trim().ToLower());
     }
 }

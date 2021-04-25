@@ -20,6 +20,7 @@ export class AddAnimalComponent implements OnInit {
   validationErrors: string[] = [];
   speciesList: any;
 
+
   constructor(private animalService: AnimalService, private speciesService: SpeciesService, private fb: FormBuilder, public datepipe: DatePipe, private ngbModal: NgbActiveModal) { }
 
   ngOnInit(): void {
@@ -40,24 +41,31 @@ export class AddAnimalComponent implements OnInit {
     })
   }
 
-  addAnimal(){
+  addAnimal() {
     let formData = new FormData();
-    formData.append('name',this.addAnimalForm.get('name').value);
-    formData.append('sex',this.addAnimalForm.get('sex').value);
-    formData.append('dateOfBirth',this.datepipe.transform(this.addAnimalForm.get('dateOfBirth').value, 'yyyy-MM-dd'));
-    formData.append('speciesid',this.addAnimalForm.get('speciesid').value);
-    formData.append('photo',this.addAnimalForm.get('photo').value);
-    this.animalService.addAnimal(formData).subscribe((animal: AnimalDto) => {this.ngbModal.close(animal)}, err => console.log(err));
+    formData.append('name', this.addAnimalForm.get('name').value);
+    formData.append('sex', this.addAnimalForm.get('sex').value);
+    formData.append('dateOfBirth', this.datepipe.transform(this.addAnimalForm.get('dateOfBirth').value, 'yyyy-MM-dd'));
+    formData.append('speciesid', this.addAnimalForm.get('speciesid').value);
+    formData.append('photo', this.addAnimalForm.get('photo').value);
+    this.animalService.addAnimal(formData).subscribe((animal: AnimalDto) => { this.ngbModal.close(animal) }, err => {
+      for (let key in err.error.errors) {
+        let array: string[] = err.error.errors[key];
+        array.forEach(v => {
+          console.log(`Key: ${key} --> message: ${v}`);
+        })
+      }
+    });
   }
 
-  fileChangeEvent(event: any): void {this.imageChangedEvent = event;}
+  fileChangeEvent(event: any): void { this.imageChangedEvent = event; }
   imageCropped(event: ImageCroppedEvent) {
-      let myfile = base64ToFile(event.base64);
-      this.addAnimalForm.patchValue({ photo: myfile });
-      this.addAnimalForm.get('photo').updateValueAndValidity();
+    let myfile = base64ToFile(event.base64);
+    this.addAnimalForm.patchValue({ photo: myfile });
+    this.addAnimalForm.get('photo').updateValueAndValidity();
   }
-  imageLoaded() {}
-  cropperReady() {}
-  loadImageFailed() {}
+  imageLoaded() { }
+  cropperReady() { }
+  loadImageFailed() { }
 
 }

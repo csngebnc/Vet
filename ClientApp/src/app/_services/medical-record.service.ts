@@ -35,10 +35,6 @@ export class MedicalRecordService {
     return this.http.get(this.baseUrl + 'records/animalid/' + id);
   }
 
-  getMedicalRecordByEmail(email) {
-    return this.http.get(this.baseUrl + 'records/email/' + email);
-  }
-
   getMedicalRecordByUserId(id) {
     return this.http.get(this.baseUrl + 'records/userid/' + id);
   }

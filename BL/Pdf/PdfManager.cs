@@ -22,9 +22,8 @@ namespace Vet.BL
             _medicalRecordRepository = medicalRecordRepository;
         }
 
-        public async Task<string> GeneratePdf(string path,int recordId)
+        public async Task<string> GeneratePdf(string path, MedicalRecord record)
         {
-            var record = await _medicalRecordRepository.GetMedicalRecordById(recordId);
             var user = await _userRepository.GetUserByIdAsync(record.OwnerId);
 
             var document = CreateDocument(user, record);

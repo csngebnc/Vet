@@ -95,6 +95,9 @@ namespace Vet.Data.Repositories
                     .ToListAsync();
         }
 
+        public async Task<bool> AnimalExists(int animalId)
+            => await _context.Animals.AnyAsync(a => a.Id == animalId);
+
 
     }
 }

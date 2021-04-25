@@ -39,46 +39,51 @@
                         (ngSubmit)="editAnimalForm.valid && editAnimalForm.dirty && updateAnimal()" autocomplete="off">
                         <h2 class="">Adatok szerkesztése</h2>
                         <hr>
-                        <div class="form-group m-0">
-                            <app-text-input [formControl]='editAnimalForm.controls["name"]' [label]='"Állat neve"'>
-                            </app-text-input>
+
+                        <mat-form-field class="full-width">
+                            <mat-label>Állat neve:</mat-label>
+                            <input matInput formControlName='name' required>
+                            <mat-error *ngIf="editAnimalForm.get('name').invalid">Az állat neve nem lehet üres.
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width">
+                            <mat-label>Születési dátum:</mat-label>
+                            <input matInput [matDatepicker]="picker" [max]="maxDate" formControlName='dateOfBirth'
+                                required>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                            <mat-error *ngIf="editAnimalForm.get('dateOfBirth').invalid">Születési dátum megadása
+                                kötelező.</mat-error>
+                        </mat-form-field>
+
+                        <div class="full-width">
+                            <mat-label>Állat neme:</mat-label>
+                        </div>
+                        <div class="full-width">
+                            <mat-radio-group formControlName='sex'>
+                                <mat-radio-button class="ml-4 mr-3" value="hím">hím</mat-radio-button>
+                                <mat-radio-button value="nőstény">nőstény</mat-radio-button>
+                            </mat-radio-group>
                         </div>
 
-                        <div class="form-group m-0">
-                            <app-date-input [formControl]='editAnimalForm.controls["dateOfBirth"]'
-                                [label]='"Születési dátum"' [maxDate]='maxDate'></app-date-input>
-                        </div>
+                        <mat-form-field class="full-width">
+                            <mat-label>Állat fajtája:</mat-label>
+                            <mat-select formControlName="speciesid">
+                                <mat-option *ngFor="let spec of speciesList" [value]="spec.id">{{spec.name}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
 
-                        <div class="form-group" style="margin-bottom: 8px;">
-                            <label class="control-label">Állat neme: </label>
-                            <div class="form-check form-check-inline pl-2">
-                                <input class="form-check-input" id="m" type="radio" value='hím' formControlName='sex'>
-                                <label class="form-check-label" for="m">Hím</label>
-                            </div>
-                            <div class="form-check form-check-inline pb-2">
-                                <input class="form-check-input" id="f" type="radio" value='nőstény'
-                                    formControlName='sex'>
-                                <label class="form-check-label" for="f">Nőstény</label>
-                            </div>
-                        </div>
+                        <mat-form-field class="full-width">
+                            <mat-label>Állat alfaja:</mat-label>
+                            <input matInput formControlName='subspecies'>
+                        </mat-form-field>
 
-                        <div class="form-group">
-                            <label style="margin-right: 10px;" class="control-label">Állat faja</label>
-                            <select class="form-control" formControlName="speciesid">
-                                <option value="" disabled>Válassz...</option>
-                                <option *ngFor="let spec of speciesList" [ngValue]="spec.id">{{spec.name}}</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <app-text-input [formControl]='editAnimalForm.controls["subspecies"]'
-                                [label]='"Állat alfaja"'></app-text-input>
-                        </div>
-
-                        <div class="form-group">
-                            <app-text-input [formControl]='editAnimalForm.controls["weight"]' [label]='"Állat súlya"'>
-                            </app-text-input>
-                        </div>
+                        <mat-form-field class="full-width">
+                            <mat-label>Állat súlya:</mat-label>
+                            <input matInput formControlName='weight'>
+                        </mat-form-field>
                         <button [disabled]="!editAnimalForm.dirty" type="submit"
                             class="btn btn-dark btn-block">Módosítások mentése</button>
                     </form>

@@ -46,7 +46,7 @@ namespace Vet.Controllers
         [HttpPost]
         public async Task<TreatmentDto> AddTreatment(AddTreatmentDto addTreatmentDto)
         {
-            return await _treatmentManager.AddTreatment(addTreatmentDto, User.GetById());
+            return await _treatmentManager.AddTreatment(addTreatmentDto);
         }
 
         [HttpPut]

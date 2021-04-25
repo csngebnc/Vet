@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vet.Models
 {
-    public class TestClass
+    public class PhotoClass
     {
         public IFormFile ProfilePhoto { get; set; }
     }
