@@ -50,67 +50,54 @@ namespace Vet.BL
 
         public async Task<AppointmentDto> ResignAppointment(int id, string details = "Lemondva")
         {
-            var error = new DataErrorException();
-
-            ValidationHelper.ValidateData(error, await _appointmentRepository.AppointmentExists(id), "appointmentId", "A megadott azonosítóval nem létezik foglalt időpont.");
+            ValidationHelper.ValidateEntity(await _appointmentRepository.AppointmentExists(id), "foglalt időpont");
             var appointment = await _appointmentRepository.GetAppointmentById(id);
 
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(_httpContextAccessor.GetCurrentUserId()), "userId", "A megadott azonosítóval nem létezik felhasználó.");
             var user = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, appointment.OwnerId == user.Id || user.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(appointment.OwnerId == user.Id || user.AuthLevel > 1);
 
             return _mapper.Map<Appointment, AppointmentDto>(await _appointmentRepository.ResignAppointment(id, details));
         } 
-        /*
-        public async Task<IEnumerable<AppointmentDto>> GetAllAppointments()
-            => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetAllAppointments());
-        public async Task<IEnumerable<AppointmentDto>> GetActiveAppointments()
-            => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetActiveAppointments());
-        public async Task<IEnumerable<AppointmentDto>> GetInactiveAppointments()
-            => _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetInactiveAppointments());
-        */
+
         public async Task<IEnumerable<AppointmentTimeDto>> GetReservedTimes(DateTime time, string doctorId)
         {
-            var error = new DataErrorException();
-
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(doctorId), "doctorId", "A megadott azonosítóval nem létezik felhasználó.");
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(doctorId), "regisztrált doktor");
             var user = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, user.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(user.AuthLevel > 1);
 
             return _mapper.Map<IEnumerable<AppointmentTimeDto>>(await _appointmentRepository.GetReservedTimes(time, doctorId));
         }
 
         public async Task<IEnumerable<AppointmentDto>> GetUserAppointments(string id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(id), "userId", "A megadott azonosítóval nem létezik felhasználó.");
             var user = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, _httpContextAccessor.GetCurrentUserId() == id || user.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(id), "felhasználó");
+            ValidationHelper.ValidatePermission(_httpContextAccessor.GetCurrentUserId() == id || user.AuthLevel > 1);
 
             return _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetUserAppointments(id));
         }
 
         public async Task<IEnumerable<AppointmentDto>> GetDoctorActiveAppointments(string id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(id), "doctorId", "A megadott azonosítóval nem létezik felhasználó.");
             var user = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, user.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(user.AuthLevel > 1);
+
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(id), "felhasználó");
 
             var doctor = await _userRepository.GetUserByIdAsync(id);
-            ValidationHelper.ValidateData(error, user.AuthLevel > 1, "doctorId", "A megadott azonosítóval nincs doktor a rendszerben.");
+            ValidationHelper.ValidateEntity(doctor.AuthLevel > 1, "doktor");
 
             return _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetDoctorActiveAppointments(id));
         }
         public async Task<IEnumerable<AppointmentDto>> GetDoctorInactiveAppointments(string id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(id), "doctorId", "A megadott azonosítóval nem létezik felhasználó.");
             var user = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, user.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(user.AuthLevel > 1);
+
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(id), "felhasználó");
 
             var doctor = await _userRepository.GetUserByIdAsync(id);
-            ValidationHelper.ValidateData(error, user.AuthLevel > 1, "doctorId", "A megadott azonosítóval nincs doktor a rendszerben.");
+            ValidationHelper.ValidateEntity(doctor.AuthLevel > 1, "doktor");
 
             return _mapper.Map<IEnumerable<AppointmentDto>>(await _appointmentRepository.GetDoctorInactiveAppointments(id));
         }
@@ -118,28 +105,22 @@ namespace Vet.BL
 
         public async Task ValidateUser(DataErrorException error, AddAppointmentDto appointment, string ownerId)
         {
-            ValidationHelper.ValidateData(error, (await _userRepository.UserExists(ownerId)), "ownerId", "A megadott azonosítóval nem létezik felhasználó.");
-
-            if ((await _userRepository.UserExists(appointment.DoctorId)))
-                ValidationHelper.ValidateData(error, (await _userRepository.GetUserByIdAsync(appointment.DoctorId)).AuthLevel > 1, "doctorId", "A megadott azonosítóval nincs doktor a rendszerben.");
-            else
-            {
-                error.AddError("doctorId", "A megadott azonosítóval nincs doktor a rendszerben.");
-                error.AddError("doctorId", "A megadott azonosítóval nincs doktor a rendszerben.");
-                throw error;
-            }
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(ownerId), "felhasználó");
+            var user = await _userRepository.GetUserByIdAsync(ownerId);
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(appointment.DoctorId), "felhasználó");
+            ValidationHelper.ValidateEntity((await _userRepository.GetUserByIdAsync(appointment.DoctorId)).AuthLevel > 1, "doktor");
 
             if (appointment.AnimalId != null)
-                if ((await _animalRepository.AnimalExists((int)appointment.AnimalId)))
-                {
-                    var animal = await _animalRepository.GetAnimalByIdAsync((int)appointment.AnimalId);
-                    ValidationHelper.ValidateData(error, animal.OwnerId == ownerId, "animalId", "A megadott állat gazdája nem a bejelentkezett felhasználó.");
-                }
+            {
+                ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists((int)appointment.AnimalId), "állat");
+                var animal = await _animalRepository.GetAnimalByIdAsync((int)appointment.AnimalId);
+                ValidationHelper.ValidatePermission(animal.OwnerId == ownerId || user.AuthLevel > 1);
+            }
         }
 
         public async Task ValidateAppointment(DataErrorException error, AddAppointmentDto appointment, string ownerId)
         {
-            ValidationHelper.ValidateData(error, await _treatmentRepository.TreatmentExists(appointment.TreatmentId), "treatmentId", "A megadott kezelés nem létezik.");
+            ValidationHelper.ValidateEntity(await _treatmentRepository.TreatmentExists(appointment.TreatmentId), "kezelés");
 
             var treatment = await _treatmentRepository.GetTreatmentByIdAsync(appointment.TreatmentId);
             ValidationHelper.ValidateData(error, treatment.DoctorId == appointment.DoctorId, "treatmentId", "A megadott kezelés nem a megadott orvos azonosítóhoz tartozik.");
@@ -151,7 +132,7 @@ namespace Vet.BL
 
             ValidationHelper.ValidateData(error, treatmentTime != null, "treatmentId", "A megadott időpont nem megfelelő.");
             ValidationHelper.ValidateData(error, appointment.StartDate < appointment.EndDate, "date", "Rossz időpont intervallum. Kezdés később van, mint a befejezés.");
-            ValidationHelper.ValidateData(error, appointment.StartDate < DateTime.Now.ToLocalTime(), "date", "Rossz időpont. Az időpont kezdete nem lehet korábban mint az aktuális idő.");
+            ValidationHelper.ValidateData(error, appointment.StartDate >= DateTime.Now.ToLocalTime(), "date", "Rossz időpont. Az időpont kezdete nem lehet korábban mint az aktuális idő.");
 
             var expectedDuration = appointment.EndDate - appointment.StartDate;
             ValidationHelper.ValidateData(error, expectedDuration.Minutes % treatmentTime.Duration == 0, "date", "Rossz időpont. A megadott időpont nincs a választható időpontok között.");

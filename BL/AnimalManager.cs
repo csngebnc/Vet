@@ -37,9 +37,10 @@ namespace Vet.BL
             var error = new DataErrorException();
             var ownerId = _httpContextAccessor.GetCurrentUserId();
 
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(ownerId), "ownerId", "A megadott azonosítóval nem létezik felhasználó.");
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(ownerId), "felhasználó");
+            ValidationHelper.ValidateEntity(await _speciesRepository.SpeciesExists(animal.SpeciesId), "állatfaj");
+
             ValidationHelper.ValidateData(error, animal.DateOfBirth.ToLocalTime() <= DateTime.Now, "dateOfBirth", "A születési idő nem lehet később, mint az aktuális időpont.");
-            ValidationHelper.ValidateData(error, await _speciesRepository.SpeciesExists(animal.SpeciesId), "speciesId", "A megadott azonosítóval nem létezik állatfaj.");
             ValidationHelper.ValidateData(error, new string[] { "hím", "nőstény" }.Contains(animal.Sex.ToLower()), "sex", "Nincs ilyen nem.");
 
             var _animal = _mapper.Map<Animal>(animal);
@@ -56,13 +57,15 @@ namespace Vet.BL
             var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
 
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(animal.Id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(animal.Id), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(animal.Id);
 
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
+
+            ValidationHelper.ValidateEntity(await _speciesRepository.SpeciesExists(animal.SpeciesId), "állatfaj");
+
             ValidationHelper.ValidateData(error, animal.DateOfBirth.ToLocalTime() <= DateTime.Now, "dateOfBirth", "A születési idő nem lehet később, mint az aktuális időpont.");
-            ValidationHelper.ValidateData(error, await _speciesRepository.SpeciesExists(animal.SpeciesId), "speciesId", "A megadott azonosítóval nem létezik állatfaj.");
             ValidationHelper.ValidateData(error, new string[] { "hím", "nőstény" }.Contains(animal.Sex.ToLower()), "sex", "Nincs ilyen nem.");
 
             _animal = _mapper.Map<UpdateAnimalDto, Animal>(animal, _animal);
@@ -73,15 +76,12 @@ namespace Vet.BL
 
         public async Task<AnimalDto> UpdateAnimalPhoto(UpdateAnimalPhotoDto animal)
         {
-            var error = new DataErrorException();
-
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(animal.Id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(animal.Id), "állat");
 
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-
             var _animal = await _animalRepository.GetAnimalByIdAsync(animal.Id);
 
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             var photoPath = await _photoManager.UploadAnimalPhoto(animal.Photo, _animal.OwnerId);
             _animal.PhotoPath = photoPath;
@@ -91,14 +91,12 @@ namespace Vet.BL
 
         public async Task DeleteAnimalPhoto(int id)
         {
-            var error = new DataErrorException();
-
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(id), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(id);
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
 
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             if (!_animal.PhotoPath.Equals("Images/Animals/empty-photo.jpg"))
             {
@@ -111,26 +109,24 @@ namespace Vet.BL
 
         public async Task ChangeStateOfAnimal(int id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(id), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(id);
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
 
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             await _animalRepository.ChangeStateOfAnimal(id);
         }
 
         public async Task<bool> DeleteAnimal(int id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(id), "állat"); ;
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(id);
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
 
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             if (_animal.PhotoPath != "Images/Animals/empty-photo.jpg")
                 _photoManager.RemovePhoto(_animal.PhotoPath);
@@ -143,9 +139,8 @@ namespace Vet.BL
 
         public async Task<IEnumerable<AnimalDto>> GetAnimalsAsync()
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
 
             return _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsAsync());
         }
@@ -153,38 +148,35 @@ namespace Vet.BL
 
         public async Task<IEnumerable<AnimalDto>> GetArchivedAnimalsByUserIdAsync(string id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1 || loggedInUser.Id == id, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1 || loggedInUser.Id == id);
 
             return _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetArchivedAnimalsByUserId(id));
         }
         public async Task<IEnumerable<AnimalDto>> GetAnimalsByUserIdAsync(string id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1 || loggedInUser.Id == id, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1 || loggedInUser.Id == id);
 
             return _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsByUserIdAsync(id));
         }
 
         public async Task<IEnumerable<AnimalDto>> GetAnimalsByUserEmailAsync(string email)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1 || loggedInUser.Id == (await _userRepository.GetUserIdByUserEmail(email)), "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1 || loggedInUser.Id == (await _userRepository.GetUserIdByUserEmail(email)));
             return _mapper.Map<IEnumerable<AnimalDto>>(await _animalRepository.GetAnimalsByUserEmailAsync(email));
         }
 
         public async Task<AnimalDto> GetAnimalByIdAsync(int id)
         {
             var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(id), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(id), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(id);
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
 
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1 || loggedInUser.Id == _animal.OwnerId, "ownerId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             return _mapper.Map<AnimalDto>(await _animalRepository.GetAnimalByIdAsync(id));
         }

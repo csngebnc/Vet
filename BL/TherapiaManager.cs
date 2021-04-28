@@ -30,19 +30,17 @@ namespace Vet.BL
 
         public async Task<TherapiaDto> AddTherapia(AddTherapiaDto therapiaDto)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
             var therapia = _mapper.Map<Therapia>(therapiaDto);
             return _mapper.Map<TherapiaDto>(await _therapiaRepository.AddTherapia(therapia));
         }
 
         public async Task<TherapiaDto> UpdateTherapia(Therapia therapia)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
-            ValidationHelper.ValidateData(error, await _therapiaRepository.TherapiaExists(therapia.Id), "therapiaId", "A megadott azonosítóval nem létezik terápia.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
+            ValidationHelper.ValidateEntity(await _therapiaRepository.TherapiaExists(therapia.Id), "terápia");
 
             var _therapia = await _therapiaRepository.GetTherapiaById(therapia.Id);
             _therapia.Name = therapia.Name;
@@ -55,22 +53,20 @@ namespace Vet.BL
 
         public async Task<bool> DeleteTherapia(int id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
-            ValidationHelper.ValidateData(error, await _therapiaRepository.TherapiaExists(id), "therapiaId", "A megadott azonosítóval nem létezik terápia.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
+            ValidationHelper.ValidateEntity(await _therapiaRepository.TherapiaExists(id), "terápia");
 
             var therapia = await _therapiaRepository.GetTherapiaById(id);
-            ValidationHelper.ValidateData(error, therapia.TherapyRecords.Count == 0, "therapiaId", "A kezelés nem törölhető, mert már van kórlap, amelyen szerepel.");
+            ValidationHelper.ValidateEntityAlreadyExists(therapia.TherapyRecords.Count == 0, "A kezelés nem törölhető, mert már van kórlap, amelyen szerepel.");
             return await _therapiaRepository.DeleteTherapia(therapia);
         }
 
         public async Task ChageStateOfTherapia(int id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
-            ValidationHelper.ValidateData(error, await _therapiaRepository.TherapiaExists(id), "therapiaId", "A megadott azonosítóval nem létezik terápia.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
+            ValidationHelper.ValidateEntity(await _therapiaRepository.TherapiaExists(id), "terápia");
 
             var therapia = await _therapiaRepository.GetTherapiaById(id);
             therapia.IsInactive = !therapia.IsInactive;
@@ -81,6 +77,9 @@ namespace Vet.BL
             => _mapper.Map<IEnumerable<TherapiaDto>>(await _therapiaRepository.GetTherapias());
 
         public async Task<TherapiaDto> GetTherapiaById(int id)
-            => _mapper.Map<TherapiaDto>(await _therapiaRepository.GetTherapiaById(id));
+        {
+            ValidationHelper.ValidateEntity(await _therapiaRepository.TherapiaExists(id), "terápia");
+            return _mapper.Map<TherapiaDto>(await _therapiaRepository.GetTherapiaById(id));
+        }
     }
 }

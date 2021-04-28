@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Vet.BL;
 using Vet.BL.Exceptions;
 using Vet.BL.ProblemDetails;
+using Vet.BL.ProblemDetails.Exceptions;
 using Vet.Controllers;
 using Vet.Data;
 using Vet.Data.Repositories;
@@ -50,10 +51,27 @@ namespace Vet
                   {
                       var pd = StatusCodeProblemDetails.Create(StatusCodes.Status404NotFound);
                       pd.Title = ex.Message;
-                      pd.Detail = ex.Detail;
                       return pd;
                   }
-                  );
+                );
+
+                options.Map<ExistingEntityException>(
+                  (ctx, ex) =>
+                  {
+                      var pd = StatusCodeProblemDetails.Create(StatusCodes.Status400BadRequest);
+                      pd.Title = ex.Message;
+                      return pd;
+                  }
+                );
+
+                options.Map<PermissionDeniedException>(
+                  (ctx, ex) =>
+                  {
+                      var pd = StatusCodeProblemDetails.Create(StatusCodes.Status401Unauthorized);
+                      pd.Title = ex.Message;
+                      return pd;
+                  }
+                );
 
                 options.Map<DataErrorException>(
                   (ctx, ex) =>
@@ -65,7 +83,7 @@ namespace Vet
                       pd.Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1";
                       return pd;
                   }
-                  );
+                );
             });
 
             services.AddTransient<IEmailSender, EmailSender>();

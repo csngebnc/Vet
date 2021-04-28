@@ -34,29 +34,26 @@ namespace Vet.BL
         {
             var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
             var _vaccine = _mapper.Map<Vaccine>(vaccine);
             return _mapper.Map<VaccineDto>(await _vaccineRepository.AddVaccine(_vaccine));
         }
 
         public async Task<VaccineDto> UpdateVaccine(VaccineDto vaccine)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineExists(vaccine.Id), "vaccineId", "A megadott azonosítóval nem létezik oltás.");
-            var _vaccine = _mapper.Map<Vaccine>(vaccine);
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineExists(vaccine.Id), "oltás");
             return _mapper.Map<VaccineDto>(await _vaccineRepository.UpdateVaccine(_mapper.Map<Vaccine>(vaccine)));
         }
 
         public async Task<bool> DeleteVaccine(int id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineExists(id), "vaccineId", "A megadott azonosítóval nem létezik oltás.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 2);
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineExists(id), "oltás");
             var _vaccine = await _vaccineRepository.GetVaccineById(id);
-            ValidationHelper.ValidateData(error, _vaccine.Records.Count == 0, "vaccineId", "Sikertelen törlés, az oltást már egy állatnál rögzítették.");
+            ValidationHelper.ValidateEntityAlreadyExists(_vaccine.Records.Count == 0, "Sikertelen törlés, az oltást már legalább egy állatnál rögzítették.");
             return await _vaccineRepository.DeleteVaccine(_vaccine);
         }
 
@@ -65,11 +62,11 @@ namespace Vet.BL
             var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
             ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "vaccineId", "Az oltás időpontja nem lehet a jövőben.");
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(record.AnimalId), "animalId", "A megadott azonosítóval nem létezik állat.");
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineExists(record.VaccineId), "vaccineId", "A megadott azonosítóval nem létezik oltás.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(record.AnimalId), "állat");
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineExists(record.VaccineId), "oltás");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(record.AnimalId);
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             var _record = _mapper.Map<VaccineRecord>(record);
 
@@ -80,14 +77,14 @@ namespace Vet.BL
         {
             var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineRecordExists(record.Id), "vaccinerecordId", "A megadott azonosítóval nem létezik korábban beadott oltás.");
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineRecordExists(record.Id), "korábban beadott oltás");
 
 
             ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "vaccineId", "Az oltás időpontja nem lehet a jövőben.");
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(record.AnimalId), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(record.AnimalId), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(record.AnimalId);
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
             var _record = await _vaccineRepository.GetVaccineRecordById(record.Id);
             _record.Date = record.Date.ToLocalTime();
             return _mapper.Map<VaccineRecordDto>(await _vaccineRepository.UpdateVaccineRecord(_record));
@@ -95,11 +92,10 @@ namespace Vet.BL
 
         public async Task<bool> DeleteVaccineRecord(int id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineRecordExists(id), "vaccinerecordId", "A megadott azonosítóval nem létezik korábban beadott oltás.");
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineRecordExists(id), "korábban beadott oltás");
             var _record = await _vaccineRepository.GetVaccineRecordById(id);
-            ValidationHelper.ValidateData(error, _record.Animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_record.Animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             return await _vaccineRepository.DeleteVaccineRecord(_record);
         }
@@ -109,29 +105,27 @@ namespace Vet.BL
 
         public async Task<VaccineDto> GetVaccineById(int id)
         {
-            var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineExists(id), "vaccineId", "A megadott azonosítóval nem létezik oltás.");
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineExists(id), "oltás");
             return _mapper.Map<VaccineDto>(await _vaccineRepository.GetVaccineById(id));
         }
 
         public async Task<IEnumerable<VaccineRecordDto>> GetVaccineRecordsOfAnimal(int animalId)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, await _animalRepository.AnimalExists(animalId), "animalId", "A megadott azonosítóval nem létezik állat.");
+            ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(animalId), "állat");
             var _animal = await _animalRepository.GetAnimalByIdAsync(animalId);
-            ValidationHelper.ValidateData(error, _animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(_animal.OwnerId == loggedInUser.Id || loggedInUser.AuthLevel > 1);
             return _mapper.Map<IEnumerable<VaccineRecordDto>>(await _vaccineRepository.GetVaccineRecordsOfAnimal(animalId));
         }
 
         public async Task<VaccineRecordDto> GetVaccineRecordById(int id)
         {
             var error = new DataErrorException();
-            ValidationHelper.ValidateData(error, await _vaccineRepository.VaccineRecordExists(id), "vaccinerecordId", "A megadott azonosítóval nem létezik beadott oltás.");
+            ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineRecordExists(id), "korábban beadott oltás");
             var _record = await _vaccineRepository.GetVaccineRecordById(id);
             var owner = await _userRepository.GetUserByIdAsync(_record.Animal.OwnerId);
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, owner.Id == loggedInUser.Id || loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(owner.Id == loggedInUser.Id || loggedInUser.AuthLevel > 1);
 
             return _mapper.Map<VaccineRecordDto>(_record);
         }

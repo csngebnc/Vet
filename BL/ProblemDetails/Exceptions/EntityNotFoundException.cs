@@ -11,13 +11,9 @@ namespace Vet.BL.Exceptions
         {
         }
 
-        private string detail;
-        public string Detail { get { return detail; } }
-
-        public EntityNotFoundException(string message, string detail = "")
+        public EntityNotFoundException(string message)
             : base(message)
         {
-            this.detail = detail;
         }
 
         public EntityNotFoundException(string message, Exception inner)

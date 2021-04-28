@@ -30,26 +30,26 @@ namespace Vet.BL
 
         public async Task<VetUserDto> PromoteToDoctor(string email)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
 
             var doctorId = await _userRepository.GetUserIdByUserEmail(email);
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(doctorId), "doctorId", "A megadott e-mail címmel nem létezik felhasználó.");
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(doctorId), "felhasználó");
+
             var doctor = await _userRepository.GetUserByIdAsync(doctorId);
-            ValidationHelper.ValidateData(error, doctor.AuthLevel < 2, "doctorId", "A megadott e-maillel már van doktor rögzítve.");
+            ValidationHelper.ValidateEntityAlreadyExists(doctor.AuthLevel < 2, "A megadott azonosítóval rendelkező felhasználó már orvos.");
+
             return _mapper.Map<VetUserDto>(await _doctorRepository.PromoteToDoctor(await _doctorRepository.GetDoctorByEmail(email)));
         }
 
         public async Task<VetUserDto> DemoteToUser(string id)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
 
-            ValidationHelper.ValidateData(error, await _userRepository.UserExists(id), "doctorId", "A megadott e-mail címmel nem létezik felhasználó.");
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(id), "felhasználó");
             var doctor = await _userRepository.GetUserByIdAsync(id);
-            ValidationHelper.ValidateData(error, doctor.AuthLevel > 1, "doctorId", "A megadott e-maillel nincs rögzített doktor.");
+            ValidationHelper.ValidateEntityAlreadyExists(doctor.AuthLevel > 1, "A megadott azonosítóval rendelkező felhasználó nem orvos.");
 
             return _mapper.Map<VetUserDto>(await _doctorRepository.DemoteToUser(await _doctorRepository.GetDoctorById(id)));
         }
@@ -59,47 +59,55 @@ namespace Vet.BL
 
         public async Task<HolidayDto> AddHoliday(AddHolidayDto holiday)
         {
-            var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
+            ValidationHelper.ValidateData(new DataErrorException(), holiday.StartDate.ToLocalTime() <= holiday.EndDate.ToLocalTime(), "date", "A kezdés nem lehet később, mint a szabadság vége.");
 
             var _holiday = _mapper.Map<Holiday>(holiday);
             _holiday.DoctorId = loggedInUser.Id;
             return _mapper.Map<HolidayDto>(await _doctorRepository.AddHoliday(_holiday));
         }
+
         public async Task<HolidayDto> EditHoliday(HolidayDto holiday)
         {
-            var error = new DataErrorException();
-
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
+            ValidationHelper.ValidateData(new DataErrorException(), holiday.StartDate.ToLocalTime() <= holiday.EndDate.ToLocalTime(), "date", "A kezdés nem lehet később, mint a szabadság vége.");
+            ValidationHelper.ValidateEntity(await _doctorRepository.HolidayExists(holiday.Id), "szabadság");
 
-            ValidationHelper.ValidateData(error, await _doctorRepository.HolidayExists(holiday.Id), "holidayId", "A megadott azonosítóval nincs szabadság rögzítve.");
             var holidayOwner = (await _doctorRepository.GetHolidayById(holiday.Id)).DoctorId;
-
-            ValidationHelper.ValidateData(error, loggedInUser.Id == holidayOwner || loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.Id == holidayOwner || loggedInUser.AuthLevel > 2);
             
             return _mapper.Map<HolidayDto>(await _doctorRepository.EditHoliday(_mapper.Map<Holiday>(holiday)));
         }
+
         public async Task<bool> DeleteHoliday(int id)
         {
-            var error = new DataErrorException();
-
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, loggedInUser.AuthLevel > 1, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
 
-            ValidationHelper.ValidateData(error, await _doctorRepository.HolidayExists(id), "holidayId", "A megadott azonosítóval nincs szabadság rögzítve.");
+            ValidationHelper.ValidateEntity(await _doctorRepository.HolidayExists(id), "szabadság"); ;
             var holidayOwner = (await _doctorRepository.GetHolidayById(id)).DoctorId;
 
-            ValidationHelper.ValidateData(error, loggedInUser.Id == holidayOwner || loggedInUser.AuthLevel > 2, "userId", "Nincs jogosultságod a művelet végrehajtásához.");
+            ValidationHelper.ValidatePermission(loggedInUser.Id == holidayOwner || loggedInUser.AuthLevel > 2);
 
             return await _doctorRepository.DeleteHoliday(await _doctorRepository.GetHolidayById(id));
         }
 
         public async Task<HolidayDto> GetHolidayById(int id)
-            => _mapper.Map<HolidayDto>(await _doctorRepository.GetHolidayById(id));
+        {
+            ValidationHelper.ValidateEntity(await _doctorRepository.HolidayExists(id), "szabadság");
+            return _mapper.Map<HolidayDto>(await _doctorRepository.GetHolidayById(id));
+        }
+
         public async Task<IEnumerable<HolidayDto>> GetDoctorsHolidays(string doctorId)
-            => _mapper.Map<IEnumerable<HolidayDto>>(await _doctorRepository.GetDoctorsHolidays(doctorId));
+        {
+            ValidationHelper.ValidateEntity(await _userRepository.UserExists(doctorId), "felhasználó");
+            var user = await _userRepository.GetUserByIdAsync(doctorId);
+            ValidationHelper.ValidateEntity(user.AuthLevel > 2, "orvos");
+            return _mapper.Map<IEnumerable<HolidayDto>>(await _doctorRepository.GetDoctorsHolidays(doctorId));
+        }
+
         public async Task<IEnumerable<HolidayDto>> GetHolidays()
             => _mapper.Map<IEnumerable<HolidayDto>>(await _doctorRepository.GetHolidays());
     }
