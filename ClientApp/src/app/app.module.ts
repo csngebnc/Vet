@@ -14,6 +14,8 @@ import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ToastrModule } from 'ngx-toastr';
+
 
 import { ImageCropperModule } from 'ngx-image-cropper';
 
@@ -74,6 +76,8 @@ import { ListArchivedAnimalByOwnerComponent } from './animal/list-archived-anima
 import { ListUsersComponent } from './admin/list-users/list-users.component';
 import { UserPhotoComponent } from './user/user-photo/user-photo.component';
 import { BookAppointmentByDoctorComponent } from './appointment/book-appointment-by-doctor/book-appointment-by-doctor.component';
+import { ErrorInterceptor } from './_interceptors/error.interceptor';
+import { ErrorMessageComponent } from './_error/error-message/error-message.component';
 
 @NgModule({
   declarations: [
@@ -121,7 +125,8 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
     ListArchivedAnimalByOwnerComponent,
     ListUsersComponent,
     UserPhotoComponent,
-    BookAppointmentByDoctorComponent
+    BookAppointmentByDoctorComponent,
+    ErrorMessageComponent
   ],
   imports: [FileUploadModule,
     MatModule,
@@ -130,6 +135,7 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TimepickerModule.forRoot(),
     ApiAuthorizationModule,
@@ -240,6 +246,7 @@ import { BookAppointmentByDoctorComponent } from './appointment/book-appointment
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     { provide: MAT_DATE_LOCALE, useValue: 'hu-HU' },
     { provide: MAT_RADIO_DEFAULT_OPTIONS, useValue: { color: 'primary' } },
     DatePipe

@@ -22,6 +22,7 @@ import { environment } from 'src/environments/environment';
 })
 export class AddRecordComponent implements OnInit {
 
+  validationErrors;
   uploader: FileUploader;
   hasBaseDropZoneOver = false;
 
@@ -136,7 +137,7 @@ export class AddRecordComponent implements OnInit {
     let newMedicalRecord: AddMedicalRecordDto = {
       date: new Date(),
       ownerEmail: this.addRecordForm.get('email').value,
-      animalId: this.addRecordForm.get('animalId').value === -1 ? null : this.addRecordForm.get('animalId').value,
+      animalId: this.addRecordForm.get('animalId').value < 0 ? null : this.addRecordForm.get('animalId').value,
       anamnesis: this.addRecordForm.get('anamnesis').value,
       symptoma: this.addRecordForm.get('symptoma').value,
       details: this.addRecordForm.get('details').value,
@@ -147,7 +148,7 @@ export class AddRecordComponent implements OnInit {
     this.medicalRecordService.addMedicalRecord(newMedicalRecord).subscribe(id => {
       this.uploader.setOptions({ url: environment.apiUrl + 'records/add-photo/' + id });
       this.uploader.uploadAll();
-    });
+    }, err => this.validationErrors = err);
   }
 
   fileOverBase(e: any) {

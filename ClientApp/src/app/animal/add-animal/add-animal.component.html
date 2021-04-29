@@ -1,8 +1,8 @@
 <div class="container" *ngIf="addAnimalForm">
     <form class="p-3" [formGroup]='addAnimalForm' (ngSubmit)="addAnimalForm.valid && addAnimal()" autocomplete="off">
         <div class="d-flex justify-content-between">
-            <h2 class="">Új állat felvétele</h2>
-            <h2><i class="fas fa-paw"></i></h2>
+            <h2 class="mb-0">Új állat felvétele</h2>
+            <h2 class="mb-0"><i class="fas fa-paw"></i></h2>
         </div>
         <hr>
         <mat-form-field class="full-width">
@@ -10,6 +10,7 @@
             <input matInput formControlName='name' required>
             <mat-error *ngIf="addAnimalForm.get('name').invalid">Az állat neve nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'name'"></error-message>
 
         <mat-form-field class="full-width">
             <mat-label>Születési dátum:</mat-label>
@@ -18,6 +19,7 @@
             <mat-datepicker #picker></mat-datepicker>
             <mat-error *ngIf="addAnimalForm.get('dateOfBirth').invalid">Születési dátum megadása kötelező.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'dateOfBirth'"></error-message>
 
         <div class="full-width">
             <mat-label>Állat neme:</mat-label>
@@ -28,6 +30,7 @@
                 <mat-radio-button value="nőstény">nőstény</mat-radio-button>
             </mat-radio-group>
         </div>
+        <error-message [validationErrors]="validationErrors" [tag]="'sex'"></error-message>
 
         <div class="full-width mb-2">
             <mat-label class="mr-3">Kép feltöltése:</mat-label>
@@ -40,6 +43,7 @@
                 <mat-option *ngFor="let spec of speciesList" [value]="spec.id">{{spec.name}}</mat-option>
             </mat-select>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'speciesId'"></error-message>
 
         <div *ngIf="imageChangedEvent" class="row dflex justify-content-center mb-4">
             <div style="width: 250px; max-height: 250px;">

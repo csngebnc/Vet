@@ -81,6 +81,24 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 
+mat-form-field .mat-form-field-underline {
+  position: relative;
+  top: 1px;
+  bottom: 0px;
+} 
+mat-form-field .mat-form-field-subscript-wrapper {
+  position: static;
+}
+
+mat-form-field .mat-form-field-wrapper {
+  padding: 0px !important;
+  
+}
+mat-form-field-subscript-wrapper mat-error{
+  font-size: 11px !important;
+}
+
+
 /*
 
 :root {

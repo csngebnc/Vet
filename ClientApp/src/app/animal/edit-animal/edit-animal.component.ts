@@ -17,9 +17,10 @@ export class EditAnimalComponent implements OnInit {
   active = 1;
   imageChangedEvent: any = '';
   croppedImage: any = '';
+  validationErrors;
 
-  @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any){
-    if(this.editAnimalForm.dirty){
+  @HostListener('window:beforeunload', ['$event']) unloadNotification($event: any) {
+    if (this.editAnimalForm.dirty) {
       $event.returnValue = true;
     }
   }
@@ -27,7 +28,7 @@ export class EditAnimalComponent implements OnInit {
   editAnimalForm: FormGroup;
   maxDate: Date;
   speciesList: any;
-  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) { 
+  constructor(private animalService: AnimalService, private speciesService: SpeciesService, private route: ActivatedRoute, private fb: FormBuilder, private datepipe: DatePipe) {
     this.refreshData();
   }
 
@@ -35,13 +36,13 @@ export class EditAnimalComponent implements OnInit {
     this.maxDate = new Date();
   }
 
-  refreshData(){
-    this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe( (animal: AnimalDto) => {
+  refreshData() {
+    this.animalService.getAnimal(this.route.snapshot.paramMap.get('animalid')).subscribe((animal: AnimalDto) => {
       this.animal = animal;
       this.speciesService.getAnimalSpecies().subscribe(response => {
         this.speciesList = response;
         this.initializeForm();
-      }) 
+      })
     })
   }
 
@@ -57,17 +58,17 @@ export class EditAnimalComponent implements OnInit {
     })
   }
 
-  updateAnimal(){
-    if(this.editAnimalForm.get('weight').value===""){
+  updateAnimal() {
+    if (this.editAnimalForm.get('weight').value === "") {
       this.editAnimalForm.patchValue({ weight: null });
     }
-    if(this.editAnimalForm.get('subspecies').value===""){
+    if (this.editAnimalForm.get('subspecies').value === "") {
       this.editAnimalForm.patchValue({ subspecies: null });
     }
-    this.animalService.updateAnimal(this.editAnimalForm.value).subscribe(() => {this.refreshData()}, err => console.log(err));;
+    this.animalService.updateAnimal(this.editAnimalForm.value).subscribe(() => { this.refreshData() }, err => this.validationErrors = err);
   }
 
-  updatePhoto(){
+  updatePhoto() {
     let formData = new FormData();
     formData.append('id', this.route.snapshot.paramMap.get('animalid'));
     formData.append('photo', this.croppedImage);
@@ -79,17 +80,17 @@ export class EditAnimalComponent implements OnInit {
     }, err => console.log(err));
   }
 
-  deletePhoto(){
+  deletePhoto() {
     this.animalService.deletePhoto(this.route.snapshot.paramMap.get('animalid')).subscribe(() => {
       this.refreshData();
     });
   }
 
 
-  fileChangeEvent(event: any) {this.imageChangedEvent = event;}
-  imageCropped(event: ImageCroppedEvent) {this.croppedImage = base64ToFile(event.base64);}
-  imageLoaded() {}
-  cropperReady() {}
-  loadImageFailed() {}
+  fileChangeEvent(event: any) { this.imageChangedEvent = event; }
+  imageCropped(event: ImageCroppedEvent) { this.croppedImage = base64ToFile(event.base64); }
+  imageLoaded() { }
+  cropperReady() { }
+  loadImageFailed() { }
 
 }

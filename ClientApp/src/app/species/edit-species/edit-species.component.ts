@@ -11,7 +11,7 @@ import { SpeciesService } from 'src/app/_services/species.service';
 })
 export class EditSpeciesComponent implements OnInit {
   editSpeciesForm: FormGroup;
-  validationErrors: string[] = [];
+  validationErrors;
 
   @Input() id;
 
@@ -31,6 +31,6 @@ export class EditSpeciesComponent implements OnInit {
     this.editSpeciesForm.addControl('id', new FormControl(this.id));
     this.speciesService.updateSpecies(this.editSpeciesForm.value).subscribe((spec: SpeciesDto) => {
       this.ngbModal.close(spec);
-    })
+    }, err => this.validationErrors = err)
   }
 }

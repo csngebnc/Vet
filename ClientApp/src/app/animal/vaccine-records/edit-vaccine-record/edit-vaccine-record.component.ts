@@ -17,6 +17,7 @@ export class EditVaccineRecordComponent implements OnInit {
 
   @Input() id;
   record: VaccineRecordDto;
+  validationErrors;
 
   constructor(private vaccineService: VaccineService, private fb: FormBuilder, private ngbModal: NgbActiveModal, public datepipe: DatePipe) { }
   addVaccineRecordForm: FormGroup;
@@ -43,6 +44,6 @@ export class EditVaccineRecordComponent implements OnInit {
       } else {
         alert('Hiba');
       }
-    })
+    }, err => this.validationErrors = err)
   }
 }

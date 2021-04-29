@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -9,7 +10,7 @@ export class MedicalRecordService {
 
   baseUrl = environment.apiUrl;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private toasr: ToastrService) { }
 
   addMedicalRecord(model: any) {
     return this.http.post(this.baseUrl + 'records', model);
@@ -52,6 +53,7 @@ export class MedicalRecordService {
   }
 
   generatePdf(id) {
+    this.toasr.warning("A pdf készítése elkeződött, hamarosan elkészül.", "PDF készítése");
     return this.http.get(this.baseUrl + 'records/pdf/' + id, { responseType: 'blob' });
   }
 }

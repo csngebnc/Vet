@@ -64,7 +64,9 @@ namespace Vet.BL.Pdf.Content
             p1.AddLineBreak();
             p1.AddText("Telefonszám:");
             p1.AddLineBreak();
-            p1.AddText(user.PhoneNumber);
+            if(user.PhoneNumber != null)
+                p1.AddText(user.PhoneNumber);
+
 
             // Add patient ID
             var p2 = cell.AddParagraph();

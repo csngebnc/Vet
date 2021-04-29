@@ -61,7 +61,7 @@ namespace Vet.BL
         {
             var error = new DataErrorException();
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
-            ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "vaccineId", "Az oltás időpontja nem lehet a jövőben.");
+            ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "date", "Az oltás időpontja nem lehet a jövőben.");
             ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(record.AnimalId), "állat");
             ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineExists(record.VaccineId), "oltás");
 
@@ -80,7 +80,7 @@ namespace Vet.BL
             ValidationHelper.ValidateEntity(await _vaccineRepository.VaccineRecordExists(record.Id), "korábban beadott oltás");
 
 
-            ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "vaccineId", "Az oltás időpontja nem lehet a jövőben.");
+            ValidationHelper.ValidateData(error, record.Date.ToLocalTime() <= DateTime.Now, "date", "Az oltás időpontja nem lehet a jövőben.");
             ValidationHelper.ValidateEntity(await _animalRepository.AnimalExists(record.AnimalId), "állat");
 
             var _animal = await _animalRepository.GetAnimalByIdAsync(record.AnimalId);

@@ -46,7 +46,7 @@ namespace Vet.BL
         {
             var loggedInUser = await _userRepository.GetUserByIdAsync(_httpContextAccessor.GetCurrentUserId());
             ValidationHelper.ValidatePermission(loggedInUser.AuthLevel > 1);
-
+            ValidationHelper.ValidatePermission(id != loggedInUser.Id);
             ValidationHelper.ValidateEntity(await _userRepository.UserExists(id), "felhasználó");
             var doctor = await _userRepository.GetUserByIdAsync(id);
             ValidationHelper.ValidateEntityAlreadyExists(doctor.AuthLevel > 1, "A megadott azonosítóval rendelkező felhasználó nem orvos.");

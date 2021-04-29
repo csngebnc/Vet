@@ -12,6 +12,7 @@ import { DoctorService } from 'src/app/_services/doctor.service';
 export class EditHolidayComponent implements OnInit {
 
   @Input() id;
+  validationErrors;
 
   editHolidayForm: FormGroup = this.fb.group({
     id: ['', Validators.required],
@@ -31,7 +32,7 @@ export class EditHolidayComponent implements OnInit {
   updateHoliday() {
     this.doctorService.updateHoliday(this.editHolidayForm.value).subscribe((res: HolidayDto) => {
       this.ngbModal.close(res);
-    })
+    }, err => this.validationErrors = err)
   }
 
 

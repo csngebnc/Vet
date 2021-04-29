@@ -141,6 +141,8 @@
                 </tr>
             </tbody>
         </table>
+        <error-message [validationErrors]="validationErrors" [tag]="'treatmentId'"></error-message>
+        <error-message [validationErrors]="validationErrors" [tag]="'date'"></error-message>
         <div>
             <button class="btn btn-dark mr-2" matStepperPrevious>Vissza: állat választása</button>
             <button class="btn btn-dark" (click)="bookAppointment()">Foglalás rögzítése</button>

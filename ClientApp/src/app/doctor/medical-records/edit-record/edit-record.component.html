@@ -12,6 +12,7 @@
                             required (change)="valuechange($event.target.value)">
                         <mat-error *ngIf="addRecordForm.controls['email']">A mező kitöltése kötelező.</mat-error>
                     </mat-form-field>
+                    <error-message [validationErrors]="validationErrors" [tag]="'ownerEmail'"></error-message>
                 </div>
                 <div class="col-4">
                     <mat-form-field class="full-width">

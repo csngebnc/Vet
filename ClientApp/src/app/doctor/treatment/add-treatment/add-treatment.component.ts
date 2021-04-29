@@ -12,8 +12,7 @@ import { TreatmentService } from 'src/app/_services/treatment.service';
 export class AddTreatmentComponent implements OnInit {
 
   addTreatmentForm: FormGroup;
-  validationErrors: string[] = [];
-
+  validationErrors;
   constructor(private treatmentService: TreatmentService, private fb: FormBuilder, private ngbModal: NgbActiveModal) { }
 
   ngOnInit(): void {
@@ -25,7 +24,7 @@ export class AddTreatmentComponent implements OnInit {
   addTreatment() {
     this.treatmentService.addTreatment(this.addTreatmentForm.value).subscribe((treatment: TreatmentDto) => {
       this.ngbModal.close(treatment);
-    })
+    }, err => this.validationErrors = err)
   }
 
 }

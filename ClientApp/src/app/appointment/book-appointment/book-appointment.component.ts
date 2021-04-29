@@ -4,6 +4,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatCalendar } from '@angular/material/datepicker';
 import { MatVerticalStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AnimalDto } from 'src/app/_models/animaldto';
 import { AppointmentTimeDto } from 'src/app/_models/appointmenttimedto';
 import { DoctorDto } from 'src/app/_models/doctordto';
@@ -26,6 +27,8 @@ export class BookAppointmentComponent implements OnInit {
   stepper: MatVerticalStepper;
 
   @ViewChild(MatCalendar) calendar: MatCalendar<Date>;
+
+  validationErrors;
 
   selectDoctorForm: FormGroup;
   selectTreatmentForm: FormGroup;
@@ -65,9 +68,9 @@ export class BookAppointmentComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder, private http: HttpClient,
     private treatmentService: TreatmentService, private treatmentTimeService: TreatmenttimeService,
-    private animalService: AnimalService, private appointmentService: AppointmentService, private doctorService: DoctorService, private router: Router) {
-    this.http.get('https://localhost:44345/api/doctors').subscribe((res: DoctorDto[]) => {
-      this.doctors = res;
+    private animalService: AnimalService, private appointmentService: AppointmentService, private doctorService: DoctorService, private toastr: ToastrService, private router: Router) {
+    this.doctorService.getDoctors().subscribe((docs: DoctorDto[]) => {
+      this.doctors = docs;
     });
 
     this.maxDate.setDate(this.maxDate.getDate() + this.maxAhead);
@@ -207,12 +210,8 @@ export class BookAppointmentComponent implements OnInit {
   }
 
   loadReservedTimes(value: Date) {
-    let params = new HttpParams()
-      .set('time', value.toLocaleString())
-      .set('doctorId', this.selectDoctorForm.get('doctorId').value);
-
     this.dates = [];
-    this.http.get('https://localhost:44345/api/appointments/getreserved', { params }).subscribe((res: AppointmentTimeDto[]) => { // SERVICE!!!!!!!!
+    this.appointmentService.getDoctorReservedTimes(this.selectDoctorForm.get('doctorId').value, value).subscribe((res: AppointmentTimeDto[]) => {
       this.dd = res;
       this.dd.forEach(d => {
         d.startDate = new Date(d.startDate);
@@ -244,9 +243,9 @@ export class BookAppointmentComponent implements OnInit {
 
   bookAppointment() {
     this.appointmentService.bookAppointment(this.addAppointmentForm.value).subscribe(res => {
-      alert("Sikeres időpontfoglalás!")
+      this.toastr.success("Sikeres foglalás", "A megadott időpontot rögzítettük rendszerünkben.")
       this.router.navigateByUrl('/');
-    })
+    }, err => this.validationErrors = err)
   }
 
   setEmpty() {
@@ -255,4 +254,7 @@ export class BookAppointmentComponent implements OnInit {
     });
     this.selectedAnimalName = '';
   }
+
 }
+
+

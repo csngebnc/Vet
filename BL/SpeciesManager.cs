@@ -56,7 +56,7 @@ namespace Vet.BL
 
             ValidationHelper.ValidateEntity(await _speciesRepository.SpeciesExists(id), "állatfaj");
             var spec = await _speciesRepository.GetAnimalSpeciesByIdWithAnimals(id);
-            ValidationHelper.ValidateEntityAlreadyExists(spec.Animals.Count > 0, "A megadott állatfajhoz már tartoznak állatok.");
+            ValidationHelper.ValidateEntityAlreadyExists(spec.Animals.Count == 0, "A megadott állatfajhoz már tartoznak állatok.");
 
             return await _speciesRepository.DeleteAnimalSpecies(spec);
         }

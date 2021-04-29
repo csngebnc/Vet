@@ -1,0 +1,7 @@
+<div class="error-class" *ngIf="validationErrors">
+    <ng-container *ngIf="validationErrors[tag]">
+        <div class="mat-error" *ngFor="let item of validationErrors[tag]">
+            {{item}}
+        </div>
+    </ng-container>
+</div>

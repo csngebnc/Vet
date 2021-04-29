@@ -11,7 +11,7 @@ import { SpeciesService } from 'src/app/_services/species.service';
 })
 export class AddSpeciesComponent implements OnInit {
   addSpeciesForm: FormGroup;
-  validationErrors: string[] = [];
+  validationErrors;
 
   constructor(private speciesService: SpeciesService, private fb: FormBuilder, private ngbModal: NgbActiveModal) { }
 
@@ -24,6 +24,8 @@ export class AddSpeciesComponent implements OnInit {
   addSpecies() {
     this.speciesService.addSpecies(this.addSpeciesForm.value).subscribe((spec: SpeciesDto) => {
       this.ngbModal.close(spec);
+    }, err => {
+      this.validationErrors = err;
     })
   }
 }

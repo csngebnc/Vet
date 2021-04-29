@@ -11,7 +11,7 @@ import { VaccineService } from '../../../_services/vaccine.service';
 export class AddVaccineComponent implements OnInit {
 
   addVaccineForm: FormGroup;
-  validationErrors: string[] = [];
+  validationErrors;
 
   constructor(private speciesService: VaccineService, private fb: FormBuilder, private ngbModal: NgbActiveModal) { }
 
@@ -24,6 +24,6 @@ export class AddVaccineComponent implements OnInit {
   addVaccine() {
     this.speciesService.addVaccine(this.addVaccineForm.value).subscribe((vaccine: VaccineDto) => {
       this.ngbModal.close(vaccine);
-    })
+    }, err => this.validationErrors = err)
   }
 }

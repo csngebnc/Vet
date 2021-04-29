@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
@@ -32,6 +32,14 @@ export class AppointmentService {
 
   doctorInactiveAppointments(id) {
     return this.http.get(this.baseUrl + 'appointments/doctor-inactive-appointments/' + id);
+  }
+
+  getDoctorReservedTimes(id, time) {
+    let params = new HttpParams()
+      .set('time', time.toLocaleString())
+      .set('doctorId', id);
+
+    return this.http.get(this.baseUrl + 'appointments/getreserved', { params });
   }
 
 }

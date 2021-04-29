@@ -19,8 +19,7 @@ export class AddTreatmentTimeComponent implements OnInit {
   duration = { hour: 0, minute: 5 };
 
   addTimeForm: FormGroup;
-  validationErrors: string[] = [];
-
+  validationErrors;
   days = [
     { id: 1, day: 'hétfő' },
     { id: 2, day: 'kedd' },
@@ -64,7 +63,7 @@ export class AddTreatmentTimeComponent implements OnInit {
 
     this.treatmentTimeService.addTreatmentTime(this.addTimeForm.value).subscribe((treatmentTime: TreatmentTimeDto) => {
       this.ngbModal.close(treatmentTime);
-    });
+    }, err => this.validationErrors = err);
   }
 
 }

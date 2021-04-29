@@ -10,7 +10,7 @@
                 <mat-icon *ngIf="(auth.getAuthLevel() | async)>=2" class="mr-2"
                     routerLink="../../record/{{med.id}}/edit">edit
                 </mat-icon>
-                <mat-icon (click)="genPdf(med.id)">picture_as_pdf</mat-icon>
+                <mat-icon class="noselect" (click)="genPdf(med.id)">picture_as_pdf</mat-icon>
             </mat-panel-description>
         </mat-expansion-panel-header>
         <h5><strong>Kórlap:</strong></h5>

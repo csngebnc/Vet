@@ -20,6 +20,7 @@ import { TherapiaService } from 'src/app/_services/therapia.service';
 })
 export class EditRecordComponent implements OnInit {
 
+  validationErrors;
   originalMedicalRecord: MedicalRecordDto;
 
   uploader: FileUploader;
@@ -173,7 +174,7 @@ export class EditRecordComponent implements OnInit {
     this.medicalRecordService.updateMedicalRecord(updatedMedicalRecord).subscribe((record: MedicalRecordDto) => {
       this.uploader.setOptions({ url: 'https://localhost:44345/api/records/add-photo/' + record.id });
       this.uploader.uploadAll();
-    });
+    }, err => this.validationErrors = err);
 
   }
 

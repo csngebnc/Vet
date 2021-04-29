@@ -2,8 +2,10 @@
     <form class="p-3" [formGroup]='addTherapiaForm' (ngSubmit)="addTherapiaForm.valid && addTherapia()"
         autocomplete="off">
         <div class="d-flex justify-content-between">
-            <h2 class="">Új állat felvétele</h2>
-            <h2><mat-icon>healing</mat-icon></h2>
+            <h2 class="">Új kórlap kezelés felvétele</h2>
+            <h2>
+                <mat-icon>healing</mat-icon>
+            </h2>
         </div>
         <hr>
         <mat-form-field class="full-width">
@@ -11,24 +13,28 @@
             <input matInput formControlName='name' required>
             <mat-error *ngIf="addTherapiaForm.get('name').invalid">Az mező nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'name'"></error-message>
 
         <mat-form-field class="full-width">
             <mat-label>Mértékegység neve:</mat-label>
             <input matInput formControlName='unitName' required>
             <mat-error *ngIf="addTherapiaForm.get('unitName').invalid">Az mező nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'unitName'"></error-message>
 
         <mat-form-field class="full-width">
             <mat-label>Egy egység tartalma mértékegység nélkül: (pl. 10)</mat-label>
             <input type="number" matInput formControlName='unit' required>
             <mat-error *ngIf="addTherapiaForm.get('unit').invalid">Az mező nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'unit'"></error-message>
 
         <mat-form-field class="full-width">
             <mat-label>Egy egység ára:</mat-label>
             <input type="number" matInput formControlName='pricePerUnit' required>
             <mat-error *ngIf="addTherapiaForm.get('pricePerUnit').invalid">Az mező nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'pricePerUnit'"></error-message>
 
 
         <div class="form-group text-center">

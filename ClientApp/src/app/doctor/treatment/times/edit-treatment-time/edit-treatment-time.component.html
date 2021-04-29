@@ -1,6 +1,6 @@
-
 <div class="container">
-    <form class="p-3" id="ngForm" #addForm="ngForm" [formGroup]='addTimeForm' (ngSubmit)="addTimeForm.valid && addTreatmentTime()" autocomplete="off">
+    <form class="p-3" id="ngForm" #addForm="ngForm" [formGroup]='editTimeForm'
+        (ngSubmit)="editTimeForm.valid && addTreatmentTime()" autocomplete="off">
         <h2 class="">Új idősáv</h2>
         <hr>
         <div class="form-group">
@@ -8,34 +8,37 @@
             <select class="form-control" formControlName="dayOfWeek">
                 <option value="" disabled>Válassz...</option>
                 <option *ngFor="let day of days" [ngValue]="day.id">{{day.day}}</option>
-             </select>
+            </select>
+            <error-message [validationErrors]="validationErrors" [tag]="'dayOfWeek'"> </error-message>
         </div>
 
-        <div class="row" *ngIf="validationErrors.length > 0">
-            <ul class="text-danger">
-                <li *ngFor="let error of validationErrors">{{error}}</li>
-            </ul>
-        </div>
     </form>
     <div class="form-group p-3 d-flex justify-content-around">
         <div>
             <label class="control-label">Legkorábban:</label>
-            <ngb-timepicker [(ngModel)]="startTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="startTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
+            <error-message [validationErrors]="validationErrors" [tag]="'startHour'"> </error-message>
+            <error-message [validationErrors]="validationErrors" [tag]="'startMin'"> </error-message>
         </div>
         <div>
             <label class="control-label">Legkésőbb:</label>
-            <ngb-timepicker [(ngModel)]="endTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="endTime" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
+            <error-message [validationErrors]="validationErrors" [tag]="'endHour'"> </error-message>
+            <error-message [validationErrors]="validationErrors" [tag]="'endMin'"> </error-message>
         </div>
         <div>
             <label class="control-label">Egy kezelés hossza:</label>
-            <ngb-timepicker [(ngModel)]="duration" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true"></ngb-timepicker>
+            <ngb-timepicker [(ngModel)]="duration" [spinners]="true" [minuteStep]="5" [readonlyInputs]="true">
+            </ngb-timepicker>
+            <error-message [validationErrors]="validationErrors" [tag]="'duration'"> </error-message>
         </div>
     </div>
-    
+
     <div class="form-group text-center">
         <button class="btn btn-success mr-2" form="ngForm" [disabled]="!addForm.form.valid">
             Idősáv felvétele
         </button>
     </div>
 </div>
-

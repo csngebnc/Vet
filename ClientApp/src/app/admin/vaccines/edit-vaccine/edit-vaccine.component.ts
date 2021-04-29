@@ -13,7 +13,7 @@ import { VaccineService } from 'src/app/_services/vaccine.service';
 export class EditVaccineComponent implements OnInit {
 
   editVaccineForm: FormGroup;
-  validationErrors: string[] = [];
+  validationErrors;
 
   @Input() id;
 
@@ -33,7 +33,7 @@ export class EditVaccineComponent implements OnInit {
     this.editVaccineForm.addControl('id', new FormControl(this.id));
     this.vaccineService.updateVaccine(this.editVaccineForm.value).subscribe((vaccine: VaccineDto) => {
       this.ngbModal.close(vaccine);
-    })
+    }, err => this.validationErrors = err)
   }
 
 }

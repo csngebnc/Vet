@@ -17,7 +17,7 @@ export class AddAnimalComponent implements OnInit {
   imageChangedEvent: any = '';
   addAnimalForm: FormGroup;
   maxDate: Date;
-  validationErrors: string[] = [];
+  validationErrors;
   speciesList: any;
 
 
@@ -49,12 +49,7 @@ export class AddAnimalComponent implements OnInit {
     formData.append('speciesid', this.addAnimalForm.get('speciesid').value);
     formData.append('photo', this.addAnimalForm.get('photo').value);
     this.animalService.addAnimal(formData).subscribe((animal: AnimalDto) => { this.ngbModal.close(animal) }, err => {
-      for (let key in err.error.errors) {
-        let array: string[] = err.error.errors[key];
-        array.forEach(v => {
-          console.log(`Key: ${key} --> message: ${v}`);
-        })
-      }
+      this.validationErrors = err;
     });
   }
 

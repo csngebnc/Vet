@@ -17,6 +17,7 @@ export class AddVaccineRecordComponent implements OnInit {
 
   @Input() animalId;
   vaccines: VaccineDto[] = [];
+  validationErrors;
 
   constructor(private vaccineService: VaccineService, private fb: FormBuilder, private ngbModal: NgbActiveModal, public datepipe: DatePipe) { }
   addVaccineRecordForm: FormGroup;
@@ -54,6 +55,6 @@ export class AddVaccineRecordComponent implements OnInit {
       } else {
         alert('Hiba');
       }
-    })
+    }, err => this.validationErrors = err)
   }
 }

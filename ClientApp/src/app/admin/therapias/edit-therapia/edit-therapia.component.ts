@@ -11,6 +11,7 @@ import { TherapiaService } from 'src/app/_services/therapia.service';
 })
 export class EditTherapiaComponent implements OnInit {
   @Input() id;
+  validationErrors;
   editTherapiaForm: FormGroup;
   constructor(private therapiaService: TherapiaService, private fb: FormBuilder, private ngbModal: NgbActiveModal) {
   }
@@ -30,6 +31,6 @@ export class EditTherapiaComponent implements OnInit {
   editTherapia() {
     this.therapiaService.updateTherapia(this.editTherapiaForm.value).subscribe((response: TherapiaDto) => {
       this.ngbModal.close(response);
-    })
+    }, err => this.validationErrors = err)
   }
 }

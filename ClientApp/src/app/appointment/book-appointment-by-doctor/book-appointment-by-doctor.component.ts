@@ -29,6 +29,8 @@ export class BookAppointmentByDoctorComponent implements OnInit {
 
   @ViewChild(MatCalendar) calendar: MatCalendar<Date>;
 
+  validationErrors;
+
   selectUserForm: FormGroup;
   selectDoctorForm: FormGroup;
   selectTreatmentForm: FormGroup;
@@ -274,7 +276,7 @@ export class BookAppointmentByDoctorComponent implements OnInit {
     this.appointmentService.bookAppointment(this.addAppointmentForm.value).subscribe(res => {
       alert("Sikeres időpontfoglalás!")
       this.router.navigateByUrl('/');
-    })
+    }, err => this.validationErrors = err)
   }
 
   setEmpty() {

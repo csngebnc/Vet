@@ -17,6 +17,7 @@
       <mat-error *ngIf="editHolidayForm.controls.endDate.hasError('matEndDateInvalid')">Hibás utolsó nap formátum
       </mat-error>
     </mat-form-field>
+    <error-message [validationErrors]="validationErrors" [tag]="'date'"></error-message>
   </div>
   <div class="row d-flex justify-content-center pt-2">
     <button class="btn btn-outline-dark mb-3" [disabled]="!editHolidayForm.valid"

@@ -12,6 +12,7 @@
             <input matInput formControlName='name' required>
             <mat-error *ngIf="addTreatmentForm.get('name').invalid">A mező nem lehet üres.</mat-error>
         </mat-form-field>
+        <error-message [validationErrors]="validationErrors" [tag]="'name'"></error-message>
 
         <div class="form-group text-center">
             <button [disabled]='!addTreatmentForm.valid' class="btn btn-success mr-2" type="submit">Kezelés

@@ -13,7 +13,7 @@ import { TreatmentService } from 'src/app/_services/treatment.service';
 export class EditTreatmentComponent implements OnInit {
 
   editTreatmentForm: FormGroup;
-  validationErrors: string[] = [];
+  validationErrors;
 
   @Input() id;
 
@@ -33,7 +33,7 @@ export class EditTreatmentComponent implements OnInit {
     this.editTreatmentForm.addControl('id', new FormControl(this.id));
     this.treatmentService.updateTreatment(this.editTreatmentForm.value).subscribe((treatment: TreatmentDto) => {
       this.ngbModal.close(treatment);
-    })
+    }, err => this.validationErrors = err)
   }
 
 }

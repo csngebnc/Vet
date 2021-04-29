@@ -71,12 +71,5 @@ namespace Vet.Controllers
             return BadRequest();
         }
 
-
-
-
-        //[HttpGet("times/{id}")]
-
-        //[HttpGet("time/{id}")]
-
     }
 }

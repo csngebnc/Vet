@@ -12,6 +12,7 @@ import { DoctorService } from 'src/app/_services/doctor.service';
 export class AddHolidayComponent implements OnInit {
 
   addHolidayForm: FormGroup;
+  validationErrors;
 
   constructor(private doctorService: DoctorService, private fb: FormBuilder, private ngbModal: NgbActiveModal) { }
 
@@ -25,7 +26,7 @@ export class AddHolidayComponent implements OnInit {
   addHoliday() {
     this.doctorService.addHoliday(this.addHolidayForm.value).subscribe((res: HolidayDto) => {
       this.ngbModal.close(res);
-    })
+    }, err => this.validationErrors = err)
   }
 
 }

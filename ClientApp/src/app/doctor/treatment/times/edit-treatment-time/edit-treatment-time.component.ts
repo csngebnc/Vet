@@ -15,8 +15,8 @@ export class EditTreatmentTimeComponent implements OnInit {
   endTime = { hour: 20, minute: 0 };
   duration = { hour: 0, minute: 5 };
 
-  addTimeForm: FormGroup;
-  validationErrors: string[] = [];
+  editTimeForm: FormGroup;
+  validationErrors;
 
   time: TreatmentTimeDto;
 
@@ -31,7 +31,7 @@ export class EditTreatmentTimeComponent implements OnInit {
   ]
 
   constructor(private treatmentTimeService: TreatmenttimeService, private fb: FormBuilder, private ngbModal: NgbActiveModal) {
-    this.addTimeForm = this.fb.group({
+    this.editTimeForm = this.fb.group({
       id: [''],
       startHour: ['', Validators.required],
       startMin: ['', Validators.required],
@@ -54,7 +54,7 @@ export class EditTreatmentTimeComponent implements OnInit {
   }
 
   initializeForm() {
-    this.addTimeForm = this.fb.group({
+    this.editTimeForm = this.fb.group({
       id: [''],
       startHour: [this.time.startHour, Validators.required],
       startMin: [this.time.startMin, Validators.required],
@@ -67,16 +67,18 @@ export class EditTreatmentTimeComponent implements OnInit {
   }
 
   addTreatmentTime() {
-    this.addTimeForm.patchValue({ id: this.id });
-    this.addTimeForm.patchValue({ startHour: this.startTime.hour });
-    this.addTimeForm.patchValue({ startMin: this.startTime.minute });
-    this.addTimeForm.patchValue({ endHour: this.endTime.hour });
-    this.addTimeForm.patchValue({ endMin: this.endTime.minute });
-    this.addTimeForm.patchValue({ duration: (this.duration.hour * 60 + this.duration.minute) });
+    this.editTimeForm.patchValue({ id: this.id });
+    this.editTimeForm.patchValue({ startHour: this.startTime.hour });
+    this.editTimeForm.patchValue({ startMin: this.startTime.minute });
+    this.editTimeForm.patchValue({ endHour: this.endTime.hour });
+    this.editTimeForm.patchValue({ endMin: this.endTime.minute });
+    this.editTimeForm.patchValue({ duration: (this.duration.hour * 60 + this.duration.minute) });
 
-    this.treatmentTimeService.updateTreatmentTime(this.addTimeForm.value).subscribe((treatmentTime: TreatmentTimeDto) => {
+    this.treatmentTimeService.updateTreatmentTime(this.editTimeForm.value).subscribe((treatmentTime: TreatmentTimeDto) => {
       this.ngbModal.close(treatmentTime);
-    });
+    }, err => this.validationErrors = err);
   }
 
 }
+
+
