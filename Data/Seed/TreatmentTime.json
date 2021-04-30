@@ -1,0 +1,542 @@
+[
+  {
+    "Id": 1,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 1,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 2,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 2,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 3,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 3,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 4,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 4,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 5,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 5,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 6,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 6,
+    "TreatmentId": 1
+  },
+  {
+    "Id": 7,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 1,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 8,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 2,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 9,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 3,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 10,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 4,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 11,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 5,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 12,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 6,
+    "TreatmentId": 2
+  },
+  {
+    "Id": 13,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 1,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 14,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 2,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 15,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 3,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 16,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 4,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 17,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 5,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 18,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 6,
+    "TreatmentId": 4
+  },
+  {
+    "Id": 19,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 1,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 20,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 2,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 21,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 3,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 22,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 4,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 23,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 5,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 24,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 10,
+    "DayOfWeek": 6,
+    "TreatmentId": 5
+  },
+  {
+    "Id": 25,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 1,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 26,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 2,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 27,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 3,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 28,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 4,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 29,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 5,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 30,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 6,
+    "TreatmentId": 6
+  },
+  {
+    "Id": 31,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 1,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 32,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 2,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 33,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 3,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 34,
+    "StartHour": 12,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 4,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 35,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 5,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 36,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 10,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 6,
+    "TreatmentId": 12
+  },
+  {
+    "Id": 37,
+    "StartHour": 10,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 40,
+    "DayOfWeek": 3,
+    "TreatmentId": 3
+  },
+  {
+    "Id": 38,
+    "StartHour": 10,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 40,
+    "DayOfWeek": 5,
+    "TreatmentId": 3
+  },
+  {
+    "Id": 39,
+    "StartHour": 16,
+    "StartMin": 0,
+    "EndHour": 18,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 3,
+    "TreatmentId": 7
+  },
+  {
+    "Id": 40,
+    "StartHour": 16,
+    "StartMin": 0,
+    "EndHour": 18,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 5,
+    "TreatmentId": 7
+  },
+  {
+    "Id": 41,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 2,
+    "TreatmentId": 8
+  },
+  {
+    "Id": 42,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 4,
+    "TreatmentId": 8
+  },
+  {
+    "Id": 43,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 2,
+    "TreatmentId": 10
+  },
+  {
+    "Id": 44,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 4,
+    "TreatmentId": 10
+  },
+  {
+    "Id": 45,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 2,
+    "TreatmentId": 16
+  },
+  {
+    "Id": 46,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 4,
+    "TreatmentId": 16
+  },
+  {
+    "Id": 47,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 16,
+    "EndMin": 0,
+    "Duration": 30,
+    "DayOfWeek": 1,
+    "TreatmentId": 9
+  },
+  {
+    "Id": 48,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 5,
+    "TreatmentId": 14
+  },
+  {
+    "Id": 49,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 20,
+    "DayOfWeek": 6,
+    "TreatmentId": 15
+  },
+  {
+    "Id": 50,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 15,
+    "DayOfWeek": 5,
+    "TreatmentId": 17
+  },
+  {
+    "Id": 51,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 5,
+    "TreatmentId": 11
+  },
+  {
+    "Id": 52,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 6,
+    "TreatmentId": 11
+  },
+  {
+    "Id": 53,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 5,
+    "TreatmentId": 13
+  },
+  {
+    "Id": 54,
+    "StartHour": 8,
+    "StartMin": 0,
+    "EndHour": 12,
+    "EndMin": 0,
+    "Duration": 5,
+    "DayOfWeek": 6,
+    "TreatmentId": 13
+  }
+]

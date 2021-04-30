@@ -1,0 +1,6001 @@
+[
+  {
+    "Id": 1,
+    "EndDate": "2020-02-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "AnimalId": 594,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 2,
+    "StartDate": "2020-01-25 12:00:00",
+    "EndDate": "2020-01-25 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 3,
+    "StartDate": "2020-07-07 08:00:00",
+    "EndDate": "2020-07-07 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 4,
+    "StartDate": "2021-05-16 12:00:00",
+    "EndDate": "2021-05-16 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "AnimalId": 585,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 5,
+    "StartDate": "2019-12-17 08:00:00",
+    "EndDate": "2019-12-17 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "d836527f-9fc8-4fcb-a0c5-ef4ee9cd74bd",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 6,
+    "StartDate": "2021-02-03 12:00:00",
+    "EndDate": "2021-02-03 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "AnimalId": 209,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 7,
+    "StartDate": "2020-03-19 08:00:00",
+    "EndDate": "2020-03-19 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "e6914db4-b830-434f-ba8f-29d9ddc5752a",
+    "AnimalId": 239,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 8,
+    "StartDate": "2019-12-30 08:00:00",
+    "EndDate": "2019-12-30 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": 316,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 9,
+    "StartDate": "2020-07-16 08:00:00",
+    "EndDate": "2020-07-16 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 10,
+    "StartDate": "2021-04-14 08:00:00",
+    "EndDate": "2021-04-14 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "AnimalId": 396,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 11,
+    "StartDate": "2020-01-31 08:00:00",
+    "EndDate": "2020-01-31 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "AnimalId": 204,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 12,
+    "StartDate": "2020-05-19 08:00:00",
+    "EndDate": "2020-05-19 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "AnimalId": 72,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 13,
+    "StartDate": "2020-03-26 08:00:00",
+    "EndDate": "2020-03-26 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "AnimalId": 235,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 14,
+    "StartDate": "2021-01-20 08:00:00",
+    "EndDate": "2021-01-20 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": 582,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 15,
+    "StartDate": "2020-12-29 12:00:00",
+    "EndDate": "2020-12-29 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "AnimalId": 364,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 16,
+    "StartDate": "2020-04-11 08:00:00",
+    "EndDate": "2020-04-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "AnimalId": 136,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 17,
+    "StartDate": "2019-04-07 12:00:00",
+    "EndDate": "2019-04-07 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": 41,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 18,
+    "StartDate": "2021-05-10 12:00:00",
+    "EndDate": "2021-05-10 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 19,
+    "StartDate": "2020-09-10 08:00:00",
+    "EndDate": "2020-09-10 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "AnimalId": 406,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 20,
+    "StartDate": "2021-03-26 12:00:00",
+    "EndDate": "2021-03-26 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 21,
+    "StartDate": "2021-03-23 12:00:00",
+    "EndDate": "2021-03-23 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 22,
+    "StartDate": "2020-06-13 08:00:00",
+    "EndDate": "2020-06-13 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 23,
+    "StartDate": "2019-10-04 08:00:00",
+    "EndDate": "2019-10-04 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 24,
+    "StartDate": "2021-04-04 08:00:00",
+    "EndDate": "2021-04-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "AnimalId": 317,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 25,
+    "StartDate": "2019-08-15 12:00:00",
+    "EndDate": "2019-08-15 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "AnimalId": 493,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 26,
+    "StartDate": "2019-07-22 12:00:00",
+    "EndDate": "2019-07-22 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "504605f3-ebde-429b-b38c-0ba6820b0c46",
+    "AnimalId": 220,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 27,
+    "StartDate": "2020-02-10 12:00:00",
+    "EndDate": "2020-02-10 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "AnimalId": 478,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 28,
+    "StartDate": "2020-05-11 12:00:00",
+    "EndDate": "2020-05-11 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "AnimalId": 73,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 29,
+    "StartDate": "2019-11-19 08:00:00",
+    "EndDate": "2019-11-19 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "kovacsmonika",
+    "AnimalId": 34,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 30,
+    "StartDate": "2021-03-22 12:00:00",
+    "EndDate": "2021-03-22 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "AnimalId": 518,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 31,
+    "StartDate": "2019-04-27 12:00:00",
+    "EndDate": "2019-04-27 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 32,
+    "StartDate": "2019-08-07 08:00:00",
+    "EndDate": "2019-08-07 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "9697edf0-60ba-4c1b-a8c6-7cd0041a48e3",
+    "AnimalId": 206,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 33,
+    "StartDate": "2019-04-24 12:00:00",
+    "EndDate": "2019-04-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 34,
+    "StartDate": "2019-11-18 08:00:00",
+    "EndDate": "2019-11-18 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "AnimalId": 66,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 35,
+    "StartDate": "2019-05-18 08:00:00",
+    "EndDate": "2019-05-18 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "AnimalId": 30,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 36,
+    "StartDate": "2020-12-26 12:00:00",
+    "EndDate": "2020-12-26 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 37,
+    "StartDate": "2020-11-23 08:00:00",
+    "EndDate": "2020-11-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 38,
+    "StartDate": "2020-02-06 08:00:00",
+    "EndDate": "2020-02-06 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 509,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 39,
+    "StartDate": "2021-02-17 08:00:00",
+    "EndDate": "2021-02-17 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "AnimalId": 95,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 40,
+    "StartDate": "2019-08-05 08:00:00",
+    "EndDate": "2019-08-05 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "419441c2-158b-49ea-bd85-626b3cf106de",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 41,
+    "StartDate": "2020-09-17 08:00:00",
+    "EndDate": "2020-09-17 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 42,
+    "StartDate": "2019-12-18 08:00:00",
+    "EndDate": "2019-12-18 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 43,
+    "StartDate": "2020-07-29 08:00:00",
+    "EndDate": "2020-07-29 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 44,
+    "StartDate": "2019-03-01 12:00:00",
+    "EndDate": "2019-03-01 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 45,
+    "StartDate": "2019-05-24 08:00:00",
+    "EndDate": "2019-05-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "AnimalId": 118,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 46,
+    "StartDate": "2019-08-26 08:00:00",
+    "EndDate": "2019-08-26 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 47,
+    "StartDate": "2019-09-30 08:00:00",
+    "EndDate": "2019-09-30 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "AnimalId": 395,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 48,
+    "StartDate": "2019-07-05 12:00:00",
+    "EndDate": "2019-07-05 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 49,
+    "StartDate": "2019-06-03 08:00:00",
+    "EndDate": "2019-06-03 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 50,
+    "StartDate": "2020-01-31 08:20:00",
+    "EndDate": "2020-01-31 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 51,
+    "StartDate": "2020-03-29 12:00:00",
+    "EndDate": "2020-03-29 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 52,
+    "StartDate": "2020-08-06 08:00:00",
+    "EndDate": "2020-08-06 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 53,
+    "StartDate": "2019-10-06 12:00:00",
+    "EndDate": "2019-10-06 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "AnimalId": 25,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 54,
+    "StartDate": "2019-10-03 08:00:00",
+    "EndDate": "2019-10-03 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 55,
+    "StartDate": "2021-05-14 08:00:00",
+    "EndDate": "2021-05-14 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "AnimalId": 570,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 56,
+    "StartDate": "2020-10-21 12:00:00",
+    "EndDate": "2020-10-21 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "AnimalId": 369,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 57,
+    "StartDate": "2020-06-24 08:00:00",
+    "EndDate": "2020-06-24 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 58,
+    "StartDate": "2021-03-18 12:00:00",
+    "EndDate": "2021-03-18 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "AnimalId": 342,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 59,
+    "StartDate": "2020-11-11 08:00:00",
+    "EndDate": "2020-11-11 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": 263,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 60,
+    "StartDate": "2021-01-29 08:00:00",
+    "EndDate": "2021-01-29 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "AnimalId": 95,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 61,
+    "StartDate": "2020-05-30 08:00:00",
+    "EndDate": "2020-05-30 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "beea87aa-91e5-4442-8b5b-37f0bbb745e3",
+    "AnimalId": 598,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 62,
+    "StartDate": "2020-10-29 08:00:00",
+    "EndDate": "2020-10-29 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 63,
+    "StartDate": "2020-03-14 08:00:00",
+    "EndDate": "2020-03-14 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 64,
+    "StartDate": "2020-11-29 08:00:00",
+    "EndDate": "2020-11-29 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "AnimalId": 251,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 65,
+    "StartDate": "2020-01-11 08:00:00",
+    "EndDate": "2020-01-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "AnimalId": 508,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 66,
+    "StartDate": "2019-07-06 12:00:00",
+    "EndDate": "2019-07-06 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 67,
+    "StartDate": "2020-12-10 08:00:00",
+    "EndDate": "2020-12-10 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": 484,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 68,
+    "StartDate": "2021-04-05 08:00:00",
+    "EndDate": "2021-04-05 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "e6914db4-b830-434f-ba8f-29d9ddc5752a",
+    "AnimalId": 239,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 69,
+    "StartDate": "2019-04-05 08:00:00",
+    "EndDate": "2019-04-05 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 70,
+    "StartDate": "2020-03-09 12:00:00",
+    "EndDate": "2020-03-09 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "AnimalId": 64,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 71,
+    "StartDate": "2019-06-21 12:00:00",
+    "EndDate": "2019-06-21 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "AnimalId": 586,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 72,
+    "StartDate": "2019-03-01 08:00:00",
+    "EndDate": "2019-03-01 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 73,
+    "StartDate": "2020-07-29 08:10:00",
+    "EndDate": "2020-07-29 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "AnimalId": 109,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 74,
+    "StartDate": "2019-12-10 08:00:00",
+    "EndDate": "2019-12-10 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 75,
+    "StartDate": "2020-09-15 12:00:00",
+    "EndDate": "2020-09-15 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": 580,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 76,
+    "StartDate": "2019-09-17 12:00:00",
+    "EndDate": "2019-09-17 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "4253aa6d-77ce-493c-8572-8b0447bcd62c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 77,
+    "StartDate": "2019-12-06 08:00:00",
+    "EndDate": "2019-12-06 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "AnimalId": 520,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 78,
+    "StartDate": "2019-06-02 12:00:00",
+    "EndDate": "2019-06-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "AnimalId": 160,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 79,
+    "StartDate": "2020-10-02 12:00:00",
+    "EndDate": "2020-10-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "fd3a1743-1f3c-4042-894f-6f72daa3c8c0",
+    "AnimalId": 587,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 80,
+    "StartDate": "2019-02-25 08:00:00",
+    "EndDate": "2019-02-25 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "AnimalId": 398,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 81,
+    "StartDate": "2021-01-29 08:20:00",
+    "EndDate": "2021-01-29 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "AnimalId": 338,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 82,
+    "StartDate": "2020-01-05 12:00:00",
+    "EndDate": "2020-01-05 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "AnimalId": 295,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 83,
+    "StartDate": "2020-11-05 12:00:00",
+    "EndDate": "2020-11-05 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 84,
+    "StartDate": "2020-03-29 12:20:00",
+    "EndDate": "2020-03-29 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "AnimalId": 140,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 85,
+    "StartDate": "2020-09-26 08:00:00",
+    "EndDate": "2020-09-26 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "AnimalId": 307,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 86,
+    "StartDate": "2019-09-03 08:00:00",
+    "EndDate": "2019-09-03 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "AnimalId": 143,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 87,
+    "StartDate": "2020-01-28 08:00:00",
+    "EndDate": "2020-01-28 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "AnimalId": 586,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 88,
+    "StartDate": "2019-07-12 12:00:00",
+    "EndDate": "2019-07-12 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 89,
+    "StartDate": "2019-08-02 08:00:00",
+    "EndDate": "2019-08-02 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 90,
+    "StartDate": "2019-08-28 08:00:00",
+    "EndDate": "2019-08-28 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 91,
+    "StartDate": "2020-10-07 08:00:00",
+    "EndDate": "2020-10-07 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 92,
+    "StartDate": "2019-04-30 08:00:00",
+    "EndDate": "2019-04-30 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "100804ad-f2d2-45cb-bc56-4ca2e7e5b26f",
+    "AnimalId": 589,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 93,
+    "StartDate": "2020-05-05 12:00:00",
+    "EndDate": "2020-05-05 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "b5ccc9dd-ccdc-456a-aab3-3d93173da7d2",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 94,
+    "StartDate": "2019-11-14 12:00:00",
+    "EndDate": "2019-11-14 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "AnimalId": 544,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 95,
+    "StartDate": "2019-10-02 08:00:00",
+    "EndDate": "2019-10-02 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 96,
+    "StartDate": "2020-08-29 12:00:00",
+    "EndDate": "2020-08-29 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "AnimalId": 156,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 97,
+    "StartDate": "2020-05-19 08:10:00",
+    "EndDate": "2020-05-19 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": 569,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 98,
+    "StartDate": "2019-09-16 12:00:00",
+    "EndDate": "2019-09-16 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "AnimalId": 291,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 99,
+    "StartDate": "2020-08-21 08:00:00",
+    "EndDate": "2020-08-21 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "f2e2b6a6-585b-45db-87ce-b4856bb1308d",
+    "AnimalId": 528,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 100,
+    "StartDate": "2021-02-08 12:00:00",
+    "EndDate": "2021-02-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "AnimalId": 396,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 101,
+    "StartDate": "2020-01-22 08:00:00",
+    "EndDate": "2020-01-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "4b7b3a39-1e9f-458c-93bb-9cc3770cfabe",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 102,
+    "StartDate": "2020-09-07 08:00:00",
+    "EndDate": "2020-09-07 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 103,
+    "StartDate": "2020-06-08 12:00:00",
+    "EndDate": "2020-06-08 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 104,
+    "StartDate": "2019-07-31 12:00:00",
+    "EndDate": "2019-07-31 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 105,
+    "StartDate": "2019-07-24 12:00:00",
+    "EndDate": "2019-07-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 106,
+    "StartDate": "2020-08-14 08:00:00",
+    "EndDate": "2020-08-14 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "AnimalId": 411,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 107,
+    "StartDate": "2020-08-17 08:00:00",
+    "EndDate": "2020-08-17 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "6cdc181a-632f-44e6-9f9f-56d5ad7f76dc",
+    "AnimalId": 468,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 108,
+    "StartDate": "2021-02-04 12:00:00",
+    "EndDate": "2021-02-04 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 109,
+    "StartDate": "2019-08-21 08:00:00",
+    "EndDate": "2019-08-21 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "AnimalId": 149,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 110,
+    "StartDate": "2019-06-16 08:00:00",
+    "EndDate": "2019-06-16 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "AnimalId": 405,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 111,
+    "StartDate": "2020-05-04 08:00:00",
+    "EndDate": "2020-05-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "2d96991e-06da-4a33-92f6-38db85f87d13",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 112,
+    "StartDate": "2021-03-26 08:00:00",
+    "EndDate": "2021-03-26 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "AnimalId": 149,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 113,
+    "StartDate": "2019-04-16 08:00:00",
+    "EndDate": "2019-04-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "AnimalId": 50,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 114,
+    "StartDate": "2020-02-15 08:20:00",
+    "EndDate": "2020-02-15 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "AnimalId": 464,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 115,
+    "StartDate": "2021-05-05 12:00:00",
+    "EndDate": "2021-05-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "AnimalId": 175,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 116,
+    "StartDate": "2020-06-19 08:00:00",
+    "EndDate": "2020-06-19 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "AnimalId": 259,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 117,
+    "StartDate": "2019-03-29 08:00:00",
+    "EndDate": "2019-03-29 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "AnimalId": 152,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 118,
+    "StartDate": "2021-03-31 08:00:00",
+    "EndDate": "2021-03-31 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "AnimalId": 280,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 119,
+    "StartDate": "2020-11-20 08:00:00",
+    "EndDate": "2020-11-20 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "AnimalId": 208,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 120,
+    "StartDate": "2020-07-02 12:00:00",
+    "EndDate": "2020-07-02 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "4b7b3a39-1e9f-458c-93bb-9cc3770cfabe",
+    "AnimalId": 517,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 121,
+    "StartDate": "2019-10-31 08:00:00",
+    "EndDate": "2019-10-31 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 122,
+    "StartDate": "2019-04-04 12:00:00",
+    "EndDate": "2019-04-04 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "AnimalId": 380,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 123,
+    "StartDate": "2021-04-14 12:00:00",
+    "EndDate": "2021-04-14 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "AnimalId": 372,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 124,
+    "StartDate": "2021-05-13 08:00:00",
+    "EndDate": "2021-05-13 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "AnimalId": 109,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 125,
+    "StartDate": "2020-03-24 08:00:00",
+    "EndDate": "2020-03-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 126,
+    "StartDate": "2019-04-10 08:00:00",
+    "EndDate": "2019-04-10 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "AnimalId": 396,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 127,
+    "StartDate": "2020-01-16 08:00:00",
+    "EndDate": "2020-01-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "AnimalId": 418,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 128,
+    "StartDate": "2020-10-28 08:00:00",
+    "EndDate": "2020-10-28 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 129,
+    "StartDate": "2020-10-19 08:00:00",
+    "EndDate": "2020-10-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 130,
+    "StartDate": "2019-10-19 08:00:00",
+    "EndDate": "2019-10-19 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "AnimalId": 288,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 131,
+    "StartDate": "2019-04-04 12:10:00",
+    "EndDate": "2019-04-04 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 49,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 132,
+    "StartDate": "2020-08-31 08:00:00",
+    "EndDate": "2020-08-31 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "AnimalId": 6,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 133,
+    "StartDate": "2019-02-21 08:00:00",
+    "EndDate": "2019-02-21 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "AnimalId": 109,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 134,
+    "StartDate": "2020-04-22 12:00:00",
+    "EndDate": "2020-04-22 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "AnimalId": 154,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 135,
+    "StartDate": "2019-11-09 08:00:00",
+    "EndDate": "2019-11-09 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 136,
+    "StartDate": "2020-10-30 12:00:00",
+    "EndDate": "2020-10-30 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "AnimalId": 136,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 137,
+    "StartDate": "2020-04-11 08:20:00",
+    "EndDate": "2020-04-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 138,
+    "StartDate": "2020-01-02 12:00:00",
+    "EndDate": "2020-01-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "cb426fab-0e61-49b5-ac46-4d8c5610e2ae",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 139,
+    "StartDate": "2020-01-30 12:00:00",
+    "EndDate": "2020-01-30 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": 569,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 140,
+    "StartDate": "2020-10-26 08:00:00",
+    "EndDate": "2020-10-26 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": 211,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 141,
+    "StartDate": "2020-04-11 08:40:00",
+    "EndDate": "2020-04-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "2d96991e-06da-4a33-92f6-38db85f87d13",
+    "AnimalId": 287,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 142,
+    "StartDate": "2020-09-27 08:00:00",
+    "EndDate": "2020-09-27 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "AnimalId": 366,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 143,
+    "StartDate": "2021-03-17 12:00:00",
+    "EndDate": "2021-03-17 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 144,
+    "StartDate": "2020-07-17 08:00:00",
+    "EndDate": "2020-07-17 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "AnimalId": 308,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 145,
+    "StartDate": "2021-03-02 12:00:00",
+    "EndDate": "2021-03-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "AnimalId": 172,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 146,
+    "StartDate": "2019-08-15 12:20:00",
+    "EndDate": "2019-08-15 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "a09f6d8c-656a-4d08-b6d4-cf5d2795fea6",
+    "AnimalId": 65,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 147,
+    "StartDate": "2020-11-09 08:00:00",
+    "EndDate": "2020-11-09 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "AnimalId": 314,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 148,
+    "StartDate": "2019-03-16 08:00:00",
+    "EndDate": "2019-03-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "1f2f416f-90cc-4f87-b5a3-e3a4fa6ca75f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 149,
+    "StartDate": "2021-03-26 08:20:00",
+    "EndDate": "2021-03-26 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "AnimalId": 250,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 150,
+    "StartDate": "2019-10-09 08:00:00",
+    "EndDate": "2019-10-09 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "AnimalId": 84,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 151,
+    "StartDate": "2019-11-09 08:20:00",
+    "EndDate": "2019-11-09 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 152,
+    "StartDate": "2020-12-31 12:00:00",
+    "EndDate": "2020-12-31 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "AnimalId": 58,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 153,
+    "StartDate": "2019-04-23 08:00:00",
+    "EndDate": "2019-04-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "AnimalId": 519,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 154,
+    "StartDate": "2020-07-17 12:00:00",
+    "EndDate": "2020-07-17 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "AnimalId": 259,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 155,
+    "StartDate": "2020-07-05 12:00:00",
+    "EndDate": "2020-07-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "AnimalId": 290,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 156,
+    "StartDate": "2020-05-15 12:00:00",
+    "EndDate": "2020-05-15 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "AnimalId": 597,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 157,
+    "StartDate": "2020-07-21 08:00:00",
+    "EndDate": "2020-07-21 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "AnimalId": 298,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 158,
+    "StartDate": "2021-02-08 12:20:00",
+    "EndDate": "2021-02-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "AnimalId": 309,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 159,
+    "StartDate": "2019-07-02 12:00:00",
+    "EndDate": "2019-07-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "AnimalId": 149,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 160,
+    "StartDate": "2020-05-25 12:00:00",
+    "EndDate": "2020-05-25 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 161,
+    "StartDate": "2021-01-14 12:00:00",
+    "EndDate": "2021-01-14 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 162,
+    "StartDate": "2020-03-25 08:00:00",
+    "EndDate": "2020-03-25 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "AnimalId": 534,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 163,
+    "StartDate": "2019-11-04 12:00:00",
+    "EndDate": "2019-11-04 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 164,
+    "StartDate": "2021-02-22 08:00:00",
+    "EndDate": "2021-02-22 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": 70,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 165,
+    "StartDate": "2021-01-12 08:00:00",
+    "EndDate": "2021-01-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 166,
+    "StartDate": "2020-12-19 08:00:00",
+    "EndDate": "2020-12-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "AnimalId": 309,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 167,
+    "StartDate": "2020-08-24 12:00:00",
+    "EndDate": "2020-08-24 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 168,
+    "StartDate": "2019-06-26 12:00:00",
+    "EndDate": "2019-06-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "AnimalId": 84,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 169,
+    "StartDate": "2020-10-02 12:20:00",
+    "EndDate": "2020-10-02 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "AnimalId": 544,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 170,
+    "StartDate": "2021-03-26 08:40:00",
+    "EndDate": "2021-03-26 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 171,
+    "StartDate": "2020-04-10 08:00:00",
+    "EndDate": "2020-04-10 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "AnimalId": 121,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 172,
+    "StartDate": "2021-05-18 12:00:00",
+    "EndDate": "2021-05-18 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "AnimalId": 578,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 173,
+    "StartDate": "2020-01-24 08:00:00",
+    "EndDate": "2020-01-24 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": 244,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 174,
+    "StartDate": "2019-11-13 08:00:00",
+    "EndDate": "2019-11-13 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "holnapeniko",
+    "AnimalId": 379,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 175,
+    "StartDate": "2020-12-22 12:00:00",
+    "EndDate": "2020-12-22 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 176,
+    "StartDate": "2020-11-30 08:00:00",
+    "EndDate": "2020-11-30 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 177,
+    "StartDate": "2020-07-23 08:00:00",
+    "EndDate": "2020-07-23 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 178,
+    "StartDate": "2019-10-18 08:00:00",
+    "EndDate": "2019-10-18 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 179,
+    "StartDate": "2019-07-23 12:00:00",
+    "EndDate": "2019-07-23 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "7f2b525c-b6bb-48f8-9e46-f6e323260f4b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 180,
+    "StartDate": "2021-03-27 08:00:00",
+    "EndDate": "2021-03-27 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 181,
+    "StartDate": "2020-07-06 08:00:00",
+    "EndDate": "2020-07-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 182,
+    "StartDate": "2020-02-29 08:00:00",
+    "EndDate": "2020-02-29 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "AnimalId": 187,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 183,
+    "StartDate": "2019-04-16 12:00:00",
+    "EndDate": "2019-04-16 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 184,
+    "StartDate": "2020-07-19 08:00:00",
+    "EndDate": "2020-07-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "AnimalId": 424,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 185,
+    "StartDate": "2020-02-11 08:00:00",
+    "EndDate": "2020-02-11 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "AnimalId": 202,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 186,
+    "StartDate": "2019-09-08 08:00:00",
+    "EndDate": "2019-09-08 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 187,
+    "StartDate": "2020-07-16 08:20:00",
+    "EndDate": "2020-07-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "AnimalId": 6,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 188,
+    "StartDate": "2019-02-22 12:00:00",
+    "EndDate": "2019-02-22 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 189,
+    "StartDate": "2020-04-08 08:00:00",
+    "EndDate": "2020-04-08 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "AnimalId": 210,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 190,
+    "StartDate": "2019-04-14 08:00:00",
+    "EndDate": "2019-04-14 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "AnimalId": 95,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 191,
+    "StartDate": "2020-07-02 12:10:00",
+    "EndDate": "2020-07-02 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "71264c02-9433-4bd2-9243-5ea11760b47d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 192,
+    "StartDate": "2020-10-04 12:00:00",
+    "EndDate": "2020-10-04 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "AnimalId": 384,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 193,
+    "StartDate": "2020-05-19 08:30:00",
+    "EndDate": "2020-05-19 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 194,
+    "StartDate": "2020-05-07 08:00:00",
+    "EndDate": "2020-05-07 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 195,
+    "StartDate": "2020-03-23 12:00:00",
+    "EndDate": "2020-03-23 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 196,
+    "StartDate": "2019-12-19 12:00:00",
+    "EndDate": "2019-12-19 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 197,
+    "StartDate": "2020-07-04 08:00:00",
+    "EndDate": "2020-07-04 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "f2e2b6a6-585b-45db-87ce-b4856bb1308d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 198,
+    "StartDate": "2019-02-24 08:00:00",
+    "EndDate": "2019-02-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "AnimalId": 51,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 199,
+    "StartDate": "2019-10-17 08:00:00",
+    "EndDate": "2019-10-17 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "AnimalId": 553,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 200,
+    "StartDate": "2019-09-03 12:00:00",
+    "EndDate": "2019-09-03 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "AnimalId": 24,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 201,
+    "StartDate": "2021-03-23 08:00:00",
+    "EndDate": "2021-03-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "AnimalId": 11,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 202,
+    "StartDate": "2020-05-15 08:00:00",
+    "EndDate": "2020-05-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 203,
+    "StartDate": "2019-07-03 08:00:00",
+    "EndDate": "2019-07-03 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "AnimalId": 197,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 204,
+    "StartDate": "2019-06-24 08:00:00",
+    "EndDate": "2019-06-24 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "AnimalId": 200,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 205,
+    "StartDate": "2020-02-04 12:00:00",
+    "EndDate": "2020-02-04 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "AnimalId": 503,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 206,
+    "StartDate": "2020-10-07 12:00:00",
+    "EndDate": "2020-10-07 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "db5d5da6-4d96-4366-813f-02990c20a4fb",
+    "AnimalId": 311,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 207,
+    "StartDate": "2019-06-22 08:00:00",
+    "EndDate": "2019-06-22 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 208,
+    "StartDate": "2019-09-13 12:00:00",
+    "EndDate": "2019-09-13 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 209,
+    "StartDate": "2021-04-24 08:00:00",
+    "EndDate": "2021-04-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 210,
+    "StartDate": "2021-02-10 12:00:00",
+    "EndDate": "2021-02-10 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 211,
+    "StartDate": "2020-02-08 12:00:00",
+    "EndDate": "2020-02-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 212,
+    "StartDate": "2020-02-23 08:00:00",
+    "EndDate": "2020-02-23 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "636d1067-d7dd-4b67-8bbb-f3faab343c51",
+    "AnimalId": 248,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 213,
+    "StartDate": "2020-09-19 08:00:00",
+    "EndDate": "2020-09-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "ac793d27-d966-444b-a39a-63b3bf9ebd7f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 214,
+    "StartDate": "2019-04-17 12:00:00",
+    "EndDate": "2019-04-17 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "AnimalId": 469,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 215,
+    "StartDate": "2019-10-19 12:00:00",
+    "EndDate": "2019-10-19 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "AnimalId": 60,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 216,
+    "StartDate": "2020-08-13 12:00:00",
+    "EndDate": "2020-08-13 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "AnimalId": 213,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 217,
+    "StartDate": "2019-06-11 12:00:00",
+    "EndDate": "2019-06-11 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 218,
+    "StartDate": "2020-08-31 12:00:00",
+    "EndDate": "2020-08-31 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 219,
+    "StartDate": "2020-09-18 12:00:00",
+    "EndDate": "2020-09-18 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "AnimalId": 342,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 220,
+    "StartDate": "2021-04-22 12:00:00",
+    "EndDate": "2021-04-22 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "db5d5da6-4d96-4366-813f-02990c20a4fb",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 221,
+    "StartDate": "2019-08-14 08:00:00",
+    "EndDate": "2019-08-14 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 222,
+    "StartDate": "2021-04-19 12:00:00",
+    "EndDate": "2021-04-19 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "5077c369-f6eb-427e-a65a-f4e761b51a9d",
+    "AnimalId": 130,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 223,
+    "StartDate": "2020-12-25 08:00:00",
+    "EndDate": "2020-12-25 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 224,
+    "StartDate": "2021-04-04 08:20:00",
+    "EndDate": "2021-04-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 225,
+    "StartDate": "2020-04-13 08:00:00",
+    "EndDate": "2020-04-13 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 226,
+    "StartDate": "2019-06-30 08:00:00",
+    "EndDate": "2019-06-30 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "tesztelek",
+    "AnimalId": 301,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 227,
+    "StartDate": "2019-05-30 08:00:00",
+    "EndDate": "2019-05-30 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": 52,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 228,
+    "StartDate": "2020-04-19 12:00:00",
+    "EndDate": "2020-04-19 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "AnimalId": 262,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 229,
+    "StartDate": "2021-02-11 12:00:00",
+    "EndDate": "2021-02-11 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "AnimalId": 96,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 230,
+    "StartDate": "2020-09-04 12:00:00",
+    "EndDate": "2020-09-04 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "AnimalId": 456,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 231,
+    "StartDate": "2019-07-06 08:00:00",
+    "EndDate": "2019-07-06 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "AnimalId": 50,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 232,
+    "StartDate": "2021-05-14 08:10:00",
+    "EndDate": "2021-05-14 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 233,
+    "StartDate": "2020-06-08 08:00:00",
+    "EndDate": "2020-06-08 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "AnimalId": 514,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 234,
+    "StartDate": "2020-01-22 08:20:00",
+    "EndDate": "2020-01-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 235,
+    "StartDate": "2021-03-29 12:00:00",
+    "EndDate": "2021-03-29 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "AnimalId": 251,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 236,
+    "StartDate": "2019-02-22 08:00:00",
+    "EndDate": "2019-02-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "AnimalId": 241,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 237,
+    "StartDate": "2019-12-06 08:20:00",
+    "EndDate": "2019-12-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 238,
+    "StartDate": "2019-08-03 08:00:00",
+    "EndDate": "2019-08-03 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "fb675924-5706-487c-bf38-5a4b1cf822cd",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 239,
+    "StartDate": "2019-08-14 08:10:00",
+    "EndDate": "2019-08-14 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "AnimalId": 557,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 240,
+    "StartDate": "2020-03-20 08:00:00",
+    "EndDate": "2020-03-20 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "f812f732-2897-4ab7-9b8c-696a41608b7d",
+    "AnimalId": 86,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 241,
+    "StartDate": "2020-04-15 08:00:00",
+    "EndDate": "2020-04-15 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "AnimalId": 51,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 242,
+    "StartDate": "2021-01-10 12:00:00",
+    "EndDate": "2021-01-10 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "AnimalId": 348,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 243,
+    "StartDate": "2020-10-11 08:00:00",
+    "EndDate": "2020-10-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "AnimalId": 342,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 244,
+    "StartDate": "2021-01-24 08:00:00",
+    "EndDate": "2021-01-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "AnimalId": 187,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 245,
+    "StartDate": "2019-09-15 08:00:00",
+    "EndDate": "2019-09-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "AnimalId": 28,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 246,
+    "StartDate": "2021-05-07 08:00:00",
+    "EndDate": "2021-05-07 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "b5ccc9dd-ccdc-456a-aab3-3d93173da7d2",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 247,
+    "StartDate": "2021-01-14 08:00:00",
+    "EndDate": "2021-01-14 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 248,
+    "StartDate": "2019-12-24 12:00:00",
+    "EndDate": "2019-12-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": 440,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 249,
+    "StartDate": "2020-05-09 12:00:00",
+    "EndDate": "2020-05-09 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "AnimalId": 30,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 250,
+    "StartDate": "2020-07-04 08:20:00",
+    "EndDate": "2020-07-04 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 251,
+    "StartDate": "2019-06-01 08:00:00",
+    "EndDate": "2019-06-01 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 252,
+    "StartDate": "2019-04-10 12:00:00",
+    "EndDate": "2019-04-10 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "AnimalId": 586,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 253,
+    "StartDate": "2019-08-03 08:10:00",
+    "EndDate": "2019-08-03 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": 52,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 254,
+    "StartDate": "2019-06-23 08:00:00",
+    "EndDate": "2019-06-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 255,
+    "StartDate": "2020-05-26 08:00:00",
+    "EndDate": "2020-05-26 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 256,
+    "StartDate": "2019-09-15 08:20:00",
+    "EndDate": "2019-09-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 257,
+    "StartDate": "2019-06-16 08:20:00",
+    "EndDate": "2019-06-16 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 49,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 258,
+    "StartDate": "2019-12-23 12:00:00",
+    "EndDate": "2019-12-23 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 259,
+    "StartDate": "2020-06-26 08:00:00",
+    "EndDate": "2020-06-26 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "AnimalId": 292,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 260,
+    "StartDate": "2020-07-22 08:00:00",
+    "EndDate": "2020-07-22 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "beea87aa-91e5-4442-8b5b-37f0bbb745e3",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 261,
+    "StartDate": "2019-04-02 12:00:00",
+    "EndDate": "2019-04-02 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 262,
+    "StartDate": "2020-01-28 08:20:00",
+    "EndDate": "2020-01-28 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "AnimalId": 16,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 263,
+    "StartDate": "2020-04-14 08:00:00",
+    "EndDate": "2020-04-14 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 264,
+    "StartDate": "2019-03-28 12:00:00",
+    "EndDate": "2019-03-28 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "18de7236-051c-4b01-b8bf-1f481abe8454",
+    "AnimalId": 487,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 265,
+    "StartDate": "2021-04-19 08:00:00",
+    "EndDate": "2021-04-19 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "AnimalId": 235,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 266,
+    "StartDate": "2020-05-14 08:00:00",
+    "EndDate": "2020-05-14 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "AnimalId": 279,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 267,
+    "StartDate": "2021-01-03 12:00:00",
+    "EndDate": "2021-01-03 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "AnimalId": 538,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 268,
+    "StartDate": "2021-03-28 08:00:00",
+    "EndDate": "2021-03-28 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "AnimalId": 348,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 269,
+    "StartDate": "2021-04-30 08:00:00",
+    "EndDate": "2021-04-30 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 270,
+    "StartDate": "2019-11-22 08:00:00",
+    "EndDate": "2019-11-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "AnimalId": 546,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 271,
+    "StartDate": "2021-04-05 08:20:00",
+    "EndDate": "2021-04-05 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 49,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 272,
+    "StartDate": "2020-11-16 08:00:00",
+    "EndDate": "2020-11-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "AnimalId": 129,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 273,
+    "StartDate": "2020-03-04 12:00:00",
+    "EndDate": "2020-03-04 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "AnimalId": 118,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 274,
+    "StartDate": "2019-08-09 08:00:00",
+    "EndDate": "2019-08-09 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "AnimalId": 314,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 275,
+    "StartDate": "2021-02-01 12:00:00",
+    "EndDate": "2021-02-01 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": 484,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 276,
+    "StartDate": "2019-12-10 08:10:00",
+    "EndDate": "2019-12-10 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 277,
+    "StartDate": "2019-12-04 08:00:00",
+    "EndDate": "2019-12-04 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 278,
+    "StartDate": "2020-03-02 12:00:00",
+    "EndDate": "2020-03-02 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "AnimalId": 411,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 279,
+    "StartDate": "2019-08-19 08:00:00",
+    "EndDate": "2019-08-19 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 280,
+    "StartDate": "2020-03-24 08:20:00",
+    "EndDate": "2020-03-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 281,
+    "StartDate": "2021-04-13 12:00:00",
+    "EndDate": "2021-04-13 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "AnimalId": 144,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 282,
+    "StartDate": "2020-05-19 08:50:00",
+    "EndDate": "2020-05-19 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "AnimalId": 368,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 283,
+    "StartDate": "2019-03-12 08:00:00",
+    "EndDate": "2019-03-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "AnimalId": 167,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 284,
+    "StartDate": "2020-03-08 08:00:00",
+    "EndDate": "2020-03-08 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 285,
+    "StartDate": "2019-02-28 08:00:00",
+    "EndDate": "2019-02-28 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 286,
+    "StartDate": "2021-05-04 12:00:00",
+    "EndDate": "2021-05-04 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 287,
+    "StartDate": "2021-03-27 12:00:00",
+    "EndDate": "2021-03-27 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 288,
+    "StartDate": "2019-06-06 12:00:00",
+    "EndDate": "2019-06-06 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "AnimalId": 227,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 289,
+    "StartDate": "2020-08-20 08:00:00",
+    "EndDate": "2020-08-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 290,
+    "StartDate": "2021-01-12 08:20:00",
+    "EndDate": "2021-01-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 291,
+    "StartDate": "2019-06-05 08:00:00",
+    "EndDate": "2019-06-05 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 292,
+    "StartDate": "2021-05-05 12:20:00",
+    "EndDate": "2021-05-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 293,
+    "StartDate": "2020-05-07 08:10:00",
+    "EndDate": "2020-05-07 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": 569,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 294,
+    "StartDate": "2020-03-18 08:00:00",
+    "EndDate": "2020-03-18 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "AnimalId": 518,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 295,
+    "StartDate": "2020-12-10 08:20:00",
+    "EndDate": "2020-12-10 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 296,
+    "StartDate": "2019-05-05 08:00:00",
+    "EndDate": "2019-05-05 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 297,
+    "StartDate": "2021-03-23 12:00:00",
+    "EndDate": "2021-03-23 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": 412,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 298,
+    "StartDate": "2021-04-29 12:00:00",
+    "EndDate": "2021-04-29 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "AnimalId": 6,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 299,
+    "StartDate": "2019-09-25 08:00:00",
+    "EndDate": "2019-09-25 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 300,
+    "StartDate": "2019-06-22 08:20:00",
+    "EndDate": "2019-06-22 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "d836527f-9fc8-4fcb-a0c5-ef4ee9cd74bd",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 301,
+    "StartDate": "2019-09-24 12:00:00",
+    "EndDate": "2019-09-24 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "AnimalId": 529,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 302,
+    "StartDate": "2020-02-10 08:00:00",
+    "EndDate": "2020-02-10 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "AnimalId": 535,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 303,
+    "StartDate": "2020-05-01 12:00:00",
+    "EndDate": "2020-05-01 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "AnimalId": 197,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 304,
+    "StartDate": "2020-03-24 08:30:00",
+    "EndDate": "2020-03-24 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 305,
+    "StartDate": "2020-01-30 12:20:00",
+    "EndDate": "2020-01-30 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "AnimalId": 129,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 306,
+    "StartDate": "2020-02-02 08:00:00",
+    "EndDate": "2020-02-02 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 307,
+    "StartDate": "2020-05-26 12:00:00",
+    "EndDate": "2020-05-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "ac793d27-d966-444b-a39a-63b3bf9ebd7f",
+    "AnimalId": 498,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 308,
+    "StartDate": "2019-09-30 08:20:00",
+    "EndDate": "2019-09-30 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "65a0d755-c3c7-4818-a2cb-97ed51225d3c",
+    "AnimalId": 362,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 309,
+    "StartDate": "2020-11-27 12:00:00",
+    "EndDate": "2020-11-27 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 310,
+    "StartDate": "2020-07-22 08:20:00",
+    "EndDate": "2020-07-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": 392,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 311,
+    "StartDate": "2020-10-21 08:00:00",
+    "EndDate": "2020-10-21 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "AnimalId": 544,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 312,
+    "StartDate": "2020-10-29 08:20:00",
+    "EndDate": "2020-10-29 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "AnimalId": 536,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 313,
+    "StartDate": "2019-09-19 08:00:00",
+    "EndDate": "2019-09-19 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "AnimalId": 567,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 314,
+    "StartDate": "2019-11-24 08:00:00",
+    "EndDate": "2019-11-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "AnimalId": 396,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 315,
+    "StartDate": "2020-08-11 12:00:00",
+    "EndDate": "2020-08-11 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 316,
+    "StartDate": "2020-11-01 12:00:00",
+    "EndDate": "2020-11-01 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "AnimalId": 103,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 317,
+    "StartDate": "2020-11-10 08:00:00",
+    "EndDate": "2020-11-10 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "aa24ae40-3d8b-4fcb-878c-d30078aaeaf6",
+    "AnimalId": 501,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 318,
+    "StartDate": "2020-08-08 12:00:00",
+    "EndDate": "2020-08-08 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 319,
+    "StartDate": "2020-04-23 08:00:00",
+    "EndDate": "2020-04-23 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "AnimalId": 550,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 320,
+    "StartDate": "2019-06-29 08:00:00",
+    "EndDate": "2019-06-29 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "kovacsmonika",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 321,
+    "StartDate": "2021-04-23 08:00:00",
+    "EndDate": "2021-04-23 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "AnimalId": 51,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 322,
+    "StartDate": "2021-05-18 08:00:00",
+    "EndDate": "2021-05-18 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "AnimalId": 460,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 323,
+    "StartDate": "2019-07-11 08:00:00",
+    "EndDate": "2019-07-11 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "AnimalId": 491,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 324,
+    "StartDate": "2021-04-12 08:00:00",
+    "EndDate": "2021-04-12 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 325,
+    "StartDate": "2021-03-15 12:00:00",
+    "EndDate": "2021-03-15 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "AnimalId": 291,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 326,
+    "StartDate": "2020-05-12 12:00:00",
+    "EndDate": "2020-05-12 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "AnimalId": 57,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 327,
+    "StartDate": "2020-07-08 08:00:00",
+    "EndDate": "2020-07-08 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "AnimalId": 477,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 328,
+    "StartDate": "2020-03-07 12:00:00",
+    "EndDate": "2020-03-07 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "42b1952c-6856-43b4-aa80-e02c78d6f308",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 329,
+    "StartDate": "2020-03-05 08:00:00",
+    "EndDate": "2020-03-05 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 330,
+    "StartDate": "2019-06-15 08:00:00",
+    "EndDate": "2019-06-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "AnimalId": 35,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 331,
+    "StartDate": "2020-05-08 12:00:00",
+    "EndDate": "2020-05-08 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "kovacsmonika",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 332,
+    "StartDate": "2020-03-06 08:00:00",
+    "EndDate": "2020-03-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "6b659a1a-744a-48a1-86e9-ad3b81f72b96",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 333,
+    "StartDate": "2019-07-12 08:00:00",
+    "EndDate": "2019-07-12 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "AnimalId": 24,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 334,
+    "StartDate": "2020-09-26 12:00:00",
+    "EndDate": "2020-09-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "AnimalId": 366,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 335,
+    "StartDate": "2021-01-31 08:00:00",
+    "EndDate": "2021-01-31 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": 552,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 336,
+    "StartDate": "2019-11-03 12:00:00",
+    "EndDate": "2019-11-03 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "AnimalId": 520,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 337,
+    "StartDate": "2020-02-21 08:00:00",
+    "EndDate": "2020-02-21 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 338,
+    "StartDate": "2020-01-18 12:00:00",
+    "EndDate": "2020-01-18 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "AnimalId": 202,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 339,
+    "StartDate": "2019-09-28 08:00:00",
+    "EndDate": "2019-09-28 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 340,
+    "StartDate": "2020-11-19 12:00:00",
+    "EndDate": "2020-11-19 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 341,
+    "StartDate": "2021-03-31 08:20:00",
+    "EndDate": "2021-03-31 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 342,
+    "StartDate": "2019-07-20 12:00:00",
+    "EndDate": "2019-07-20 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 343,
+    "StartDate": "2019-04-24 12:20:00",
+    "EndDate": "2019-04-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "AnimalId": 229,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 344,
+    "StartDate": "2021-05-09 12:00:00",
+    "EndDate": "2021-05-09 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "4253aa6d-77ce-493c-8572-8b0447bcd62c",
+    "AnimalId": 272,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 345,
+    "StartDate": "2020-12-25 12:00:00",
+    "EndDate": "2020-12-25 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "ef8948f5-8244-41ed-98ca-1f7e5b187337",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 346,
+    "StartDate": "2020-03-19 08:20:00",
+    "EndDate": "2020-03-19 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "AnimalId": 322,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 347,
+    "StartDate": "2020-06-29 08:00:00",
+    "EndDate": "2020-06-29 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "AnimalId": 8,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 348,
+    "StartDate": "2020-09-12 08:00:00",
+    "EndDate": "2020-09-12 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 349,
+    "StartDate": "2019-12-24 12:20:00",
+    "EndDate": "2019-12-24 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "AnimalId": 215,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 350,
+    "StartDate": "2021-01-05 12:00:00",
+    "EndDate": "2021-01-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 351,
+    "StartDate": "2020-04-13 08:10:00",
+    "EndDate": "2020-04-13 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 352,
+    "StartDate": "2020-08-14 08:20:00",
+    "EndDate": "2020-08-14 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "b356c661-a9b7-48b1-b0f4-2c5894cb8fb8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 353,
+    "StartDate": "2020-08-09 12:00:00",
+    "EndDate": "2020-08-09 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "AnimalId": 306,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 354,
+    "StartDate": "2019-10-23 12:00:00",
+    "EndDate": "2019-10-23 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 355,
+    "StartDate": "2019-06-26 08:00:00",
+    "EndDate": "2019-06-26 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "AnimalId": 586,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 356,
+    "StartDate": "2020-08-31 12:10:00",
+    "EndDate": "2020-08-31 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 357,
+    "StartDate": "2019-02-22 08:20:00",
+    "EndDate": "2019-02-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 358,
+    "StartDate": "2020-07-09 08:00:00",
+    "EndDate": "2020-07-09 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "AnimalId": 235,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 359,
+    "StartDate": "2020-09-08 08:00:00",
+    "EndDate": "2020-09-08 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "AnimalId": 251,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 360,
+    "StartDate": "2020-07-09 12:00:00",
+    "EndDate": "2020-07-09 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 361,
+    "StartDate": "2020-08-28 08:00:00",
+    "EndDate": "2020-08-28 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 362,
+    "StartDate": "2019-03-06 08:00:00",
+    "EndDate": "2019-03-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 363,
+    "StartDate": "2019-12-06 12:00:00",
+    "EndDate": "2019-12-06 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 364,
+    "StartDate": "2020-02-11 08:10:00",
+    "EndDate": "2020-02-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "AnimalId": 397,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 365,
+    "StartDate": "2021-03-18 08:00:00",
+    "EndDate": "2021-03-18 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": 75,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 366,
+    "StartDate": "2021-04-17 08:00:00",
+    "EndDate": "2021-04-17 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 367,
+    "StartDate": "2021-02-23 08:00:00",
+    "EndDate": "2021-02-23 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 368,
+    "StartDate": "2020-07-01 08:00:00",
+    "EndDate": "2020-07-01 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 369,
+    "StartDate": "2020-08-20 08:10:00",
+    "EndDate": "2020-08-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "f6566d57-d8bd-4074-8400-4a17c7b5050e",
+    "AnimalId": 126,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 370,
+    "StartDate": "2020-11-30 12:00:00",
+    "EndDate": "2020-11-30 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": 263,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 371,
+    "StartDate": "2020-01-22 12:00:00",
+    "EndDate": "2020-01-22 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": 316,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 372,
+    "StartDate": "2019-11-25 08:00:00",
+    "EndDate": "2019-11-25 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "AnimalId": 550,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 373,
+    "StartDate": "2019-05-17 12:00:00",
+    "EndDate": "2019-05-17 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "AnimalId": 282,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 374,
+    "StartDate": "2019-10-01 12:00:00",
+    "EndDate": "2019-10-01 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "AnimalId": 369,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 375,
+    "StartDate": "2020-04-03 08:00:00",
+    "EndDate": "2020-04-03 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "419441c2-158b-49ea-bd85-626b3cf106de",
+    "AnimalId": 145,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 376,
+    "StartDate": "2020-10-23 08:00:00",
+    "EndDate": "2020-10-23 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 377,
+    "StartDate": "2020-03-07 12:10:00",
+    "EndDate": "2020-03-07 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "8f4084dd-7d5c-4be0-b426-9ebabb3b883a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 378,
+    "StartDate": "2019-04-02 08:00:00",
+    "EndDate": "2019-04-02 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": 569,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 379,
+    "StartDate": "2020-05-28 12:00:00",
+    "EndDate": "2020-05-28 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "f6566d57-d8bd-4074-8400-4a17c7b5050e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 380,
+    "StartDate": "2020-06-16 08:00:00",
+    "EndDate": "2020-06-16 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "b356c661-a9b7-48b1-b0f4-2c5894cb8fb8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 381,
+    "StartDate": "2020-10-24 08:00:00",
+    "EndDate": "2020-10-24 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "AnimalId": 521,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 382,
+    "StartDate": "2020-05-08 12:20:00",
+    "EndDate": "2020-05-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "AnimalId": 557,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 383,
+    "StartDate": "2019-11-25 12:00:00",
+    "EndDate": "2019-11-25 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "AnimalId": 341,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 384,
+    "StartDate": "2021-05-19 12:00:00",
+    "EndDate": "2021-05-19 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 385,
+    "StartDate": "2019-09-06 08:00:00",
+    "EndDate": "2019-09-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "AnimalId": 9,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 386,
+    "StartDate": "2020-04-13 12:00:00",
+    "EndDate": "2020-04-13 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 387,
+    "StartDate": "2019-05-12 08:00:00",
+    "EndDate": "2019-05-12 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "AnimalId": 441,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 388,
+    "StartDate": "2019-09-16 08:00:00",
+    "EndDate": "2019-09-16 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 389,
+    "StartDate": "2021-04-21 08:00:00",
+    "EndDate": "2021-04-21 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "65a0d755-c3c7-4818-a2cb-97ed51225d3c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 390,
+    "StartDate": "2021-01-19 08:00:00",
+    "EndDate": "2021-01-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "AnimalId": 108,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 391,
+    "StartDate": "2019-04-05 12:00:00",
+    "EndDate": "2019-04-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "0476dff4-e2e9-4d2a-b5ed-18b205b5e359",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 392,
+    "StartDate": "2020-10-09 08:00:00",
+    "EndDate": "2020-10-09 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 393,
+    "StartDate": "2019-10-01 12:20:00",
+    "EndDate": "2019-10-01 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "AnimalId": 360,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 394,
+    "StartDate": "2021-04-23 08:10:00",
+    "EndDate": "2021-04-23 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "AnimalId": 178,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 395,
+    "StartDate": "2019-03-15 12:00:00",
+    "EndDate": "2019-03-15 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "aa24ae40-3d8b-4fcb-878c-d30078aaeaf6",
+    "AnimalId": 46,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 396,
+    "StartDate": "2019-08-12 12:00:00",
+    "EndDate": "2019-08-12 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "AnimalId": 580,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 397,
+    "StartDate": "2019-06-05 08:20:00",
+    "EndDate": "2019-06-05 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "AnimalId": 360,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 398,
+    "StartDate": "2019-10-20 08:00:00",
+    "EndDate": "2019-10-20 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "AnimalId": 345,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 399,
+    "StartDate": "2019-07-16 08:00:00",
+    "EndDate": "2019-07-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "AnimalId": 451,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 400,
+    "StartDate": "2020-05-15 12:00:00",
+    "EndDate": "2020-05-15 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "AnimalId": 291,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 401,
+    "StartDate": "2019-09-18 08:00:00",
+    "EndDate": "2019-09-18 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 402,
+    "StartDate": "2020-11-25 12:00:00",
+    "EndDate": "2020-11-25 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 403,
+    "StartDate": "2021-01-10 08:00:00",
+    "EndDate": "2021-01-10 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 404,
+    "StartDate": "2019-08-20 08:00:00",
+    "EndDate": "2019-08-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 405,
+    "StartDate": "2021-05-02 08:00:00",
+    "EndDate": "2021-05-02 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "fb675924-5706-487c-bf38-5a4b1cf822cd",
+    "AnimalId": 545,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 406,
+    "StartDate": "2020-01-27 12:00:00",
+    "EndDate": "2020-01-27 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 407,
+    "StartDate": "2020-02-06 08:20:00",
+    "EndDate": "2020-02-06 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 408,
+    "StartDate": "2021-04-11 12:00:00",
+    "EndDate": "2021-04-11 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 409,
+    "StartDate": "2020-04-26 12:00:00",
+    "EndDate": "2020-04-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 410,
+    "StartDate": "2020-10-01 08:00:00",
+    "EndDate": "2020-10-01 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 411,
+    "StartDate": "2019-09-17 08:00:00",
+    "EndDate": "2019-09-17 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 412,
+    "StartDate": "2020-06-01 12:00:00",
+    "EndDate": "2020-06-01 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "636d1067-d7dd-4b67-8bbb-f3faab343c51",
+    "AnimalId": 248,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 413,
+    "StartDate": "2019-06-23 08:20:00",
+    "EndDate": "2019-06-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "AnimalId": 175,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 414,
+    "StartDate": "2021-05-16 08:00:00",
+    "EndDate": "2021-05-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "AnimalId": 184,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 415,
+    "StartDate": "2020-12-19 08:20:00",
+    "EndDate": "2020-12-19 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "AnimalId": 43,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 416,
+    "StartDate": "2021-02-24 08:00:00",
+    "EndDate": "2021-02-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 417,
+    "StartDate": "2020-01-07 12:00:00",
+    "EndDate": "2020-01-07 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "AnimalId": 307,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 418,
+    "StartDate": "2020-10-27 08:00:00",
+    "EndDate": "2020-10-27 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "kovacsmonika",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 419,
+    "StartDate": "2019-05-08 12:00:00",
+    "EndDate": "2019-05-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 420,
+    "StartDate": "2021-04-09 12:00:00",
+    "EndDate": "2021-04-09 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "6cdc181a-632f-44e6-9f9f-56d5ad7f76dc",
+    "AnimalId": 468,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 421,
+    "StartDate": "2019-11-28 12:00:00",
+    "EndDate": "2019-11-28 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 422,
+    "StartDate": "2021-03-20 08:00:00",
+    "EndDate": "2021-03-20 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "AnimalId": 156,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 423,
+    "StartDate": "2020-12-26 08:00:00",
+    "EndDate": "2020-12-26 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "AnimalId": 236,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 424,
+    "StartDate": "2019-12-25 08:00:00",
+    "EndDate": "2019-12-25 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "AnimalId": 149,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 425,
+    "StartDate": "2019-12-14 12:00:00",
+    "EndDate": "2019-12-14 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "AnimalId": 119,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 426,
+    "StartDate": "2020-05-09 08:00:00",
+    "EndDate": "2020-05-09 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "AnimalId": 235,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 427,
+    "StartDate": "2019-11-13 08:20:00",
+    "EndDate": "2019-11-13 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "AnimalId": 17,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 428,
+    "StartDate": "2019-09-28 12:00:00",
+    "EndDate": "2019-09-28 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "281ce08e-eba2-431f-b1a1-51470df71e31",
+    "AnimalId": 403,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 429,
+    "StartDate": "2019-06-17 12:00:00",
+    "EndDate": "2019-06-17 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 430,
+    "StartDate": "2019-08-12 08:00:00",
+    "EndDate": "2019-08-12 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 431,
+    "StartDate": "2019-11-03 12:10:00",
+    "EndDate": "2019-11-03 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": 552,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 432,
+    "StartDate": "2021-04-07 08:00:00",
+    "EndDate": "2021-04-07 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "AnimalId": 25,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 433,
+    "StartDate": "2020-12-31 12:20:00",
+    "EndDate": "2020-12-31 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "AnimalId": 368,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 434,
+    "StartDate": "2021-03-15 08:00:00",
+    "EndDate": "2021-03-15 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": 440,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 435,
+    "StartDate": "2019-10-18 08:20:00",
+    "EndDate": "2019-10-18 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "1506ff51-0175-4cbd-9351-51f8a1b6adcc",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 436,
+    "StartDate": "2021-01-31 08:20:00",
+    "EndDate": "2021-01-31 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "9c13b82e-56c2-4376-a494-d2beaec83b29",
+    "AnimalId": 444,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 437,
+    "StartDate": "2020-08-16 08:00:00",
+    "EndDate": "2020-08-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 438,
+    "StartDate": "2020-05-17 12:00:00",
+    "EndDate": "2020-05-17 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "AnimalId": 282,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 439,
+    "StartDate": "2020-07-12 08:00:00",
+    "EndDate": "2020-07-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 440,
+    "StartDate": "2021-04-28 08:00:00",
+    "EndDate": "2021-04-28 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "AnimalId": 518,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 441,
+    "StartDate": "2020-11-30 08:00:00",
+    "EndDate": "2020-11-30 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "AnimalId": 235,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 442,
+    "StartDate": "2019-07-04 08:00:00",
+    "EndDate": "2019-07-04 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "AnimalId": 117,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 443,
+    "StartDate": "2019-03-08 08:00:00",
+    "EndDate": "2019-03-08 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "AnimalId": 73,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 444,
+    "StartDate": "2019-05-02 12:00:00",
+    "EndDate": "2019-05-02 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "AnimalId": 364,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 445,
+    "StartDate": "2021-02-24 08:10:00",
+    "EndDate": "2021-02-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "AnimalId": 288,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 446,
+    "StartDate": "2020-08-14 12:00:00",
+    "EndDate": "2020-08-14 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "tesztelek",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 447,
+    "StartDate": "2021-01-26 08:00:00",
+    "EndDate": "2021-01-26 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 448,
+    "StartDate": "2020-04-25 08:00:00",
+    "EndDate": "2020-04-25 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 449,
+    "StartDate": "2021-01-15 12:00:00",
+    "EndDate": "2021-01-15 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "AnimalId": 478,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 450,
+    "StartDate": "2020-02-29 08:20:00",
+    "EndDate": "2020-02-29 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "tesztelek",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 451,
+    "StartDate": "2019-07-26 08:00:00",
+    "EndDate": "2019-07-26 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "AnimalId": 456,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 452,
+    "StartDate": "2019-05-05 08:10:00",
+    "EndDate": "2019-05-05 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 453,
+    "StartDate": "2019-12-03 12:00:00",
+    "EndDate": "2019-12-03 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": 246,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 454,
+    "StartDate": "2019-12-24 08:00:00",
+    "EndDate": "2019-12-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "AnimalId": 14,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 455,
+    "StartDate": "2020-08-22 08:00:00",
+    "EndDate": "2020-08-22 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 456,
+    "StartDate": "2021-02-09 12:00:00",
+    "EndDate": "2021-02-09 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "AnimalId": 156,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 457,
+    "StartDate": "2019-12-15 08:00:00",
+    "EndDate": "2019-12-15 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 458,
+    "StartDate": "2020-01-13 12:00:00",
+    "EndDate": "2020-01-13 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 459,
+    "StartDate": "2019-11-20 08:00:00",
+    "EndDate": "2019-11-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 49,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 460,
+    "StartDate": "2020-11-02 12:00:00",
+    "EndDate": "2020-11-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "AnimalId": 470,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 461,
+    "StartDate": "2020-01-12 08:00:00",
+    "EndDate": "2020-01-12 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "AnimalId": 571,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 462,
+    "StartDate": "2019-06-01 08:20:00",
+    "EndDate": "2019-06-01 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "holnapeniko",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 463,
+    "StartDate": "2020-09-27 08:20:00",
+    "EndDate": "2020-09-27 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "AnimalId": 227,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 464,
+    "StartDate": "2019-07-07 08:00:00",
+    "EndDate": "2019-07-07 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "AnimalId": 375,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 465,
+    "StartDate": "2021-02-03 08:00:00",
+    "EndDate": "2021-02-03 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "AnimalId": 305,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 466,
+    "StartDate": "2020-10-01 12:00:00",
+    "EndDate": "2020-10-01 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 467,
+    "StartDate": "2019-11-25 08:00:00",
+    "EndDate": "2019-11-25 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "AnimalId": 309,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 468,
+    "StartDate": "2021-05-08 08:00:00",
+    "EndDate": "2021-05-08 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "AnimalId": 529,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 469,
+    "StartDate": "2019-08-26 12:00:00",
+    "EndDate": "2019-08-26 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "AnimalId": 183,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 470,
+    "StartDate": "2019-04-18 08:00:00",
+    "EndDate": "2019-04-18 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "ff1327dc-e7ab-4386-9805-2c2a82cb3571",
+    "AnimalId": 542,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 471,
+    "StartDate": "2020-08-31 12:30:00",
+    "EndDate": "2020-08-31 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 472,
+    "StartDate": "2020-03-24 12:00:00",
+    "EndDate": "2020-03-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 473,
+    "StartDate": "2019-08-23 08:00:00",
+    "EndDate": "2019-08-23 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "AnimalId": 457,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 474,
+    "StartDate": "2021-03-04 08:00:00",
+    "EndDate": "2021-03-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 475,
+    "StartDate": "2019-08-17 08:00:00",
+    "EndDate": "2019-08-17 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "AnimalId": 386,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 476,
+    "StartDate": "2020-09-01 08:00:00",
+    "EndDate": "2020-09-01 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": 526,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 477,
+    "StartDate": "2020-05-16 12:00:00",
+    "EndDate": "2020-05-16 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 478,
+    "StartDate": "2020-01-24 12:00:00",
+    "EndDate": "2020-01-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "AnimalId": 350,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 479,
+    "StartDate": "2020-05-30 08:10:00",
+    "EndDate": "2020-05-30 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "AnimalId": 295,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 480,
+    "StartDate": "2021-04-20 08:00:00",
+    "EndDate": "2021-04-20 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "AnimalId": 397,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 481,
+    "StartDate": "2020-08-11 12:10:00",
+    "EndDate": "2020-08-11 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "AnimalId": 259,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 482,
+    "StartDate": "2020-05-24 08:00:00",
+    "EndDate": "2020-05-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 483,
+    "StartDate": "2019-06-22 08:30:00",
+    "EndDate": "2019-06-22 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "1506ff51-0175-4cbd-9351-51f8a1b6adcc",
+    "AnimalId": 131,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 484,
+    "StartDate": "2019-05-03 08:00:00",
+    "EndDate": "2019-05-03 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "AnimalId": 156,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 485,
+    "StartDate": "2020-06-07 12:00:00",
+    "EndDate": "2020-06-07 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": 373,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 486,
+    "StartDate": "2021-01-15 08:00:00",
+    "EndDate": "2021-01-15 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 487,
+    "StartDate": "2019-05-31 12:00:00",
+    "EndDate": "2019-05-31 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "AnimalId": 493,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 488,
+    "StartDate": "2019-04-24 08:00:00",
+    "EndDate": "2019-04-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "AnimalId": 460,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 489,
+    "StartDate": "2020-03-03 08:00:00",
+    "EndDate": "2020-03-03 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": 440,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 490,
+    "StartDate": "2020-03-14 12:00:00",
+    "EndDate": "2020-03-14 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5506584d-0edc-4f03-9e25-de01b8097506",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 491,
+    "StartDate": "2019-11-05 12:00:00",
+    "EndDate": "2019-11-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": 438,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 492,
+    "StartDate": "2021-05-09 08:00:00",
+    "EndDate": "2021-05-09 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "cecc2c5f-6395-4af0-aa8c-b3bbcfdde2d1",
+    "AnimalId": 203,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 493,
+    "StartDate": "2021-01-06 12:00:00",
+    "EndDate": "2021-01-06 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "AnimalId": 502,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 494,
+    "StartDate": "2020-01-17 12:00:00",
+    "EndDate": "2020-01-17 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 495,
+    "StartDate": "2019-09-28 08:00:00",
+    "EndDate": "2019-09-28 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 496,
+    "StartDate": "2020-05-25 08:00:00",
+    "EndDate": "2020-05-25 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 497,
+    "StartDate": "2021-04-25 12:00:00",
+    "EndDate": "2021-04-25 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "AnimalId": 384,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 498,
+    "StartDate": "2020-07-02 12:30:00",
+    "EndDate": "2020-07-02 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": 315,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 499,
+    "StartDate": "2019-09-12 08:00:00",
+    "EndDate": "2019-09-12 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 500,
+    "StartDate": "2019-03-14 12:00:00",
+    "EndDate": "2019-03-14 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "AnimalId": 525,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 501,
+    "StartDate": "2019-08-09 08:20:00",
+    "EndDate": "2019-08-09 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "AnimalId": 93,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 502,
+    "StartDate": "2021-05-14 08:30:00",
+    "EndDate": "2021-05-14 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 503,
+    "StartDate": "2021-05-02 12:00:00",
+    "EndDate": "2021-05-02 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 504,
+    "StartDate": "2019-06-09 08:00:00",
+    "EndDate": "2019-06-09 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "AnimalId": 290,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 505,
+    "StartDate": "2019-12-24 08:10:00",
+    "EndDate": "2019-12-24 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 506,
+    "StartDate": "2019-03-03 08:00:00",
+    "EndDate": "2019-03-03 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 507,
+    "StartDate": "2020-12-05 12:00:00",
+    "EndDate": "2020-12-05 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 508,
+    "StartDate": "2020-01-05 08:00:00",
+    "EndDate": "2020-01-05 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "ef8948f5-8244-41ed-98ca-1f7e5b187337",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 509,
+    "StartDate": "2021-04-17 08:20:00",
+    "EndDate": "2021-04-17 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 510,
+    "StartDate": "2019-04-08 12:00:00",
+    "EndDate": "2019-04-08 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "AnimalId": 461,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 511,
+    "StartDate": "2019-05-22 08:00:00",
+    "EndDate": "2019-05-22 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 512,
+    "StartDate": "2020-05-03 08:00:00",
+    "EndDate": "2020-05-03 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 513,
+    "StartDate": "2019-05-16 08:00:00",
+    "EndDate": "2019-05-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "AnimalId": 49,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 514,
+    "StartDate": "2021-03-08 08:00:00",
+    "EndDate": "2021-03-08 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": 569,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 515,
+    "StartDate": "2019-09-05 12:00:00",
+    "EndDate": "2019-09-05 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "AnimalId": 406,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 516,
+    "StartDate": "2021-03-22 08:00:00",
+    "EndDate": "2021-03-22 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "AnimalId": 491,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 517,
+    "StartDate": "2020-11-30 08:20:00",
+    "EndDate": "2020-11-30 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "6844403a-b9f7-4b31-8358-8e853421328f",
+    "AnimalId": 193,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 518,
+    "StartDate": "2021-01-01 12:00:00",
+    "EndDate": "2021-01-01 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "AnimalId": 337,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 519,
+    "StartDate": "2019-07-19 12:00:00",
+    "EndDate": "2019-07-19 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "AnimalId": 207,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 520,
+    "StartDate": "2019-06-10 12:00:00",
+    "EndDate": "2019-06-10 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 521,
+    "StartDate": "2020-10-28 12:00:00",
+    "EndDate": "2020-10-28 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 522,
+    "StartDate": "2020-08-23 08:00:00",
+    "EndDate": "2020-08-23 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "AnimalId": 369,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 523,
+    "StartDate": "2020-03-05 12:00:00",
+    "EndDate": "2020-03-05 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "AnimalId": 147,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 524,
+    "StartDate": "2020-07-05 12:20:00",
+    "EndDate": "2020-07-05 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "AnimalId": 557,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 525,
+    "StartDate": "2019-05-30 08:20:00",
+    "EndDate": "2019-05-30 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "AnimalId": 369,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 526,
+    "StartDate": "2019-03-13 12:00:00",
+    "EndDate": "2019-03-13 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "a09f6d8c-656a-4d08-b6d4-cf5d2795fea6",
+    "AnimalId": 591,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 527,
+    "StartDate": "2021-02-09 12:20:00",
+    "EndDate": "2021-02-09 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "AnimalId": 460,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 528,
+    "StartDate": "2021-03-17 12:20:00",
+    "EndDate": "2021-03-17 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "AnimalId": 472,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 529,
+    "StartDate": "2019-02-26 12:00:00",
+    "EndDate": "2019-02-26 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 530,
+    "StartDate": "2021-02-26 12:00:00",
+    "EndDate": "2021-02-26 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "AnimalId": 63,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 531,
+    "StartDate": "2020-06-02 08:00:00",
+    "EndDate": "2020-06-02 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "281ce08e-eba2-431f-b1a1-51470df71e31",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 532,
+    "StartDate": "2020-06-15 08:00:00",
+    "EndDate": "2020-06-15 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 533,
+    "StartDate": "2019-07-22 08:00:00",
+    "EndDate": "2019-07-22 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 534,
+    "StartDate": "2020-08-05 12:00:00",
+    "EndDate": "2020-08-05 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "AnimalId": 360,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 535,
+    "StartDate": "2020-11-21 12:00:00",
+    "EndDate": "2020-11-21 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 536,
+    "StartDate": "2020-10-13 08:00:00",
+    "EndDate": "2020-10-13 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "AnimalId": 52,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 537,
+    "StartDate": "2020-06-24 12:00:00",
+    "EndDate": "2020-06-24 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 538,
+    "StartDate": "2019-10-24 08:00:00",
+    "EndDate": "2019-10-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "AnimalId": 342,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 539,
+    "StartDate": "2019-09-14 08:00:00",
+    "EndDate": "2019-09-14 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "AnimalId": 298,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 540,
+    "StartDate": "2020-07-12 08:20:00",
+    "EndDate": "2020-07-12 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "0476dff4-e2e9-4d2a-b5ed-18b205b5e359",
+    "AnimalId": 355,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 541,
+    "StartDate": "2020-04-07 08:00:00",
+    "EndDate": "2020-04-07 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": 440,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 542,
+    "StartDate": "2019-05-11 08:00:00",
+    "EndDate": "2019-05-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "AnimalId": 204,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 543,
+    "StartDate": "2019-10-01 12:40:00",
+    "EndDate": "2019-10-01 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "54d7bd7d-bf08-43ed-89c4-934d3db35bd7",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 544,
+    "StartDate": "2021-02-20 08:00:00",
+    "EndDate": "2021-02-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 545,
+    "StartDate": "2019-03-16 08:20:00",
+    "EndDate": "2019-03-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "AnimalId": 204,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 546,
+    "StartDate": "2019-09-10 08:00:00",
+    "EndDate": "2019-09-10 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "AnimalId": 266,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 547,
+    "StartDate": "2021-01-27 08:00:00",
+    "EndDate": "2021-01-27 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "AnimalId": 129,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 548,
+    "StartDate": "2019-06-03 12:00:00",
+    "EndDate": "2019-06-03 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 549,
+    "StartDate": "2020-12-20 08:00:00",
+    "EndDate": "2020-12-20 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "AnimalId": 14,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 550,
+    "StartDate": "2019-03-18 08:00:00",
+    "EndDate": "2019-03-18 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 551,
+    "StartDate": "2020-02-12 08:00:00",
+    "EndDate": "2020-02-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "AnimalId": 396,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 552,
+    "StartDate": "2019-02-26 12:20:00",
+    "EndDate": "2019-02-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "AnimalId": 594,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 553,
+    "StartDate": "2019-10-02 12:00:00",
+    "EndDate": "2019-10-02 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "AnimalId": 430,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 554,
+    "StartDate": "2021-04-15 12:00:00",
+    "EndDate": "2021-04-15 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 10,
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "AnimalId": 207,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 555,
+    "StartDate": "2020-10-15 12:00:00",
+    "EndDate": "2020-10-15 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "ff1327dc-e7ab-4386-9805-2c2a82cb3571",
+    "AnimalId": 77,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 556,
+    "StartDate": "2020-07-11 08:00:00",
+    "EndDate": "2020-07-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 557,
+    "StartDate": "2020-05-07 08:20:00",
+    "EndDate": "2020-05-07 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 15,
+    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "AnimalId": 374,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 558,
+    "StartDate": "2021-03-18 08:20:00",
+    "EndDate": "2021-03-18 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 559,
+    "StartDate": "2021-05-14 08:50:00",
+    "EndDate": "2021-05-14 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "AnimalId": 247,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 560,
+    "StartDate": "2020-01-09 08:00:00",
+    "EndDate": "2020-01-09 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "AnimalId": 304,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 561,
+    "StartDate": "2020-08-23 12:00:00",
+    "EndDate": "2020-08-23 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "AnimalId": 57,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 562,
+    "StartDate": "2020-09-04 08:00:00",
+    "EndDate": "2020-09-04 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 7,
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "AnimalId": 210,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 563,
+    "StartDate": "2021-01-25 08:00:00",
+    "EndDate": "2021-01-25 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "AnimalId": 189,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 564,
+    "StartDate": "2020-02-26 12:00:00",
+    "EndDate": "2020-02-26 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "AnimalId": 23,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 565,
+    "StartDate": "2020-08-20 12:00:00",
+    "EndDate": "2020-08-20 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 566,
+    "StartDate": "2020-06-19 12:00:00",
+    "EndDate": "2020-06-19 12:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 8,
+    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "AnimalId": 323,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 567,
+    "StartDate": "2021-01-25 12:00:00",
+    "EndDate": "2021-01-25 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "6844403a-b9f7-4b31-8358-8e853421328f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 568,
+    "StartDate": "2021-01-07 12:00:00",
+    "EndDate": "2021-01-07 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "a7edca4c-a457-447a-80c0-903e18eef81c",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 569,
+    "StartDate": "2019-10-04 12:00:00",
+    "EndDate": "2019-10-04 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "100804ad-f2d2-45cb-bc56-4ca2e7e5b26f",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 570,
+    "StartDate": "2020-01-13 08:00:00",
+    "EndDate": "2020-01-13 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "AnimalId": 331,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 571,
+    "StartDate": "2019-11-12 08:00:00",
+    "EndDate": "2019-11-12 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "AnimalId": 560,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 572,
+    "StartDate": "2019-04-20 08:00:00",
+    "EndDate": "2019-04-20 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "AnimalId": 96,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 573,
+    "StartDate": "2021-05-01 08:00:00",
+    "EndDate": "2021-05-01 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": 70,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 574,
+    "StartDate": "2021-04-16 08:00:00",
+    "EndDate": "2021-04-16 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "AnimalId": 361,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 575,
+    "StartDate": "2020-06-11 08:00:00",
+    "EndDate": "2020-06-11 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 576,
+    "StartDate": "2020-10-09 08:20:00",
+    "EndDate": "2020-10-09 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 577,
+    "StartDate": "2020-12-10 08:40:00",
+    "EndDate": "2020-12-10 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "AnimalId": 267,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 578,
+    "StartDate": "2019-07-27 08:00:00",
+    "EndDate": "2019-07-27 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "AnimalId": 113,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 579,
+    "StartDate": "2020-03-06 08:10:00",
+    "EndDate": "2020-03-06 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 13,
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 580,
+    "StartDate": "2019-10-12 08:00:00",
+    "EndDate": "2019-10-12 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 6,
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "AnimalId": 518,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 581,
+    "StartDate": "2021-03-15 12:00:00",
+    "EndDate": "2021-03-15 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "AnimalId": 133,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 582,
+    "StartDate": "2020-04-03 12:00:00",
+    "EndDate": "2020-04-03 12:10:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 16,
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "AnimalId": 316,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 583,
+    "StartDate": "2019-08-08 08:00:00",
+    "EndDate": "2019-08-08 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 584,
+    "StartDate": "2019-08-17 08:10:00",
+    "EndDate": "2019-08-17 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "AnimalId": 560,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 585,
+    "StartDate": "2019-04-24 12:00:00",
+    "EndDate": "2019-04-24 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 586,
+    "StartDate": "2020-08-23 12:20:00",
+    "EndDate": "2020-08-23 12:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 14,
+    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 587,
+    "StartDate": "2020-04-19 08:00:00",
+    "EndDate": "2020-04-19 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 588,
+    "StartDate": "2020-02-14 08:00:00",
+    "EndDate": "2020-02-14 08:20:00",
+    "DoctorId": "holnapeniko",
+    "TreatmentId": 3,
+    "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "AnimalId": 332,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 589,
+    "StartDate": "2020-01-24 08:00:00",
+    "EndDate": "2020-01-24 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "f7cd5e15-4688-4538-a9c3-1aa0198ba7eb",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 590,
+    "StartDate": "2020-02-07 08:00:00",
+    "EndDate": "2020-02-07 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 591,
+    "StartDate": "2020-04-25 12:00:00",
+    "EndDate": "2020-04-25 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 4,
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "AnimalId": 129,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 592,
+    "StartDate": "2020-11-11 08:10:00",
+    "EndDate": "2020-11-11 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "AnimalId": 420,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 593,
+    "StartDate": "2020-03-24 08:00:00",
+    "EndDate": "2020-03-24 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 12,
+    "OwnerId": "8f4084dd-7d5c-4be0-b426-9ebabb3b883a",
+    "AnimalId": 340,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 594,
+    "StartDate": "2021-04-04 08:40:00",
+    "EndDate": "2021-04-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 595,
+    "StartDate": "2020-02-04 08:00:00",
+    "EndDate": "2020-02-04 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 9,
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 596,
+    "StartDate": "2020-07-03 08:00:00",
+    "EndDate": "2020-07-03 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 1,
+    "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 597,
+    "StartDate": "2020-05-27 08:00:00",
+    "EndDate": "2020-05-27 08:10:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 17,
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "AnimalId": 473,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 598,
+    "StartDate": "2019-05-10 12:00:00",
+    "EndDate": "2019-05-10 12:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 2,
+    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "AnimalId": 541,
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 599,
+    "StartDate": "2019-04-18 08:10:00",
+    "EndDate": "2019-04-18 08:20:00",
+    "DoctorId": "tesztelek",
+    "TreatmentId": 5,
+    "OwnerId": "55bd4a45-d60f-42ef-afe0-4a7526ccf76e",
+    "AnimalId": "",
+    "IsResigned": "FALSE"
+  },
+  {
+    "Id": 600,
+    "StartDate": "2020-02-03 08:00:00",
+    "EndDate": "2020-02-03 08:20:00",
+    "DoctorId": "kovacsmonika",
+    "TreatmentId": 11,
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "AnimalId": 480,
+    "IsResigned": "FALSE"
+  }
+]

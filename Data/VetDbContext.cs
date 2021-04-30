@@ -26,5 +26,26 @@ namespace Vet.Data
         public DbSet<TherapiaRecord> TherapiaRecords { get; set; }
         public DbSet<Vaccine> Vaccines { get; set; }
         public DbSet<VaccineRecord> VaccinationRecords { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<VetUser>().HasData(JsonDataLoader.LoadJson<VetUser>("./Data/Seed/VetUser"));
+            modelBuilder.Entity<AnimalSpecies>().HasData(JsonDataLoader.LoadJson<AnimalSpecies>("./Data/Seed/AnimalSpecies"));
+            modelBuilder.Entity<Animal>().HasData(JsonDataLoader.LoadJson<Animal>("./Data/Seed/Animal"));
+            modelBuilder.Entity<Treatment>().HasData(JsonDataLoader.LoadJson<Treatment>("./Data/Seed/Treatment"));
+            modelBuilder.Entity<TreatmentTime>().HasData(JsonDataLoader.LoadJson<TreatmentTime>("./Data/Seed/TreatmentTime"));
+            modelBuilder.Entity<Appointment>().HasData(JsonDataLoader.LoadJson<Appointment>("./Data/Seed/Appointment"));
+            modelBuilder.Entity<Holiday>().HasData(JsonDataLoader.LoadJson<Holiday>("./Data/Seed/Holiday"));
+            modelBuilder.Entity<Vaccine>().HasData(JsonDataLoader.LoadJson<Vaccine>("./Data/Seed/Vaccine"));
+            modelBuilder.Entity<VaccineRecord>().HasData(JsonDataLoader.LoadJson<VaccineRecord>("./Data/Seed/VaccineRecord"));
+            modelBuilder.Entity<Therapia>().HasData(JsonDataLoader.LoadJson<Therapia>("./Data/Seed/Therapia"));
+            modelBuilder.Entity<MedicalRecord>().HasData(JsonDataLoader.LoadJson<MedicalRecord>("./Data/Seed/MedicalRecord"));
+            modelBuilder.Entity<TherapiaRecord>().HasData(JsonDataLoader.LoadJson<TherapiaRecord>("./Data/Seed/TherapiaRecord"));
+            modelBuilder.Entity<MedicalRecordPhoto>().HasData(JsonDataLoader.LoadJson<MedicalRecordPhoto>("./Data/Seed/MedicalRecordPhoto"));
+        }
     }
 }
+
+

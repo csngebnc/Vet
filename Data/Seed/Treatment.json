@@ -1,0 +1,87 @@
+[
+  {
+    "Id": 1,
+    "Name": "Állat általános vizsgálata (nem egzotikus)",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 2,
+    "Name": "Állat általános vizsgálata (egzotikus)",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 3,
+    "Name": "Bőrgyógyászati vizsgálat",
+    "DoctorId": "holnapeniko"
+  },
+  {
+    "Id": 4,
+    "Name": "Oltás (nem egzotikus állat)",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 5,
+    "Name": "Oltás (egzotikus állat)",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 6,
+    "Name": "Kontroll",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 7,
+    "Name": "Kontroll",
+    "DoctorId": "holnapeniko"
+  },
+  {
+    "Id": 8,
+    "Name": "Állat általános vizsgálata (nem egzotikus)",
+    "DoctorId": "holnapeniko"
+  },
+  {
+    "Id": 9,
+    "Name": "Műtét előtti vizsgálat",
+    "DoctorId": "kovacsmonika"
+  },
+  {
+    "Id": 10,
+    "Name": "Karomvágás",
+    "DoctorId": "holnapeniko"
+  },
+  {
+    "Id": 11,
+    "Name": "Karomvágás",
+    "DoctorId": "kovacsmonika"
+  },
+  {
+    "Id": 12,
+    "Name": "Karomvágás",
+    "DoctorId": "tesztelek"
+  },
+  {
+    "Id": 13,
+    "Name": "Kontroll",
+    "DoctorId": "kovacsmonika"
+  },
+  {
+    "Id": 14,
+    "Name": "Állat általános vizsgálata (nem egzotikus)",
+    "DoctorId": "kovacsmonika"
+  },
+  {
+    "Id": 15,
+    "Name": "Oltás (egzotikus állat)",
+    "DoctorId": "kovacsmonika"
+  },
+  {
+    "Id": 16,
+    "Name": "Oltás (nem egzotikus állat)",
+    "DoctorId": "holnapeniko"
+  },
+  {
+    "Id": 17,
+    "Name": "Oltás (nem egzotikus állat)",
+    "DoctorId": "kovacsmonika"
+  }
+]
