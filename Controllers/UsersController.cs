@@ -31,6 +31,7 @@ namespace Vet.Controllers
         [HttpGet("filter")]
         public async Task<IEnumerable<VetUserDto>> GetUsersByFilter([FromQuery]string name, [FromQuery] string email)
         {
+            var a = name;
             return await _userManager.GetUsersByFilter(name, email);
         }
 

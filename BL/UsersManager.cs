@@ -43,7 +43,7 @@ namespace Vet.BL
             return user == null ? 0 : user.AuthLevel;
         }
 
-        public async Task<IEnumerable<VetUserDto>> GetUsersByFilter(string email, string name)
+        public async Task<IEnumerable<VetUserDto>> GetUsersByFilter(string name, string email)
         {
             return _mapper.Map<IEnumerable<VetUserDto>>(await _userRepository.GetUserByFilter(name, email));
         }

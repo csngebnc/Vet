@@ -58,6 +58,7 @@ namespace Vet.Helpers
             CreateMap<MedicalRecord, MedicalRecordDto>()
                 .ForMember(dest => dest.DoctorName, opt => opt.MapFrom(src => src.Doctor.RealName))
                 .ForMember(dest => dest.OwnerName, opt => opt.MapFrom(src => src.Owner.RealName))
+                .ForMember(dest => dest.OwnerEmail, opt => opt.MapFrom(src => src.Owner.Email))
                 .ForMember(dest => dest.AnimalName, opt => opt.MapFrom(src => src.Animal.Name));
 
             CreateMap<MedicalRecordPhoto, MedicalRecordPhotoDto>();

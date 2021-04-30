@@ -32,10 +32,22 @@ namespace Vet.Data.Repositories
 
         public async Task<IEnumerable<VetUser>> GetUserByFilter(string name, string email)
         {
-            if (name == null) name = "";
-            if (email == null) email = "";
-            
-            return await _context.Users.Where(u => u.RealName.Contains(name) && u.Email.Contains(email)).ToListAsync();
+            IEnumerable<VetUser> user_w_name;
+            if(name != null)
+            {
+                user_w_name = await _context.Users.Where(u => u.RealName.ToLower().Contains(name.ToLower())).ToListAsync();
+                if(email != null)
+                    user_w_name = user_w_name.Where(u => u.Email.ToLower().Contains(email.ToLower())).ToList();
+            }
+            else
+            {
+                if (email != null)
+                    user_w_name = await _context.Users.Where(u => u.Email.ToLower().Contains(email.ToLower())).ToListAsync();
+                else
+                    user_w_name = await _context.Users.ToListAsync();
+            }
+
+            return user_w_name;
         }
 
         public async Task<bool> SetPhoto(string photoPath, string userId)

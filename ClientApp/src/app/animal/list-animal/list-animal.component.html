@@ -11,7 +11,7 @@
     <div class="row mt-4">
         <div class="col-lg-4 col-md-6 col-sm-12 pb-3"
             *ngFor="let item of animals | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
-            <div class="card mb-3" style="max-width: 310px;">
+            <div class="card mb-3" style="width: 310px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img class="img-fluid p-2" src="{{item.photoPath}}" alt="">

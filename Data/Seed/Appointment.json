@@ -1,10 +1,12 @@
 [
   {
     "Id": 1,
+    "StartDate": "2020-02-15 08:00:00",
     "EndDate": "2020-02-15 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "OwnerId": "09fbe6f3-98bf-451b-9c00-4460bf3e23c2",
+    "OwnerEmail": "jjakubczyk1z@huffingtonpost.com",
     "AnimalId": 594,
     "IsResigned": "FALSE"
   },
@@ -15,6 +17,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -25,6 +28,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -34,7 +38,8 @@
     "EndDate": "2021-05-16 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": 585,
     "IsResigned": "FALSE"
   },
@@ -45,6 +50,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "d836527f-9fc8-4fcb-a0c5-ef4ee9cd74bd",
+    "OwnerEmail": "umccart55@youtube.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -54,7 +60,8 @@
     "EndDate": "2021-02-03 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": 209,
     "IsResigned": "FALSE"
   },
@@ -64,7 +71,8 @@
     "EndDate": "2020-03-19 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "e6914db4-b830-434f-ba8f-29d9ddc5752a",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 239,
     "IsResigned": "FALSE"
   },
@@ -74,7 +82,8 @@
     "EndDate": "2019-12-30 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "OwnerEmail": "efetherstone6@hhs.gov",
     "AnimalId": 316,
     "IsResigned": "FALSE"
   },
@@ -85,6 +94,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -94,7 +104,8 @@
     "EndDate": "2021-04-14 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 396,
     "IsResigned": "FALSE"
   },
@@ -104,7 +115,8 @@
     "EndDate": "2020-01-31 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 204,
     "IsResigned": "FALSE"
   },
@@ -114,7 +126,8 @@
     "EndDate": "2020-05-19 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "OwnerId": "ef8948f5-8244-41ed-98ca-1f7e5b187337",
+    "OwnerEmail": "blamar3@narod.ru",
     "AnimalId": 72,
     "IsResigned": "FALSE"
   },
@@ -124,7 +137,8 @@
     "EndDate": "2020-03-26 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 235,
     "IsResigned": "FALSE"
   },
@@ -134,7 +148,8 @@
     "EndDate": "2021-01-20 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "OwnerEmail": "jphilbrick3y@wsj.com",
     "AnimalId": 582,
     "IsResigned": "FALSE"
   },
@@ -144,7 +159,8 @@
     "EndDate": "2020-12-29 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "OwnerEmail": "tdarville49@ucsd.edu",
     "AnimalId": 364,
     "IsResigned": "FALSE"
   },
@@ -154,7 +170,8 @@
     "EndDate": "2020-04-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": 136,
     "IsResigned": "FALSE"
   },
@@ -164,7 +181,8 @@
     "EndDate": "2019-04-07 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerId": "18de7236-051c-4b01-b8bf-1f481abe8454",
+    "OwnerEmail": "oconnow9@sfgate.com",
     "AnimalId": 41,
     "IsResigned": "FALSE"
   },
@@ -175,6 +193,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -184,7 +203,8 @@
     "EndDate": "2020-09-10 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "OwnerEmail": "bcucinotta34@answers.com",
     "AnimalId": 406,
     "IsResigned": "FALSE"
   },
@@ -195,6 +215,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "OwnerEmail": "mverson26@etsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -205,6 +226,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "OwnerEmail": "wiannetti2o@amazon.co.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -215,6 +237,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerEmail": "mgatiss3d@irs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -225,6 +248,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "OwnerEmail": "ttroughton2g@rakuten.co.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -234,7 +258,8 @@
     "EndDate": "2021-04-04 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerEmail": "oivshin14@techcrunch.com",
     "AnimalId": 317,
     "IsResigned": "FALSE"
   },
@@ -244,7 +269,8 @@
     "EndDate": "2019-08-15 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerEmail": "srollason3n@printfriendly.com",
     "AnimalId": 493,
     "IsResigned": "FALSE"
   },
@@ -254,7 +280,8 @@
     "EndDate": "2019-07-22 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "504605f3-ebde-429b-b38c-0ba6820b0c46",
+    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "OwnerEmail": "kgoggan1k@hubpages.com",
     "AnimalId": 220,
     "IsResigned": "FALSE"
   },
@@ -264,7 +291,8 @@
     "EndDate": "2020-02-10 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": 478,
     "IsResigned": "FALSE"
   },
@@ -274,7 +302,8 @@
     "EndDate": "2020-05-11 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "OwnerId": "a29f2473-55b6-4ee8-b0a7-5fd1f08fb7d9",
+    "OwnerEmail": "apinnm@cyberchimps.com",
     "AnimalId": 73,
     "IsResigned": "FALSE"
   },
@@ -284,7 +313,8 @@
     "EndDate": "2019-11-19 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "kovacsmonika",
+    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "OwnerEmail": "kgoggan1k@hubpages.com",
     "AnimalId": 34,
     "IsResigned": "FALSE"
   },
@@ -294,7 +324,8 @@
     "EndDate": "2021-03-22 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": 518,
     "IsResigned": "FALSE"
   },
@@ -305,6 +336,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -314,7 +346,8 @@
     "EndDate": "2019-08-07 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "9697edf0-60ba-4c1b-a8c6-7cd0041a48e3",
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerEmail": "jklimentyev52@vimeo.com",
     "AnimalId": 206,
     "IsResigned": "FALSE"
   },
@@ -325,6 +358,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "OwnerEmail": "bkoubek4w@usda.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -334,7 +368,8 @@
     "EndDate": "2019-11-18 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerEmail": "dlong5e@t-online.de",
     "AnimalId": 66,
     "IsResigned": "FALSE"
   },
@@ -344,7 +379,8 @@
     "EndDate": "2019-05-18 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerEmail": "jklimentyev52@vimeo.com",
     "AnimalId": 30,
     "IsResigned": "FALSE"
   },
@@ -355,6 +391,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerEmail": "pfiorentinoq@reverbnation.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -365,6 +402,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "OwnerEmail": "ttroughton2g@rakuten.co.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -374,7 +412,8 @@
     "EndDate": "2020-02-06 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 509,
     "IsResigned": "FALSE"
   },
@@ -384,7 +423,8 @@
     "EndDate": "2021-02-17 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerEmail": "cshellum3a@earthlink.net",
     "AnimalId": 95,
     "IsResigned": "FALSE"
   },
@@ -395,6 +435,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "419441c2-158b-49ea-bd85-626b3cf106de",
+    "OwnerEmail": "plints4g@last.fm",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -405,6 +446,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "OwnerEmail": "cstonner1n@taobao.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -415,6 +457,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -425,6 +468,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "OwnerEmail": "bpovalli@google.es",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -435,6 +479,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "OwnerEmail": "aocurrine51@liveinternet.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -444,7 +489,8 @@
     "EndDate": "2019-05-24 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "OwnerEmail": "lmatasov41@unicef.org",
     "AnimalId": 118,
     "IsResigned": "FALSE"
   },
@@ -455,6 +501,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "OwnerEmail": "daleksandrikin4@unc.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -464,7 +511,8 @@
     "EndDate": "2019-09-30 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "OwnerEmail": "ttroughton2g@rakuten.co.jp",
     "AnimalId": 395,
     "IsResigned": "FALSE"
   },
@@ -475,6 +523,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -485,6 +534,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "OwnerEmail": "hhartgillr@ibm.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -495,6 +545,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -505,6 +556,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "OwnerEmail": "ntaggett4r@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -515,6 +567,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -524,7 +577,8 @@
     "EndDate": "2019-10-06 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerEmail": "kmcorkill3l@rambler.ru",
     "AnimalId": 25,
     "IsResigned": "FALSE"
   },
@@ -535,6 +589,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -544,7 +599,8 @@
     "EndDate": "2021-05-14 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerEmail": "oivshin14@techcrunch.com",
     "AnimalId": 570,
     "IsResigned": "FALSE"
   },
@@ -554,7 +610,8 @@
     "EndDate": "2020-10-21 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 369,
     "IsResigned": "FALSE"
   },
@@ -565,6 +622,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerEmail": "rcolquytew@ox.ac.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -574,7 +632,8 @@
     "EndDate": "2021-03-18 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 342,
     "IsResigned": "FALSE"
   },
@@ -584,7 +643,8 @@
     "EndDate": "2020-11-11 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": 263,
     "IsResigned": "FALSE"
   },
@@ -594,7 +654,8 @@
     "EndDate": "2021-01-29 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerEmail": "cshellum3a@earthlink.net",
     "AnimalId": 95,
     "IsResigned": "FALSE"
   },
@@ -604,7 +665,8 @@
     "EndDate": "2020-05-30 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "beea87aa-91e5-4442-8b5b-37f0bbb745e3",
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerEmail": "pfiorentinoq@reverbnation.com",
     "AnimalId": 598,
     "IsResigned": "FALSE"
   },
@@ -615,6 +677,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -625,6 +688,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "OwnerEmail": "chollierc@theatlantic.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -634,7 +698,8 @@
     "EndDate": "2020-11-29 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 251,
     "IsResigned": "FALSE"
   },
@@ -644,7 +709,8 @@
     "EndDate": "2020-01-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerId": "d7a53f3c-89d4-4996-9744-bed7fe2f688c",
+    "OwnerEmail": "rrallin3q@cbsnews.com",
     "AnimalId": 508,
     "IsResigned": "FALSE"
   },
@@ -655,6 +721,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "OwnerEmail": "aocurrine51@liveinternet.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -664,7 +731,8 @@
     "EndDate": "2020-12-10 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": 484,
     "IsResigned": "FALSE"
   },
@@ -674,7 +742,8 @@
     "EndDate": "2021-04-05 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "e6914db4-b830-434f-ba8f-29d9ddc5752a",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 239,
     "IsResigned": "FALSE"
   },
@@ -685,6 +754,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "OwnerEmail": "dstinton39@indiatimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -694,7 +764,8 @@
     "EndDate": "2020-03-09 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerId": "8a65b72b-5737-4690-a1a3-cd235f6be409",
+    "OwnerEmail": "hsommerlin15@harvard.edu",
     "AnimalId": 64,
     "IsResigned": "FALSE"
   },
@@ -704,7 +775,8 @@
     "EndDate": "2019-06-21 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": 586,
     "IsResigned": "FALSE"
   },
@@ -715,6 +787,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerEmail": "opapps1m@latimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -724,7 +797,8 @@
     "EndDate": "2020-07-29 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerId": "d7a53f3c-89d4-4996-9744-bed7fe2f688c",
+    "OwnerEmail": "rrallin3q@cbsnews.com",
     "AnimalId": 109,
     "IsResigned": "FALSE"
   },
@@ -734,7 +808,8 @@
     "EndDate": "2019-12-10 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -744,7 +819,8 @@
     "EndDate": "2020-09-15 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": 580,
     "IsResigned": "FALSE"
   },
@@ -755,6 +831,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "4253aa6d-77ce-493c-8572-8b0447bcd62c",
+    "OwnerEmail": "tgiffard1i@arizona.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -764,7 +841,8 @@
     "EndDate": "2019-12-06 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": 520,
     "IsResigned": "FALSE"
   },
@@ -774,7 +852,8 @@
     "EndDate": "2019-06-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 160,
     "IsResigned": "FALSE"
   },
@@ -784,7 +863,8 @@
     "EndDate": "2020-10-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "fd3a1743-1f3c-4042-894f-6f72daa3c8c0",
+    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "OwnerEmail": "rpasley5b@epa.gov",
     "AnimalId": 587,
     "IsResigned": "FALSE"
   },
@@ -794,7 +874,8 @@
     "EndDate": "2019-02-25 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerEmail": "cscupham24@sitemeter.com",
     "AnimalId": 398,
     "IsResigned": "FALSE"
   },
@@ -804,7 +885,8 @@
     "EndDate": "2021-01-29 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 338,
     "IsResigned": "FALSE"
   },
@@ -814,7 +896,8 @@
     "EndDate": "2020-01-05 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 295,
     "IsResigned": "FALSE"
   },
@@ -825,6 +908,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "OwnerEmail": "hbernocchi3g@google.pl",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -834,7 +918,8 @@
     "EndDate": "2020-03-29 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerEmail": "rmulheron17@gov.uk",
     "AnimalId": 140,
     "IsResigned": "FALSE"
   },
@@ -844,7 +929,8 @@
     "EndDate": "2020-09-26 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "OwnerEmail": "waikett4l@deliciousdays.com",
     "AnimalId": 307,
     "IsResigned": "FALSE"
   },
@@ -854,7 +940,8 @@
     "EndDate": "2019-09-03 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 143,
     "IsResigned": "FALSE"
   },
@@ -864,7 +951,8 @@
     "EndDate": "2020-01-28 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": 586,
     "IsResigned": "FALSE"
   },
@@ -875,6 +963,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "OwnerEmail": "aocurrine51@liveinternet.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -885,6 +974,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -895,6 +985,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "OwnerEmail": "dcess4d@patch.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -905,6 +996,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "OwnerEmail": "aredon1v@yale.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -914,7 +1006,8 @@
     "EndDate": "2019-04-30 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "100804ad-f2d2-45cb-bc56-4ca2e7e5b26f",
+    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "OwnerEmail": "waikett4l@deliciousdays.com",
     "AnimalId": 589,
     "IsResigned": "FALSE"
   },
@@ -925,6 +1018,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "b5ccc9dd-ccdc-456a-aab3-3d93173da7d2",
+    "OwnerEmail": "dtheml1g@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -934,7 +1028,8 @@
     "EndDate": "2019-11-14 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerEmail": "aalelsandrowicz2n@geocities.jp",
     "AnimalId": 544,
     "IsResigned": "FALSE"
   },
@@ -945,6 +1040,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -954,7 +1050,8 @@
     "EndDate": "2020-08-29 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 156,
     "IsResigned": "FALSE"
   },
@@ -964,7 +1061,8 @@
     "EndDate": "2020-05-19 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 569,
     "IsResigned": "FALSE"
   },
@@ -974,7 +1072,8 @@
     "EndDate": "2019-09-16 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerEmail": "sprinn20@meetup.com",
     "AnimalId": 291,
     "IsResigned": "FALSE"
   },
@@ -984,7 +1083,8 @@
     "EndDate": "2020-08-21 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "f2e2b6a6-585b-45db-87ce-b4856bb1308d",
+    "OwnerId": "77d4f034-8730-4854-83fe-4aad0da649a3",
+    "OwnerEmail": "alyver56@facebook.com",
     "AnimalId": 528,
     "IsResigned": "FALSE"
   },
@@ -994,7 +1094,8 @@
     "EndDate": "2021-02-08 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 396,
     "IsResigned": "FALSE"
   },
@@ -1005,6 +1106,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "4b7b3a39-1e9f-458c-93bb-9cc3770cfabe",
+    "OwnerEmail": "hainsbury59@sfgate.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1015,6 +1117,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerEmail": "ddruitt2v@cdc.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1025,6 +1128,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerEmail": "kmcorkill3l@rambler.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1035,6 +1139,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerEmail": "idixie32@jigsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1045,6 +1150,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "OwnerEmail": "mtomlinson5a@odnoklassniki.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1054,7 +1160,8 @@
     "EndDate": "2020-08-14 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 411,
     "IsResigned": "FALSE"
   },
@@ -1064,7 +1171,8 @@
     "EndDate": "2020-08-17 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "6cdc181a-632f-44e6-9f9f-56d5ad7f76dc",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 468,
     "IsResigned": "FALSE"
   },
@@ -1075,6 +1183,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1084,7 +1193,8 @@
     "EndDate": "2019-08-21 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 149,
     "IsResigned": "FALSE"
   },
@@ -1094,7 +1204,8 @@
     "EndDate": "2019-06-16 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerEmail": "kmcorkill3l@rambler.ru",
     "AnimalId": 405,
     "IsResigned": "FALSE"
   },
@@ -1105,6 +1216,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "2d96991e-06da-4a33-92f6-38db85f87d13",
+    "OwnerEmail": "bundrillg@shareasale.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1114,7 +1226,8 @@
     "EndDate": "2021-03-26 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 149,
     "IsResigned": "FALSE"
   },
@@ -1124,7 +1237,8 @@
     "EndDate": "2019-04-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "OwnerEmail": "ainwood4f@csmonitor.com",
     "AnimalId": 50,
     "IsResigned": "FALSE"
   },
@@ -1134,7 +1248,8 @@
     "EndDate": "2020-02-15 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerId": "af33836a-3a58-444a-8b72-6459cf29ef31",
+    "OwnerEmail": "mmcgougan1h@usa.gov",
     "AnimalId": 464,
     "IsResigned": "FALSE"
   },
@@ -1144,7 +1259,8 @@
     "EndDate": "2021-05-05 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "OwnerEmail": "hbernocchi3g@google.pl",
     "AnimalId": 175,
     "IsResigned": "FALSE"
   },
@@ -1154,7 +1270,8 @@
     "EndDate": "2020-06-19 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerEmail": "dmcgirl12@intel.com",
     "AnimalId": 259,
     "IsResigned": "FALSE"
   },
@@ -1164,7 +1281,8 @@
     "EndDate": "2019-03-29 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "OwnerId": "1872fdc8-6390-4b0e-82da-4b7f33099e22",
+    "OwnerEmail": "iburnyeat1f@soundcloud.com",
     "AnimalId": 152,
     "IsResigned": "FALSE"
   },
@@ -1174,7 +1292,8 @@
     "EndDate": "2021-03-31 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 280,
     "IsResigned": "FALSE"
   },
@@ -1184,7 +1303,8 @@
     "EndDate": "2020-11-20 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerId": "6cdc181a-632f-44e6-9f9f-56d5ad7f76dc",
+    "OwnerEmail": "ckillshaw4q@stumbleupon.com",
     "AnimalId": 208,
     "IsResigned": "FALSE"
   },
@@ -1194,7 +1314,8 @@
     "EndDate": "2020-07-02 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "4b7b3a39-1e9f-458c-93bb-9cc3770cfabe",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 517,
     "IsResigned": "FALSE"
   },
@@ -1205,6 +1326,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "OwnerEmail": "cstonner1n@taobao.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1214,7 +1336,8 @@
     "EndDate": "2019-04-04 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerEmail": "dmcgirl12@intel.com",
     "AnimalId": 380,
     "IsResigned": "FALSE"
   },
@@ -1224,7 +1347,8 @@
     "EndDate": "2021-04-14 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "OwnerEmail": "nconklin2k@mac.com",
     "AnimalId": 372,
     "IsResigned": "FALSE"
   },
@@ -1234,7 +1358,8 @@
     "EndDate": "2021-05-13 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerId": "d7a53f3c-89d4-4996-9744-bed7fe2f688c",
+    "OwnerEmail": "rrallin3q@cbsnews.com",
     "AnimalId": 109,
     "IsResigned": "FALSE"
   },
@@ -1245,6 +1370,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "OwnerEmail": "dstinton39@indiatimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1254,7 +1380,8 @@
     "EndDate": "2019-04-10 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 396,
     "IsResigned": "FALSE"
   },
@@ -1264,7 +1391,8 @@
     "EndDate": "2020-01-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerEmail": "gabercrombiev@hugedomains.com",
     "AnimalId": 418,
     "IsResigned": "FALSE"
   },
@@ -1275,6 +1403,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1285,6 +1414,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerEmail": "jbryceson31@hibu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1294,7 +1424,8 @@
     "EndDate": "2019-10-19 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 288,
     "IsResigned": "FALSE"
   },
@@ -1304,7 +1435,8 @@
     "EndDate": "2019-04-04 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 49,
     "IsResigned": "FALSE"
   },
@@ -1314,7 +1446,8 @@
     "EndDate": "2020-08-31 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerEmail": "rcolquytew@ox.ac.uk",
     "AnimalId": 6,
     "IsResigned": "FALSE"
   },
@@ -1324,7 +1457,8 @@
     "EndDate": "2019-02-21 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerId": "d7a53f3c-89d4-4996-9744-bed7fe2f688c",
+    "OwnerEmail": "rrallin3q@cbsnews.com",
     "AnimalId": 109,
     "IsResigned": "FALSE"
   },
@@ -1334,7 +1468,8 @@
     "EndDate": "2020-04-22 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "OwnerId": "8a65b72b-5737-4690-a1a3-cd235f6be409",
+    "OwnerEmail": "hsommerlin15@harvard.edu",
     "AnimalId": 154,
     "IsResigned": "FALSE"
   },
@@ -1345,6 +1480,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerEmail": "dmcgirl12@intel.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1354,7 +1490,8 @@
     "EndDate": "2020-10-30 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": 136,
     "IsResigned": "FALSE"
   },
@@ -1365,6 +1502,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1375,6 +1513,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "cb426fab-0e61-49b5-ac46-4d8c5610e2ae",
+    "OwnerEmail": "gbacop4u@mozilla.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1384,7 +1523,8 @@
     "EndDate": "2020-01-30 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 569,
     "IsResigned": "FALSE"
   },
@@ -1394,7 +1534,8 @@
     "EndDate": "2020-10-26 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerId": "100804ad-f2d2-45cb-bc56-4ca2e7e5b26f",
+    "OwnerEmail": "tstitwell3t@t.co",
     "AnimalId": 211,
     "IsResigned": "FALSE"
   },
@@ -1404,7 +1545,8 @@
     "EndDate": "2020-04-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "2d96991e-06da-4a33-92f6-38db85f87d13",
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": 287,
     "IsResigned": "FALSE"
   },
@@ -1414,7 +1556,8 @@
     "EndDate": "2020-09-27 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerEmail": "bprydieh@i2i.jp",
     "AnimalId": 366,
     "IsResigned": "FALSE"
   },
@@ -1425,6 +1568,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1434,7 +1578,8 @@
     "EndDate": "2020-07-17 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "OwnerId": "7f2b525c-b6bb-48f8-9e46-f6e323260f4b",
+    "OwnerEmail": "hmcnaughton4o@infoseek.co.jp",
     "AnimalId": 308,
     "IsResigned": "FALSE"
   },
@@ -1444,7 +1589,8 @@
     "EndDate": "2021-03-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "OwnerId": "18de7236-051c-4b01-b8bf-1f481abe8454",
+    "OwnerEmail": "oconnow9@sfgate.com",
     "AnimalId": 172,
     "IsResigned": "FALSE"
   },
@@ -1454,7 +1600,8 @@
     "EndDate": "2019-08-15 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "a09f6d8c-656a-4d08-b6d4-cf5d2795fea6",
+    "OwnerId": "5a196870-948d-4285-ab2a-b4a3262f0fef",
+    "OwnerEmail": "htybalt3w@booking.com",
     "AnimalId": 65,
     "IsResigned": "FALSE"
   },
@@ -1464,7 +1611,8 @@
     "EndDate": "2020-11-09 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 314,
     "IsResigned": "FALSE"
   },
@@ -1475,6 +1623,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "1f2f416f-90cc-4f87-b5a3-e3a4fa6ca75f",
+    "OwnerEmail": "cwillman3m@webmd.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1484,7 +1633,8 @@
     "EndDate": "2021-03-26 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerEmail": "aalelsandrowicz2n@geocities.jp",
     "AnimalId": 250,
     "IsResigned": "FALSE"
   },
@@ -1494,7 +1644,8 @@
     "EndDate": "2019-10-09 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 84,
     "IsResigned": "FALSE"
   },
@@ -1505,6 +1656,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1514,7 +1666,8 @@
     "EndDate": "2020-12-31 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 58,
     "IsResigned": "FALSE"
   },
@@ -1524,7 +1677,8 @@
     "EndDate": "2019-04-23 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 519,
     "IsResigned": "FALSE"
   },
@@ -1534,7 +1688,8 @@
     "EndDate": "2020-07-17 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerEmail": "dmcgirl12@intel.com",
     "AnimalId": 259,
     "IsResigned": "FALSE"
   },
@@ -1544,7 +1699,8 @@
     "EndDate": "2020-07-05 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 290,
     "IsResigned": "FALSE"
   },
@@ -1554,7 +1710,8 @@
     "EndDate": "2020-05-15 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerEmail": "rcolquytew@ox.ac.uk",
     "AnimalId": 597,
     "IsResigned": "FALSE"
   },
@@ -1564,7 +1721,8 @@
     "EndDate": "2020-07-21 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": 298,
     "IsResigned": "FALSE"
   },
@@ -1574,7 +1732,8 @@
     "EndDate": "2021-02-08 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerId": "f64e070d-9664-4e3f-85cc-fda2912b6d41",
+    "OwnerEmail": "vchesley3e@amazonaws.com",
     "AnimalId": 309,
     "IsResigned": "FALSE"
   },
@@ -1584,7 +1743,8 @@
     "EndDate": "2019-07-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 149,
     "IsResigned": "FALSE"
   },
@@ -1595,6 +1755,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerEmail": "ehayhow50@123-reg.co.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1605,6 +1766,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "OwnerEmail": "cchurm8@wired.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1614,7 +1776,8 @@
     "EndDate": "2020-03-25 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 534,
     "IsResigned": "FALSE"
   },
@@ -1625,6 +1788,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "OwnerEmail": "cparlett28@sourceforge.net",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1634,7 +1798,8 @@
     "EndDate": "2021-02-22 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "OwnerEmail": "rchace35@blogtalkradio.com",
     "AnimalId": 70,
     "IsResigned": "FALSE"
   },
@@ -1645,6 +1810,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerEmail": "bprydieh@i2i.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1654,7 +1820,8 @@
     "EndDate": "2020-12-19 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerId": "f64e070d-9664-4e3f-85cc-fda2912b6d41",
+    "OwnerEmail": "vchesley3e@amazonaws.com",
     "AnimalId": 309,
     "IsResigned": "FALSE"
   },
@@ -1665,6 +1832,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1674,7 +1842,8 @@
     "EndDate": "2019-06-26 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 84,
     "IsResigned": "FALSE"
   },
@@ -1684,7 +1853,8 @@
     "EndDate": "2020-10-02 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerEmail": "aalelsandrowicz2n@geocities.jp",
     "AnimalId": 544,
     "IsResigned": "FALSE"
   },
@@ -1695,6 +1865,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerEmail": "cscupham24@sitemeter.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1704,7 +1875,8 @@
     "EndDate": "2020-04-10 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "OwnerEmail": "waikett4l@deliciousdays.com",
     "AnimalId": 121,
     "IsResigned": "FALSE"
   },
@@ -1714,7 +1886,8 @@
     "EndDate": "2021-05-18 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": 578,
     "IsResigned": "FALSE"
   },
@@ -1724,7 +1897,8 @@
     "EndDate": "2020-01-24 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerId": "55bd4a45-d60f-42ef-afe0-4a7526ccf76e",
+    "OwnerEmail": "hovenden5@baidu.com",
     "AnimalId": 244,
     "IsResigned": "FALSE"
   },
@@ -1734,7 +1908,8 @@
     "EndDate": "2019-11-13 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "holnapeniko",
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": 379,
     "IsResigned": "FALSE"
   },
@@ -1745,6 +1920,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "e3d5e9a0-b0d2-4e68-a4b6-3afa58ae7dff",
+    "OwnerEmail": "bkoubek4w@usda.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1755,6 +1931,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "OwnerEmail": "gwhitehall47@si.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1765,6 +1942,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerEmail": "jdoerling3c@lulu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1775,6 +1953,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1785,6 +1964,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "7f2b525c-b6bb-48f8-9e46-f6e323260f4b",
+    "OwnerEmail": "hmcnaughton4o@infoseek.co.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1795,6 +1975,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "OwnerEmail": "bpovalli@google.es",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1805,6 +1986,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1814,7 +1996,8 @@
     "EndDate": "2020-02-29 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 187,
     "IsResigned": "FALSE"
   },
@@ -1824,7 +2007,8 @@
     "EndDate": "2019-04-16 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -1834,7 +2018,8 @@
     "EndDate": "2020-07-19 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": 424,
     "IsResigned": "FALSE"
   },
@@ -1844,7 +2029,8 @@
     "EndDate": "2020-02-11 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerEmail": "jthorius37@vkontakte.ru",
     "AnimalId": 202,
     "IsResigned": "FALSE"
   },
@@ -1855,6 +2041,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "OwnerEmail": "lmatasov41@unicef.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1864,7 +2051,8 @@
     "EndDate": "2020-07-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerEmail": "rcolquytew@ox.ac.uk",
     "AnimalId": 6,
     "IsResigned": "FALSE"
   },
@@ -1875,6 +2063,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "OwnerEmail": "gmacneil3k@topsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1884,7 +2073,8 @@
     "EndDate": "2020-04-08 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": 210,
     "IsResigned": "FALSE"
   },
@@ -1894,7 +2084,8 @@
     "EndDate": "2019-04-14 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerEmail": "cshellum3a@earthlink.net",
     "AnimalId": 95,
     "IsResigned": "FALSE"
   },
@@ -1905,6 +2096,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "71264c02-9433-4bd2-9243-5ea11760b47d",
+    "OwnerEmail": "gparadis3h@symantec.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1914,7 +2106,8 @@
     "EndDate": "2020-10-04 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerId": "holnapeniko",
+    "OwnerEmail": "heniko@veterinary.hu",
     "AnimalId": 384,
     "IsResigned": "FALSE"
   },
@@ -1925,6 +2118,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1935,6 +2129,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "OwnerEmail": "pmquharge3o@discovery.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1945,6 +2140,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1955,6 +2151,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "OwnerEmail": "chedde46@furl.net",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1965,6 +2162,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "f2e2b6a6-585b-45db-87ce-b4856bb1308d",
+    "OwnerEmail": "sbenedtti1r@youku.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -1974,7 +2172,8 @@
     "EndDate": "2019-02-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 51,
     "IsResigned": "FALSE"
   },
@@ -1984,7 +2183,8 @@
     "EndDate": "2019-10-17 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 553,
     "IsResigned": "FALSE"
   },
@@ -1994,7 +2194,8 @@
     "EndDate": "2019-09-03 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "OwnerEmail": "chollierc@theatlantic.com",
     "AnimalId": 24,
     "IsResigned": "FALSE"
   },
@@ -2004,7 +2205,8 @@
     "EndDate": "2021-03-23 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "OwnerEmail": "bpovalli@google.es",
     "AnimalId": 11,
     "IsResigned": "FALSE"
   },
@@ -2015,6 +2217,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "OwnerEmail": "ntown1c@hc360.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2024,7 +2227,8 @@
     "EndDate": "2019-07-03 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "OwnerEmail": "mbrounfield58@ed.gov",
     "AnimalId": 197,
     "IsResigned": "FALSE"
   },
@@ -2034,7 +2238,8 @@
     "EndDate": "2019-06-24 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerEmail": "rkrop4b@ebay.com",
     "AnimalId": 200,
     "IsResigned": "FALSE"
   },
@@ -2044,7 +2249,8 @@
     "EndDate": "2020-02-04 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 503,
     "IsResigned": "FALSE"
   },
@@ -2054,7 +2260,8 @@
     "EndDate": "2020-10-07 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "db5d5da6-4d96-4366-813f-02990c20a4fb",
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerEmail": "skasparp@icio.us",
     "AnimalId": 311,
     "IsResigned": "FALSE"
   },
@@ -2065,6 +2272,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2075,6 +2283,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "OwnerEmail": "efetherstone6@hhs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2085,6 +2294,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerEmail": "lshowl3x@lulu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2095,6 +2305,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerEmail": "idixie32@jigsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2105,6 +2316,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2114,7 +2326,8 @@
     "EndDate": "2020-02-23 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "636d1067-d7dd-4b67-8bbb-f3faab343c51",
+    "OwnerId": "1872fdc8-6390-4b0e-82da-4b7f33099e22",
+    "OwnerEmail": "iburnyeat1f@soundcloud.com",
     "AnimalId": 248,
     "IsResigned": "FALSE"
   },
@@ -2125,6 +2338,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "ac793d27-d966-444b-a39a-63b3bf9ebd7f",
+    "OwnerEmail": "acuffe2z@vistaprint.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2134,7 +2348,8 @@
     "EndDate": "2019-04-17 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": 469,
     "IsResigned": "FALSE"
   },
@@ -2144,7 +2359,8 @@
     "EndDate": "2019-10-19 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "OwnerEmail": "ntown1c@hc360.com",
     "AnimalId": 60,
     "IsResigned": "FALSE"
   },
@@ -2154,7 +2370,8 @@
     "EndDate": "2020-08-13 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": 213,
     "IsResigned": "FALSE"
   },
@@ -2165,6 +2382,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerEmail": "mgatiss3d@irs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2175,6 +2393,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerEmail": "srollason3n@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2184,7 +2403,8 @@
     "EndDate": "2020-09-18 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 342,
     "IsResigned": "FALSE"
   },
@@ -2195,6 +2415,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "db5d5da6-4d96-4366-813f-02990c20a4fb",
+    "OwnerEmail": "lfairholme3i@shutterfly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2205,6 +2426,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "OwnerEmail": "cstonner1n@taobao.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2214,7 +2436,8 @@
     "EndDate": "2021-04-19 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "5077c369-f6eb-427e-a65a-f4e761b51a9d",
+    "OwnerId": "24e8f2d6-a528-4260-b22c-47781ca45289",
+    "OwnerEmail": "rlailey2w@blogtalkradio.com",
     "AnimalId": 130,
     "IsResigned": "FALSE"
   },
@@ -2225,6 +2448,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerEmail": "kmcorkill3l@rambler.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2235,6 +2459,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "OwnerEmail": "kgoggan1k@hubpages.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2245,6 +2470,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerEmail": "eberzen3s@mail.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2254,7 +2480,8 @@
     "EndDate": "2019-06-30 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "tesztelek",
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": 301,
     "IsResigned": "FALSE"
   },
@@ -2264,7 +2491,8 @@
     "EndDate": "2019-05-30 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "OwnerEmail": "mverson26@etsy.com",
     "AnimalId": 52,
     "IsResigned": "FALSE"
   },
@@ -2274,7 +2502,8 @@
     "EndDate": "2020-04-19 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": 262,
     "IsResigned": "FALSE"
   },
@@ -2284,7 +2513,8 @@
     "EndDate": "2021-02-11 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerEmail": "janniwell3z@nhs.uk",
     "AnimalId": 96,
     "IsResigned": "FALSE"
   },
@@ -2294,7 +2524,8 @@
     "EndDate": "2020-09-04 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 456,
     "IsResigned": "FALSE"
   },
@@ -2304,7 +2535,8 @@
     "EndDate": "2019-07-06 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "OwnerEmail": "ainwood4f@csmonitor.com",
     "AnimalId": 50,
     "IsResigned": "FALSE"
   },
@@ -2315,6 +2547,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerEmail": "eberzen3s@mail.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2324,7 +2557,8 @@
     "EndDate": "2020-06-08 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": 514,
     "IsResigned": "FALSE"
   },
@@ -2335,6 +2569,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerEmail": "lshowl3x@lulu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2344,7 +2579,8 @@
     "EndDate": "2021-03-29 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 251,
     "IsResigned": "FALSE"
   },
@@ -2354,7 +2590,8 @@
     "EndDate": "2019-02-22 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "OwnerEmail": "kvyed@altervista.org",
     "AnimalId": 241,
     "IsResigned": "FALSE"
   },
@@ -2365,6 +2602,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2375,6 +2613,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "fb675924-5706-487c-bf38-5a4b1cf822cd",
+    "OwnerEmail": "cvandrill1e@dagondesign.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2384,7 +2623,8 @@
     "EndDate": "2019-08-14 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerEmail": "skasparp@icio.us",
     "AnimalId": 557,
     "IsResigned": "FALSE"
   },
@@ -2394,7 +2634,8 @@
     "EndDate": "2020-03-20 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "f812f732-2897-4ab7-9b8c-696a41608b7d",
+    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "OwnerEmail": "jphilbrick3y@wsj.com",
     "AnimalId": 86,
     "IsResigned": "FALSE"
   },
@@ -2404,7 +2645,8 @@
     "EndDate": "2020-04-15 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 51,
     "IsResigned": "FALSE"
   },
@@ -2414,7 +2656,8 @@
     "EndDate": "2021-01-10 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 348,
     "IsResigned": "FALSE"
   },
@@ -2424,7 +2667,8 @@
     "EndDate": "2020-10-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 342,
     "IsResigned": "FALSE"
   },
@@ -2434,7 +2678,8 @@
     "EndDate": "2021-01-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "655dcf62-93f6-4aed-89db-82ca08ffb28d",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 187,
     "IsResigned": "FALSE"
   },
@@ -2444,7 +2689,8 @@
     "EndDate": "2019-09-15 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerEmail": "lshowl3x@lulu.com",
     "AnimalId": 28,
     "IsResigned": "FALSE"
   },
@@ -2455,6 +2701,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "b5ccc9dd-ccdc-456a-aab3-3d93173da7d2",
+    "OwnerEmail": "dtheml1g@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2465,6 +2712,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2474,7 +2722,8 @@
     "EndDate": "2019-12-24 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerEmail": "jdoerling3c@lulu.com",
     "AnimalId": 440,
     "IsResigned": "FALSE"
   },
@@ -2484,7 +2733,8 @@
     "EndDate": "2020-05-09 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerEmail": "jklimentyev52@vimeo.com",
     "AnimalId": 30,
     "IsResigned": "FALSE"
   },
@@ -2495,6 +2745,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "OwnerEmail": "wforganl@mtv.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2505,6 +2756,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "OwnerEmail": "hhartgillr@ibm.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2514,7 +2766,8 @@
     "EndDate": "2019-04-10 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": 586,
     "IsResigned": "FALSE"
   },
@@ -2524,7 +2777,8 @@
     "EndDate": "2019-08-03 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "OwnerEmail": "mverson26@etsy.com",
     "AnimalId": 52,
     "IsResigned": "FALSE"
   },
@@ -2535,6 +2789,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2545,6 +2800,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "OwnerEmail": "bmaddock2f@hc360.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2555,6 +2811,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "OwnerEmail": "pjaan5g@wikipedia.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2564,7 +2821,8 @@
     "EndDate": "2019-06-16 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 49,
     "IsResigned": "FALSE"
   },
@@ -2575,6 +2833,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "OwnerEmail": "akitteringham5d@telegraph.co.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2584,7 +2843,8 @@
     "EndDate": "2020-06-26 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": 292,
     "IsResigned": "FALSE"
   },
@@ -2595,6 +2855,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "beea87aa-91e5-4442-8b5b-37f0bbb745e3",
+    "OwnerEmail": "lnairn2b@apache.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2605,6 +2866,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerEmail": "rkrop4b@ebay.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2614,7 +2876,8 @@
     "EndDate": "2020-01-28 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerId": "5506584d-0edc-4f03-9e25-de01b8097506",
+    "OwnerEmail": "ttissiman1t@unblog.fr",
     "AnimalId": 16,
     "IsResigned": "FALSE"
   },
@@ -2625,6 +2888,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerEmail": "rkrop4b@ebay.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2634,7 +2898,8 @@
     "EndDate": "2019-03-28 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "18de7236-051c-4b01-b8bf-1f481abe8454",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 487,
     "IsResigned": "FALSE"
   },
@@ -2644,7 +2909,8 @@
     "EndDate": "2021-04-19 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 235,
     "IsResigned": "FALSE"
   },
@@ -2654,7 +2920,8 @@
     "EndDate": "2020-05-14 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerEmail": "rmulheron17@gov.uk",
     "AnimalId": 279,
     "IsResigned": "FALSE"
   },
@@ -2664,7 +2931,8 @@
     "EndDate": "2021-01-03 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "OwnerEmail": "cburnsyde1j@eventbrite.com",
     "AnimalId": 538,
     "IsResigned": "FALSE"
   },
@@ -2674,7 +2942,8 @@
     "EndDate": "2021-03-28 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 348,
     "IsResigned": "FALSE"
   },
@@ -2685,6 +2954,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "OwnerEmail": "egawney@google.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2694,7 +2964,8 @@
     "EndDate": "2019-11-22 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "d2fb0a3d-f4b0-4e1f-92f9-b0d798ebd6e4",
+    "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "OwnerEmail": "ainwood4f@csmonitor.com",
     "AnimalId": 546,
     "IsResigned": "FALSE"
   },
@@ -2704,7 +2975,8 @@
     "EndDate": "2021-04-05 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 49,
     "IsResigned": "FALSE"
   },
@@ -2714,7 +2986,8 @@
     "EndDate": "2020-11-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 129,
     "IsResigned": "FALSE"
   },
@@ -2724,7 +2997,8 @@
     "EndDate": "2020-03-04 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "15cf9570-5e6d-40b2-92b3-78c5fbd0564d",
+    "OwnerId": "1898daa9-1435-49dc-a6b5-c1a722682377",
+    "OwnerEmail": "lmatasov41@unicef.org",
     "AnimalId": 118,
     "IsResigned": "FALSE"
   },
@@ -2734,7 +3008,8 @@
     "EndDate": "2019-08-09 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 314,
     "IsResigned": "FALSE"
   },
@@ -2744,7 +3019,8 @@
     "EndDate": "2021-02-01 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": 484,
     "IsResigned": "FALSE"
   },
@@ -2755,6 +3031,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerEmail": "jthorius37@vkontakte.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2765,6 +3042,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "OwnerEmail": "dpickerin18@engadget.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2774,7 +3052,8 @@
     "EndDate": "2020-03-02 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 411,
     "IsResigned": "FALSE"
   },
@@ -2785,6 +3064,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "OwnerEmail": "pvants@samsung.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2795,6 +3075,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "d6f5125e-776f-493e-a61e-a448707ff16a",
+    "OwnerEmail": "ntaggett4r@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2804,7 +3085,8 @@
     "EndDate": "2021-04-13 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerEmail": "lmccarry1s@independent.co.uk",
     "AnimalId": 144,
     "IsResigned": "FALSE"
   },
@@ -2814,7 +3096,8 @@
     "EndDate": "2020-05-19 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "OwnerId": "71264c02-9433-4bd2-9243-5ea11760b47d",
+    "OwnerEmail": "gparadis3h@symantec.com",
     "AnimalId": 368,
     "IsResigned": "FALSE"
   },
@@ -2824,7 +3107,8 @@
     "EndDate": "2019-03-12 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerEmail": "jragborne3p@parallels.com",
     "AnimalId": 167,
     "IsResigned": "FALSE"
   },
@@ -2835,6 +3119,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "OwnerEmail": "lgeharke38@imgur.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2845,6 +3130,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2855,6 +3141,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "OwnerEmail": "hbernocchi3g@google.pl",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2865,6 +3152,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "OwnerEmail": "lgeharke38@imgur.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2874,7 +3162,8 @@
     "EndDate": "2019-06-06 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": 227,
     "IsResigned": "FALSE"
   },
@@ -2885,6 +3174,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
     "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "OwnerEmail": "wforganl@mtv.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2895,6 +3185,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "OwnerEmail": "ggidden3u@nbcnews.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2905,6 +3196,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "OwnerEmail": "rgreenslade2i@vinaora.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2915,6 +3207,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2924,7 +3217,8 @@
     "EndDate": "2020-05-07 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 569,
     "IsResigned": "FALSE"
   },
@@ -2934,7 +3228,8 @@
     "EndDate": "2020-03-18 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": 518,
     "IsResigned": "FALSE"
   },
@@ -2945,6 +3240,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "OwnerEmail": "rgreenslade2i@vinaora.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2955,6 +3251,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerEmail": "aromans1d@surveymonkey.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2964,7 +3261,8 @@
     "EndDate": "2021-03-23 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerId": "kovacsmonika",
+    "OwnerEmail": "kmoni@veterinary.hu",
     "AnimalId": 412,
     "IsResigned": "FALSE"
   },
@@ -2974,7 +3272,8 @@
     "EndDate": "2021-04-29 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "5b618862-b7f4-42a9-89a4-d3c0a9de3a23",
+    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerEmail": "rcolquytew@ox.ac.uk",
     "AnimalId": 6,
     "IsResigned": "FALSE"
   },
@@ -2985,6 +3284,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerEmail": "eledes2y@cbsnews.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -2995,6 +3295,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "d836527f-9fc8-4fcb-a0c5-ef4ee9cd74bd",
+    "OwnerEmail": "umccart55@youtube.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3004,7 +3305,8 @@
     "EndDate": "2019-09-24 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerEmail": "ahedylstone36@google.co.jp",
     "AnimalId": 529,
     "IsResigned": "FALSE"
   },
@@ -3014,7 +3316,8 @@
     "EndDate": "2020-02-10 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerEmail": "adowneyo@cdc.gov",
     "AnimalId": 535,
     "IsResigned": "FALSE"
   },
@@ -3024,7 +3327,8 @@
     "EndDate": "2020-05-01 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "c5060975-8ff5-4bbb-9a97-463592d2933e",
+    "OwnerId": "678927d2-ca8f-4a51-9c19-c7e563061fed",
+    "OwnerEmail": "mbrounfield58@ed.gov",
     "AnimalId": 197,
     "IsResigned": "FALSE"
   },
@@ -3035,6 +3339,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3044,7 +3349,8 @@
     "EndDate": "2020-01-30 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 129,
     "IsResigned": "FALSE"
   },
@@ -3055,6 +3361,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "OwnerEmail": "bgoacher4c@hao123.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3064,7 +3371,8 @@
     "EndDate": "2020-05-26 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "ac793d27-d966-444b-a39a-63b3bf9ebd7f",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 498,
     "IsResigned": "FALSE"
   },
@@ -3074,7 +3382,8 @@
     "EndDate": "2019-09-30 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "65a0d755-c3c7-4818-a2cb-97ed51225d3c",
+    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "OwnerEmail": "vcrocroft2@google.ca",
     "AnimalId": 362,
     "IsResigned": "FALSE"
   },
@@ -3085,6 +3394,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "OwnerEmail": "dpickerin18@engadget.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3094,7 +3404,8 @@
     "EndDate": "2020-07-22 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerId": "db5d5da6-4d96-4366-813f-02990c20a4fb",
+    "OwnerEmail": "lfairholme3i@shutterfly.com",
     "AnimalId": 392,
     "IsResigned": "FALSE"
   },
@@ -3104,7 +3415,8 @@
     "EndDate": "2020-10-21 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerEmail": "aalelsandrowicz2n@geocities.jp",
     "AnimalId": 544,
     "IsResigned": "FALSE"
   },
@@ -3114,7 +3426,8 @@
     "EndDate": "2020-10-29 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 536,
     "IsResigned": "FALSE"
   },
@@ -3124,7 +3437,8 @@
     "EndDate": "2019-09-19 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerEmail": "aapplegartha@wikimedia.org",
     "AnimalId": 567,
     "IsResigned": "FALSE"
   },
@@ -3134,7 +3448,8 @@
     "EndDate": "2019-11-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 396,
     "IsResigned": "FALSE"
   },
@@ -3145,6 +3460,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3154,7 +3470,8 @@
     "EndDate": "2020-11-01 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 103,
     "IsResigned": "FALSE"
   },
@@ -3164,7 +3481,8 @@
     "EndDate": "2020-11-10 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "aa24ae40-3d8b-4fcb-878c-d30078aaeaf6",
+    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "OwnerEmail": "aredon1v@yale.edu",
     "AnimalId": 501,
     "IsResigned": "FALSE"
   },
@@ -3175,6 +3493,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerEmail": "ddruitt2v@cdc.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3184,7 +3503,8 @@
     "EndDate": "2020-04-23 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": 550,
     "IsResigned": "FALSE"
   },
@@ -3195,6 +3515,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "kovacsmonika",
+    "OwnerEmail": "kmoni@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3204,7 +3525,8 @@
     "EndDate": "2021-04-23 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 51,
     "IsResigned": "FALSE"
   },
@@ -3214,7 +3536,8 @@
     "EndDate": "2021-05-18 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 460,
     "IsResigned": "FALSE"
   },
@@ -3224,7 +3547,8 @@
     "EndDate": "2019-07-11 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerEmail": "bchatenier1a@issuu.com",
     "AnimalId": 491,
     "IsResigned": "FALSE"
   },
@@ -3235,6 +3559,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3244,7 +3569,8 @@
     "EndDate": "2021-03-15 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerEmail": "sprinn20@meetup.com",
     "AnimalId": 291,
     "IsResigned": "FALSE"
   },
@@ -3254,7 +3580,8 @@
     "EndDate": "2020-05-12 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerEmail": "tgerleit3f@uol.com.br",
     "AnimalId": 57,
     "IsResigned": "FALSE"
   },
@@ -3264,7 +3591,8 @@
     "EndDate": "2020-07-08 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 477,
     "IsResigned": "FALSE"
   },
@@ -3275,6 +3603,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "42b1952c-6856-43b4-aa80-e02c78d6f308",
+    "OwnerEmail": "lclouter54@archive.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3285,6 +3614,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "OwnerEmail": "egawney@google.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3294,7 +3624,8 @@
     "EndDate": "2019-06-15 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerId": "ac793d27-d966-444b-a39a-63b3bf9ebd7f",
+    "OwnerEmail": "acuffe2z@vistaprint.com",
     "AnimalId": 35,
     "IsResigned": "FALSE"
   },
@@ -3305,6 +3636,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "kovacsmonika",
+    "OwnerEmail": "kmoni@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3315,6 +3647,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "6b659a1a-744a-48a1-86e9-ad3b81f72b96",
+    "OwnerEmail": "vmamwell1o@hostgator.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3324,7 +3657,8 @@
     "EndDate": "2019-07-12 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "OwnerId": "69f2e20d-3ca7-48c1-b067-78255aee8144",
+    "OwnerEmail": "chollierc@theatlantic.com",
     "AnimalId": 24,
     "IsResigned": "FALSE"
   },
@@ -3334,7 +3668,8 @@
     "EndDate": "2020-09-26 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerEmail": "bprydieh@i2i.jp",
     "AnimalId": 366,
     "IsResigned": "FALSE"
   },
@@ -3344,7 +3679,8 @@
     "EndDate": "2021-01-31 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerEmail": "ddruitt2v@cdc.gov",
     "AnimalId": 552,
     "IsResigned": "FALSE"
   },
@@ -3354,7 +3690,8 @@
     "EndDate": "2019-11-03 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "44054849-e6a6-4413-b198-654e23406c9e",
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": 520,
     "IsResigned": "FALSE"
   },
@@ -3365,6 +3702,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "OwnerEmail": "mgowrichj@people.com.cn",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3374,7 +3712,8 @@
     "EndDate": "2020-01-18 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerEmail": "jthorius37@vkontakte.ru",
     "AnimalId": 202,
     "IsResigned": "FALSE"
   },
@@ -3385,6 +3724,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "OwnerEmail": "pvants@samsung.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3395,6 +3735,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerEmail": "lshowl3x@lulu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3405,6 +3746,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3415,6 +3757,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3424,7 +3767,8 @@
     "EndDate": "2019-04-24 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "OwnerId": "2d96991e-06da-4a33-92f6-38db85f87d13",
+    "OwnerEmail": "bundrillg@shareasale.com",
     "AnimalId": 229,
     "IsResigned": "FALSE"
   },
@@ -3434,7 +3778,8 @@
     "EndDate": "2021-05-09 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "4253aa6d-77ce-493c-8572-8b0447bcd62c",
+    "OwnerId": "54d7bd7d-bf08-43ed-89c4-934d3db35bd7",
+    "OwnerEmail": "aburges44@omniture.com",
     "AnimalId": 272,
     "IsResigned": "FALSE"
   },
@@ -3445,6 +3790,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "ef8948f5-8244-41ed-98ca-1f7e5b187337",
+    "OwnerEmail": "blamar3@narod.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3454,7 +3800,8 @@
     "EndDate": "2020-03-19 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerEmail": "jbryceson31@hibu.com",
     "AnimalId": 322,
     "IsResigned": "FALSE"
   },
@@ -3464,7 +3811,8 @@
     "EndDate": "2020-06-29 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerEmail": "bprydieh@i2i.jp",
     "AnimalId": 8,
     "IsResigned": "FALSE"
   },
@@ -3475,6 +3823,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3484,7 +3833,8 @@
     "EndDate": "2019-12-24 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "OwnerEmail": "uskillicorn2u@mysql.com",
     "AnimalId": 215,
     "IsResigned": "FALSE"
   },
@@ -3495,6 +3845,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerEmail": "sprinn20@meetup.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3505,6 +3856,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "340ddef8-8f71-4b46-b79e-8d0f396880b8",
+    "OwnerEmail": "cstonner1n@taobao.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3515,6 +3867,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "b356c661-a9b7-48b1-b0f4-2c5894cb8fb8",
+    "OwnerEmail": "sludwikiewicz1x@vinaora.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3524,7 +3877,8 @@
     "EndDate": "2020-08-09 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerId": "504605f3-ebde-429b-b38c-0ba6820b0c46",
+    "OwnerEmail": "agilliver4y@columbia.edu",
     "AnimalId": 306,
     "IsResigned": "FALSE"
   },
@@ -3535,6 +3889,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerEmail": "rdeabill13@reverbnation.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3544,7 +3899,8 @@
     "EndDate": "2019-06-26 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": 586,
     "IsResigned": "FALSE"
   },
@@ -3555,6 +3911,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "OwnerEmail": "lgeharke38@imgur.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3565,6 +3922,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3574,7 +3932,8 @@
     "EndDate": "2020-07-09 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 235,
     "IsResigned": "FALSE"
   },
@@ -3584,7 +3943,8 @@
     "EndDate": "2020-09-08 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 251,
     "IsResigned": "FALSE"
   },
@@ -3595,6 +3955,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "OwnerEmail": "bmaddock2f@hc360.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3605,6 +3966,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "OwnerEmail": "pjaan5g@wikipedia.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3615,6 +3977,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3625,6 +3988,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "OwnerEmail": "wforganl@mtv.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3634,7 +3998,8 @@
     "EndDate": "2020-02-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerEmail": "mgatiss3d@irs.gov",
     "AnimalId": 397,
     "IsResigned": "FALSE"
   },
@@ -3644,7 +4009,8 @@
     "EndDate": "2021-03-18 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "OwnerEmail": "dgoldhill2d@so-net.ne.jp",
     "AnimalId": 75,
     "IsResigned": "FALSE"
   },
@@ -3655,6 +4021,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerEmail": "opapps1m@latimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3665,6 +4032,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerEmail": "eberzen3s@mail.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3675,6 +4043,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "3e1b7e8a-b4ed-4432-a6dd-b6665dcc9837",
+    "OwnerEmail": "hhartgillr@ibm.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3684,7 +4053,8 @@
     "EndDate": "2020-08-20 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "f6566d57-d8bd-4074-8400-4a17c7b5050e",
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerEmail": "ddruitt2v@cdc.gov",
     "AnimalId": 126,
     "IsResigned": "FALSE"
   },
@@ -3694,7 +4064,8 @@
     "EndDate": "2020-11-30 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": 263,
     "IsResigned": "FALSE"
   },
@@ -3704,7 +4075,8 @@
     "EndDate": "2020-01-22 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "OwnerEmail": "efetherstone6@hhs.gov",
     "AnimalId": 316,
     "IsResigned": "FALSE"
   },
@@ -3714,7 +4086,8 @@
     "EndDate": "2019-11-25 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": 550,
     "IsResigned": "FALSE"
   },
@@ -3724,7 +4097,8 @@
     "EndDate": "2019-05-17 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 282,
     "IsResigned": "FALSE"
   },
@@ -3734,7 +4108,8 @@
     "EndDate": "2019-10-01 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 369,
     "IsResigned": "FALSE"
   },
@@ -3744,7 +4119,8 @@
     "EndDate": "2020-04-03 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "419441c2-158b-49ea-bd85-626b3cf106de",
+    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "OwnerEmail": "jromanin1p@webs.com",
     "AnimalId": 145,
     "IsResigned": "FALSE"
   },
@@ -3755,6 +4131,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "OwnerEmail": "kvyed@altervista.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3765,6 +4142,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "8f4084dd-7d5c-4be0-b426-9ebabb3b883a",
+    "OwnerEmail": "thague3b@addtoany.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3774,7 +4152,8 @@
     "EndDate": "2019-04-02 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 569,
     "IsResigned": "FALSE"
   },
@@ -3785,6 +4164,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "f6566d57-d8bd-4074-8400-4a17c7b5050e",
+    "OwnerEmail": "togorman2q@mysql.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3795,6 +4175,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "b356c661-a9b7-48b1-b0f4-2c5894cb8fb8",
+    "OwnerEmail": "sludwikiewicz1x@vinaora.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3804,7 +4185,8 @@
     "EndDate": "2020-10-24 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "cd5eb7ef-55d3-4ac1-bcba-259bb228422f",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 521,
     "IsResigned": "FALSE"
   },
@@ -3814,7 +4196,8 @@
     "EndDate": "2020-05-08 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerEmail": "skasparp@icio.us",
     "AnimalId": 557,
     "IsResigned": "FALSE"
   },
@@ -3824,7 +4207,8 @@
     "EndDate": "2019-11-25 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "OwnerEmail": "chedde46@furl.net",
     "AnimalId": 341,
     "IsResigned": "FALSE"
   },
@@ -3835,6 +4219,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "OwnerEmail": "bgoneaun@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3844,7 +4229,8 @@
     "EndDate": "2019-09-06 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerEmail": "skasparp@icio.us",
     "AnimalId": 9,
     "IsResigned": "FALSE"
   },
@@ -3855,6 +4241,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerEmail": "idixie32@jigsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3864,7 +4251,8 @@
     "EndDate": "2019-05-12 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 441,
     "IsResigned": "FALSE"
   },
@@ -3875,6 +4263,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "44768cc4-747a-4dc9-92e0-bf6066de00b8",
+    "OwnerEmail": "pjaan5g@wikipedia.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3885,6 +4274,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "65a0d755-c3c7-4818-a2cb-97ed51225d3c",
+    "OwnerEmail": "bgarrioch2s@mtv.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3894,7 +4284,8 @@
     "EndDate": "2021-01-19 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerEmail": "gabercrombiev@hugedomains.com",
     "AnimalId": 108,
     "IsResigned": "FALSE"
   },
@@ -3905,6 +4296,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "0476dff4-e2e9-4d2a-b5ed-18b205b5e359",
+    "OwnerEmail": "theinschke48@uol.com.br",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3915,6 +4307,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "OwnerEmail": "sduran33@whitehouse.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -3924,7 +4317,8 @@
     "EndDate": "2019-10-01 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "OwnerEmail": "jjaffa53@fc2.com",
     "AnimalId": 360,
     "IsResigned": "FALSE"
   },
@@ -3934,7 +4328,8 @@
     "EndDate": "2021-04-23 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": 178,
     "IsResigned": "FALSE"
   },
@@ -3944,7 +4339,8 @@
     "EndDate": "2019-03-15 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "aa24ae40-3d8b-4fcb-878c-d30078aaeaf6",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 46,
     "IsResigned": "FALSE"
   },
@@ -3954,7 +4350,8 @@
     "EndDate": "2019-08-12 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "518be8f7-db5d-45ac-8291-317fc347010a",
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": 580,
     "IsResigned": "FALSE"
   },
@@ -3964,7 +4361,8 @@
     "EndDate": "2019-06-05 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "OwnerEmail": "jjaffa53@fc2.com",
     "AnimalId": 360,
     "IsResigned": "FALSE"
   },
@@ -3974,7 +4372,8 @@
     "EndDate": "2019-10-20 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerEmail": "mtremble4n@rediff.com",
     "AnimalId": 345,
     "IsResigned": "FALSE"
   },
@@ -3984,7 +4383,8 @@
     "EndDate": "2019-07-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "OwnerId": "09fbe6f3-98bf-451b-9c00-4460bf3e23c2",
+    "OwnerEmail": "jjakubczyk1z@huffingtonpost.com",
     "AnimalId": 451,
     "IsResigned": "FALSE"
   },
@@ -3994,7 +4394,8 @@
     "EndDate": "2020-05-15 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerEmail": "sprinn20@meetup.com",
     "AnimalId": 291,
     "IsResigned": "FALSE"
   },
@@ -4005,6 +4406,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "OwnerEmail": "bcucinotta34@answers.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4015,6 +4417,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "OwnerEmail": "trushworth4x@csmonitor.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4025,6 +4428,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4035,6 +4439,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "8ab0fdb7-9088-4966-babf-3f35aea26dad",
+    "OwnerEmail": "eberzen3s@mail.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4044,7 +4449,8 @@
     "EndDate": "2021-05-02 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "fb675924-5706-487c-bf38-5a4b1cf822cd",
+    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "OwnerEmail": "dgoldhill2d@so-net.ne.jp",
     "AnimalId": 545,
     "IsResigned": "FALSE"
   },
@@ -4055,6 +4461,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "OwnerEmail": "syakolev23@e-recht24.de",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4065,6 +4472,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "01ee6c39-9f3e-4aac-963d-a3ce34bc40d9",
+    "OwnerEmail": "hwhissell1y@weather.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4075,6 +4483,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerEmail": "oivshin14@techcrunch.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4085,6 +4494,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerEmail": "jklimentyev52@vimeo.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4095,6 +4505,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4105,6 +4516,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "OwnerEmail": "cvenour45@hugedomains.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4114,7 +4526,8 @@
     "EndDate": "2020-06-01 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "636d1067-d7dd-4b67-8bbb-f3faab343c51",
+    "OwnerId": "1872fdc8-6390-4b0e-82da-4b7f33099e22",
+    "OwnerEmail": "iburnyeat1f@soundcloud.com",
     "AnimalId": 248,
     "IsResigned": "FALSE"
   },
@@ -4124,7 +4537,8 @@
     "EndDate": "2019-06-23 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "49086727-96c3-45f5-a616-47e3dd931ad6",
+    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "OwnerEmail": "hbernocchi3g@google.pl",
     "AnimalId": 175,
     "IsResigned": "FALSE"
   },
@@ -4134,7 +4548,8 @@
     "EndDate": "2021-05-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": 184,
     "IsResigned": "FALSE"
   },
@@ -4144,7 +4559,8 @@
     "EndDate": "2020-12-19 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "4fb0587d-3b3e-4d01-b50b-e34cfb57c6f4",
+    "OwnerId": "cb426fab-0e61-49b5-ac46-4d8c5610e2ae",
+    "OwnerEmail": "gbacop4u@mozilla.com",
     "AnimalId": 43,
     "IsResigned": "FALSE"
   },
@@ -4155,6 +4571,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerEmail": "cshellum3a@earthlink.net",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4164,7 +4581,8 @@
     "EndDate": "2020-01-07 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "OwnerId": "43c27405-cec1-4040-8e57-e08544fdc7c8",
+    "OwnerEmail": "waikett4l@deliciousdays.com",
     "AnimalId": 307,
     "IsResigned": "FALSE"
   },
@@ -4175,6 +4593,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "kovacsmonika",
+    "OwnerEmail": "kmoni@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4184,7 +4603,8 @@
     "EndDate": "2019-05-08 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -4194,7 +4614,8 @@
     "EndDate": "2021-04-09 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "6cdc181a-632f-44e6-9f9f-56d5ad7f76dc",
+    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": 468,
     "IsResigned": "FALSE"
   },
@@ -4205,6 +4626,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "OwnerEmail": "jromanin1p@webs.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4214,7 +4636,8 @@
     "EndDate": "2021-03-20 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 156,
     "IsResigned": "FALSE"
   },
@@ -4224,7 +4647,8 @@
     "EndDate": "2020-12-26 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "OwnerId": "5a196870-948d-4285-ab2a-b4a3262f0fef",
+    "OwnerEmail": "htybalt3w@booking.com",
     "AnimalId": 236,
     "IsResigned": "FALSE"
   },
@@ -4234,7 +4658,8 @@
     "EndDate": "2019-12-25 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "6697798f-83b2-49d7-bc74-bb81a8226956",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 149,
     "IsResigned": "FALSE"
   },
@@ -4244,7 +4669,8 @@
     "EndDate": "2019-12-14 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerEmail": "mgatiss3d@irs.gov",
     "AnimalId": 119,
     "IsResigned": "FALSE"
   },
@@ -4254,7 +4680,8 @@
     "EndDate": "2020-05-09 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 235,
     "IsResigned": "FALSE"
   },
@@ -4264,7 +4691,8 @@
     "EndDate": "2019-11-13 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "OwnerId": "0476dff4-e2e9-4d2a-b5ed-18b205b5e359",
+    "OwnerEmail": "theinschke48@uol.com.br",
     "AnimalId": 17,
     "IsResigned": "FALSE"
   },
@@ -4274,7 +4702,8 @@
     "EndDate": "2019-09-28 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "281ce08e-eba2-431f-b1a1-51470df71e31",
+    "OwnerId": "beea87aa-91e5-4442-8b5b-37f0bbb745e3",
+    "OwnerEmail": "lnairn2b@apache.org",
     "AnimalId": 403,
     "IsResigned": "FALSE"
   },
@@ -4285,6 +4714,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "OwnerEmail": "saxworthy0@diigo.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4295,6 +4725,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4304,7 +4735,8 @@
     "EndDate": "2019-11-03 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerEmail": "ddruitt2v@cdc.gov",
     "AnimalId": 552,
     "IsResigned": "FALSE"
   },
@@ -4314,7 +4746,8 @@
     "EndDate": "2021-04-07 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerEmail": "kmcorkill3l@rambler.ru",
     "AnimalId": 25,
     "IsResigned": "FALSE"
   },
@@ -4324,7 +4757,8 @@
     "EndDate": "2020-12-31 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "5f8b10ad-83d6-4397-b360-2498b27272af",
+    "OwnerId": "71264c02-9433-4bd2-9243-5ea11760b47d",
+    "OwnerEmail": "gparadis3h@symantec.com",
     "AnimalId": 368,
     "IsResigned": "FALSE"
   },
@@ -4334,7 +4768,8 @@
     "EndDate": "2021-03-15 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerEmail": "jdoerling3c@lulu.com",
     "AnimalId": 440,
     "IsResigned": "FALSE"
   },
@@ -4345,6 +4780,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "1506ff51-0175-4cbd-9351-51f8a1b6adcc",
+    "OwnerEmail": "ctwitchingt@answers.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4354,7 +4790,8 @@
     "EndDate": "2021-01-31 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "9c13b82e-56c2-4376-a494-d2beaec83b29",
+    "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "OwnerEmail": "nconklin2k@mac.com",
     "AnimalId": 444,
     "IsResigned": "FALSE"
   },
@@ -4365,6 +4802,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4374,7 +4812,8 @@
     "EndDate": "2020-05-17 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": 282,
     "IsResigned": "FALSE"
   },
@@ -4385,6 +4824,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4394,7 +4834,8 @@
     "EndDate": "2021-04-28 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": 518,
     "IsResigned": "FALSE"
   },
@@ -4404,7 +4845,8 @@
     "EndDate": "2020-11-30 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": 235,
     "IsResigned": "FALSE"
   },
@@ -4414,7 +4856,8 @@
     "EndDate": "2019-07-04 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerEmail": "jbryceson31@hibu.com",
     "AnimalId": 117,
     "IsResigned": "FALSE"
   },
@@ -4424,7 +4867,8 @@
     "EndDate": "2019-03-08 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "f2720c0a-6d30-4bd1-ba34-eb8fba0bbca4",
+    "OwnerId": "a29f2473-55b6-4ee8-b0a7-5fd1f08fb7d9",
+    "OwnerEmail": "apinnm@cyberchimps.com",
     "AnimalId": 73,
     "IsResigned": "FALSE"
   },
@@ -4434,7 +4878,8 @@
     "EndDate": "2019-05-02 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerId": "19789421-36a0-4b95-8b8f-fb8281967107",
+    "OwnerEmail": "tdarville49@ucsd.edu",
     "AnimalId": 364,
     "IsResigned": "FALSE"
   },
@@ -4444,7 +4889,8 @@
     "EndDate": "2021-02-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 288,
     "IsResigned": "FALSE"
   },
@@ -4455,6 +4901,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4465,6 +4912,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "OwnerEmail": "vyork2a@nsw.gov.au",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4475,6 +4923,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "c88d3e1f-ffeb-4944-9fee-a28e2b278aaa",
+    "OwnerEmail": "ogason1q@cbsnews.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4484,7 +4933,8 @@
     "EndDate": "2021-01-15 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerId": "e39663ea-9fb6-4e99-bf55-356aa4fb4343",
+    "OwnerEmail": "atrattone@delicious.com",
     "AnimalId": 478,
     "IsResigned": "FALSE"
   },
@@ -4495,6 +4945,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "tesztelek",
+    "OwnerEmail": "tesztelek@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4504,7 +4955,8 @@
     "EndDate": "2019-07-26 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "99052cbd-9eae-451f-82e3-0e16218ef321",
+    "OwnerId": "660eb954-fbd0-45c4-b2a4-94377955c863",
+    "OwnerEmail": "ntrustey2j@epa.gov",
     "AnimalId": 456,
     "IsResigned": "FALSE"
   },
@@ -4515,6 +4967,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "OwnerEmail": "dpickerin18@engadget.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4524,7 +4977,8 @@
     "EndDate": "2019-12-03 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerId": "307387c2-71dd-4953-a267-d6cfce7c0a2e",
+    "OwnerEmail": "dpickerin18@engadget.com",
     "AnimalId": 246,
     "IsResigned": "FALSE"
   },
@@ -4534,7 +4988,8 @@
     "EndDate": "2019-12-24 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerEmail": "rmulheron17@gov.uk",
     "AnimalId": 14,
     "IsResigned": "FALSE"
   },
@@ -4545,6 +5000,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "0e085670-6d81-42bd-a628-4a8f4dd12fab",
+    "OwnerEmail": "ggidden3u@nbcnews.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4554,7 +5010,8 @@
     "EndDate": "2021-02-09 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 156,
     "IsResigned": "FALSE"
   },
@@ -4565,6 +5022,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "9aee51aa-7486-4c3c-9768-aca66abc693c",
+    "OwnerEmail": "ainwood4f@csmonitor.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4575,6 +5033,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerEmail": "jbryceson31@hibu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4584,7 +5043,8 @@
     "EndDate": "2019-11-20 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 49,
     "IsResigned": "FALSE"
   },
@@ -4594,7 +5054,8 @@
     "EndDate": "2020-11-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "36e82b88-7408-4027-b090-f1e3198c2b98",
+    "OwnerId": "42b1952c-6856-43b4-aa80-e02c78d6f308",
+    "OwnerEmail": "lclouter54@archive.org",
     "AnimalId": 470,
     "IsResigned": "FALSE"
   },
@@ -4604,7 +5065,8 @@
     "EndDate": "2020-01-12 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "OwnerId": "0ad85645-7d06-43db-a3ed-459efb0528f4",
+    "OwnerEmail": "cwither4z@hhs.gov",
     "AnimalId": 571,
     "IsResigned": "FALSE"
   },
@@ -4615,6 +5077,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "holnapeniko",
+    "OwnerEmail": "heniko@veterinary.hu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4624,7 +5087,8 @@
     "EndDate": "2020-09-27 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": 227,
     "IsResigned": "FALSE"
   },
@@ -4634,7 +5098,8 @@
     "EndDate": "2019-07-07 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerEmail": "ahedylstone36@google.co.jp",
     "AnimalId": 375,
     "IsResigned": "FALSE"
   },
@@ -4644,7 +5109,8 @@
     "EndDate": "2021-02-03 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "OwnerId": "bb118c51-dd27-4998-921a-65a8e7115ce5",
+    "OwnerEmail": "dmcelwee2e@shinystat.com",
     "AnimalId": 305,
     "IsResigned": "FALSE"
   },
@@ -4654,7 +5120,8 @@
     "EndDate": "2020-10-01 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -4664,7 +5131,8 @@
     "EndDate": "2019-11-25 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerId": "f64e070d-9664-4e3f-85cc-fda2912b6d41",
+    "OwnerEmail": "vchesley3e@amazonaws.com",
     "AnimalId": 309,
     "IsResigned": "FALSE"
   },
@@ -4674,7 +5142,8 @@
     "EndDate": "2021-05-08 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "daf7d2f5-9ec3-41e3-adf9-706034d97eb7",
+    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerEmail": "ahedylstone36@google.co.jp",
     "AnimalId": 529,
     "IsResigned": "FALSE"
   },
@@ -4684,7 +5153,8 @@
     "EndDate": "2019-08-26 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "OwnerId": "8e18ea44-64fb-452d-a34e-070755633c56",
+    "OwnerEmail": "mcolaco4s@netvibes.com",
     "AnimalId": 183,
     "IsResigned": "FALSE"
   },
@@ -4694,7 +5164,8 @@
     "EndDate": "2019-04-18 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "ff1327dc-e7ab-4386-9805-2c2a82cb3571",
+    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "OwnerEmail": "dgoldhill2d@so-net.ne.jp",
     "AnimalId": 542,
     "IsResigned": "FALSE"
   },
@@ -4705,6 +5176,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "OwnerEmail": "cburnsyde1j@eventbrite.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4715,6 +5187,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerEmail": "janniwell3z@nhs.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4724,7 +5197,8 @@
     "EndDate": "2019-08-23 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "ae3546cb-b724-451d-9a49-0736121ef67d",
+    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "OwnerEmail": "dgrinin1@cdc.gov",
     "AnimalId": 457,
     "IsResigned": "FALSE"
   },
@@ -4734,7 +5208,8 @@
     "EndDate": "2021-03-04 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -4744,7 +5219,8 @@
     "EndDate": "2019-08-17 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "4e77c3d8-5c7b-43a3-b5cd-0ab7c316979d",
+    "OwnerId": "1f2f416f-90cc-4f87-b5a3-e3a4fa6ca75f",
+    "OwnerEmail": "cwillman3m@webmd.com",
     "AnimalId": 386,
     "IsResigned": "FALSE"
   },
@@ -4754,7 +5230,8 @@
     "EndDate": "2020-09-01 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "OwnerEmail": "dstinton39@indiatimes.com",
     "AnimalId": 526,
     "IsResigned": "FALSE"
   },
@@ -4765,6 +5242,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerEmail": "jragborne3p@parallels.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4774,7 +5252,8 @@
     "EndDate": "2020-01-24 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": 350,
     "IsResigned": "FALSE"
   },
@@ -4784,7 +5263,8 @@
     "EndDate": "2020-05-30 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 295,
     "IsResigned": "FALSE"
   },
@@ -4794,7 +5274,8 @@
     "EndDate": "2021-04-20 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "f2000134-b1ca-4877-ad14-5f545c53bdca",
+    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerEmail": "mgatiss3d@irs.gov",
     "AnimalId": 397,
     "IsResigned": "FALSE"
   },
@@ -4804,7 +5285,8 @@
     "EndDate": "2020-08-11 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "8eaa4b05-3c54-4de0-8094-947427d41adc",
+    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerEmail": "dmcgirl12@intel.com",
     "AnimalId": 259,
     "IsResigned": "FALSE"
   },
@@ -4815,6 +5297,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerEmail": "drichtb@walmart.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4824,7 +5307,8 @@
     "EndDate": "2019-06-22 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "1506ff51-0175-4cbd-9351-51f8a1b6adcc",
+    "OwnerId": "1872fdc8-6390-4b0e-82da-4b7f33099e22",
+    "OwnerEmail": "iburnyeat1f@soundcloud.com",
     "AnimalId": 131,
     "IsResigned": "FALSE"
   },
@@ -4834,7 +5318,8 @@
     "EndDate": "2019-05-03 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 156,
     "IsResigned": "FALSE"
   },
@@ -4844,7 +5329,8 @@
     "EndDate": "2020-06-07 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerId": "65a0d755-c3c7-4818-a2cb-97ed51225d3c",
+    "OwnerEmail": "bgarrioch2s@mtv.com",
     "AnimalId": 373,
     "IsResigned": "FALSE"
   },
@@ -4855,6 +5341,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerEmail": "rkrop4b@ebay.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4864,7 +5351,8 @@
     "EndDate": "2019-05-31 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "836924b9-12c3-40c6-a638-88901775e132",
+    "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerEmail": "srollason3n@printfriendly.com",
     "AnimalId": 493,
     "IsResigned": "FALSE"
   },
@@ -4874,7 +5362,8 @@
     "EndDate": "2019-04-24 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 460,
     "IsResigned": "FALSE"
   },
@@ -4884,7 +5373,8 @@
     "EndDate": "2020-03-03 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerEmail": "jdoerling3c@lulu.com",
     "AnimalId": 440,
     "IsResigned": "FALSE"
   },
@@ -4895,6 +5385,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "5506584d-0edc-4f03-9e25-de01b8097506",
+    "OwnerEmail": "ttissiman1t@unblog.fr",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4904,7 +5395,8 @@
     "EndDate": "2019-11-05 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerId": "9697edf0-60ba-4c1b-a8c6-7cd0041a48e3",
+    "OwnerEmail": "gchastan1b@disqus.com",
     "AnimalId": 438,
     "IsResigned": "FALSE"
   },
@@ -4914,7 +5406,8 @@
     "EndDate": "2021-05-09 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "cecc2c5f-6395-4af0-aa8c-b3bbcfdde2d1",
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerEmail": "cscupham24@sitemeter.com",
     "AnimalId": 203,
     "IsResigned": "FALSE"
   },
@@ -4924,7 +5417,8 @@
     "EndDate": "2021-01-06 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "5d974f6b-e91f-4d6d-8aa9-2cd5897a0fe1",
+    "OwnerId": "feb3bcef-aff2-4a99-a152-b38f6d3376d0",
+    "OwnerEmail": "wforganl@mtv.com",
     "AnimalId": 502,
     "IsResigned": "FALSE"
   },
@@ -4935,6 +5429,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4945,6 +5440,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "3319c0d9-3281-4a55-b8bb-c6a93277d05b",
+    "OwnerEmail": "aapplegartha@wikimedia.org",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4955,6 +5451,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "OwnerEmail": "pmquharge3o@discovery.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4964,7 +5461,8 @@
     "EndDate": "2021-04-25 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerId": "holnapeniko",
+    "OwnerEmail": "heniko@veterinary.hu",
     "AnimalId": 384,
     "IsResigned": "FALSE"
   },
@@ -4974,7 +5472,8 @@
     "EndDate": "2020-07-02 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerId": "281ce08e-eba2-431f-b1a1-51470df71e31",
+    "OwnerEmail": "lmaster42@fastcompany.com",
     "AnimalId": 315,
     "IsResigned": "FALSE"
   },
@@ -4985,6 +5484,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerEmail": "jscimonef@princeton.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -4994,7 +5494,8 @@
     "EndDate": "2019-03-14 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "OwnerId": "71264c02-9433-4bd2-9243-5ea11760b47d",
+    "OwnerEmail": "gparadis3h@symantec.com",
     "AnimalId": 525,
     "IsResigned": "FALSE"
   },
@@ -5004,7 +5505,8 @@
     "EndDate": "2019-08-09 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "eb70e10a-6c46-4c7a-a6a8-9095727d463f",
+    "OwnerId": "041a2d93-1c5e-41d4-b47c-8b4bf59e7a96",
+    "OwnerEmail": "cburnsyde1j@eventbrite.com",
     "AnimalId": 93,
     "IsResigned": "FALSE"
   },
@@ -5015,6 +5517,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5025,6 +5528,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "82fbfc8a-655c-465c-a861-8203889b66dc",
+    "OwnerEmail": "jbream4h@time.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5034,7 +5538,8 @@
     "EndDate": "2019-06-09 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "a2478aee-4afd-4a0e-96c3-339178fd826d",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 290,
     "IsResigned": "FALSE"
   },
@@ -5045,6 +5550,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "0b952b62-14f8-4d44-b1fa-1536b5712112",
+    "OwnerEmail": "trushworth4x@csmonitor.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5055,6 +5561,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "f0d90b01-1b6e-4268-aa55-5a5194345757",
+    "OwnerEmail": "ntown1c@hc360.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5065,6 +5572,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "2ee92670-24b0-4895-95c3-b3a47bac51ea",
+    "OwnerEmail": "pmquharge3o@discovery.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5075,6 +5583,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "ef8948f5-8244-41ed-98ca-1f7e5b187337",
+    "OwnerEmail": "blamar3@narod.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5085,6 +5594,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5094,7 +5604,8 @@
     "EndDate": "2019-04-08 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerEmail": "opapps1m@latimes.com",
     "AnimalId": 461,
     "IsResigned": "FALSE"
   },
@@ -5105,6 +5616,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
     "OwnerId": "392a714e-6f65-4cab-8e5c-1589ec5420e5",
+    "OwnerEmail": "jthorius37@vkontakte.ru",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5115,6 +5627,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "6a5ae734-2a57-456a-a37d-f1ab89d5534b",
+    "OwnerEmail": "vyork2a@nsw.gov.au",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5124,7 +5637,8 @@
     "EndDate": "2019-05-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "f21cf24b-45ea-4f47-aaa3-4b9315790c96",
+    "OwnerId": "03e2a909-39c0-4425-9253-8470b1fd5ebf",
+    "OwnerEmail": "aharses1w@barnesandnoble.com",
     "AnimalId": 49,
     "IsResigned": "FALSE"
   },
@@ -5134,7 +5648,8 @@
     "EndDate": "2021-03-08 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 569,
     "IsResigned": "FALSE"
   },
@@ -5144,7 +5659,8 @@
     "EndDate": "2019-09-05 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerId": "8ae1b2c1-8c3f-46c4-9ed0-feb90193f632",
+    "OwnerEmail": "bcucinotta34@answers.com",
     "AnimalId": 406,
     "IsResigned": "FALSE"
   },
@@ -5154,7 +5670,8 @@
     "EndDate": "2021-03-22 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerEmail": "bchatenier1a@issuu.com",
     "AnimalId": 491,
     "IsResigned": "FALSE"
   },
@@ -5164,7 +5681,8 @@
     "EndDate": "2020-11-30 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "6844403a-b9f7-4b31-8358-8e853421328f",
+    "OwnerId": "add38c3b-d12b-4929-bce5-8a3db755a346",
+    "OwnerEmail": "bmacak2p@addtoany.com",
     "AnimalId": 193,
     "IsResigned": "FALSE"
   },
@@ -5174,7 +5692,8 @@
     "EndDate": "2021-01-01 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "6c0f7789-63a4-4aad-9e11-6390c9cd7572",
+    "OwnerId": "450113cb-8dfd-4e1f-8198-e5bb8074b922",
+    "OwnerEmail": "fludlamme4a@hhs.gov",
     "AnimalId": 337,
     "IsResigned": "FALSE"
   },
@@ -5184,7 +5703,8 @@
     "EndDate": "2019-07-19 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "OwnerEmail": "sduran33@whitehouse.gov",
     "AnimalId": 207,
     "IsResigned": "FALSE"
   },
@@ -5195,6 +5715,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerEmail": "bchatenier1a@issuu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5205,6 +5726,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "d87a58b0-575b-4a4e-bc46-375d4f0e9072",
+    "OwnerEmail": "idixie32@jigsy.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5214,7 +5736,8 @@
     "EndDate": "2020-08-23 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 369,
     "IsResigned": "FALSE"
   },
@@ -5224,7 +5747,8 @@
     "EndDate": "2020-03-05 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "45417a12-0c5e-4053-9dc5-6bcf815f2787",
+    "OwnerId": "ff1327dc-e7ab-4386-9805-2c2a82cb3571",
+    "OwnerEmail": "pburdell2h@tuttocitta.it",
     "AnimalId": 147,
     "IsResigned": "FALSE"
   },
@@ -5234,7 +5758,8 @@
     "EndDate": "2020-07-05 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "5479df4a-3093-4364-975b-5c7754ac30aa",
+    "OwnerId": "4dc1ddcd-6a80-4027-953a-f3696dcc539e",
+    "OwnerEmail": "skasparp@icio.us",
     "AnimalId": 557,
     "IsResigned": "FALSE"
   },
@@ -5244,7 +5769,8 @@
     "EndDate": "2019-05-30 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": 369,
     "IsResigned": "FALSE"
   },
@@ -5254,7 +5780,8 @@
     "EndDate": "2019-03-13 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "a09f6d8c-656a-4d08-b6d4-cf5d2795fea6",
+    "OwnerId": "247763db-da47-4206-ae12-c061619f353c",
+    "OwnerEmail": "hpretti3r@telegraph.co.uk",
     "AnimalId": 591,
     "IsResigned": "FALSE"
   },
@@ -5264,7 +5791,8 @@
     "EndDate": "2021-02-09 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "cdfa07ed-57cb-4dfb-aa0c-0bc5691f6d17",
+    "OwnerId": "c2aacabe-ba07-4911-9521-f91fb979906b",
+    "OwnerEmail": "eadamkiewicz2t@apple.com",
     "AnimalId": 460,
     "IsResigned": "FALSE"
   },
@@ -5274,7 +5802,8 @@
     "EndDate": "2021-03-17 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerEmail": "cscupham24@sitemeter.com",
     "AnimalId": 472,
     "IsResigned": "FALSE"
   },
@@ -5285,6 +5814,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "4c92ccfb-6337-47eb-8746-4bd7031ba5d6",
+    "OwnerEmail": "pvants@samsung.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5294,7 +5824,8 @@
     "EndDate": "2021-02-26 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "dab0ed05-b00f-462f-96dd-60fe19385c95",
+    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerEmail": "pfiorentinoq@reverbnation.com",
     "AnimalId": 63,
     "IsResigned": "FALSE"
   },
@@ -5305,6 +5836,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "281ce08e-eba2-431f-b1a1-51470df71e31",
+    "OwnerEmail": "lmaster42@fastcompany.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5315,6 +5847,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "e41f2b12-229c-404f-a4af-c7557e5a7c9d",
+    "OwnerEmail": "cscupham24@sitemeter.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5325,6 +5858,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "01906b5b-e2d0-485f-a6c7-e9f35de0b4a2",
+    "OwnerEmail": "gabercrombiev@hugedomains.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5334,7 +5868,8 @@
     "EndDate": "2020-08-05 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "OwnerId": "bf753b13-043f-4874-8e06-af6732e5a3f5",
+    "OwnerEmail": "jjaffa53@fc2.com",
     "AnimalId": 360,
     "IsResigned": "FALSE"
   },
@@ -5345,6 +5880,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
     "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5354,7 +5890,8 @@
     "EndDate": "2020-10-13 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "a18471ee-da18-4dff-acb0-c62b2f3a3a82",
+    "OwnerId": "333a1a0f-c43c-49a0-a2d8-74b3820d4aa6",
+    "OwnerEmail": "mverson26@etsy.com",
     "AnimalId": 52,
     "IsResigned": "FALSE"
   },
@@ -5365,6 +5902,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "561ae619-066c-4709-abd9-f45d30287fa4",
+    "OwnerEmail": "srollason3n@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5374,7 +5912,8 @@
     "EndDate": "2019-10-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "24fba150-1817-4d02-9313-985c9d05b953",
+    "OwnerId": "3d0832b5-7bb4-45e8-9802-b5736ad8a923",
+    "OwnerEmail": "sboerderman57@newyorker.com",
     "AnimalId": 342,
     "IsResigned": "FALSE"
   },
@@ -5384,7 +5923,8 @@
     "EndDate": "2019-09-14 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "dbd5fa4f-fffb-45d3-ab36-e8793504bb25",
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": 298,
     "IsResigned": "FALSE"
   },
@@ -5394,7 +5934,8 @@
     "EndDate": "2020-07-12 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "0476dff4-e2e9-4d2a-b5ed-18b205b5e359",
+    "OwnerId": "fd3a1743-1f3c-4042-894f-6f72daa3c8c0",
+    "OwnerEmail": "gformie19@un.org",
     "AnimalId": 355,
     "IsResigned": "FALSE"
   },
@@ -5404,7 +5945,8 @@
     "EndDate": "2020-04-07 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerId": "95fc8a1c-1a43-448f-a414-1851cfa2b566",
+    "OwnerEmail": "jdoerling3c@lulu.com",
     "AnimalId": 440,
     "IsResigned": "FALSE"
   },
@@ -5414,7 +5956,8 @@
     "EndDate": "2019-05-11 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
-    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 204,
     "IsResigned": "FALSE"
   },
@@ -5425,6 +5968,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
     "OwnerId": "54d7bd7d-bf08-43ed-89c4-934d3db35bd7",
+    "OwnerEmail": "aburges44@omniture.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5435,6 +5979,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerEmail": "dlong5e@t-online.de",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5444,7 +5989,8 @@
     "EndDate": "2019-03-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "dce4b233-ffbb-4e39-a073-6eaf730f5c51",
+    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerEmail": "jlittleover4m@cnn.com",
     "AnimalId": 204,
     "IsResigned": "FALSE"
   },
@@ -5454,7 +6000,8 @@
     "EndDate": "2019-09-10 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "ea2cdf92-4224-4121-aca8-225af5dfd47f",
+    "OwnerId": "37ec39bd-48bf-4d64-953f-248fc1fee425",
+    "OwnerEmail": "shudghton4j@etsy.com",
     "AnimalId": 266,
     "IsResigned": "FALSE"
   },
@@ -5464,7 +6011,8 @@
     "EndDate": "2021-01-27 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 129,
     "IsResigned": "FALSE"
   },
@@ -5475,6 +6023,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
     "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerEmail": "drichtb@walmart.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5484,7 +6033,8 @@
     "EndDate": "2020-12-20 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "88eaeca1-deef-4f99-bc9a-345635673796",
+    "OwnerId": "1bcd7b99-e901-49bb-94bd-bcc241271b80",
+    "OwnerEmail": "rmulheron17@gov.uk",
     "AnimalId": 14,
     "IsResigned": "FALSE"
   },
@@ -5495,6 +6045,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
     "OwnerId": "5b4fd579-a1d8-4024-9fe0-92b6f700ea9c",
+    "OwnerEmail": "msurgeon2x@geocities.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5504,7 +6055,8 @@
     "EndDate": "2020-02-12 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "371cc651-6b8f-4442-9345-650f8007bb36",
+    "OwnerId": "d06a896e-4c26-4506-a0d6-158b5f99a170",
+    "OwnerEmail": "bbleazard29@123-reg.co.uk",
     "AnimalId": 396,
     "IsResigned": "FALSE"
   },
@@ -5514,7 +6066,8 @@
     "EndDate": "2019-02-26 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "5ef043f2-4c85-4f5f-ae01-2d7f720e8ccb",
+    "OwnerId": "09fbe6f3-98bf-451b-9c00-4460bf3e23c2",
+    "OwnerEmail": "jjakubczyk1z@huffingtonpost.com",
     "AnimalId": 594,
     "IsResigned": "FALSE"
   },
@@ -5524,7 +6077,8 @@
     "EndDate": "2019-10-02 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "c0f41a1c-7563-4cf5-bab0-341774b20609",
+    "OwnerId": "509070ce-af89-4d9c-bf03-88a3bb6ecded",
+    "OwnerEmail": "jbryceson31@hibu.com",
     "AnimalId": 430,
     "IsResigned": "FALSE"
   },
@@ -5534,7 +6088,8 @@
     "EndDate": "2021-04-15 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 10,
-    "OwnerId": "47144695-3fde-4216-9e60-0102bf9ede2f",
+    "OwnerId": "489bf459-098a-427c-aa6d-78d9f300910b",
+    "OwnerEmail": "sduran33@whitehouse.gov",
     "AnimalId": 207,
     "IsResigned": "FALSE"
   },
@@ -5544,7 +6099,8 @@
     "EndDate": "2020-10-15 12:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
-    "OwnerId": "ff1327dc-e7ab-4386-9805-2c2a82cb3571",
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerEmail": "tgerleit3f@uol.com.br",
     "AnimalId": 77,
     "IsResigned": "FALSE"
   },
@@ -5555,6 +6111,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
     "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerEmail": "tgerleit3f@uol.com.br",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5564,7 +6121,8 @@
     "EndDate": "2020-05-07 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 15,
-    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "OwnerId": "3142d545-b24f-418f-8af6-f47fe10d91b7",
+    "OwnerEmail": "dgoldhill2d@so-net.ne.jp",
     "AnimalId": 374,
     "IsResigned": "FALSE"
   },
@@ -5575,6 +6133,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "194da1fa-18ca-4877-9e6d-8a779129a279",
+    "OwnerEmail": "ehayhow50@123-reg.co.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5584,7 +6143,8 @@
     "EndDate": "2021-05-14 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerId": "34b88015-cf0f-4295-b881-7be0aab61304",
+    "OwnerEmail": "drichtb@walmart.com",
     "AnimalId": 247,
     "IsResigned": "FALSE"
   },
@@ -5594,7 +6154,8 @@
     "EndDate": "2020-01-09 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "ca1e8794-c5c8-479e-9c64-f094b62d2d33",
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": 304,
     "IsResigned": "FALSE"
   },
@@ -5604,7 +6165,8 @@
     "EndDate": "2020-08-23 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "de61fde4-3782-49d2-b1a1-6e14ce2876e5",
+    "OwnerId": "f72e492d-531f-4fef-bad1-6ea28bb8dff1",
+    "OwnerEmail": "tgerleit3f@uol.com.br",
     "AnimalId": 57,
     "IsResigned": "FALSE"
   },
@@ -5614,7 +6176,8 @@
     "EndDate": "2020-09-04 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 7,
-    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": 210,
     "IsResigned": "FALSE"
   },
@@ -5624,7 +6187,8 @@
     "EndDate": "2021-01-25 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "bcc8eda4-ada4-447f-93f8-64d1005b6a59",
+    "OwnerId": "a09f6d8c-656a-4d08-b6d4-cf5d2795fea6",
+    "OwnerEmail": "mbissiker30@1688.com",
     "AnimalId": 189,
     "IsResigned": "FALSE"
   },
@@ -5634,7 +6198,8 @@
     "EndDate": "2020-02-26 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "77d7094f-8776-43a1-a94a-0694eeabd443",
+    "OwnerId": "1fa0f61f-8c0a-45b9-aa7a-9c14fdaed7e6",
+    "OwnerEmail": "gmoran1u@tinyurl.com",
     "AnimalId": 23,
     "IsResigned": "FALSE"
   },
@@ -5645,6 +6210,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "OwnerEmail": "bgoneaun@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5654,7 +6220,8 @@
     "EndDate": "2020-06-19 12:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 8,
-    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "OwnerId": "54d7bd7d-bf08-43ed-89c4-934d3db35bd7",
+    "OwnerEmail": "aburges44@omniture.com",
     "AnimalId": 323,
     "IsResigned": "FALSE"
   },
@@ -5665,6 +6232,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "6844403a-b9f7-4b31-8358-8e853421328f",
+    "OwnerEmail": "akrojn27@hugedomains.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5675,6 +6243,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "a7edca4c-a457-447a-80c0-903e18eef81c",
+    "OwnerEmail": "tmico4e@skype.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5685,6 +6254,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
     "OwnerId": "100804ad-f2d2-45cb-bc56-4ca2e7e5b26f",
+    "OwnerEmail": "tstitwell3t@t.co",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5694,7 +6264,8 @@
     "EndDate": "2020-01-13 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "adf65544-a8fe-4228-925a-913134c4bba6",
+    "OwnerId": "08f4b2f4-c000-45da-8d00-a1475201b6a7",
+    "OwnerEmail": "tbusk3v@ca.gov",
     "AnimalId": 331,
     "IsResigned": "FALSE"
   },
@@ -5704,7 +6275,8 @@
     "EndDate": "2019-11-12 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
-    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": 560,
     "IsResigned": "FALSE"
   },
@@ -5714,7 +6286,8 @@
     "EndDate": "2019-04-20 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "51d01a27-3b3c-461f-83a5-b72b40283bf5",
+    "OwnerId": "f2797bf8-05e2-4881-8939-b78b6fbe6898",
+    "OwnerEmail": "janniwell3z@nhs.uk",
     "AnimalId": 96,
     "IsResigned": "FALSE"
   },
@@ -5724,7 +6297,8 @@
     "EndDate": "2021-05-01 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
-    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerId": "e9e844ea-67fd-45bf-b783-918f6a371b5c",
+    "OwnerEmail": "rchace35@blogtalkradio.com",
     "AnimalId": 70,
     "IsResigned": "FALSE"
   },
@@ -5734,7 +6308,8 @@
     "EndDate": "2021-04-16 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
-    "OwnerId": "5dbcbd07-ab02-421e-8a4d-51f318fc541e",
+    "OwnerId": "6bae7776-8863-4858-b2f9-1b724bc5e936",
+    "OwnerEmail": "dfarre40@taobao.com",
     "AnimalId": 361,
     "IsResigned": "FALSE"
   },
@@ -5745,6 +6320,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
     "OwnerId": "561adfd5-82ef-4a3d-9746-6168fccc9575",
+    "OwnerEmail": "cyegorov11@ca.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5755,6 +6331,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "78ef290b-6651-4525-806f-83047d05e0a4",
+    "OwnerEmail": "saxworthy0@diigo.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5764,7 +6341,8 @@
     "EndDate": "2020-12-10 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "95c0c9c0-f818-4859-9a5a-d554ee1501b0",
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": 267,
     "IsResigned": "FALSE"
   },
@@ -5774,7 +6352,8 @@
     "EndDate": "2019-07-27 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "f319d622-fd27-40dd-bf89-7aa6c0eedab5",
+    "OwnerId": "419441c2-158b-49ea-bd85-626b3cf106de",
+    "OwnerEmail": "plints4g@last.fm",
     "AnimalId": 113,
     "IsResigned": "FALSE"
   },
@@ -5785,6 +6364,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 13,
     "OwnerId": "727059a6-89b2-412f-bf08-cff1df3f7649",
+    "OwnerEmail": "bprydieh@i2i.jp",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5794,7 +6374,8 @@
     "EndDate": "2019-10-12 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 6,
-    "OwnerId": "e4c6fe44-2336-4edd-8bff-fa9fb9be2340",
+    "OwnerId": "10b9c3b6-dcfb-423c-a5bc-0c410ce0749e",
+    "OwnerEmail": "grenish5c@spiegel.de",
     "AnimalId": 518,
     "IsResigned": "FALSE"
   },
@@ -5804,7 +6385,8 @@
     "EndDate": "2021-03-15 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "64e9aff6-dd28-4d34-96a0-5b755a9e52a9",
+    "OwnerId": "92ccec02-3c11-49dc-83f9-ad79236d254c",
+    "OwnerEmail": "trooze43@nasa.gov",
     "AnimalId": 133,
     "IsResigned": "FALSE"
   },
@@ -5814,7 +6396,8 @@
     "EndDate": "2020-04-03 12:10:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 16,
-    "OwnerId": "3203c539-1245-4ac5-a8a4-4bf8c2228101",
+    "OwnerId": "32b61bbc-a288-417c-af18-f3c002284d11",
+    "OwnerEmail": "efetherstone6@hhs.gov",
     "AnimalId": 316,
     "IsResigned": "FALSE"
   },
@@ -5825,6 +6408,7 @@
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
     "OwnerId": "63bfe889-78c1-492f-9e25-175b772a7e92",
+    "OwnerEmail": "opapps1m@latimes.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5834,7 +6418,8 @@
     "EndDate": "2019-08-17 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "cc410cc5-c613-4d90-86a0-8e889ad9a9a9",
+    "OwnerId": "bea6a953-9c18-456f-b8a8-2eb05d5de15b",
+    "OwnerEmail": "mpresnell1l@bizjournals.com",
     "AnimalId": 560,
     "IsResigned": "FALSE"
   },
@@ -5845,6 +6430,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
     "OwnerId": "30c3afb7-abe3-4df5-9449-c9e5ffbfb885",
+    "OwnerEmail": "bgoneaun@printfriendly.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5855,6 +6441,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 14,
     "OwnerId": "36db7c29-825e-491e-beec-ce72340207d6",
+    "OwnerEmail": "bpovalli@google.es",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5865,6 +6452,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "f8b682e5-bd9a-4b15-b5a8-b25fc68d2be8",
+    "OwnerEmail": "sconisbeex@dot.gov",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5874,7 +6462,8 @@
     "EndDate": "2020-02-14 08:20:00",
     "DoctorId": "holnapeniko",
     "TreatmentId": 3,
-    "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "OwnerId": "bb2c59e8-1096-480a-acb5-e2731f835a09",
+    "OwnerEmail": "hdunk3j@topsy.com",
     "AnimalId": 332,
     "IsResigned": "FALSE"
   },
@@ -5885,6 +6474,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "f7cd5e15-4688-4538-a9c3-1aa0198ba7eb",
+    "OwnerEmail": "icrossgrove2l@imageshack.us",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5895,6 +6485,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
     "OwnerId": "5439ceac-3885-4d39-9a5c-d3c8bb4ef738",
+    "OwnerEmail": "wlouisot4i@businesswire.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5904,7 +6495,8 @@
     "EndDate": "2020-04-25 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 4,
-    "OwnerId": "e9934507-a222-45fc-8459-855f6eedecb4",
+    "OwnerId": "ef39c78c-e689-471b-9959-f7c976b9842c",
+    "OwnerEmail": "ddrust16@php.net",
     "AnimalId": 129,
     "IsResigned": "FALSE"
   },
@@ -5914,7 +6506,8 @@
     "EndDate": "2020-11-11 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "b6f119d4-bbf8-48ba-b808-3a21ed1cdcac",
+    "OwnerId": "3dd2b4c9-1c06-4c9a-9b5d-7d9f9e081c21",
+    "OwnerEmail": "mgowrichj@people.com.cn",
     "AnimalId": 420,
     "IsResigned": "FALSE"
   },
@@ -5924,7 +6517,8 @@
     "EndDate": "2020-03-24 08:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 12,
-    "OwnerId": "8f4084dd-7d5c-4be0-b426-9ebabb3b883a",
+    "OwnerId": "de7a022e-57bc-4e58-a152-f03a6346285a",
+    "OwnerEmail": "jklimentyev52@vimeo.com",
     "AnimalId": 340,
     "IsResigned": "FALSE"
   },
@@ -5935,6 +6529,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "dfef515d-b7f3-441f-9980-f2590767528b",
+    "OwnerEmail": "nconklin2k@mac.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5945,6 +6540,7 @@
     "DoctorId": "kovacsmonika",
     "TreatmentId": 9,
     "OwnerId": "ab189fc8-c2cc-40e1-bd92-bbacfca04585",
+    "OwnerEmail": "ccleobury2m@nhs.uk",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5955,6 +6551,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 1,
     "OwnerId": "ebd113c7-7b20-4d2d-bb01-163a2fcdcb46",
+    "OwnerEmail": "jrakestraw4v@comcast.net",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5964,7 +6561,8 @@
     "EndDate": "2020-05-27 08:10:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 17,
-    "OwnerId": "f00778e9-ffce-49b9-88b7-d029874a2a39",
+    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerEmail": "chunte2c@mit.edu",
     "AnimalId": 473,
     "IsResigned": "FALSE"
   },
@@ -5974,7 +6572,8 @@
     "EndDate": "2019-05-10 12:20:00",
     "DoctorId": "tesztelek",
     "TreatmentId": 2,
-    "OwnerId": "9b29f604-e8ad-4691-bc67-7f3933568122",
+    "OwnerId": "eaa9bd6b-c66d-44ed-9ab5-dacbb2bd149a",
+    "OwnerEmail": "lbrandenberg5f@weebly.com",
     "AnimalId": 541,
     "IsResigned": "FALSE"
   },
@@ -5985,6 +6584,7 @@
     "DoctorId": "tesztelek",
     "TreatmentId": 5,
     "OwnerId": "55bd4a45-d60f-42ef-afe0-4a7526ccf76e",
+    "OwnerEmail": "hovenden5@baidu.com",
     "AnimalId": "",
     "IsResigned": "FALSE"
   },
@@ -5994,7 +6594,8 @@
     "EndDate": "2020-02-03 08:20:00",
     "DoctorId": "kovacsmonika",
     "TreatmentId": 11,
-    "OwnerId": "6b02389b-9aaa-43a0-bfef-80dacee8daea",
+    "OwnerId": "89ada3ca-781d-4279-a182-e0582104ae4a",
+    "OwnerEmail": "kbaldacchi10@indiatimes.com",
     "AnimalId": 480,
     "IsResigned": "FALSE"
   }
