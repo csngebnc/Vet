@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Vet.BL.Pagination;
+using Vet.Extensions;
 using Vet.Interfaces;
 using Vet.Models;
 
@@ -30,21 +32,21 @@ namespace Vet.Data.Repositories
                 .Include(a => a.Animals)
                 .SingleOrDefaultAsync(x => x.UserName == username);
 
-        public async Task<IEnumerable<VetUser>> GetUserByFilter(string name, string email)
+        public IQueryable<VetUser> GetUserByFilter(string name, string email)
         {
-            IEnumerable<VetUser> user_w_name;
+            IQueryable<VetUser> user_w_name;
             if(name != null)
             {
-                user_w_name = await _context.Users.Where(u => u.RealName.ToLower().Contains(name.ToLower())).ToListAsync();
-                if(email != null)
-                    user_w_name = user_w_name.Where(u => u.Email.ToLower().Contains(email.ToLower())).ToList();
+                user_w_name = _context.Users.Where(u => u.RealName.ToLower().Contains(name.ToLower()));
+                if (email != null)
+                    user_w_name = user_w_name.Where(u => u.Email.ToLower().Contains(email.ToLower()));
             }
             else
             {
                 if (email != null)
-                    user_w_name = await _context.Users.Where(u => u.Email.ToLower().Contains(email.ToLower())).ToListAsync();
+                    user_w_name = _context.Users.Where(u => u.Email.ToLower().Contains(email.ToLower()));
                 else
-                    user_w_name = await _context.Users.ToListAsync();
+                    user_w_name = _context.Users;
             }
 
             return user_w_name;

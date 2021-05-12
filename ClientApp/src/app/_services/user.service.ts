@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -15,11 +16,13 @@ export class UserService {
     return this.http.get(this.baseUrl + 'users');
   }
 
-  getUsersFilter(name?, email?) {
+  getUsersFilter(event: PageEvent, name?, email?) {
     return this.http.get(this.baseUrl + 'users/filter', {
       params: {
         name: name ? name : '',
-        email: email ? email : ''
+        email: email ? email : '',
+        pageIndex: event.pageIndex.toString(),
+        pageSize: event.pageSize.toString()
       }
     });
   }

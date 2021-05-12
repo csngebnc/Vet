@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Vet.BL;
 using Vet.BL.Exceptions;
+using Vet.BL.Pagination;
 using Vet.Extensions;
 using Vet.Interfaces;
 using Vet.Models;
@@ -29,10 +30,10 @@ namespace Vet.Controllers
         }
 
         [HttpGet("filter")]
-        public async Task<IEnumerable<VetUserDto>> GetUsersByFilter([FromQuery]string name, [FromQuery] string email)
+        public async Task<PagedList<VetUserDto>> GetUsersByFilter([FromQuery]string name, [FromQuery] string email, [FromQuery]PaginationData pgd)
         {
             var a = name;
-            return await _userManager.GetUsersByFilter(name, email);
+            return await _userManager.GetUsersByFilter(name, email, pgd);
         }
 
         [HttpGet("{id}")]

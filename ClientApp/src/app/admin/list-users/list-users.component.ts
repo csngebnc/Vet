@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { PageEvent, MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import { PagedList } from 'src/app/_models/PagedList';
 import { VetUserDto } from 'src/app/_models/vetuserdto';
 import { UserService } from 'src/app/_services/user.service';
 
@@ -15,8 +17,13 @@ export class ListUsersComponent implements OnInit {
 
   filter: FormGroup
 
-  dataSource;
+  dataSource = new MatTableDataSource<VetUserDto>();
   displayedColumns: string[] = ['name', 'email', 'button'];
+
+  pageEvent: PageEvent;
+  lenght: number;
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
 
   users: VetUserDto[] = []
 
@@ -28,18 +35,23 @@ export class ListUsersComponent implements OnInit {
         email: ['']
       }
     )
-
-    this.userService.getUsersFilter().subscribe((users: VetUserDto[]) => {
-      this.users = users;
-      this.dataSource = new MatTableDataSource<VetUserDto>(this.users);
-    })
+    this.dataSource.paginator = this.paginator;
+    this.runFilter();
   }
 
   runFilter() {
-    this.userService.getUsersFilter(this.filter.get('name').value, this.filter.get('email').value).subscribe((users: VetUserDto[]) => {
-      this.users = users;
-      this.dataSource = new MatTableDataSource<VetUserDto>(this.users);
+    if (this.users.length > 0)
+      this.paginator.firstPage();
+    this.pageChanged({ pageIndex: 0, pageSize: 10, length: 0 });
+  }
+
+  pageChanged(event: PageEvent) {
+    this.userService.getUsersFilter(event, this.filter.get('name').value, this.filter.get('email').value).subscribe((users: PagedList<VetUserDto>) => {
+      this.users = users.items;
+      this.dataSource.data = users.items;
+      this.lenght = users.total;
     })
+    return event;
   }
 
 }

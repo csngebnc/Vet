@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Vet.BL.Exceptions;
+using Vet.BL.Pagination;
 using Vet.Helpers;
 using Vet.Interfaces;
 using Vet.Models;
 using Vet.Models.DTOs;
+using Vet.Extensions;
 
 namespace Vet.BL
 {
@@ -43,9 +45,9 @@ namespace Vet.BL
             return user == null ? 0 : user.AuthLevel;
         }
 
-        public async Task<IEnumerable<VetUserDto>> GetUsersByFilter(string name, string email)
+        public async Task<PagedList<VetUserDto>> GetUsersByFilter(string name, string email, PaginationData pgd)
         {
-            return _mapper.Map<IEnumerable<VetUserDto>>(await _userRepository.GetUserByFilter(name, email));
+            return await _userRepository.GetUserByFilter(name, email).ToPagedList<VetUser,VetUserDto>(_mapper, pgd);
         }
 
         public async Task<string> AddUserPhoto(PhotoClass picData, string userId)
